@@ -1,0 +1,95 @@
+{
+ "disoccupazione_tassi": {
+  "nome": "Tasso di disoccupazione (Rilevazione sulle forze di lavoro, dati annuali)",
+  "scaricato": "2026-10-05T07:13:43Z",
+  "ultimo_anno": 2025,
+  "righe": 2683,
+  "ultimo_aggiornamento_istat": "2026-09-11T08:54:28.185Z",
+  "dati_modificati": "2026-09-30T08:14:18Z"
+ },
+ "disoccupazione_disoccupati": {
+  "nome": "Disoccupati in migliaia (Rilevazione sulle forze di lavoro, dati annuali)",
+  "scaricato": "2026-10-05T07:13:43Z",
+  "ultimo_anno": 2025,
+  "righe": 336,
+  "ultimo_aggiornamento_istat": "2026-09-11T08:51:07.720Z",
+  "dati_modificati": "2026-09-30T08:14:18Z"
+ },
+ "occupazione_tassi": {
+  "nome": "Tasso di occupazione (Rilevazione sulle forze di lavoro, dati annuali)",
+  "scaricato": "2026-10-05T07:13:43Z",
+  "ultimo_anno": 2025,
+  "righe": 3360,
+  "ultimo_aggiornamento_istat": "2026-09-11T08:04:59.701Z",
+  "dati_modificati": "2026-09-30T09:11:00Z"
+ },
+ "occupazione_occupati": {
+  "nome": "Occupati in migliaia per settore e posizione (Rilevazione sulle forze di lavoro, dati annuali)",
+  "scaricato": "2026-10-05T07:13:43Z",
+  "ultimo_anno": 2025,
+  "righe": 944,
+  "ultimo_aggiornamento_istat": "2026-09-11T08:43:00.884Z",
+  "dati_modificati": "2026-09-30T09:11:00Z"
+ },
+ "attivita_forze": {
+  "nome": "Forze di lavoro in migliaia (Rilevazione sulle forze di lavoro, dati annuali)",
+  "scaricato": "2026-10-05T07:13:43Z",
+  "ultimo_anno": 2025,
+  "righe": 336,
+  "ultimo_aggiornamento_istat": "2026-09-11T08:03:48.665Z",
+  "dati_modificati": "2026-09-30T10:49:08Z"
+ },
+ "attivita_tassi": {
+  "nome": "Tasso di attività (Rilevazione sulle forze di lavoro, dati annuali)",
+  "scaricato": "2026-10-05T07:13:43Z",
+  "ultimo_anno": 2025,
+  "righe": 3024,
+  "ultimo_aggiornamento_istat": "2026-09-11T08:48:36.536Z",
+  "dati_modificati": "2026-09-30T10:49:08Z"
+ },
+ "inattivita_inattivi": {
+  "nome": "Inattivi in migliaia (Rilevazione sulle forze di lavoro, dati annuali)",
+  "scaricato": "2026-10-05T07:13:43Z",
+  "ultimo_anno": 2025,
+  "righe": 336,
+  "ultimo_aggiornamento_istat": "2026-09-11T08:38:49.539Z",
+  "dati_modificati": "2026-10-05T07:03:32Z"
+ },
+ "inattivita_tassi": {
+  "nome": "Tasso di inattività (Rilevazione sulle forze di lavoro, dati annuali)",
+  "scaricato": "2026-10-05T07:13:43Z",
+  "ultimo_anno": 2025,
+  "righe": 3023,
+  "ultimo_aggiornamento_istat": "2026-09-11T08:58:39.950Z",
+  "dati_modificati": "2026-10-05T07:03:32Z"
+ },
+ "controllato": "2026-10-05T07:13:43Z",
+ "controllato_cig": "2026-10-05T09:11:04Z",
+ "cig_territori": {
+  "nome": "Ore autorizzate di cassa integrazione per provincia lombarda, Lombardia e Italia (cumulate da inizio anno, INPS)",
+  "scaricato": "2026-10-05T09:05:44Z",
+  "ultimo_mese": "2026-06",
+  "righe": 588,
+  "ultimo_aggiornamento_inps": "2026-10-02",
+  "ultimo_aggiornamento_inps_serie_2009_2022": "2020-12-17",
+  "dati_modificati": "2026-10-05T08:50:00Z"
+ },
+ "cig_classi": {
+  "nome": "Ore autorizzate di cassa integrazione di Varese per classe di attività economica (cumulate da inizio anno, INPS)",
+  "scaricato": "2026-10-05T09:05:44Z",
+  "ultimo_mese": "2026-06",
+  "righe": 854,
+  "ultimo_aggiornamento_inps": "2026-10-02",
+  "ultimo_aggiornamento_inps_serie_2009_2022": "2020-12-17",
+  "dati_modificati": "2026-10-05T08:50:00Z"
+ },
+ "cig_varese_mensile": {
+  "nome": "Ore autorizzate di cassa integrazione di Varese per mese (INPS)",
+  "scaricato": "2026-10-05T09:05:44Z",
+  "ultimo_mese": "2026-06",
+  "righe": 630,
+  "ultimo_aggiornamento_inps": "2026-10-02",
+  "ultimo_aggiornamento_inps_serie_2009_2022": "2020-12-17",
+  "dati_modificati": "2026-10-05T08:50:00Z"
+ }
+}

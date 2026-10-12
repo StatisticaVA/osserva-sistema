@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trasporti – Report statistici · Camera di Commercio di Varese</title>
+<meta name="description" content="Autovetture circolanti in provincia di Varese per classe Euro, alimentazione e cilindrata, dall&#x27;Autoritratto dell&#x27;ACI e dalla popolazione ISTAT.">
+<meta name="theme-color" content="#12104a">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/portale.css?v=e0f75119b8">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="pagina-tema" data-area="trasporti" style="--area:#be123c;--area-soft:#fce7eb">
+<a class="vai-contenuto" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="testata-in">
+    <a class="marchio" href="../index.html" title="Torna alla pagina iniziale"><img src="../assets/logo.png" alt="Camera di Commercio di Varese – Futuro Impresa Territorio" width="218" height="44"></a>
+    <div class="testata-titolo"><a href="../index.html">Report statistici</a><small>Tabelle per Osserva · Ufficio Statistica</small></div>
+    <nav class="testata-link" aria-label="Collegamenti principali">
+      <a href="../index.html"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><span>Home</span></a>
+      <a href="../index.html#stato"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span>Stato dei dati</span></a>
+    </nav>
+    <button class="bottone-menu" type="button" aria-controls="menu" aria-expanded="false"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>Temi</button>
+  </div>
+</header>
+<div class="velo"></div>
+<div class="struttura">
+<aside class="menu-laterale" id="menu" aria-label="Temi">
+  <nav>
+    <a class="menu-area menu-home" href="../index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="nome">Pagina iniziale</span></a>
+    <p class="titoletto">Temi</p>
+    <details class="menu-voce" style="--c:#006ba0;--c-soft:#e3f2fa">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span><span class="nome">Imprese</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../imprese/index.html#sezione=registrate_attive" data-sezione="registrate_attive">Registrate e attive</a></li>
+        <li><a href="../imprese/index.html#sezione=iscrizioni_cessazioni" data-sezione="iscrizioni_cessazioni">Iscrizioni e cessazioni</a></li>
+        <li><a href="../imprese/index.html#sezione=procedure" data-sezione="procedure">Procedure concorsuali e scioglimenti</a></li>
+      </ul>
+    </details>
+    <details class="menu-voce" style="--c:#c2410c;--c-soft:#fdede4">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><span class="nome">Lavoro</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../lavoro/index.html#sezione=disoccupazione" data-sezione="disoccupazione">Disoccupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=occupazione" data-sezione="occupazione">Occupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=attivita" data-sezione="attivita">Attività</a></li>
+        <li><a href="../lavoro/index.html#sezione=inattivita" data-sezione="inattivita">Inattività</a></li>
+        <li><a href="../lavoro/index.html#sezione=cig" data-sezione="cig">Cassa integrazione</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce" style="--c:#0f766e;--c-soft:#e0f3f0"><a class="menu-area" href="../commercio-estero/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span class="nome">Commercio estero</span></a></div>
+    <details class="menu-voce" style="--c:#4338ca;--c-soft:#ebeafd">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></svg></span><span class="nome">Credito</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../credito/index.html#sezione=depositi" data-sezione="depositi">Depositi</a></li>
+        <li><a href="../credito/index.html#sezione=impieghi" data-sezione="impieghi">Impieghi</a></li>
+        <li><a href="../credito/index.html#sezione=sofferenze" data-sezione="sofferenze">Sofferenze</a></li>
+        <li><a href="../credito/index.html#sezione=sportelli" data-sezione="sportelli">Sportelli</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce" style="--c:#7e22ce;--c-soft:#f3e7fc"><a class="menu-area" href="../conti-economici/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span><span class="nome">Conti economici</span></a></div>
+    <div class="menu-voce" style="--c:#13733a;--c-soft:#e3f4e8"><a class="menu-area" href="../popolazione/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="nome">Popolazione</span></a></div>
+    <div class="menu-voce corrente" style="--c:#be123c;--c-soft:#fce7eb"><a class="menu-area" href="../trasporti/index.html" aria-current="page"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></span><span class="nome">Trasporti</span></a></div>
+  </nav>
+  <div class="menu-nota"><b>Come si usa</b>Scegli un tema, controlla i dati e premi «Genera». In fondo a ogni pagina, «Come funziona» spiega tabelle e regole di calcolo.</div>
+</aside>
+<div class="contenuto">
+  <section class="eroe-area senza-schede" aria-labelledby="titolo-tema">
+    <div class="briciole"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Trasporti</a></div>
+    <div class="eroe-riga">
+      <div class="tessera-grande"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></div>
+      <div>
+        <h1 id="titolo-tema">Trasporti</h1>
+        <p class="lead">Autovetture circolanti in provincia di Varese per classe Euro, alimentazione e cilindrata, dall&#x27;Autoritratto dell&#x27;ACI e dalla popolazione ISTAT.</p>
+        <ul class="meta">
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>Fonte: ACI · ISTAT</li>
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Dati automatici: controllo ogni giorno</li>
+          <li class="stato-dati" data-stato-area="trasporti"><span class="pallino"></span><span class="testo">Controllo lo stato dei dati…</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<main class="wrap" id="contenuto">
+  <section class="card">
+    <h2>1 · Anno</h2>
+    <div class="riga">
+      <label class="campo">Anno delle autovetture <select id="anno"></select></label>
+    </div>
+    <p class="nota" id="notaFonti"></p>
+    <p class="nota">Si sceglie l'ultimo anno (per esempio 2025: autovetture al 31 dicembre 2025 confrontate con il 31 dicembre 2024). Le autovetture sono quelle del
+      parco veicolare ACI (Pubblico Registro Automobilistico); la popolazione è quella ISTAT al 1° gennaio.</p>
+  </section>
+
+  <section class="card">
+    <h2>2 · Dati</h2>
+    <div id="fonte" class="fonte"><span class="icona">⏳</span><div><b>Cerco i dati aggiornati automaticamente…</b></div></div>
+    <h3>Se i dati automatici mancano o non sono aggiornati</h3>
+    <ol class="passi">
+      <li>I dati sono tre file CSV nella cartella «dati» di questo sito (<code>aci_autovetture.csv</code>, <code>aci_varese_dettaglio.csv</code>, <code>istat_popolazione.csv</code>):
+        scaricali dal sito pubblicato e trascinali qui sotto (non serve aprirli).
+        <a class="bottone" id="linkDati" href="https://statisticava.github.io/report-trasporti/dati/aci_autovetture.csv" rel="noopener">⬇ aci_autovetture.csv</a></li>
+      <li>L'ACI pubblica ogni anno (entro luglio) il file «Autoritratto» nella pagina Open data:
+        <a class="bottone" id="linkAci" href="https://aci.gov.it/attivita-e-progetti/studi-e-ricerche/open-data/" rel="noopener">ACI · Open data</a>
+        Il programma di aggiornamento lo legge da solo: non serve scaricarlo a mano.</li>
+    </ol>
+    <label class="drop" id="drop">
+      <input type="file" id="scegli" multiple accept=".csv,.txt">
+      <b>Trascina qui i file CSV dei dati</b> oppure clicca per sceglierli
+      <div class="descr">I dati dei file caricati prevalgono su quelli automatici. I file restano sul tuo computer.</div>
+    </label>
+    <ul class="lista-file" id="listaFile"></ul>
+  </section>
+
+  <section class="card">
+    <h2>3 · Controllo e tabelle</h2>
+    <div id="controllo"></div>
+    <div class="riga" style="margin-top:14px">
+      <span class="spazio"></span>
+      <button id="genera" class="primario" disabled>⬇ Genera tabelle</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Stato</h2>
+    <pre id="log"><span class="muted">In attesa dei dati.</span></pre>
+  </section>
+
+  <section class="card" id="risultati" hidden>
+    <h2 id="titoloRisultati">File pronti</h2>
+    <a id="zip" class="zip" href="#">⬇ Scarica tutto (ZIP)</a>
+    <div id="elenco"></div>
+  </section>
+
+  <section class="card">
+    <h2>Come funziona</h2>
+    <details open>
+      <summary>Tabelle prodotte, fonti dei dati e regole</summary>
+      <ul>
+        <li><b>Trasporto_su_strada_sintesi</b>: autovetture (totale e ogni 100 abitanti) di Varese, Lombardia e Italia, anno scelto e anno prima, con variazione %; <b>…_sintesi_x_grafico</b>: le autovetture di Varese per il grafico.</li>
+        <li><b>Trasporto_su_strada_tempo</b>: autovetture di Varese degli ultimi 15 anni, variazione % sull'anno prima e autovetture ogni 100 abitanti.</li>
+        <li><b>…_tipologia_euro</b>, <b>…_tipologia_alimentazione</b>, <b>…_tipologia_cilindrata</b>: autovetture di Varese dell'anno scelto per classe Euro, per alimentazione e per cilindrata, con il peso %.</li>
+      </ul>
+      <p class="nota"><b>Da dove vengono i numeri.</b> Autovetture: file «Autoritratto» dell'ACI (open data, licenza CC-BY 4.0), parco veicolare al 31 dicembre; Lombardia = somma delle 12 province, Italia = somma di tutte le province.
+        Classi Euro e alimentazione: foglio «Circolante Copert» (Euro 5 = Euro 5 + 5B; Euro 6 = Euro 6, 6A, 6B, 6C, 6D, 6E; «Alimentazione elettrica» = veicoli senza classe Euro); cilindrata: foglio «Autovetture per provincia e cilindrata»
+        (Fino a 1200 = fino a 800 + 801-1200; 1201-2000; 2001-3000; oltre 3000). Gli anni passati restano quelli di ciascuna edizione ACI e non vengono ricalcolati.</p>
+      <p class="nota">«Autovetture ogni 100 abitanti» = autovetture al 31/12 dell'anno ÷ popolazione residente al 1° gennaio dello stesso anno (dato definitivo) × 100. I numeri sono salvati come numeri veri senza arrotondamenti:
+        variazioni e pesi hanno 2 decimali visibili nel formato (nei vecchi modelli di Osserva il formato nascondeva i decimali di «ogni 100 abitanti»).</p>
+      <p class="nota">L'ACI pubblica l'Autoritratto una volta l'anno (entro luglio, a volte più tardi); ISTAT pubblica la popolazione a fine marzo. L'aggiornamento automatico controlla ogni giorno e, se qualcosa non torna,
+        non cambia i dati e manda un avviso.</p>
+    </details>
+  </section>
+</main>
+<footer class="versione">Fonte: Automobile Club d'Italia (Autoritratto, open data CC-BY 4.0) e ISTAT · elaborazione Camera di Commercio di Varese · versione 1.0</footer>
+</div>
+</div>
+<footer class="pie">
+  <div class="pie-in">
+    <div><img class="simbolo" src="../assets/simbolo-bianco.png" alt=""><b>Camera di Commercio di Varese</b> · Ufficio Statistica</div>
+    <div>Fonti: ISTAT, Banca d'Italia, INPS, InfoCamere, Centro Studi Tagliacarne, ACI · Le tabelle si creano nel browser: i file che carichi restano sul tuo computer · versione 1.0</div>
+  </div>
+</footer>
+<script id="motore">
+"use strict";
+/* ==========================================================================
+   MOTORE (nessuna libreria esterna: lettura CSV, calcoli, Excel e ZIP)
+   Le 6 tabelle riproducono quelle di Osserva «Trasporti – Strade» (cartella «output osserva», anno 2025).
+
+   DATI (salvati ogni giorno da GitHub Actions in dati/):
+     aci_autovetture.csv        anno, territorio, autovetture, fonte   (autovetture al 31 dicembre: 12 province lombarde, Lombardia, Italia)
+     aci_varese_dettaglio.csv   anno, tavola, riga, colonna, valore   (Varese: alimentazione x classe Euro «copert», cilindrata «cilindrata»)
+     istat_popolazione.csv      anno, territorio, popolazione, stato  (popolazione residente al 1° gennaio: Varese, Lombardia, Italia)
+   REGOLA: «autovetture ogni 100 abitanti» di un anno Y = autovetture al 31/12/Y / popolazione al 1° gennaio Y (decisione dell'ufficio:
+   il dato al 1° gennaio dello stesso anno è già definitivo). Le variazioni e i pesi non si arrotondano (lo fa il formato della cella).
+   ========================================================================== */
+class ErroreDati extends Error {}
+
+// dati salvati dall'aggiornamento automatico (GitHub Actions): stessa cartella del sito, oppure il sito pubblicato
+const URL_DATI_ONLINE = "https://statisticava.github.io/report-trasporti/dati/";
+const PAGINA_ACI = "https://aci.gov.it/attivita-e-progetti/studi-e-ricerche/open-data/";
+const FILE_DATI = ["aci_autovetture.csv", "aci_varese_dettaglio.csv", "istat_popolazione.csv"];
+const ANNI_TEMPO = 15;                                 // la serie nel tempo tiene 15 anni (N-14 … N)
+const AREE = ["Varese", "Lombardia", "Italia"];        // ordine della tabella di sintesi
+
+// raggruppamenti delle voci ACI nelle voci delle tabelle di Osserva
+const VOCI_ALIM = ["Benzina", "Benzina e gas liquido", "Benzina e metano", "Elettricità", "Gasolio", "Ibrido benzina", "Ibrido gasolio", "Metano", "Altre e non definito"];
+const MAPPA_ALIM = {
+  "BENZINA": "Benzina", "BENZINA E GAS LIQUIDO": "Benzina e gas liquido", "BENZINA E METANO": "Benzina e metano", "ELETTRICITA": "Elettricità",
+  "GASOLIO": "Gasolio", "GASOLIO E GAS": "Gasolio",                                  // «gasolio e gas» = gasolio con impianto a gas (non è un ibrido)
+  "IBRIDO BENZINA": "Ibrido benzina", "IBRIDO BENZINA GAS LIQUIDO": "Ibrido benzina", "IBRIDO BENZINA METANO": "Ibrido benzina",
+  "IBRIDO GASOLIO": "Ibrido gasolio", "IBRIDO GASOLIO GPL": "Ibrido gasolio", "METANO": "Metano",
+  "ALTRE": "Altre e non definito", "NON DEFINITO": "Altre e non definito",
+};
+const VOCI_EURO = ["Euro 0", "Euro 1", "Euro 2", "Euro 3", "Euro 4", "Euro 5", "Euro 6", "Alimentazione elettrica", "Non definito"];
+const VOCI_CILINDRATA = [["Fino a 1200", ["FINO A 800", "801 - 1200"]], ["1201 - 2000", ["1201 - 1600", "1601 - 1800", "1801 - 2000"]],
+                         ["2001-3000", ["2001 - 2500", "2501 - 3000"]], ["Oltre 3000", ["OLTRE 3000"]], ["Non definito", ["NON DEFINITO"]]];
+
+const nullo = v => v === null || v === undefined;
+// variazione % come la formula del foglio di lavoro dell'ufficio: =nuovo/vecchio*100-100 (non arrotondata)
+const varPerc = (rec, prec) => nullo(rec) || nullo(prec) || prec === 0 ? null : rec / prec * 100 - 100;
+const somma = lista => lista.reduce((s, v) => s + v, 0);
+
+/* ------------------------------------------------------------------ CSV */
+function parseCsv(testo) {
+  if (testo.charCodeAt(0) === 0xFEFF) testo = testo.slice(1);
+  const primaRiga = testo.split(/\r?\n/, 1)[0];
+  const sep = [",", ";", "\t"].map(c => [c, primaRiga.split(c).length]).sort((a, b) => b[1] - a[1])[0][0];
+  const righe = [];
+  let riga = [], campo = "", tra = false;
+  for (let i = 0; i < testo.length; i++) {
+    const c = testo[i];
+    if (tra) {
+      if (c === '"') { if (testo[i + 1] === '"') { campo += '"'; i++; } else tra = false; } else campo += c;
+    } else if (c === '"') tra = true;
+    else if (c === sep) { riga.push(campo); campo = ""; }
+    else if (c === "\n" || c === "\r") {
+      if (c === "\r" && testo[i + 1] === "\n") i++;
+      riga.push(campo); campo = "";
+      if (riga.length > 1 || riga[0] !== "") righe.push(riga);
+      riga = [];
+    } else campo += c;
+  }
+  if (campo !== "" || riga.length) { riga.push(campo); righe.push(riga); }
+  return righe;
+}
+
+const INTEST_AUT = ["anno", "territorio", "autovetture", "fonte"];
+const INTEST_DET = ["anno", "tavola", "riga", "colonna", "valore"];
+const INTEST_POP = ["anno", "territorio", "popolazione", "stato"];
+function interoAnno(s, n, nome) {
+  const a = Number(String(s).trim());
+  if (!Number.isInteger(a) || a < 1990 || a > 2100) throw new ErroreDati(`${nome}, riga ${n}: anno non valido («${s}»).`);
+  return a;
+}
+function valoreNum(s, n, nome) {
+  const t = String(s).trim();
+  const v = t === "" ? NaN : Number(t);
+  if (!Number.isFinite(v) || v < 0) throw new ErroreDati(`${nome}, riga ${n}: numero non valido («${s}»).`);
+  return v;
+}
+// CSV salvato dal programma di aggiornamento (o scaricato dalla cartella «dati» del sito) -> { tipo, voci, descr }
+function leggiCsv(testo, nome = "file") {
+  const righe = parseCsv(testo);
+  if (!righe.length) throw new ErroreDati("Il file è vuoto.");
+  const testa = righe[0].map(s => s.trim().toLowerCase());
+  const uguale = att => att.length === testa.length && att.every((x, i) => x === testa[i]);
+  const corpo = righe.slice(1);
+  const range = voci => { const a = voci.map(x => x.anno); return a.length ? `${Math.min(...a)}–${Math.max(...a)}` : "nessun anno"; };
+  if (uguale(INTEST_AUT)) {
+    const voci = corpo.map((r, i) => ({ anno: interoAnno(r[0], i + 2, nome), t: r[1].trim(), v: valoreNum(r[2], i + 2, nome), fonte: (r[3] || "").trim() }));
+    return { tipo: "A", voci, descr: `autovetture ACI al 31 dicembre, anni ${range(voci)} (${voci.length} valori)` };
+  }
+  if (uguale(INTEST_DET)) {
+    const voci = corpo.map((r, i) => ({ anno: interoAnno(r[0], i + 2, nome), tavola: r[1].trim(), riga: r[2].trim(), colonna: r[3].trim(), v: valoreNum(r[4], i + 2, nome) }));
+    return { tipo: "D", voci, descr: `dettaglio di Varese (alimentazione, classe Euro, cilindrata), anni ${range(voci)}` };
+  }
+  if (uguale(INTEST_POP)) {
+    const voci = corpo.map((r, i) => ({ anno: interoAnno(r[0], i + 2, nome), t: r[1].trim(), v: valoreNum(r[2], i + 2, nome), stato: (r[3] || "").trim() }));
+    return { tipo: "P", voci, descr: `popolazione ISTAT al 1° gennaio, anni ${range(voci)} (${voci.length} valori)` };
+  }
+  throw new ErroreDati("Il file non è uno dei tre CSV dei dati (aci_autovetture.csv, aci_varese_dettaglio.csv, istat_popolazione.csv): le colonne non sono quelle attese.");
+}
+
+/* ------------------------------------------------------------------ dati */
+class DatiStrade {
+  constructor() { this.aut = new Map(); this.pop = new Map(); this.stato = new Map(); this.det = new Map(); this.anniDet = new Set(); }
+  aggiungi(l) {
+    if (l.tipo === "A") for (const x of l.voci) this.aut.set(`${x.t}|${x.anno}`, x.v);
+    else if (l.tipo === "P") for (const x of l.voci) { this.pop.set(`${x.t}|${x.anno}`, x.v); this.stato.set(`${x.t}|${x.anno}`, x.stato); }
+    else if (l.tipo === "D") {
+      const anni = new Set(l.voci.map(x => x.anno));             // un file di dettaglio sostituisce tutto il dettaglio degli anni che contiene
+      for (const k of [...this.det.keys()]) if (anni.has(Number(k.split("|")[0]))) this.det.delete(k);
+      for (const x of l.voci) this.det.set(`${x.anno}|${x.tavola}|${x.riga}|${x.colonna}`, x.v);
+      for (const a of anni) this.anniDet.add(a);
+    }
+  }
+  get vuoto() { return !this.aut.size && !this.det.size && !this.pop.size; }
+  anniAutovetture() { return [...new Set([...this.aut.keys()].filter(k => k.startsWith("Varese|")).map(k => Number(k.split("|")[1])))].sort((a, b) => a - b); }
+}
+const autV = (D, t, y) => D.aut.has(`${t}|${y}`) ? D.aut.get(`${t}|${y}`) : null;
+const popV = (D, t, y) => D.pop.has(`${t}|${y}`) ? D.pop.get(`${t}|${y}`) : null;
+const ogni100 = (D, t, y) => { const a = autV(D, t, y), p = popV(D, t, y); return nullo(a) || nullo(p) || p === 0 ? null : a / p * 100; };
+const cella = (D, y, tavola, riga, colonna) => D.det.has(`${y}|${tavola}|${riga}|${colonna}`) ? D.det.get(`${y}|${tavola}|${riga}|${colonna}`) : 0;
+
+// cosa serve perché un anno si possa fare: null se c'è tutto, altrimenti il messaggio
+function mancaPerAnno(D, N) {
+  for (const t of AREE) {
+    for (const y of [N - 1, N]) {
+      if (autV(D, t, y) === null) return `le autovetture ${t} del ${y} (ACI)`;
+      if (popV(D, t, y) === null) return `la popolazione ${t} al 1° gennaio ${y} (ISTAT)`;
+    }
+  }
+  for (let y = N - ANNI_TEMPO; y <= N; y++) if (autV(D, "Varese", y) === null) return `le autovetture di Varese del ${y} (ACI)`;
+  for (let y = N - ANNI_TEMPO + 1; y <= N; y++) if (popV(D, "Varese", y) === null) return `la popolazione di Varese al 1° gennaio ${y} (ISTAT)`;
+  if (!D.anniDet.has(N)) return `il dettaglio di Varese per alimentazione, classe Euro e cilindrata del ${N} (file ACI Autoritratto ${N})`;
+  return null;
+}
+function anniPossibili(D) { return D.anniAutovetture().filter(a => D.anniDet.has(a) && mancaPerAnno(D, a) === null); }
+function ultimoAnno(D) { const a = anniPossibili(D); return a.length ? a[a.length - 1] : null; }
+function controllaAnno(D, N) {
+  if (!Number.isInteger(N) || N < 2000) return { ok: false, errore: "Anno non valido." };
+  const manca = mancaPerAnno(D, N), tutti = [...D.anniDet].sort((a, b) => a - b);
+  if (manca) {
+    const ult = tutti.length ? ` (ultimo disponibile: ${tutti[tutti.length - 1]})` : "";
+    return { ok: false, ultimo: ultimoAnno(D), errore: D.anniDet.has(N)
+      ? `Mancano dei dati per il ${N}: ${manca}.` : `L'ACI non ha ancora pubblicato l'Autoritratto ${N}${ult}.` };
+  }
+  return { ok: true, ultimo: ultimoAnno(D) };
+}
+
+/* ------------------------------------------------------------------ dettaglio di Varese: alimentazione, Euro, cilindrata */
+// {voci: [[etichetta, valore]], totale, sconosciute: [alimentazioni ACI non previste]}
+function alimentazione(D, y) {
+  const s = new Map(VOCI_ALIM.map(v => [v, 0])), sconosciute = [];
+  for (const [k, v] of D.det) {
+    const [a, tav, riga, col] = k.split("|");
+    if (Number(a) !== y || tav !== "copert" || riga === "TOTALE" || col !== "TOTALE") continue;
+    let voce = MAPPA_ALIM[riga];
+    if (!voce) { voce = "Altre e non definito"; if (v > 0) sconosciute.push(riga); }
+    s.set(voce, s.get(voce) + v);
+  }
+  const totale = cella(D, y, "copert", "TOTALE", "TOTALE");
+  if (!totale) throw new ErroreDati(`Manca il totale delle autovetture di Varese nel dettaglio ${y}.`);
+  if (Math.abs(somma([...s.values()]) - totale) > 0.5) throw new ErroreDati(`Alimentazione ${y}: la somma delle voci (${somma([...s.values()])}) non coincide con il totale (${totale}).`);
+  return { voci: VOCI_ALIM.map(v => [v, s.get(v)]), totale, sconosciute };
+}
+function classiEuro(D, y) {
+  const s = new Map(VOCI_EURO.map(v => [v, 0]));
+  for (const [k, v] of D.det) {
+    const [a, tav, riga, col] = k.split("|");
+    if (Number(a) !== y || tav !== "copert" || riga !== "TOTALE" || col === "TOTALE") continue;
+    const m = /^EURO ([0-6])[A-Z]?$/.exec(col);
+    const voce = m ? `Euro ${m[1]}` : col === "NON CONTEMPLATO" ? "Alimentazione elettrica" : col === "NON DEFINITO" ? "Non definito" : null;
+    if (!voce) { if (v > 0) throw new ErroreDati(`Classe Euro non prevista nel dettaglio ${y}: «${col}».`); continue; }
+    s.set(voce, s.get(voce) + v);
+  }
+  const totale = cella(D, y, "copert", "TOTALE", "TOTALE");
+  if (!totale) throw new ErroreDati(`Manca il totale delle autovetture di Varese nel dettaglio ${y}.`);
+  if (Math.abs(somma([...s.values()]) - totale) > 0.5) throw new ErroreDati(`Classi Euro ${y}: la somma delle voci (${somma([...s.values()])}) non coincide con il totale (${totale}).`);
+  return { voci: VOCI_EURO.map(v => [v, s.get(v)]), totale };
+}
+function cilindrate(D, y) {
+  const usate = new Set(), voci = VOCI_CILINDRATA.map(([nome, classi]) => [nome, somma(classi.map(c => { usate.add(c); return cella(D, y, "cilindrata", "VARESE", c); }))]);
+  const totale = cella(D, y, "cilindrata", "VARESE", "TOTALE");
+  if (!totale) throw new ErroreDati(`Manca il totale delle cilindrate di Varese nel dettaglio ${y}.`);
+  for (const [k, v] of D.det) { const [a, tav, riga, col] = k.split("|"); if (Number(a) === y && tav === "cilindrata" && col !== "TOTALE" && !usate.has(col) && v > 0) throw new ErroreDati(`Fascia di cilindrata non prevista nel dettaglio ${y}: «${col}».`); }
+  if (Math.abs(somma(voci.map(x => x[1])) - totale) > 0.5) throw new ErroreDati(`Cilindrata ${y}: la somma delle voci non coincide con il totale (${totale}).`);
+  return { voci, totale };
+}
+
+/* ------------------------------------------------------------------ tabelle (specifica = modelli di Osserva) */
+const G = ["General", null];
+const CONTA = ["#,##0", null], DEC = ["0.00", null];
+const contaVuoti = righe => righe.reduce((n, r) => n + r.filter(v => v === null).length, 0);
+const vuoti = tab => Math.max(0, contaVuoti(tab.righe) - (tab.vuotiPrevisti || 0));
+const SENZA = [false, null];
+const dato = (v, cosa) => { if (nullo(v)) throw new ErroreDati(`Manca ${cosa}.`); return v; };
+
+function tabSintesi(D, N) {
+  const righe = [], formatiCelle = {}; let n = 0;
+  for (const t of AREE) {
+    const a0 = dato(autV(D, t, N - 1), `le autovetture ${t} del ${N - 1}`), a1 = dato(autV(D, t, N), `le autovetture ${t} del ${N}`);
+    righe.push([++n, t, "Totale", a0, a1, varPerc(a1, a0)]);
+    formatiCelle[`${righe.length + 1},4`] = "#,##0"; formatiCelle[`${righe.length + 1},5`] = "#,##0";
+    const r0 = dato(ogni100(D, t, N - 1), `la popolazione ${t} al 1° gennaio ${N - 1}`), r1 = dato(ogni100(D, t, N), `la popolazione ${t} al 1° gennaio ${N}`);
+    righe.push([++n, t, "Ogni 100 abitanti", r0, r1, varPerc(r1, r0)]);
+    formatiCelle[`${righe.length + 1},4`] = "0.00"; formatiCelle[`${righe.length + 1},5`] = "0.00";
+  }
+  return { foglio: "Foglio2", nomeFile: "Trasporto_su_strada_sintesi.xlsx", righe, formatiCelle,
+    intest: ["Ordine", "Territori", "Autovetture", "Periodo precedente", "Periodo successivo", "T.var %"],
+    hdr: [SENZA, SENZA, SENZA, SENZA, SENZA, SENZA],
+    colonne: [G, G, G, CONTA, CONTA, DEC],
+    larghezze: { B: 10.29, C: 16, D: 22.43, E: 18.5, F: 13.86 } };
+}
+function tabSintesiGrafico(D, N) {
+  const a0 = dato(autV(D, "Varese", N - 1), `le autovetture di Varese del ${N - 1}`), a1 = dato(autV(D, "Varese", N), `le autovetture di Varese del ${N}`);
+  return { foglio: "Foglio2", nomeFile: "Trasporto_su_strada_sintesi_x_grafico.xlsx", righe: [[1, "Varese", a0, a1]],
+    intest: ["Ordine", "Territori", "Periodo precedente", "Periodo successivo"], hdr: [SENZA, SENZA, SENZA, SENZA],
+    colonne: [G, G, CONTA, CONTA], larghezze: { B: 10.29, C: 22.43, D: 18.5 } };
+}
+function tabTempo(D, N) {
+  const righe = [];
+  for (let y = N - ANNI_TEMPO + 1; y <= N; y++) {
+    const a = dato(autV(D, "Varese", y), `le autovetture di Varese del ${y}`), p = dato(autV(D, "Varese", y - 1), `le autovetture di Varese del ${y - 1}`);
+    righe.push([righe.length + 1, y, a, varPerc(a, p), dato(ogni100(D, "Varese", y), `la popolazione di Varese al 1° gennaio ${y}`)]);
+  }
+  return { foglio: "Foglio1", nomeFile: "Trasporto_su_strada_tempo.xlsx", righe, altezzaIntest: 30, stileIntest: true,
+    intest: ["Ordine", "Anno", "Autovetture", "T.var %", "Autovetture ogni 100 abitanti"],
+    colonne: [G, G, ["#,##0", ["right", null, false]], ["0.00", ["right", null, false]], ["0.00", ["right", null, false]]],
+    larghezze: { C: 11.86, D: 23.43, E: 26.43 } };
+}
+function tabTipologia(voci, totale, nomeFile, intestVoce, larghezze, altezza) {
+  const righe = voci.map(([nome, v], i) => [i + 1, nome, v, v / totale * 100]);
+  righe.push([voci.length + 1, "Totale", totale, 100]);
+  return { foglio: "Foglio1", nomeFile, righe, altezzaIntest: altezza, stileIntest: true,
+    intest: ["Ordine", intestVoce, "Autovetture", "Peso %"], colonne: [G, G, CONTA, DEC], larghezze };
+}
+function tabAlimentazione(D, N) {
+  const a = alimentazione(D, N);
+  const t = tabTipologia(a.voci, a.totale, "Trasporto_su_strada_tipologia_alimentazione.xlsx", "Alimentazione", { B: 27, D: 11 });
+  t.sconosciute = a.sconosciute;
+  return t;
+}
+function tabCilindrata(D, N) {
+  const c = cilindrate(D, N);
+  return tabTipologia(c.voci, c.totale, "Trasporto_su_strada_tipologia_cilindrata.xlsx", "Cilindrata", { A: 9.14, B: 23.86, C: 19, D: 13.43 }, 31.5);
+}
+function tabEuro(D, N) {
+  const e = classiEuro(D, N);
+  return tabTipologia(e.voci, e.totale, "Trasporto_su_strada_tipologia_euro.xlsx", "Tipologia", { B: 23.86, C: 12.86, D: 22 });
+}
+const TABELLE = [["Sintesi", tabSintesi], ["Sintesi (grafico)", tabSintesiGrafico], ["Tempo", tabTempo], ["Alimentazione", tabAlimentazione],
+                 ["Cilindrata", tabCilindrata], ["Classi Euro", tabEuro]];
+const CARTELLA = "Report_trasporti_strade_";
+
+/* ------------------------------------------------------------------ generazione completa */
+function generaReport(dati, anno, ctx = {}) {
+  const log = ctx.log || (() => {});
+  anno = Number(anno);
+  const c = controllaAnno(dati, anno);
+  if (!c.ok) throw new ErroreDati(c.errore);
+  const file = [], errori = [];
+  for (const [nome, fn] of TABELLE) {
+    try {
+      const tab = fn(dati, anno);
+      tab.mancanti = vuoti(tab);
+      file.push({ nome: tab.nomeFile, dati: creaXlsx(tab), tab });
+      log(tab.nomeFile, "ok");
+    } catch (e) { errori.push(nome); log(`${nome}: ${e.message}`, "err"); }
+  }
+  return { cartella: `${CARTELLA}${anno}`, file, errori };
+}
+
+/* ------------------------------------------------------------------ Excel (.xlsx) con gli stili dei modelli */
+const enc = new TextEncoder();
+const xmlEsc = s => String(s).replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "")
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+function colonna(n) { let s = ""; while (n > 0) { const m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = Math.floor((n - 1) / 26); } return s; }
+function colDaLettere(l) { let n = 0; for (let i = 0; i < l.length; i++) n = n * 26 + l.charCodeAt(i) - 64; return n; }
+
+// registro degli stili di una cartella di lavoro: (formato numerico, grassetto, allineamento) -> indice di cellXfs
+function nuovoRegistroStili() {
+  const predefiniti = { "General": 0, "0": 1, "0.00": 2, "#,##0": 3 };
+  const personalizzati = new Map(), xfs = [{ numId: 0, bold: false, al: null }], indice = new Map([["General|0|", 0]]);
+  return {
+    stile(fmt, bold, al) {
+      const chiave = `${fmt}|${bold ? 1 : 0}|${al ? al.join(",") : ""}`;
+      if (indice.has(chiave)) return indice.get(chiave);
+      let numId = predefiniti[fmt];
+      if (numId === undefined) { if (!personalizzati.has(fmt)) personalizzati.set(fmt, 164 + personalizzati.size); numId = personalizzati.get(fmt); }
+      xfs.push({ numId, bold: !!bold, al });
+      indice.set(chiave, xfs.length - 1);
+      return xfs.length - 1;
+    },
+    xml() {
+      const nf = [...personalizzati].map(([f, id]) => `<numFmt numFmtId="${id}" formatCode="${xmlEsc(f)}"/>`).join("");
+      const xf = xfs.map(x => `<xf numFmtId="${x.numId}" fontId="${x.bold ? 1 : 0}" fillId="0" borderId="0" xfId="0"${x.numId ? ' applyNumberFormat="1"' : ""}${x.bold ? ' applyFont="1"' : ""}${x.al ? ' applyAlignment="1"' : ""}>`
+        + (x.al ? `<alignment${x.al[0] ? ` horizontal="${x.al[0]}"` : ""}${x.al[1] ? ` vertical="${x.al[1]}"` : ""}${x.al[2] ? ' wrapText="1"' : ""}/>` : "") + "</xf>").join("");
+      return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+${nf ? `<numFmts count="${personalizzati.size}">${nf}</numFmts>` : ""}<fonts count="2"><font><sz val="11"/><name val="Calibri"/><family val="2"/></font><font><b/><sz val="11"/><name val="Calibri"/><family val="2"/></font></fonts>
+<fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills>
+<borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>
+<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
+<cellXfs count="${xfs.length}">${xf}</cellXfs>
+<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>
+</styleSheet>`;
+    },
+  };
+}
+
+const HEAD = ["General", true, ["center", "center", true]];    // intestazione: grassetto, centrata, a capo
+function foglioXml(tab, reg) {
+  const attr = (ref, s) => `<c r="${ref}"${s ? ` s="${s}"` : ""}`;
+  const testo = (ref, s, t) => `${attr(ref, s)} t="inlineStr"><is><t xml:space="preserve">${xmlEsc(t)}</t></is></c>`;
+  const cella = (ref, s, v) => v === null || v === undefined ? (s ? `${attr(ref, s)}/>` : "")
+    : typeof v === "number" ? (Number.isFinite(v) ? `${attr(ref, s)}><v>${String(Object.is(v, -0) ? 0 : v)}</v></c>` : (s ? `${attr(ref, s)}/>` : ""))
+    : testo(ref, s, v);
+  let righe = `<row r="1"${tab.altezzaIntest ? ` ht="${tab.altezzaIntest}" customHeight="1"` : ""}>`;
+  tab.intest.forEach((h, j) => {
+    const fmt = (tab.formatiIntest && tab.formatiIntest[j + 1]) || "General";
+    const s = tab.hdr ? reg.stile(fmt, tab.hdr[j][0], tab.hdr[j][1]) : tab.stileIntest ? reg.stile(fmt, true, HEAD[2]) : tab.intestGrassetto ? reg.stile(fmt, true, null) : reg.stile(fmt, false, tab.intestACapoDa && j + 1 >= tab.intestACapoDa && j + 1 <= (tab.intestACapoA || 99) ? [null, null, true] : null);
+    righe += cella(colonna(j + 1) + "1", s, h);
+  });
+  righe += "</row>";
+  tab.righe.forEach((r, i) => {
+    const nr = i + 2;
+    righe += `<row r="${nr}">` + r.map((v, j) => {
+      const [fmt, al] = tab.colonne[j];
+      const f = (tab.formatiCelle && tab.formatiCelle[`${nr},${j + 1}`]) || fmt;
+      return cella(colonna(j + 1) + nr, reg.stile(f, false, al), v);
+    }).join("") + "</row>";
+  });
+  const cols = Object.entries(tab.larghezze || {}).sort((a, b) => colDaLettere(a[0]) - colDaLettere(b[0]))
+    .map(([l, w]) => { const n = colDaLettere(l); return `<col min="${n}" max="${n}" width="${w}" customWidth="1"/>`; }).join("");
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+${tab.riquadro ? '<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>\n' : ""}<sheetFormatPr defaultRowHeight="15"/>
+${cols ? `<cols>${cols}</cols>` : ""}<sheetData>${righe}</sheetData>
+</worksheet>`;
+}
+
+// tab -> file .xlsx (un foglio)
+function creaXlsx(tab) {
+  const reg = nuovoRegistroStili();
+  const foglio = foglioXml(tab, reg);      // prima il foglio: registra gli stili usati
+  const parti = [
+    ["[Content_Types].xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>`],
+    ["_rels/.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`],
+    ["xl/workbook.xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="${xmlEsc(tab.foglio)}" sheetId="1" r:id="rId1"/></sheets></workbook>`],
+    ["xl/_rels/workbook.xml.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>`],
+    ["xl/styles.xml", reg.xml()],
+    ["xl/worksheets/sheet1.xml", foglio],
+  ];
+  return creaZip(parti.map(([nome, t]) => ({ nome, dati: enc.encode(t) })));
+}
+
+/* ------------------------------------------------------------------ ZIP (senza compressione) */
+const CRC_TAB = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC_TAB[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+
+function creaZip(voci, data = new Date()) {
+  const ora = ((data.getHours() << 11) | (data.getMinutes() << 5) | Math.floor(data.getSeconds() / 2)) & 0xFFFF;
+  const giorno = (((data.getFullYear() - 1980) << 9) | ((data.getMonth() + 1) << 5) | data.getDate()) & 0xFFFF;
+  const parti = [], centrale = [];
+  let offset = 0;
+  for (const v of voci) {
+    const nome = enc.encode(v.nome), crc = crc32(v.dati), dim = v.dati.length;
+    const lh = new DataView(new ArrayBuffer(30));
+    lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true); lh.setUint16(6, 0x0800, true); lh.setUint16(8, 0, true);
+    lh.setUint16(10, ora, true); lh.setUint16(12, giorno, true); lh.setUint32(14, crc, true);
+    lh.setUint32(18, dim, true); lh.setUint32(22, dim, true); lh.setUint16(26, nome.length, true); lh.setUint16(28, 0, true);
+    parti.push(new Uint8Array(lh.buffer), nome, v.dati);
+    const ch = new DataView(new ArrayBuffer(46));
+    ch.setUint32(0, 0x02014b50, true); ch.setUint16(4, 20, true); ch.setUint16(6, 20, true); ch.setUint16(8, 0x0800, true);
+    ch.setUint16(10, 0, true); ch.setUint16(12, ora, true); ch.setUint16(14, giorno, true); ch.setUint32(16, crc, true);
+    ch.setUint32(20, dim, true); ch.setUint32(24, dim, true); ch.setUint16(28, nome.length, true);
+    ch.setUint32(42, offset, true);
+    centrale.push(new Uint8Array(ch.buffer), nome);
+    offset += 30 + nome.length + dim;
+  }
+  const dimCentrale = centrale.reduce((s, a) => s + a.length, 0);
+  const fine = new DataView(new ArrayBuffer(22));
+  fine.setUint32(0, 0x06054b50, true); fine.setUint16(8, voci.length, true); fine.setUint16(10, voci.length, true);
+  fine.setUint32(12, dimCentrale, true); fine.setUint32(16, offset, true);
+  const tutte = [...parti, ...centrale, new Uint8Array(fine.buffer)];
+  const out = new Uint8Array(tutte.reduce((s, a) => s + a.length, 0));
+  let p = 0;
+  for (const a of tutte) { out.set(a, p); p += a.length; }
+  return out;
+}
+
+
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { ErroreDati, TABELLE, AREE, ANNI_TEMPO, URL_DATI_ONLINE, PAGINA_ACI, FILE_DATI, VOCI_ALIM, VOCI_EURO, VOCI_CILINDRATA, MAPPA_ALIM, varPerc, parseCsv, leggiCsv,
+                     DatiStrade, autV, popV, ogni100, mancaPerAnno, anniPossibili, ultimoAnno, controllaAnno, alimentazione, classiEuro, cilindrate,
+                     generaReport, creaXlsx, creaZip };
+}
+
+</script>
+
+<script>
+"use strict";
+/* ==========================================================================
+   INTERFACCIA
+   ========================================================================== */
+(function () {
+  const $ = id => document.getElementById(id);
+  const XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+  const stato = { auto: [], autoInfo: null, cerco: true, file: [], dati: new DatiStrade(), sceltaUtente: false, url: [], mancanti: [] };
+
+  function log(msg, tag) {
+    const el = $("log");
+    if (el.dataset.vuoto !== "no") { el.textContent = ""; el.dataset.vuoto = "no"; }
+    const riga = document.createElement("span");
+    const sim = tag === "ok" ? "✓ " : tag === "err" ? "✗ " : tag === "warn" ? "⚠ " : tag === "muted" ? "ℹ " : "";
+    riga.className = tag || "";
+    riga.textContent = sim + msg + "\n";
+    el.appendChild(riga);
+    el.scrollTop = el.scrollHeight;
+  }
+  const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const dataIt = iso => { const d = new Date(iso); return Number.isNaN(d.getTime()) ? "" : d.toLocaleDateString("it-IT"); };
+  const fmtData = d => d.toLocaleDateString("it-IT") + " alle " + d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+
+  /* ---------- anno */
+  function riempiAnni() {
+    const sel = $("anno"), attuale = sel.value;
+    sel.innerHTML = "";
+    const possibili = anniPossibili(stato.dati);
+    const anni = possibili.length ? [...possibili].reverse() : [...stato.dati.anniDet].sort((a, b) => b - a);
+    if (!anni.length) anni.push(new Date().getFullYear() - 1);
+    for (const a of anni) sel.add(new Option(String(a), String(a)));
+    if (attuale && [...sel.options].some(o => o.value === attuale) && stato.sceltaUtente) sel.value = attuale;
+    else if (possibili.length) sel.value = String(possibili[possibili.length - 1]);
+  }
+
+  /* ---------- dati */
+  function ricostruisci() {
+    const d = new DatiStrade();
+    for (const a of [...stato.auto, ...stato.file]) if (a.tipo) d.aggiungi(a);       // i file caricati dall'utente prevalgono
+    stato.dati = d;
+    $("risultati").hidden = true;
+    riempiAnni();
+    aggiorna();
+  }
+
+  async function caricaAutomatici() {
+    const basi = location.protocol === "file:" ? [URL_DATI_ONLINE] : [URL_DATI_ONLINE];
+    let base = null;
+    for (const b of basi) {
+      try {
+        const r = await fetch(b + "aggiornamento.json", { cache: "no-store" });
+        if (r.ok) { stato.autoInfo = await r.json(); base = b; break; }
+      } catch (e) { /* si prova l'indirizzo successivo */ }
+    }
+    if (!base) { log("Dati automatici non raggiungibili: scarica i file CSV della cartella «dati» del sito e trascinali nella pagina (punto 2).", "warn"); stato.mancanti = ["tutti"]; }
+    else {
+      for (const f of FILE_DATI) {
+        try {
+          const r = await fetch(base + f, { cache: "no-store" });
+          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          const letto = leggiCsv(await r.text(), f);
+          stato.auto.push(letto);
+          log(`Dati automatici caricati: ${letto.descr}.`, "ok");
+        } catch (e) { stato.mancanti.push(f); log(`Dati automatici (${f}) non leggibili: ${e.message}`, "warn"); }
+      }
+    }
+    stato.cerco = false;
+    ricostruisci();
+  }
+
+  function mostraFonte() {
+    const el = $("fonte"), info = stato.autoInfo || {};
+    const aci = info.aci, ist = info.istat_popolazione;
+    if (stato.cerco) {
+      el.className = "fonte";
+      el.innerHTML = `<span class="icona">⏳</span><div><b>Cerco i dati aggiornati automaticamente…</b></div>`;
+    } else if (!stato.mancanti.length && stato.auto.length) {
+      const contr = info.controllato ? new Date(info.controllato) : null;
+      const anni = [...stato.dati.anniDet].sort((a, b) => a - b);
+      const pop = [...stato.dati.pop.keys()].filter(k => k.startsWith("Varese|")).map(k => Number(k.split("|")[1]));
+      const avvisi = info.avvisi || [];
+      el.className = "fonte ok";
+      el.innerHTML = `<span class="icona">✅</span><div><b>Dati automatici: autovetture ACI fino al ${anni[anni.length - 1]}, popolazione ISTAT al 1° gennaio ${Math.max(...pop)}</b>
+        <span class="dett">${aci && aci.ultima_modifica ? `Ultimo file ACI (Autoritratto ${aci.anno}) caricato dall'ACI il ${esc(dataIt(aci.ultima_modifica))}. ` : ""}${ist && ist.ultimo_aggiornamento_istat ? `Ultimo aggiornamento ISTAT: ${esc(dataIt(ist.ultimo_aggiornamento_istat))}. ` : ""}${contr ? `Dati aggiornati al ${esc(fmtData(contr))}. ` : ""}
+        Si controllano da soli ogni giorno.${avvisi.length ? `<br>Avvisi dell'ultimo aggiornamento: ${esc(avvisi.join(" · "))}` : ""}</span></div>`;
+    } else {
+      el.className = "fonte warn";
+      el.innerHTML = `<span class="icona">⚠️</span><div><b>Dati automatici non disponibili o incompleti (${esc(stato.mancanti.join(", ") || "nessun file")})</b>
+        <span class="dett">${location.protocol === "file:" ? "La pagina è aperta dal computer e il sito con i dati automatici non risponde. " : ""}Scarica i tre file CSV della cartella «dati» del sito e trascinali qui sotto (punto 2).</span></div>`;
+    }
+  }
+
+  function mostraFile() {
+    const ul = $("listaFile");
+    ul.innerHTML = "";
+    stato.file.forEach((f, i) => {
+      const li = document.createElement("li");
+      if (f.errore) li.className = "errore";
+      li.innerHTML = `<span>${f.errore ? "✗" : "✓"} <b>${esc(f.nome)}</b> — ${f.errore ? esc(f.errore) : esc(f.descr)}</span>`;
+      const b = document.createElement("button");
+      b.className = "togli"; b.title = "Togli"; b.textContent = "✕";
+      b.onclick = () => { stato.file.splice(i, 1); mostraFile(); ricostruisci(); };
+      li.appendChild(b);
+      ul.appendChild(li);
+    });
+  }
+
+  async function caricaFile(lista) {
+    for (const file of lista) {
+      log(`Leggo ${file.name}…`, "muted");
+      await new Promise(r => setTimeout(r, 20));
+      try {
+        if (/\.(zip|rar|7z|xls|xlsx|ods)$/i.test(file.name)) throw new ErroreDati("Servono i file CSV della cartella «dati» di questo sito (non il file originale dell'ACI): sono tre, aci_autovetture.csv, aci_varese_dettaglio.csv e istat_popolazione.csv.");
+        const letto = leggiCsv(await file.text(), file.name);
+        stato.file = stato.file.filter(f => f.nome !== file.name);
+        stato.file.push({ nome: file.name, ...letto });
+        log(`${file.name}: ${letto.descr}.`, "ok");
+      } catch (e) {
+        stato.file.push({ nome: file.name, errore: e instanceof ErroreDati ? e.message : `Errore di lettura: ${e.message}` });
+        log(`${file.name}: ${e.message}`, "err");
+      }
+    }
+    mostraFile();
+    ricostruisci();
+  }
+
+  /* ---------- controllo */
+  function aggiorna() {
+    mostraFonte();
+    const anno = Number($("anno").value);
+    const el = $("controllo");
+    if (stato.dati.vuoto || !anno) {
+      el.innerHTML = `<p class="nota" style="margin-top:0">Nessun dato caricato.</p>`;
+      $("genera").disabled = true;
+      $("notaFonti").textContent = "";
+      return;
+    }
+    $("notaFonti").textContent = `Autovetture ACI al 31 dicembre ${anno} e ${anno - 1}; popolazione ISTAT al 1° gennaio ${anno} e ${anno - 1}; serie nel tempo ${anno - ANNI_TEMPO + 1}–${anno}.`;
+    const c = controllaAnno(stato.dati, anno);
+    if (!c.ok) {
+      el.innerHTML = `<div class="servono">${esc(c.errore)}</div>`;
+      $("genera").disabled = true;
+      return;
+    }
+    const dett = { "Sintesi": `Varese, Lombardia, Italia: autovetture e ogni 100 abitanti, ${anno - 1} e ${anno}`, "Sintesi (grafico)": `autovetture di Varese, ${anno - 1} e ${anno}`,
+                   "Tempo": `Varese ${anno - ANNI_TEMPO + 1}–${anno}: autovetture, variazione, ogni 100 abitanti`, "Alimentazione": `Varese ${anno}: 9 voci e totale, peso %`,
+                   "Cilindrata": `Varese ${anno}: 5 fasce e totale, peso %`, "Classi Euro": `Varese ${anno}: Euro 0-6, elettriche, non definito, peso %` };
+    let html = `<table class="controllo">`, vuote = [], sconosciute = [];
+    for (const [nome, fn] of TABELLE) {
+      let t;
+      try { t = fn(stato.dati, anno); } catch (e) { html += `<tr><td>${esc(nome)}</td><td><span class="badge err">non si può fare</span></td><td class="dett">${esc(e.message)}</td></tr>`; continue; }
+      const n = vuoti(t);
+      if (n) vuote.push(`${nome} (${n})`);
+      if (t.sconosciute && t.sconosciute.length) sconosciute.push(...t.sconosciute);
+      html += `<tr><td>${esc(t.nomeFile.replace(/\.xlsx$/, ""))}</td><td><span class="badge ${n ? "warn" : "ok"}">${n ? "con celle vuote" : "pronta"}</span></td><td class="dett">${esc(dett[nome])}</td></tr>`;
+    }
+    html += `</table>`;
+    const prov = ["Varese", "Lombardia", "Italia"].filter(t => stato.dati.stato.get(`${t}|${anno}`) === "e");
+    if (prov.length) html += `<div class="servono">La popolazione al 1° gennaio ${anno} è ancora provvisoria per ISTAT (${esc(prov.join(", "))}): i valori «ogni 100 abitanti» possono cambiare di poco quando ISTAT la rende definitiva.</div>`;
+    if (sconosciute.length) html += `<div class="servono">Nel file ACI ci sono alimentazioni nuove (${esc([...new Set(sconosciute)].join(", "))}): sono state messe in «Altre e non definito».</div>`;
+    if (vuote.length) html += `<div class="servono">Mancano alcuni valori (celle vuote): ${esc(vuote.join(", "))}.</div>`;
+    html += `<div class="pronto">Tutto pronto per il ${anno}: ${TABELLE.length} tabelle sulle autovetture.</div>`;
+    el.innerHTML = html;
+    $("genera").disabled = false;
+  }
+
+  /* ---------- generazione */
+  function genera() {
+    const anno = Number($("anno").value);
+    stato.url.forEach(u => URL.revokeObjectURL(u)); stato.url = [];
+    $("risultati").hidden = true;
+    try {
+      log(`Genero le tabelle delle autovetture ${anno}…`);
+      const esito = generaReport(stato.dati, anno, { log });
+      const elenco = $("elenco");
+      elenco.innerHTML = "";
+      for (const f of esito.file) {
+        const url = URL.createObjectURL(new Blob([f.dati], { type: XLSX }));
+        stato.url.push(url);
+        const div = document.createElement("div");
+        div.className = "file";
+        div.innerHTML = `<span>${esc(f.nome)}</span>`;
+        const a = document.createElement("a");
+        a.className = "scarica"; a.href = url; a.download = f.nome; a.textContent = "⬇ Scarica";
+        div.appendChild(a);
+        elenco.appendChild(div);
+      }
+      const zip = creaZip(esito.file.map(f => ({ nome: `${esito.cartella}/${f.nome}`, dati: f.dati })));
+      const urlZip = URL.createObjectURL(new Blob([zip], { type: "application/zip" }));
+      stato.url.push(urlZip);
+      $("zip").href = urlZip; $("zip").download = `${esito.cartella}.zip`;
+      $("titoloRisultati").textContent = `File pronti — autovetture ${anno}`;
+      $("risultati").hidden = false;
+      log(esito.errori.length ? `Fatto: ${esito.file.length} file; non riuscite: ${esito.errori.join(", ")}.` : `Fatto: ${esito.file.length} file.`, esito.errori.length ? "warn" : "ok");
+    } catch (e) {
+      log(e instanceof ErroreDati ? e.message : `Errore inatteso: ${e.message}`, "err");
+      if (!(e instanceof ErroreDati)) console.error(e);
+    }
+  }
+
+  /* ---------- eventi */
+  $("anno").onchange = () => { stato.sceltaUtente = true; $("risultati").hidden = true; aggiorna(); };
+  $("genera").onclick = genera;
+  $("scegli").onchange = e => { caricaFile([...e.target.files]); e.target.value = ""; };
+  const drop = $("drop");
+  drop.addEventListener("dragover", e => { e.preventDefault(); drop.classList.add("sopra"); });
+  drop.addEventListener("dragleave", () => drop.classList.remove("sopra"));
+  drop.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("sopra"); caricaFile([...e.dataTransfer.files]); });
+  window.addEventListener("dragover", e => e.preventDefault());
+  window.addEventListener("drop", e => { if (!drop.contains(e.target)) { e.preventDefault(); caricaFile([...e.dataTransfer.files]); } });
+
+  riempiAnni();
+  aggiorna();
+  caricaAutomatici();
+})();
+
+</script>
+<script src="../assets/aree.js?v=3910429333"></script>
+<script src="../assets/portale.js?v=73dcaff065"></script>
+</body>
+</html>

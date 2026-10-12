@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Popolazione – Report statistici · Camera di Commercio di Varese</title>
+<meta name="description" content="Popolazione residente e straniera, territori, serie storica, saldi demografici e indicatori (vecchiaia, dipendenza, speranza di vita) dai dati ISTAT.">
+<meta name="theme-color" content="#12104a">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/portale.css?v=e0f75119b8">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="pagina-tema" data-area="popolazione" style="--area:#13733a;--area-soft:#e3f4e8">
+<a class="vai-contenuto" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="testata-in">
+    <a class="marchio" href="../index.html" title="Torna alla pagina iniziale"><img src="../assets/logo.png" alt="Camera di Commercio di Varese – Futuro Impresa Territorio" width="218" height="44"></a>
+    <div class="testata-titolo"><a href="../index.html">Report statistici</a><small>Tabelle per Osserva · Ufficio Statistica</small></div>
+    <nav class="testata-link" aria-label="Collegamenti principali">
+      <a href="../index.html"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><span>Home</span></a>
+      <a href="../index.html#stato"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span>Stato dei dati</span></a>
+    </nav>
+    <button class="bottone-menu" type="button" aria-controls="menu" aria-expanded="false"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>Temi</button>
+  </div>
+</header>
+<div class="velo"></div>
+<div class="struttura">
+<aside class="menu-laterale" id="menu" aria-label="Temi">
+  <nav>
+    <a class="menu-area menu-home" href="../index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="nome">Pagina iniziale</span></a>
+    <p class="titoletto">Temi</p>
+    <details class="menu-voce" style="--c:#006ba0;--c-soft:#e3f2fa">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span><span class="nome">Imprese</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../imprese/index.html#sezione=registrate_attive" data-sezione="registrate_attive">Registrate e attive</a></li>
+        <li><a href="../imprese/index.html#sezione=iscrizioni_cessazioni" data-sezione="iscrizioni_cessazioni">Iscrizioni e cessazioni</a></li>
+        <li><a href="../imprese/index.html#sezione=procedure" data-sezione="procedure">Procedure concorsuali e scioglimenti</a></li>
+      </ul>
+    </details>
+    <details class="menu-voce" style="--c:#c2410c;--c-soft:#fdede4">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><span class="nome">Lavoro</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../lavoro/index.html#sezione=disoccupazione" data-sezione="disoccupazione">Disoccupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=occupazione" data-sezione="occupazione">Occupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=attivita" data-sezione="attivita">Attività</a></li>
+        <li><a href="../lavoro/index.html#sezione=inattivita" data-sezione="inattivita">Inattività</a></li>
+        <li><a href="../lavoro/index.html#sezione=cig" data-sezione="cig">Cassa integrazione</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce" style="--c:#0f766e;--c-soft:#e0f3f0"><a class="menu-area" href="../commercio-estero/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span class="nome">Commercio estero</span></a></div>
+    <details class="menu-voce" style="--c:#4338ca;--c-soft:#ebeafd">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></svg></span><span class="nome">Credito</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../credito/index.html#sezione=depositi" data-sezione="depositi">Depositi</a></li>
+        <li><a href="../credito/index.html#sezione=impieghi" data-sezione="impieghi">Impieghi</a></li>
+        <li><a href="../credito/index.html#sezione=sofferenze" data-sezione="sofferenze">Sofferenze</a></li>
+        <li><a href="../credito/index.html#sezione=sportelli" data-sezione="sportelli">Sportelli</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce" style="--c:#7e22ce;--c-soft:#f3e7fc"><a class="menu-area" href="../conti-economici/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span><span class="nome">Conti economici</span></a></div>
+    <div class="menu-voce corrente" style="--c:#13733a;--c-soft:#e3f4e8"><a class="menu-area" href="../popolazione/index.html" aria-current="page"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="nome">Popolazione</span></a></div>
+    <div class="menu-voce" style="--c:#be123c;--c-soft:#fce7eb"><a class="menu-area" href="../trasporti/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></span><span class="nome">Trasporti</span></a></div>
+  </nav>
+  <div class="menu-nota"><b>Come si usa</b>Scegli un tema, controlla i dati e premi «Genera». In fondo a ogni pagina, «Come funziona» spiega tabelle e regole di calcolo.</div>
+</aside>
+<div class="contenuto">
+  <section class="eroe-area senza-schede" aria-labelledby="titolo-tema">
+    <div class="briciole"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Popolazione</a></div>
+    <div class="eroe-riga">
+      <div class="tessera-grande"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div>
+        <h1 id="titolo-tema">Popolazione</h1>
+        <p class="lead">Popolazione residente e straniera, territori, serie storica, saldi demografici e indicatori (vecchiaia, dipendenza, speranza di vita) dai dati ISTAT.</p>
+        <ul class="meta">
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>Fonte: ISTAT</li>
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Dati automatici: controllo ogni lunedì</li>
+          <li class="stato-dati" data-stato-area="popolazione"><span class="pallino"></span><span class="testo">Controllo lo stato dei dati…</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<main class="wrap" id="contenuto">
+  <section class="card">
+    <h2>1 · Anno</h2>
+    <div class="riga">
+      <label class="campo">Popolazione al 1° gennaio <select id="anno"></select></label>
+    </div>
+    <p class="nota" id="notaPeriodo">Si sceglie l'anno del 1° gennaio (per esempio 2026: popolazione al 1° gennaio 2026 confrontata con quella del 1° gennaio 2025).</p>
+    <p class="nota" id="notaProvvisorio" hidden></p>
+  </section>
+
+  <section class="card">
+    <h2>2 · Dati ISTAT</h2>
+    <div id="fonte" class="fonte"><span class="icona">⏳</span><div><b>Cerco i dati aggiornati automaticamente…</b></div></div>
+    <h3>Se i dati automatici mancano o non sono aggiornati</h3>
+    <ol class="passi">
+      <li>Scarica da ISTAT i sei file dei dati (si salvano nei Download; ogni clic scarica un file CSV):
+        <span id="linkIstat"></span></li>
+      <li>Trascina qui sotto i sei file scaricati.</li>
+    </ol>
+    <label class="drop" id="drop">
+      <input type="file" id="scegli" multiple accept=".csv,.txt">
+      <b>Trascina qui i file CSV di ISTAT</b> oppure clicca per sceglierli
+      <div class="descr">Vanno bene anche i file scaricati da IstatData in formato SDMX-CSV. I dati dei file caricati prevalgono su quelli automatici.
+        I file restano sul tuo computer.</div>
+    </label>
+    <ul class="lista-file" id="listaFile"></ul>
+  </section>
+
+  <section class="card">
+    <h2>3 · Controllo e tabelle</h2>
+    <div id="controllo"></div>
+    <div class="riga" style="margin-top:14px">
+      <span class="spazio"></span>
+      <button id="genera" class="primario" disabled>⬇ Genera tabelle</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Stato</h2>
+    <pre id="log"><span class="muted">In attesa dei dati.</span></pre>
+  </section>
+
+  <section class="card" id="risultati" hidden>
+    <h2 id="titoloRisultati">File pronti</h2>
+    <a id="zip" class="zip" href="#">⬇ Scarica tutto (ZIP)</a>
+    <div id="elenco"></div>
+  </section>
+
+  <section class="card">
+    <h2>Come funziona</h2>
+    <details open>
+      <summary>Tabelle prodotte, dati usati e regole</summary>
+      <ul>
+        <li><b>Popolazione_sintesi</b>: maschi, femmine, totale, stranieri e densità abitativa di Varese, Lombardia e Italia al 1° gennaio dell'anno scelto e dell'anno prima, con variazione % e peso %.</li>
+        <li><b>Popolazione_caratteristiche</b>: popolazione di Varese per genere, nazionalità (italiani/stranieri) e classe d'età (0-14, 15-64, 65 e oltre, anche per i soli stranieri), con variazione % e peso %.</li>
+        <li><b>Popolazione_territori</b>: popolazione delle 12 province lombarde, della Lombardia e dell'Italia, con variazione % e peso % sulla Lombardia (nella riga <b>Italia*</b> il peso è quello della Lombardia sull'Italia).</li>
+        <li><b>Popolazione_tempo</b>: popolazione di Varese al 1° gennaio negli ultimi 15 anni, con la variazione % sull'anno prima.</li>
+        <li><b>Popolazione_saldi</b>: saldo naturale (nati meno morti), saldo migratorio e per altri motivi, di cui saldo migratorio estero, e saldo totale di Varese, anno per anno.</li>
+        <li><b>Popolazione_indici</b>: indicatori demografici (figli per donna, speranza di vita, indici di dipendenza e di vecchiaia, età media) di Varese, Lombardia e Italia dal 2018.</li>
+      </ul>
+      <p class="nota">Fonte: ISTAT, popolazione residente al 1° gennaio (per sesso, età e cittadinanza), bilancio demografico e indicatori demografici (IstatData).
+        Le percentuali non sono arrotondate (il formato mostra due decimali), come nei modelli di Osserva. La densità abitativa è la popolazione divisa per la superficie
+        (Varese 1.198 kmq, Lombardia 23.844 kmq, Italia 301.338 kmq).
+        <b>Il dato dell'ultimo 1° gennaio è provvisorio</b>: ISTAT lo rivede l'anno dopo. Le tabelle vengono ricalcolate ogni volta sui dati più recenti, quindi anche l'anno
+        precedente è già quello definitivo.</p>
+      <p class="nota">ISTAT pubblica la popolazione al 1° gennaio verso la fine di marzo e rivede il bilancio demografico in autunno. I dati automatici vengono controllati ogni lunedì;
+        se l'anno non è ancora pubblicato la pagina lo dice.</p>
+    </details>
+  </section>
+</main>
+<footer class="versione">Fonte: ISTAT – popolazione residente, bilancio e indicatori demografici · elaborazione Camera di Commercio di Varese · versione 1.0</footer>
+</div>
+</div>
+<footer class="pie">
+  <div class="pie-in">
+    <div><img class="simbolo" src="../assets/simbolo-bianco.png" alt=""><b>Camera di Commercio di Varese</b> · Ufficio Statistica</div>
+    <div>Fonti: ISTAT, Banca d'Italia, INPS, InfoCamere, Centro Studi Tagliacarne, ACI · Le tabelle si creano nel browser: i file che carichi restano sul tuo computer · versione 1.0</div>
+  </div>
+</footer>
+<script id="motore">
+"use strict";
+/* ==========================================================================
+   MOTORE (nessuna libreria esterna: lettura CSV, calcoli, Excel e ZIP)
+   Le 6 tabelle riproducono quelle di Osserva (cartella «output osserva» del 2026).
+   ========================================================================== */
+class ErroreDati extends Error {}
+
+// dati scaricati da ISTAT dall'aggiornamento automatico (GitHub Actions): stessa cartella del sito, oppure il sito pubblicato
+const URL_DATI_ONLINE = "https://statisticava.github.io/report-popolazione/dati/";
+const URL_ISTAT_DATI = "https://esploradati.istat.it/SDMXWS/rest/data/";
+const ANNO_INIZIO = 2018;            // gli indici partono sempre da qui
+const ANNO_INIZIO_SALDI = 2019;      // primo anno dei saldi (il bilancio demografico di ISTAT parte dal 2019)
+const ANNI_TEMPO = 15;               // la tabella «tempo» tiene 15 anni
+const PROVINCIA = "ITC41", REGIONE = "ITC4", ITALIA = "IT";   // ISTAT: Italia = IT
+const PROVINCE_REGIONE = [
+  ["ITC41", "Varese"], ["ITC42", "Como"], ["ITC44", "Sondrio"], ["ITC45", "Milano"], ["ITC46", "Bergamo"], ["ITC47", "Brescia"],
+  ["ITC48", "Pavia"], ["ITC4A", "Cremona"], ["ITC4B", "Mantova"], ["ITC43", "Lecco"], ["ITC49", "Lodi"], ["IT108", "Monza e Brianza"],
+];
+const NOMI = { [PROVINCIA]: "Varese", [REGIONE]: "Lombardia", [ITALIA]: "Italia" };
+const TRE_AREE = [ITALIA, REGIONE, PROVINCIA];            // ordine delle richieste a ISTAT
+const AREE_TABELLE = [PROVINCIA, REGIONE, ITALIA];        // ordine delle tabelle di Osserva: Varese, Lombardia, Italia
+const AREE_TUTTE = [ITALIA, REGIONE, ...PROVINCE_REGIONE.map(p => p[0])];
+// superficie in kmq (stesse cifre del foglio di lavoro dell'ufficio): serve alla densità abitativa
+const SUPERFICIE_KMQ = { [PROVINCIA]: 1198, [REGIONE]: 23844, [ITALIA]: 301338 };
+// indicatori demografici (DATA_TYPE ISTAT) con le etichette dei modelli di Osserva
+const INDICI = [["TFR", "Numero medio di figli per donna"], ["LIFEEXP0M", "Speranza vita dei maschi"], ["LIFEEXP0F", "Speranza di vita delle femmine"],
+                ["DEPENDRATE", "Indice di dipendenza strutturale"], ["OLDAGEDEPR", "Indice di dipendenza anziani"], ["AGEINDEX", "Indice di vecchiaia"],
+                ["MEANAGEP", "Eta' media"]];
+const BILANCIO_NATURALE = "NTGROW_REGOF", BILANCIO_ESTERO = "INTERTNMIG_REGOF", BILANCIO_TOTALE = "TOTAL_BAL";
+const ETA_MAX = 100;                 // singole età 0…99 più «100 e oltre» (Y_GE100)
+const codiceEta = e => e >= ETA_MAX ? "Y_GE100" : `Y${e}`;
+
+// le tavole ISTAT (stesse richieste di aggiorna_dati.py). tipo: P residenti, F stranieri, S serie storica, B bilancio, X indicatori
+const TAVOLE = {
+  P: { tipo: "P", nome: "popolazione residente", file: "popolazione_residenti.csv", dataflow: "IT1,22_289_DF_DCIS_POPRES1_1,1.0", inizio: 2019,
+       chiave: () => `A.${AREE_TUTTE.join("+")}.JAN.1+2+9.TOTAL.99` },
+  E: { tipo: "P", nome: "popolazione residente di Varese per età", file: "popolazione_eta.csv", dataflow: "IT1,22_289_DF_DCIS_POPRES1_1,1.0", inizio: 2019,
+       chiave: () => `A.${PROVINCIA}.JAN.9..99` },
+  F: { tipo: "F", nome: "popolazione straniera", file: "popolazione_stranieri.csv", dataflow: "IT1,29_7_DF_DCIS_POPSTRRES1_1,1.0", inizio: 2019,
+       chiave: () => `A.${TRE_AREE.join("+")}.JAN.9.` },
+  S: { tipo: "S", nome: "serie storica della popolazione", file: "popolazione_serie_storica.csv", dataflow: "IT1,164_164_DF_DCIS_RICPOPRES2011_1,1.0", inizio: 2002, fine: 2019,
+       chiave: () => `A.${PROVINCIA}.JAN.TOTAL.9.TOTAL` },
+  B: { tipo: "B", nome: "bilancio demografico", file: "popolazione_bilancio.csv", dataflow: "IT1,22_315_DF_DCIS_POPORESBIL1_1,1.0", inizio: 2019,
+       chiave: () => `A.${PROVINCIA}.${[BILANCIO_NATURALE, BILANCIO_ESTERO, BILANCIO_TOTALE].join("+")}.9` },
+  X: { tipo: "X", nome: "indicatori demografici", file: "popolazione_indici.csv", dataflow: "IT1,22_293_DF_DCIS_INDDEMOG1_1,1.0", inizio: ANNO_INIZIO,
+       chiave: () => `A.${TRE_AREE.join("+")}.${INDICI.map(i => i[0]).join("+")}` },
+};
+const urlIstat = (t, annoFine) =>
+  `${URL_ISTAT_DATI}${t.dataflow}/${t.chiave()}?startPeriod=${t.inizio}&endPeriod=${t.fine || annoFine}&format=csvfile`;
+
+/* ------------------------------------------------------------------ lettura CSV ISTAT */
+function parseCsv(testo) {
+  if (testo.charCodeAt(0) === 0xFEFF) testo = testo.slice(1);
+  const primaRiga = testo.split(/\r?\n/, 1)[0];
+  const sep = [",", ";", "\t"].map(c => [c, primaRiga.split(c).length]).sort((a, b) => b[1] - a[1])[0][0];
+  const righe = [];
+  let riga = [], campo = "", tra = false;
+  for (let i = 0; i < testo.length; i++) {
+    const c = testo[i];
+    if (tra) {
+      if (c === '"') { if (testo[i + 1] === '"') { campo += '"'; i++; } else tra = false; } else campo += c;
+    } else if (c === '"') tra = true;
+    else if (c === sep) { riga.push(campo); campo = ""; }
+    else if (c === "\n" || c === "\r") {
+      if (c === "\r" && testo[i + 1] === "\n") i++;
+      riga.push(campo); campo = "";
+      if (riga.length > 1 || riga[0] !== "") righe.push(riga);
+      riga = [];
+    } else campo += c;
+  }
+  if (campo !== "" || riga.length) { riga.push(campo); righe.push(riga); }
+  return righe;
+}
+
+// la tavola si riconosce dalla colonna DATAFLOW (c'è sia nei file automatici sia in quelli scaricati dal link «csvfile»)
+function tipoDaFlusso(flusso) {
+  if (/DCIS_POPRES1_\d/.test(flusso)) return "P";
+  if (/DCIS_POPSTRRES1_\d/.test(flusso)) return "F";
+  if (/DCIS_RICPOPRES2011_1(?!\d)/.test(flusso)) return "S";
+  if (/DCIS_POPORESBIL1_\d/.test(flusso)) return "B";
+  if (/DCIS_INDDEMOG1_\d/.test(flusso)) return "X";
+  return null;
+}
+const DATA_TYPE_AMMESSI = { P: new Set(["JAN"]), F: new Set(["JAN"]), S: new Set(["JAN"]),
+  B: new Set([BILANCIO_NATURALE, BILANCIO_ESTERO, BILANCIO_TOTALE]), X: new Set(INDICI.map(i => i[0])) };
+const NOME_TIPO = { P: "popolazione residente", F: "popolazione straniera", S: "serie storica della popolazione", B: "bilancio demografico", X: "indicatori demografici" };
+
+// CSV SDMX di ISTAT (file automatico o file scaricato dal link «csvfile»): le colonne si riconoscono dal nome.
+function leggiCsvIstat(testo) {
+  const righe = parseCsv(testo);
+  if (!righe.length) throw new ErroreDati("Il file è vuoto.");
+  const testa = righe[0].map(s => s.trim());
+  const pos = n => testa.indexOf(n);
+  const obbl = ["DATAFLOW", "REF_AREA", "DATA_TYPE", "TIME_PERIOD", "OBS_VALUE"];
+  const mancano = obbl.filter(n => pos(n) < 0);
+  if (mancano.length)
+    throw new ErroreDati(`Non è un file CSV dei dati ISTAT (mancano le colonne ${mancano.join(", ")}). Servono i file scaricati con i link del punto 2.`);
+  const [iF, iA, iT, iP, iV] = obbl.map(pos);
+  const iS = pos("SEX"), iE = pos("AGE"), iM = pos("MARITAL_STATUS"), iC = pos("CITIZENSHIP"), iO = pos("OBS_STATUS");
+  const valori = new Map(), stati = new Map(), tipi = new Set(), anni = new Set();
+  let n = 0;
+  for (const r of righe.slice(1)) {
+    if (r.length < testa.length) continue;
+    const tipo = tipoDaFlusso(r[iF].trim());
+    if (!tipo || !DATA_TYPE_AMMESSI[tipo].has(r[iT].trim()) || !/^\d{4}$/.test(r[iP].trim())) continue;
+    if (iM >= 0 && r[iM].trim() !== "99") continue;              // stato civile: solo il totale
+    if (iC >= 0 && r[iC].trim() !== "TOTAL") continue;           // cittadinanza: solo il totale
+    const v = r[iV].trim() === "" ? NaN : Number(r[iV]);
+    if (!Number.isFinite(v)) continue;
+    const anno = Number(r[iP]);
+    const sesso = iS >= 0 ? r[iS].trim() : "", eta = iE >= 0 ? r[iE].trim() : "";
+    // chiave: tipo|territorio|sesso|età (per bilancio e indicatori il tipo di dato)|anno
+    const chiave = `${tipo}|${r[iA].trim()}|${sesso}|${tipo === "B" || tipo === "X" ? r[iT].trim() : eta}|${anno}`;
+    valori.set(chiave, v);
+    if (iO >= 0 && r[iO].trim()) stati.set(chiave, r[iO].trim());
+    tipi.add(tipo); anni.add(anno); n++;
+  }
+  if (!n) throw new ErroreDati("Nel file non ci sono valori annuali dei dati usati dalla pagina (popolazione residente e straniera al 1° gennaio, serie storica, bilancio e indicatori demografici).");
+  const ord = [...anni].sort((a, b) => a - b);
+  return { valori, stati, tipi: [...tipi], primo: ord[0], ultimo: ord[ord.length - 1], righe: n, descr: [...tipi].map(t => NOME_TIPO[t]).join(" e ") };
+}
+
+class DatiPopolazione {
+  constructor() { this.valori = new Map(); this.stati = new Map(); }
+  aggiungi(letto) { for (const [k, v] of letto.valori) this.valori.set(k, v); for (const [k, s] of letto.stati) this.stati.set(k, s); }
+  _v(chiave) { const v = this.valori.get(chiave); return v === undefined ? null : v; }
+  residenti(area, sesso, anno) { return this._v(`P|${area}|${sesso}|TOTAL|${anno}`); }
+  stranieri(area, anno) { return this._v(`F|${area}|9|TOTAL|${anno}`); }
+  // somma delle singole età da..a (a = 100 include «100 e oltre»); null se manca anche una sola età
+  fascia(tipo, area, anno, da, a) {
+    let s = 0;
+    for (let e = da; e <= Math.min(a, ETA_MAX); e++) {
+      const v = this._v(`${tipo}|${area}|9|${codiceEta(e)}|${anno}`);
+      if (v === null) return null;
+      s += v;
+    }
+    return s;
+  }
+  // popolazione di Varese: dal 2019 la tavola «al 1° gennaio», prima la serie ricostruita (ISTAT, anni 2002-2019)
+  serie(anno) { const v = this.residenti(PROVINCIA, "9", anno); return v !== null ? v : this._v(`S|${PROVINCIA}|9|TOTAL|${anno}`); }
+  bilancio(tipoDato, anno) { return this._v(`B|${PROVINCIA}|9|${tipoDato}|${anno}`); }
+  indice(area, tipoDato, anno) { return this._v(`X|${area}||${tipoDato}|${anno}`); }
+  provvisorio(anno) { return this.stati.get(`P|${PROVINCIA}|9|TOTAL|${anno}`) === "e"; }
+  anniResidenti() {
+    const s = new Set();
+    for (const k of this.valori.keys()) { const p = k.split("|"); if (p[0] === "P" && p[1] === PROVINCIA && p[2] === "9" && p[3] === "TOTAL") s.add(Number(p[4])); }
+    return [...s].sort((a, b) => a - b);
+  }
+}
+
+/* ------------------------------------------------------------------ controlli */
+// cosa serve perché un anno si possa fare: ritorna null se c'è tutto, altrimenti il messaggio
+function mancaPerAnno(D, anno) {
+  for (const y of [anno, anno - 1]) {
+    for (const area of AREE_TUTTE)
+      for (const s of ["1", "2", "9"])
+        if (D.residenti(area, s, y) === null) return `la popolazione residente al 1° gennaio ${y} (${NOMI[area] || area}, sesso ${s})`;
+    for (const area of TRE_AREE)
+      if (D.stranieri(area, y) === null) return `la popolazione straniera al 1° gennaio ${y} (${NOMI[area]})`;
+    for (const tipo of ["P", "F"]) {
+      const f = D.fascia(tipo, PROVINCIA, y, 0, ETA_MAX);
+      if (f === null) return `la popolazione di Varese per età al 1° gennaio ${y}`;
+      const tot = tipo === "P" ? D.residenti(PROVINCIA, "9", y) : D.stranieri(PROVINCIA, y);
+      if (f !== tot) return `coerenza delle età (la somma delle età di Varese ${y}, ${tipo === "P" ? "residenti" : "stranieri"}, è ${f} invece di ${tot})`;
+    }
+  }
+  for (let y = anno - ANNI_TEMPO; y <= anno; y++)
+    if (D.serie(y) === null) return `la popolazione di Varese al 1° gennaio ${y}`;
+  return null;
+}
+function ultimoAnno(D) {
+  const ok = D.anniResidenti().filter(a => mancaPerAnno(D, a) === null);
+  return ok.length ? ok[ok.length - 1] : null;
+}
+function controllaAnno(D, anno) {
+  if (!Number.isInteger(anno) || anno <= ANNO_INIZIO)
+    return { ok: false, errore: `L'anno deve essere successivo al ${ANNO_INIZIO}.` };
+  const ultimo = ultimoAnno(D), anni = D.anniResidenti();
+  const manca = mancaPerAnno(D, anno);
+  if (manca) {
+    const ult = anni.length ? ` (ultimo anno disponibile: ${anni[anni.length - 1]})` : "";
+    return { ok: false, ultimo, errore: D.residenti(PROVINCIA, "9", anno) === null
+      ? `ISTAT non ha ancora pubblicato la popolazione al 1° gennaio ${anno}${ult}.` : `Mancano dei dati ISTAT per il ${anno}: ${manca}.` };
+  }
+  return { ok: true, ultimo };
+}
+
+/* ------------------------------------------------------------------ tabelle (specifica = modelli di Osserva) */
+const SX = ["left", "center", true], DX = ["right", "center", true];
+const G = ["General", null];
+const contaVuoti = righe => righe.reduce((n, r) => n + r.filter(v => v === null).length, 0);
+// celle vuote «per sbaglio»: quelle che i modelli lasciano vuote di proposito (variazione e peso della densità) non contano
+const vuoti = tab => Math.max(0, contaVuoti(tab.righe) - (tab.vuotiPrevisti || 0));
+// variazione % e peso %: valori non arrotondati (il formato mostra 2 decimali), come nei modelli
+const variazione = (rec, prec) => rec === null || prec === null || prec === 0 ? null : (rec / prec - 1) * 100;
+const peso = (v, tot) => v === null || tot === null || tot === 0 ? null : v / tot * 100;
+
+function tabSintesi(D, anno) {
+  const righe = []; let n = 0;
+  const formatiCelle = {};
+  for (const area of AREE_TABELLE) {
+    const val = y => [D.residenti(area, "1", y), D.residenti(area, "2", y), D.residenti(area, "9", y), D.stranieri(area, y)];
+    const prec = val(anno - 1), rec = val(anno);
+    ["Maschi", "Femmine", "Totale", "Stranieri"].forEach((nome, i) =>
+      righe.push([++n, NOMI[area], nome, prec[i], rec[i], variazione(rec[i], prec[i]), peso(rec[i], rec[2])]));
+    const dens = y => { const p = D.residenti(area, "9", y); return p === null ? null : p / SUPERFICIE_KMQ[area]; };
+    righe.push([++n, NOMI[area], "Densità abitativa", dens(anno - 1), dens(anno), null, null]);
+    formatiCelle[`${righe.length + 1},4`] = "0.00"; formatiCelle[`${righe.length + 1},5`] = "0.00";
+  }
+  return { foglio: "Foglio1", nomeFile: "Popolazione_sintesi.xlsx", righe, formatiCelle, vuotiPrevisti: 6, altezzaIntest: 30, intestACapoDa: 4, intestACapoA: 5,
+    intest: ["Ordine", "Territori", "Popolazione", "periodo passato", "periodo recente", "T.var.%", "Peso%"],
+    colonne: [G, G, G, G, G, ["0.00", null], ["0.00", null]],
+    larghezze: { D: 9.57, E: 12.86 } };
+}
+function tabCaratteristiche(D, anno) {
+  const V = PROVINCIA;
+  const f = y => {
+    const tot = D.residenti(V, "9", y), str = D.stranieri(V, y);
+    return { M: D.residenti(V, "1", y), F: D.residenti(V, "2", y), T: tot, S: str, I: tot === null || str === null ? null : tot - str,
+             e1: D.fascia("P", V, y, 0, 14), e2: D.fascia("P", V, y, 15, 64), e3: D.fascia("P", V, y, 65, ETA_MAX),
+             s1: D.fascia("F", V, y, 0, 14), s2: D.fascia("F", V, y, 15, 64), s3: D.fascia("F", V, y, 65, ETA_MAX) };
+  };
+  const p = f(anno - 1), r = f(anno);
+  // [nome, chiave, chiave del totale del blocco]
+  const voci = [["Maschi", "M", "T"], ["Femmine", "F", "T"], ["Totale genere", "T", "T"],
+                ["Italiani", "I", "T"], ["Stranieri", "S", "T"], ["Totale nazionalità", "T", "T"],
+                ["0-14", "e1", "T"], ["15-64", "e2", "T"], ["65 e oltre", "e3", "T"], ["Totale età", "T", "T"],
+                ["Stranieri 0-14", "s1", "S"], ["Stranieri 15-64", "s2", "S"], ["Stranieri 65 e oltre", "s3", "S"], ["Totale stranieri età", "S", "S"]];
+  const righe = voci.map(([nome, k, kt], i) => [i + 1, nome, p[k], r[k], variazione(r[k], p[k]), peso(r[k], r[kt])]);
+  return { foglio: "Foglio1", nomeFile: "Popolazione_caratteristiche.xlsx", righe, stileIntest: true,
+    intest: ["Ordine", "Caratteristiche", anno - 1, anno, "T.var.%", "Peso %"],
+    colonne: [G, G, G, G, ["0.00", null], ["0.00", null]],
+    larghezze: { B: 16.57 } };
+}
+function tabTerritori(D, anno) {
+  const aree = [...PROVINCE_REGIONE, [REGIONE, NOMI[REGIONE]], [ITALIA, "Italia*"]];
+  const lomb = D.residenti(REGIONE, "9", anno), ita = D.residenti(ITALIA, "9", anno);
+  const righe = aree.map(([area, nome], i) => {
+    const rec = D.residenti(area, "9", anno), prec = D.residenti(area, "9", anno - 1);
+    // peso: sul totale della Lombardia; per l'Italia il peso della Lombardia sull'Italia (come nel modello)
+    return [i + 1, nome, prec, rec, variazione(rec, prec), area === ITALIA ? peso(lomb, ita) : peso(rec, lomb)];
+  });
+  return { foglio: "Foglio1", nomeFile: "Popolazione_territori.xlsx", righe, stileIntest: true,
+    intest: ["Ordine", "Territorio", anno - 1, anno, "T.var. %", "Peso %"],
+    colonne: [G, ["General", SX], ["0", DX], ["0", DX], ["0.00", DX], ["0.00", DX]],
+    larghezze: { B: 21.43, C: 12.43, E: 11.43 } };
+}
+function tabTempo(D, anno) {
+  const righe = [];
+  for (let y = anno - ANNI_TEMPO + 1; y <= anno; y++) righe.push([y, D.serie(y), variazione(D.serie(y), D.serie(y - 1))]);
+  return { foglio: "Foglio1", nomeFile: "Popolazione_tempo.xlsx", righe, stileIntest: true,
+    intest: ["Anno", "Popolazione", "T.var %"],
+    colonne: [["General", SX], ["0", null], ["0.00", null]],
+    larghezze: { B: 14.57 } };
+}
+function tabSaldi(D, anno) {
+  const righe = [];
+  for (let y = ANNO_INIZIO_SALDI; y < anno; y++) {
+    const nat = D.bilancio(BILANCIO_NATURALE, y), estero = D.bilancio(BILANCIO_ESTERO, y);
+    const a = D.serie(y), b = D.serie(y + 1);
+    const tot = a === null || b === null ? null : b - a;      // saldo totale = variazione della popolazione fra i due 1° gennaio
+    righe.push([y, nat, tot === null || nat === null ? null : tot - nat, estero, tot]);
+  }
+  return { foglio: "Foglio1", nomeFile: "Popolazione_saldi.xlsx", righe,
+    intest: ["Anno", "Saldo naturale", "Saldo migratorio e per altri motivi", "Di cui: saldo migratorio estero", "Saldo Totale"],
+    colonne: [G, G, G, G, G],
+    larghezze: { B: 12.57, C: 28.57, D: 25.86, E: 11.14 } };
+}
+function tabIndici(D, anno) {
+  const righe = []; let n = 0;
+  const anni = []; for (let y = ANNO_INIZIO; y <= anno; y++) anni.push(y);
+  for (const area of AREE_TABELLE)
+    for (const [codice, nome] of INDICI) righe.push([++n, NOMI[area], nome, ...anni.map(y => D.indice(area, codice, y))]);
+  return { foglio: "Foglio2", nomeFile: "Popolazione_indici.xlsx", righe,
+    intest: ["Ordine", "Territorio", "Indici", ...anni],
+    colonne: [G, G, G, ...anni.map(() => ["0.00", null])],
+    larghezze: { C: 34.43, D: 10 } };
+}
+const TABELLE = [["Sintesi", tabSintesi], ["Caratteristiche", tabCaratteristiche], ["Territori", tabTerritori],
+                 ["Tempo", tabTempo], ["Saldi", tabSaldi], ["Indici", tabIndici]];
+const CARTELLA = "Report_popolazione_";
+
+/* ------------------------------------------------------------------ generazione completa */
+function generaReport(dati, anno, ctx = {}) {
+  const log = ctx.log || (() => {});
+  anno = Number(anno);
+  const c = controllaAnno(dati, anno);
+  if (!c.ok) throw new ErroreDati(c.errore);
+  const file = [], errori = [];
+  for (const [nome, fn] of TABELLE) {
+    try {
+      const tab = fn(dati, anno);
+      tab.mancanti = vuoti(tab);
+      file.push({ nome: tab.nomeFile, dati: creaXlsx(tab), tab });
+      log(tab.nomeFile, "ok");
+      if (tab.mancanti) log(`${nome}: ${tab.mancanti} valori non pubblicati da ISTAT (celle vuote)`, "muted");
+    } catch (e) { errori.push(nome); log(`${nome}: ${e.message}`, "err"); }
+  }
+  return { cartella: `${CARTELLA}${anno}`, file, errori };
+}
+
+/* ------------------------------------------------------------------ Excel (.xlsx) con gli stili dei modelli */
+const enc = new TextEncoder();
+const xmlEsc = s => String(s).replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "")
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+function colonna(n) { let s = ""; while (n > 0) { const m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = Math.floor((n - 1) / 26); } return s; }
+function colDaLettere(l) { let n = 0; for (let i = 0; i < l.length; i++) n = n * 26 + l.charCodeAt(i) - 64; return n; }
+
+// registro degli stili di una cartella di lavoro: (formato numerico, grassetto, allineamento) -> indice di cellXfs
+function nuovoRegistroStili() {
+  const predefiniti = { "General": 0, "0": 1, "0.00": 2, "#,##0": 3 };
+  const personalizzati = new Map(), xfs = [{ numId: 0, bold: false, al: null }], indice = new Map([["General|0|", 0]]);
+  return {
+    stile(fmt, bold, al) {
+      const chiave = `${fmt}|${bold ? 1 : 0}|${al ? al.join(",") : ""}`;
+      if (indice.has(chiave)) return indice.get(chiave);
+      let numId = predefiniti[fmt];
+      if (numId === undefined) { if (!personalizzati.has(fmt)) personalizzati.set(fmt, 164 + personalizzati.size); numId = personalizzati.get(fmt); }
+      xfs.push({ numId, bold: !!bold, al });
+      indice.set(chiave, xfs.length - 1);
+      return xfs.length - 1;
+    },
+    xml() {
+      const nf = [...personalizzati].map(([f, id]) => `<numFmt numFmtId="${id}" formatCode="${xmlEsc(f)}"/>`).join("");
+      const xf = xfs.map(x => `<xf numFmtId="${x.numId}" fontId="${x.bold ? 1 : 0}" fillId="0" borderId="0" xfId="0"${x.numId ? ' applyNumberFormat="1"' : ""}${x.bold ? ' applyFont="1"' : ""}${x.al ? ' applyAlignment="1"' : ""}>`
+        + (x.al ? `<alignment${x.al[0] ? ` horizontal="${x.al[0]}"` : ""}${x.al[1] ? ` vertical="${x.al[1]}"` : ""}${x.al[2] ? ' wrapText="1"' : ""}/>` : "") + "</xf>").join("");
+      return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+${nf ? `<numFmts count="${personalizzati.size}">${nf}</numFmts>` : ""}<fonts count="2"><font><sz val="11"/><name val="Calibri"/><family val="2"/></font><font><b/><sz val="11"/><name val="Calibri"/><family val="2"/></font></fonts>
+<fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills>
+<borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>
+<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
+<cellXfs count="${xfs.length}">${xf}</cellXfs>
+<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>
+</styleSheet>`;
+    },
+  };
+}
+
+const HEAD = ["General", true, ["center", "center", true]];    // intestazione: grassetto, centrata, a capo
+function foglioXml(tab, reg) {
+  const attr = (ref, s) => `<c r="${ref}"${s ? ` s="${s}"` : ""}`;
+  const testo = (ref, s, t) => `${attr(ref, s)} t="inlineStr"><is><t xml:space="preserve">${xmlEsc(t)}</t></is></c>`;
+  const cella = (ref, s, v) => v === null || v === undefined ? (s ? `${attr(ref, s)}/>` : "")
+    : typeof v === "number" ? (Number.isFinite(v) ? `${attr(ref, s)}><v>${String(Object.is(v, -0) ? 0 : v)}</v></c>` : (s ? `${attr(ref, s)}/>` : ""))
+    : testo(ref, s, v);
+  let righe = `<row r="1"${tab.altezzaIntest ? ` ht="${tab.altezzaIntest}" customHeight="1"` : ""}>`;
+  tab.intest.forEach((h, j) => {
+    const fmt = (tab.formatiIntest && tab.formatiIntest[j + 1]) || "General";
+    const s = tab.stileIntest ? reg.stile(fmt, true, HEAD[2]) : tab.intestGrassetto ? reg.stile(fmt, true, null) : reg.stile(fmt, false, tab.intestACapoDa && j + 1 >= tab.intestACapoDa && j + 1 <= (tab.intestACapoA || 99) ? [null, null, true] : null);
+    righe += cella(colonna(j + 1) + "1", s, h);
+  });
+  righe += "</row>";
+  tab.righe.forEach((r, i) => {
+    const nr = i + 2;
+    righe += `<row r="${nr}">` + r.map((v, j) => {
+      const [fmt, al] = tab.colonne[j];
+      const f = (tab.formatiCelle && tab.formatiCelle[`${nr},${j + 1}`]) || fmt;
+      return cella(colonna(j + 1) + nr, reg.stile(f, false, al), v);
+    }).join("") + "</row>";
+  });
+  const cols = Object.entries(tab.larghezze || {}).sort((a, b) => colDaLettere(a[0]) - colDaLettere(b[0]))
+    .map(([l, w]) => { const n = colDaLettere(l); return `<col min="${n}" max="${n}" width="${w}" customWidth="1"/>`; }).join("");
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+${tab.riquadro ? '<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>\n' : ""}<sheetFormatPr defaultRowHeight="15"/>
+${cols ? `<cols>${cols}</cols>` : ""}<sheetData>${righe}</sheetData>
+</worksheet>`;
+}
+
+// tab -> file .xlsx (un foglio)
+function creaXlsx(tab) {
+  const reg = nuovoRegistroStili();
+  const foglio = foglioXml(tab, reg);      // prima il foglio: registra gli stili usati
+  const parti = [
+    ["[Content_Types].xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>`],
+    ["_rels/.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`],
+    ["xl/workbook.xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="${xmlEsc(tab.foglio)}" sheetId="1" r:id="rId1"/></sheets></workbook>`],
+    ["xl/_rels/workbook.xml.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>`],
+    ["xl/styles.xml", reg.xml()],
+    ["xl/worksheets/sheet1.xml", foglio],
+  ];
+  return creaZip(parti.map(([nome, t]) => ({ nome, dati: enc.encode(t) })));
+}
+
+/* ------------------------------------------------------------------ ZIP (senza compressione) */
+const CRC_TAB = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC_TAB[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+
+function creaZip(voci, data = new Date()) {
+  const ora = ((data.getHours() << 11) | (data.getMinutes() << 5) | Math.floor(data.getSeconds() / 2)) & 0xFFFF;
+  const giorno = (((data.getFullYear() - 1980) << 9) | ((data.getMonth() + 1) << 5) | data.getDate()) & 0xFFFF;
+  const parti = [], centrale = [];
+  let offset = 0;
+  for (const v of voci) {
+    const nome = enc.encode(v.nome), crc = crc32(v.dati), dim = v.dati.length;
+    const lh = new DataView(new ArrayBuffer(30));
+    lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true); lh.setUint16(6, 0x0800, true); lh.setUint16(8, 0, true);
+    lh.setUint16(10, ora, true); lh.setUint16(12, giorno, true); lh.setUint32(14, crc, true);
+    lh.setUint32(18, dim, true); lh.setUint32(22, dim, true); lh.setUint16(26, nome.length, true); lh.setUint16(28, 0, true);
+    parti.push(new Uint8Array(lh.buffer), nome, v.dati);
+    const ch = new DataView(new ArrayBuffer(46));
+    ch.setUint32(0, 0x02014b50, true); ch.setUint16(4, 20, true); ch.setUint16(6, 20, true); ch.setUint16(8, 0x0800, true);
+    ch.setUint16(10, 0, true); ch.setUint16(12, ora, true); ch.setUint16(14, giorno, true); ch.setUint32(16, crc, true);
+    ch.setUint32(20, dim, true); ch.setUint32(24, dim, true); ch.setUint16(28, nome.length, true);
+    ch.setUint32(42, offset, true);
+    centrale.push(new Uint8Array(ch.buffer), nome);
+    offset += 30 + nome.length + dim;
+  }
+  const dimCentrale = centrale.reduce((s, a) => s + a.length, 0);
+  const fine = new DataView(new ArrayBuffer(22));
+  fine.setUint32(0, 0x06054b50, true); fine.setUint16(8, voci.length, true); fine.setUint16(10, voci.length, true);
+  fine.setUint32(12, dimCentrale, true); fine.setUint32(16, offset, true);
+  const tutte = [...parti, ...centrale, new Uint8Array(fine.buffer)];
+  const out = new Uint8Array(tutte.reduce((s, a) => s + a.length, 0));
+  let p = 0;
+  for (const a of tutte) { out.set(a, p); p += a.length; }
+  return out;
+}
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { ErroreDati, TAVOLE, TABELLE, PROVINCE_REGIONE, ANNO_INIZIO, ANNO_INIZIO_SALDI, ANNI_TEMPO, INDICI, SUPERFICIE_KMQ, URL_DATI_ONLINE,
+                     parseCsv, leggiCsvIstat, DatiPopolazione, ultimoAnno, controllaAnno, mancaPerAnno, generaReport, creaXlsx, creaZip, urlIstat, variazione, peso };
+}
+</script>
+
+<script>
+"use strict";
+/* ==========================================================================
+   INTERFACCIA
+   ========================================================================== */
+(function () {
+  const $ = id => document.getElementById(id);
+  const XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+  const stato = { auto: new Map(), autoInfo: null, cerco: true, file: [], dati: new DatiPopolazione(), sceltaUtente: false, url: [] };
+  const tavole = Object.values(TAVOLE);
+
+  function log(msg, tag) {
+    const el = $("log");
+    if (el.dataset.vuoto !== "no") { el.textContent = ""; el.dataset.vuoto = "no"; }
+    const riga = document.createElement("span");
+    const sim = tag === "ok" ? "✓ " : tag === "err" ? "✗ " : tag === "warn" ? "⚠ " : tag === "muted" ? "ℹ " : "";
+    riga.className = tag || "";
+    riga.textContent = sim + msg + "\n";
+    el.appendChild(riga);
+    el.scrollTop = el.scrollHeight;
+  }
+  const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const fmtData = d => d.toLocaleDateString("it-IT") + " alle " + d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+
+  /* ---------- anno */
+  function riempiAnni(ultimo) {
+    const sel = $("anno"), attuale = sel.value;
+    sel.innerHTML = "";
+    const massimo = ultimo || new Date().getFullYear();
+    for (let a = massimo; a > ANNO_INIZIO; a--) sel.add(new Option(String(a), String(a)));
+    if (attuale && [...sel.options].some(o => o.value === attuale)) sel.value = attuale;
+  }
+  function annoPredefinito() {
+    const u = ultimoAnno(stato.dati);
+    riempiAnni(u);
+    if (u && !stato.sceltaUtente) $("anno").value = String(u);
+  }
+
+  /* ---------- dati */
+  function ricostruisci() {
+    const d = new DatiPopolazione();
+    for (const a of [...stato.auto.values(), ...stato.file]) if (a.valori) d.aggiungi(a);
+    stato.dati = d;
+    $("risultati").hidden = true;      // i file generati prima potrebbero non corrispondere più ai dati
+    annoPredefinito();
+    aggiorna();
+  }
+
+  // all'apertura carica i file dei dati (dati/…csv nella stessa cartella, oppure dal sito pubblicato)
+  async function caricaAutomatici() {
+    const basi = location.protocol === "file:" ? [URL_DATI_ONLINE] : [URL_DATI_ONLINE];
+    for (const t of tavole) {
+      for (const base of basi) {
+        try {
+          const r = await fetch(base + t.file, { cache: "no-store" });
+          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          const letto = leggiCsvIstat(await r.text());
+          if (!stato.autoInfo) {
+            try { const ri = await fetch(base + "aggiornamento.json", { cache: "no-store" }); if (ri.ok) stato.autoInfo = await ri.json(); } catch (e) { /* facoltativo */ }
+          }
+          stato.auto.set(t.file, letto);
+          log(`Dati automatici caricati: ${t.nome}, ${letto.primo}–${letto.ultimo}.`, "ok");
+          break;
+        } catch (e) { /* si prova l'indirizzo successivo */ }
+      }
+      if (!stato.auto.has(t.file)) log(`Dati automatici (${t.nome}) non raggiungibili: scarica i file e trascinali nella pagina (punto 2).`, "warn");
+    }
+    stato.cerco = false;
+    ricostruisci();
+  }
+
+  function mostraFonte() {
+    const el = $("fonte");
+    const annoFine = new Date().getFullYear();
+    $("linkIstat").innerHTML = tavole.map(t => `<a class="bottone" href="${esc(urlIstat(t, annoFine))}" rel="noopener">⬇ ${esc(t.nome[0].toUpperCase() + t.nome.slice(1))}</a>`).join(" ");
+    const mancanti = tavole.filter(t => !stato.auto.has(t.file));
+    if (!mancanti.length) {
+      const info = stato.autoInfo || {};
+      const agg = tavole.map(t => info[t.file.replace(/\.csv$/, "")] && info[t.file.replace(/\.csv$/, "")].ultimo_aggiornamento_istat).filter(Boolean).sort().pop();
+      const contr = info.controllato ? new Date(info.controllato) : null;
+      const u = ultimoAnno(stato.dati);
+      el.className = "fonte ok";
+      el.innerHTML = `<span class="icona">✅</span><div><b>Dati automatici: popolazione residente fino al 1° gennaio ${u || "—"}, bilancio e indicatori demografici</b>
+        <span class="dett">${agg ? `Ultimo aggiornamento dei dati da parte di ISTAT: ${esc(new Date(agg).toLocaleDateString("it-IT"))}. ` : ""}${contr ? `Dati aggiornati al ${esc(fmtData(contr))}. ` : ""}
+        Si aggiornano da soli (controllo ogni lunedì).</span></div>`;
+    } else if (stato.cerco) {
+      el.className = "fonte";
+      el.innerHTML = `<span class="icona">⏳</span><div><b>Cerco i dati aggiornati automaticamente…</b></div>`;
+    } else {
+      el.className = "fonte warn";
+      el.innerHTML = `<span class="icona">⚠️</span><div><b>Dati automatici (${esc(mancanti.map(t => t.nome).join(", "))}) non disponibili</b>
+        <span class="dett">${location.protocol === "file:" ? "La pagina è aperta dal computer e il sito con i dati automatici non risponde. " : ""}Scarica i file da ISTAT e trascinali qui sotto (passi 1 e 2).</span></div>`;
+    }
+  }
+
+  function mostraFile() {
+    const ul = $("listaFile");
+    ul.innerHTML = "";
+    stato.file.forEach((f, i) => {
+      const li = document.createElement("li");
+      if (f.errore) li.className = "errore";
+      li.innerHTML = `<span>${f.errore ? "✗" : "✓"} <b>${esc(f.nome)}</b> — ${f.errore ? esc(f.errore) : `${esc(f.descr)}, ${f.primo}–${f.ultimo}`}</span>`;
+      const b = document.createElement("button");
+      b.className = "togli"; b.title = "Togli"; b.textContent = "✕";
+      b.onclick = () => { stato.file.splice(i, 1); mostraFile(); ricostruisci(); };
+      li.appendChild(b);
+      ul.appendChild(li);
+    });
+  }
+
+  async function caricaFile(lista) {
+    for (const file of lista) {
+      log(`Leggo ${file.name}…`, "muted");
+      await new Promise(r => setTimeout(r, 20));
+      try {
+        if (/\.(xlsx?|zip|7z)$/i.test(file.name)) throw new ErroreDati("Servono i file CSV dei dati (punto 2), non file Excel o ZIP.");
+        const letto = leggiCsvIstat(await file.text());
+        stato.file = stato.file.filter(f => f.nome !== file.name);
+        stato.file.push({ nome: file.name, ...letto });
+        log(`${file.name}: ${letto.descr}, ${letto.primo}–${letto.ultimo}.`, "ok");
+      } catch (e) {
+        stato.file.push({ nome: file.name, errore: e instanceof ErroreDati ? e.message : `Errore di lettura: ${e.message}` });
+        log(`${file.name}: ${e.message}`, "err");
+      }
+    }
+    mostraFile();
+    ricostruisci();
+  }
+
+  /* ---------- controllo */
+  function aggiorna() {
+    mostraFonte();
+    const anno = Number($("anno").value);
+    const el = $("controllo"), prov = $("notaProvvisorio");
+    prov.hidden = true;
+    if (!stato.dati.valori.size || !anno) {
+      el.innerHTML = `<p class="nota" style="margin-top:0">Nessun dato caricato.</p>`;
+      $("genera").disabled = true;
+      return;
+    }
+    const c = controllaAnno(stato.dati, anno);
+    if (!c.ok) {
+      el.innerHTML = `<div class="servono">${esc(c.errore)}</div>`;
+      $("genera").disabled = true;
+      return;
+    }
+    if (stato.dati.provvisorio(anno)) {
+      prov.textContent = `Attenzione: il dato della popolazione al 1° gennaio ${anno} è provvisorio (ISTAT lo rivede l'anno dopo); quello del 1° gennaio ${anno - 1} è già quello aggiornato da ISTAT.`;
+      prov.hidden = false;
+    }
+    const dett = { "Sintesi": `Varese, Lombardia, Italia: 1° gennaio ${anno - 1} e ${anno}`, "Caratteristiche": `Varese: genere, nazionalità, età; ${anno - 1} e ${anno}`,
+                   "Territori": `12 province, Lombardia, Italia; ${anno - 1} e ${anno}`, "Tempo": `Varese, ${anno - ANNI_TEMPO + 1}–${anno}, con variazione %`,
+                   "Saldi": `Varese, ${ANNO_INIZIO_SALDI}–${anno - 1}`, "Indici": `Varese, Lombardia, Italia, ${ANNO_INIZIO}–${anno}` };
+    let html = `<table class="controllo">`, vuote = [];
+    for (const [nome, fn] of TABELLE) {
+      let t;
+      try { t = fn(stato.dati, anno); } catch (e) { html += `<tr><td>${esc(nome)}</td><td><span class="badge err">non si può fare</span></td><td class="dett">${esc(e.message)}</td></tr>`; continue; }
+      const n = vuoti(t);
+      if (n) vuote.push(`${nome} (${n})`);
+      html += `<tr><td>${esc(t.nomeFile.replace(/\.xlsx$/, ""))}</td><td><span class="badge ${n ? "warn" : "ok"}">${n ? "con celle vuote" : "pronta"}</span></td><td class="dett">${esc(dett[nome])}${n ? ` — ${n} valori non pubblicati da ISTAT` : ""}</td></tr>`;
+    }
+    html += `</table>`;
+    if (vuote.length) html += `<div class="servono">Mancano alcuni valori (celle vuote): ${esc(vuote.join(", "))}. Per gli indicatori demografici è normale: figli per donna e speranza di vita dell'ultimo anno escono più tardi.</div>`;
+    html += `<div class="pronto">Tutto pronto per il ${anno}: ${TABELLE.length} tabelle di popolazione.</div>`;
+    el.innerHTML = html;
+    $("genera").disabled = false;
+  }
+
+  /* ---------- generazione */
+  function genera() {
+    const anno = Number($("anno").value);
+    stato.url.forEach(u => URL.revokeObjectURL(u)); stato.url = [];
+    $("risultati").hidden = true;
+    try {
+      log(`Genero le tabelle di popolazione al 1° gennaio ${anno}…`);
+      const esito = generaReport(stato.dati, anno, { log });
+      const elenco = $("elenco");
+      elenco.innerHTML = "";
+      for (const f of esito.file) {
+        const url = URL.createObjectURL(new Blob([f.dati], { type: XLSX }));
+        stato.url.push(url);
+        const div = document.createElement("div");
+        div.className = "file";
+        div.innerHTML = `<span>${esc(f.nome)}</span>`;
+        const a = document.createElement("a");
+        a.className = "scarica"; a.href = url; a.download = f.nome; a.textContent = "⬇ Scarica";
+        div.appendChild(a);
+        elenco.appendChild(div);
+      }
+      const zip = creaZip(esito.file.map(f => ({ nome: `${esito.cartella}/${f.nome}`, dati: f.dati })));
+      const urlZip = URL.createObjectURL(new Blob([zip], { type: "application/zip" }));
+      stato.url.push(urlZip);
+      $("zip").href = urlZip; $("zip").download = `${esito.cartella}.zip`;
+      $("titoloRisultati").textContent = `File pronti — popolazione al 1° gennaio ${anno}`;
+      $("risultati").hidden = false;
+      log(esito.errori.length ? `Fatto: ${esito.file.length} file; non riuscite: ${esito.errori.join(", ")}.` : `Fatto: ${esito.file.length} file.`, esito.errori.length ? "warn" : "ok");
+    } catch (e) {
+      log(e instanceof ErroreDati ? e.message : `Errore inatteso: ${e.message}`, "err");
+      if (!(e instanceof ErroreDati)) console.error(e);
+    }
+  }
+
+  /* ---------- eventi */
+  $("anno").onchange = () => { stato.sceltaUtente = true; $("risultati").hidden = true; aggiorna(); };
+  $("genera").onclick = genera;
+  $("scegli").onchange = e => { caricaFile([...e.target.files]); e.target.value = ""; };
+  const drop = $("drop");
+  drop.addEventListener("dragover", e => { e.preventDefault(); drop.classList.add("sopra"); });
+  drop.addEventListener("dragleave", () => drop.classList.remove("sopra"));
+  drop.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("sopra"); caricaFile([...e.dataTransfer.files]); });
+  // file lasciati fuori dal riquadro: stessi effetti, invece di aprirli nel browser
+  window.addEventListener("dragover", e => e.preventDefault());
+  window.addEventListener("drop", e => { if (!drop.contains(e.target)) { e.preventDefault(); caricaFile([...e.dataTransfer.files]); } });
+
+  riempiAnni();
+  aggiorna();
+  caricaAutomatici();
+})();
+</script>
+<script src="../assets/aree.js?v=3910429333"></script>
+<script src="../assets/portale.js?v=73dcaff065"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+==============================================================================
+   REPORT IMPORT/EXPORT ISTAT - VERSIONE WEB (nessuna installazione)
+==============================================================================
+
+COS'E'
+  Una sola pagina, index.html, che scarica i dati ISTAT (Coeweb) e crea le
+  tabelle Excel del report Import/Export di Varese, Lombardia e Italia.
+  Non serve Python ne' altri programmi: basta un browser aggiornato
+  (Chrome, Edge, Firefox, Safari).
+
+COME SI USA
+  1. Apri index.html (doppio clic, oppure l'indirizzo dove e' pubblicata).
+  2. Scegli Anno e Trimestre e premi "Genera report".
+  3. Attendi 1-2 minuti (ISTAT accetta ~5 richieste al minuto) senza chiudere
+     la pagina.
+  4. Scarica tutto con "Scarica tutto (ZIP)" oppure i singoli file.
+
+REGOLE DI CALCOLO
+  - Valori CUMULATI: "T2" = T1+T2 dell'anno, confrontato con T1+T2 dell'anno
+    precedente. Con T4 si usa il dato annuale ISTAT.
+  - Tempo_Trimestrale: singoli trimestri degli ultimi 5 anni.
+  - Tempo_Annuale: ultimi 13 anni; si crea SOLO scegliendo T4 e solo se ISTAT
+    ha gia' pubblicato il dato annuale (con T1-T3 escono 9 file).
+  - Se il trimestre scelto non e' ancora pubblicato da ISTAT compare un
+    messaggio con l'ultimo trimestre disponibile.
+
+PERCHE' RESTA INTEGRA NEL TEMPO
+  - E' un unico file: niente librerie esterne, niente CDN, niente server.
+    La creazione degli Excel e dello ZIP e' scritta dentro la pagina.
+  - L'elenco dei paesi non e' fisso: arriva ogni volta da ISTAT.
+  - Conserva una copia di questo file: funziona anche aperto in locale.
+  L'unica dipendenza e' il servizio ISTAT Coeweb. Se un giorno ISTAT cambia
+  indirizzo o formato dei dati, andranno aggiornati gli indirizzi in cima al
+  motore (URL_CONG, URL_STORICO) nel file index.html.
+
+DOVE E' PUBBLICATA
+  Sito dell'ufficio statistica: https://statisticava.github.io/report-import-export/
+  (repository GitHub StatisticaVA/report-import-export: se si modifica index.html va ricaricato li').
+
+DOVE PUBBLICARLA (facoltativo)
+  - Sito o intranet della Camera di Commercio: caricare index.html.
+  - GitHub Pages / Netlify (gratuiti): caricare la cartella con index.html.
+  - Cartella condivisa: basta copiare il file e aprirlo con doppio clic.
+
+PERSONALIZZARE
+  In index.html, sezione "MOTORE DEL REPORT": provincia/regione
+  (PROVINCIA, REGIONE, PROVINCE_REGIONE) ed etichette dei settori (SETTORI).
+==============================================================================

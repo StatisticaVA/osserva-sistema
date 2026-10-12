@@ -1,0 +1,47 @@
+==============================================================================
+   12_Web_Sito_Unico - IL SITO UNICO CON TUTTI I REPORT (08/10/2026)
+==============================================================================
+
+COS'E'
+   Un solo sito con dentro i 7 siti di prima (Imprese, Lavoro, Commercio
+   estero, Credito, Conti economici, Popolazione, Trasporti): pagina iniziale,
+   menu a sinistra con temi e sezioni, grafica nuova con logo e colori della
+   Camera di Commercio di Varese.
+   I SITI DI PRIMA NON SONO STATI TOCCATI e continuano a funzionare come sempre.
+   Pubblicato il 08/10/2026: https://statisticava.github.io/report-osserva/
+   (repository StatisticaVA/report-osserva = la cartella sito/).
+
+COSA C'E' IN QUESTA CARTELLA
+   sito/                IL SITO (questa cartella e' il repository da pubblicare)
+      index.html           pagina iniziale (temi, come funziona, stato dei dati)
+      imprese/ lavoro/ commercio-estero/ credito/ conti-economici/
+      popolazione/ trasporti/   una pagina per tema (index.html)
+      assets/              grafica comune: portale.css, portale.js, logo,
+                           font Titillium Web (licenza OFL), aree.js
+      LEGGIMI.txt          istruzioni per chi usa il sito
+   sorgenti/            la grafica comune (da modificare qui, non in sito/)
+   costruisci_sito.py   ricostruisce sito/ dalle pagine originali
+
+COME E' FATTO (perche' i calcoli sono garantiti uguali)
+   costruisci_sito.py prende ogni pagina originale (cartelle 2, 6, 7, 8, 9, 10,
+   11) e copia IDENTICI i due programmi della pagina (motore dei calcoli e
+   interfaccia) e il contenuto della pagina; aggiunge solo la grafica comune.
+   Uniche modifiche:
+    - i dati automatici si leggono sempre dai siti di prima (statisticava.
+      github.io/report-credito/dati/ ecc.): un solo controllo automatico, una
+      sola e-mail di avviso, dati sempre allineati;
+    - il titolo «1 · Sezione e periodo» diventa «1 · Periodo» (la sezione si
+      sceglie con le schede in alto, che usano gli stessi pulsanti di prima).
+   Quindi i siti dei dati (report-credito, report-lavoro, report-popolazione,
+   report-conti-economici, report-trasporti) DEVONO RESTARE ATTIVI.
+
+QUANDO SI MODIFICA UN SITO ORIGINALE (es. nuova sezione nel Lavoro)
+   1. modificare e provare il sito originale;
+   2. se c'e' una sezione nuova, aggiungerla in AREE dentro costruisci_sito.py;
+   3. python3 costruisci_sito.py
+   4. aprire sito/ in locale e provare le pagine;
+   5. pubblicare il contenuto di sito/ nel repository StatisticaVA/report-osserva
+      (git add -A, git commit, git push).
+
+PROVA IN LOCALE
+   python3 -m http.server 8774 --directory sito   e aprire http://localhost:8774

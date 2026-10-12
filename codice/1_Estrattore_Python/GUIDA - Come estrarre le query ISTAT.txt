@@ -1,0 +1,192 @@
+==============================================================================
+   GUIDA SEMPLICE: COME TROVARE LE QUERY ISTAT DA INCOLLARE IN query_salvate.py
+==============================================================================
+
+Ci sono DUE tipi di query. Il programma capisce da solo quale sia:
+
+  TIPO A "normale"  -> ha un campo "url"     (un link diretto ai dati SDMX)
+  TIPO B "coeweb"   -> ha un campo "filtri"  (commercio estero provinciale,
+                       il sito NON dà un link diretto: bisogna copiare i filtri)
+
+Sotto trovi, per ognuno, due metodi:
+   - METODO 1: strumenti per sviluppatori del browser (F12) -> funziona SEMPRE
+   - METODO 2: pulsante "API / Sviluppatori" dentro il sito ISTAT -> più comodo
+
+Sito di partenza in entrambi i casi:  https://esploradati.istat.it
+
+
+------------------------------------------------------------------------------
+  TIPO A  -  query "normale" (la maggior parte dei dati ISTAT)
+------------------------------------------------------------------------------
+
+Esempio già pronto nel file: "BES - Speranza di vita alla nascita".
+Ti serve solo trovare la stringa "url" e incollarla.
+
+........................................................
+  METODO 1 (sempre valido) - Strumenti sviluppatore (F12)
+........................................................
+
+  1. Vai su https://esploradati.istat.it e apri la tabella che ti interessa.
+  2. Scegli i filtri che vuoi (anno, territorio, indicatore...).
+  3. Premi il tasto  F12  (oppure tasto destro -> "Ispeziona").
+     Si apre un pannello: scegli la scheda  "Network"  (o "Rete").
+  4. In alto, tra i filtri del pannello, clicca  "Fetch/XHR".
+  5. Sulla tabella ISTAT premi "Applica" / cambia un filtro: nel pannello
+     compaiono delle righe (sono le richieste che il sito fa al server).
+  6. Cerca la riga che contiene:   SDMXWS/rest/data/...
+  7. Tasto destro su quella riga ->  Copy  ->  "Copy URL"  (Copia indirizzo).
+  8. Quella è la tua URL. Incollala nel campo "url" di una nuova query.
+
+........................................................
+  METODO 2 (più comodo) - Pulsante API dentro ISTAT
+........................................................
+
+  1. Apri la tabella e impostala come vuoi.
+  2. Nella barra degli strumenti sopra/accanto alla tabella cerca l'icona
+     degli sviluppatori:  </>  (a volte scritto "API" o "Developers").
+  3. Si apre un riquadro con due link pronti:
+        - "Data query"      = il link ai DATI  <-- QUESTO ti serve
+        - "Structure query" = il link alla struttura (etichette)
+  4. Copia il link "Data query" e incollalo nel campo "url".
+
+........................................................
+  Come si scrive la query nel file (TIPO A)
+........................................................
+
+    {
+        "nome": "Un nome che riconosci",
+        "url": "INCOLLA QUI l'url copiata (SDMXWS/rest/data/...)",
+        "layout": "long",          # "long" = tabella semplice (consigliato)
+        "righe": "REF_AREA",       # solo se usi layout "istat" (matrice)
+    },
+
+  NOTA UTILE (i puntini "..."):
+  Nell'url i dati sono separati da punti, uno per ogni filtro, in quest'ordine
+  fisso del dataset. Un segmento VUOTO = "prendi tutti i valori".
+  Esempio BES:  .../DF_BES_TERRIT_1,1.0/...01SAL001../ALL/
+  vuol dire: tutte le frequenze, tutti i territori, tutti i domini,
+  SOLO l'indicatore 01SAL001, tutti i sessi, tutte le edizioni.
+  Quindi NON devi per forza riempire tutti i filtri sul sito: puoi lasciarli
+  vuoti nell'url. Per il periodo aggiungi alla fine:  ?startPeriod=2020&endPeriod=2025
+
+
+------------------------------------------------------------------------------
+  TIPO B  -  query "coeweb" (commercio estero - import/export provinciale)
+------------------------------------------------------------------------------
+
+Per questi dati il portale Coeweb NON fornisce un link diretto: i dati si
+chiedono al server inviando i FILTRI. Quindi qui devi copiare due cose:
+la "url" della richiesta E il blocco "filtri".
+
+........................................................
+  METODO 1 (sempre valido) - Strumenti sviluppatore (F12)
+........................................................
+
+  1. Apri il portale commercio estero (Coeweb) su esploradati.istat.it e
+     costruisci la tabella scegliendo TUTTI i filtri (merce, paese, periodo...).
+  2. Premi  F12  ->  scheda "Network" (Rete)  ->  filtro "Fetch/XHR".
+  3. Premi "Applica" sulla tabella per generare la richiesta.
+  4. Cerca la riga che è una POST verso:   databrowserhub/.../data
+     (di solito è chiamata semplicemente  "data").
+  5. Cliccaci sopra. Si aprono delle schede a destra:
+        a) Scheda "Headers" (Intestazioni): in alto copia la "Request URL"
+           -> va nel campo "url".
+        b) Scheda "Payload" (Carico utile): qui ci sono i filtri.
+           Tasto destro -> "Copy value" (Copia valore) per prendere TUTTO.
+           -> va nel campo "filtri".
+  6. IMPORTANTE: assicurati di copiare il payload INTERO. Se vedi dei "..."
+     vuol dire che è troncato: allarga la finestra o usa "Copy value", così
+     non perdi pezzi dei filtri (merci o periodo).
+
+........................................................
+  METODO 2 - Pulsante API
+........................................................
+
+  Sul portale Coeweb il pulsante API spesso NON offre il link diretto ai dati
+  (è il motivo per cui esiste il TIPO B). Se lo trovi puoi usarlo per leggere
+  i codici dei filtri, ma per scaricare resta valido il METODO 1 (F12).
+
+........................................................
+  Come si scrive la query nel file (TIPO B)
+........................................................
+
+    {
+        "nome": "Un nome che riconosci",
+        "url": "INCOLLA QUI la Request URL (databrowserhub/.../data)",
+        "filtri": [
+            INCOLLA QUI il payload copiato (la lista con id e filterValues)
+        ],
+        "layout": "long",
+    },
+
+
+------------------------------------------------------------------------------
+  DOPO AVER INCOLLATO LA QUERY
+------------------------------------------------------------------------------
+
+  1. Salva il file query_salvate.py.
+  2. Avvia il programma (doppio clic su "Avvia Estrattore SDMX (Mac).command")
+     oppure da terminale:  python3 sdmx_estrai.py --list
+  3. Spunta la query nuova e premi "Aggiorna": crea il file Excel.
+
+  ATTENZIONE AL LIMITE ISTAT:
+  ISTAT accetta circa 5 richieste al minuto. Il programma ora aspetta in
+  automatico tra una query e l'altra e riprova da solo se riceve un "429"
+  (troppe richieste), quindi puoi anche selezionarne tante: andranno più
+  lente ma non falliranno per il limite.
+
+  REGOLA D'ORO: ogni query va dentro  QUERY = [ ... ]  e SENZA "#" davanti.
+
+
+------------------------------------------------------------------------------
+  SCEGLIERE IL PERIODO (anno e trimestre di inizio/fine download)
+------------------------------------------------------------------------------
+
+  Nell'interfaccia, riquadro opzioni, riga "PERIODO". Tre modalità:
+
+  - "Più recenti" (predefinita): scarica i dati più aggiornati disponibili
+    più TUTTI i trimestri dell'anno precedente. Es.: se l'ultimo dato
+    pubblicato è il 2026-T1, ottieni 2025-T1..T4 + 2026-T1.
+  - "Personalizzato": scegli tu anno e trimestre di inizio e di fine
+    (Da 2024 T1 a 2025 T4, per esempio).
+  - "Come da query": usa il periodo scritto dentro la query salvata
+    (il comportamento vecchio).
+
+  Il periodo scelto vale per TUTTE le query selezionate e funziona con
+  entrambi i tipi (A e B) senza dover modificare query_salvate.py.
+  Per le query annuali (es. BES) conta solo l'anno: i trimestri vengono
+  adattati da soli.
+
+  Da riga di comando:
+    python3 sdmx_estrai.py --run "Nome" --periodo auto
+    python3 sdmx_estrai.py --run "Nome" --inizio 2024-T1 --fine 2025-T4
+
+
+------------------------------------------------------------------------------
+  REPORT IMPORT/EXPORT (Varese, Lombardia, Italia)
+------------------------------------------------------------------------------
+
+  Nell'interfaccia, riga "REPORT": scegli ANNO e TRIMESTRE e premi
+  "Genera report". Non servono query: il programma scarica da solo i dati
+  ISTAT (Coeweb) e crea nella CARTELLA una
+  sottocartella "Report_import_export_ANNO_Tn" con queste tabelle:
+
+    Import_export_Sintesi.xlsx            Import_export_Territori.xlsx
+    Import_export_Tempo_Trimestrale.xlsx  Import_export_Tempo_Annuale.xlsx
+    Import_export_Settori_Export.xlsx     Import_export_Settori_Import.xlsx
+    Import_export_Paesi_Export.xlsx       Import_export_Paesi_Import.xlsx
+    Export_paesi_xgrafico.xlsx            Import_paesi_xgrafico.xlsx
+
+  VALORI CUMULATI: "2026 T2" = T1+T2 del 2026, confrontato con T1+T2 del
+  2025 (T.var% tend. / Variazione %). Con T4 si usa il dato annuale ISTAT.
+  Eccezioni: Tempo_Trimestrale mostra i singoli trimestri degli ultimi 5
+  anni; Tempo_Annuale gli ultimi 13 anni ed e' creato SOLO scegliendo T4 e
+  solo se ISTAT ha gia' pubblicato il dato annuale di quell'anno. Con T1, T2,
+  T3 (o T4 senza dato annuale) escono 9 file e lo stato lo segnala.
+
+  Provincia/regione ed elenco settori si cambiano in cima al file
+  report_import_export.py.
+
+  Da riga di comando:
+    python3 report_import_export.py --anno 2026 --trimestre 1 --outdir CARTELLA
+==============================================================================

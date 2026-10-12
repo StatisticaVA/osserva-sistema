@@ -1,0 +1,44 @@
+==============================================================================
+   REPORT STATISTICI PER OSSERVA - SITO UNICO
+   Camera di Commercio di Varese - Ufficio Statistica
+==============================================================================
+
+COS'E'
+   Un solo sito con tutti i report che prima erano in 7 siti diversi:
+   Imprese, Lavoro, Commercio estero, Credito, Conti economici, Popolazione,
+   Trasporti. Dalla pagina iniziale si sceglie il tema; il menu a sinistra
+   (sul telefono il pulsante "Temi") porta a ogni tema e a ogni sezione.
+
+COME SI USA (uguale per ogni tema)
+   1. Apri il tema. In alto ci sono le schede delle sezioni (es. Credito:
+      Depositi, Impieghi, Sofferenze, Sportelli): clicca quella che serve.
+   2. Scegli l'anno (o il trimestre) al punto 1.
+   3. Punto 2: un riquadro VERDE vuol dire che i dati automatici ci sono.
+      Se e' arancione, segui le istruzioni del riquadro (scarichi un file e
+      lo trascini nella pagina). Per le Imprese si trascinano sempre i file
+      di Stockview e la serie storica, come prima.
+   4. Punto 3: la pagina controlla tutto e dice cosa manca. Premi «Genera».
+   5. Scarica i file Excel uno per uno o tutti insieme con «Scarica tutto (ZIP)».
+   In fondo a ogni pagina, «Come funziona» spiega tabelle e regole.
+
+DA DOVE ARRIVANO I DATI
+   I calcoli sono ESATTAMENTE quelli dei siti di prima (stesso programma,
+   copiato identico). I dati automatici vengono letti dai siti di prima,
+   dove ogni giorno/settimana/mese li aggiorna il controllo automatico:
+   quindi il sito unico e' sempre aggiornato quanto quelli, senza un secondo
+   controllo e senza e-mail doppie. NON spegnere i siti di prima
+   (report-credito, report-lavoro, report-popolazione, report-conti-economici,
+   report-trasporti): sono loro a tenere aggiornati i dati.
+   La pagina iniziale ("Stato dei dati") mostra fino a quando arrivano i dati
+   e la data a cui sono aggiornati
+   (il controllo gira ogni giorno/settimana, ma la data cambia solo quando ci sono
+   dati nuovi e una volta al mese).
+
+I FILE RESTANO SUL COMPUTER
+   Le tabelle si calcolano nel browser. I file che carichi (Stockview,
+   serie storica delle imprese, ZIP della Banca d'Italia...) non vengono
+   inviati a nessun server.
+
+APRIRE IL SITO SENZA INTERNET / CON DOPPIO CLIC
+   Si puo' aprire anche index.html con doppio clic dalla cartella; per i
+   dati automatici serve comunque internet (vengono letti online).

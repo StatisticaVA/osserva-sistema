@@ -1,0 +1,150 @@
+==============================================================================
+   REPORT IMPRESE - STOCKVIEW (VERSIONE WEB, NESSUNA INSTALLAZIONE)   v2.2
+   Sezioni: IMPRESE REGISTRATE E ATTIVE  -  ISCRIZIONI E CESSAZIONI
+            PROCEDURE CONCORSUALI E SCIOGLIMENTI
+==============================================================================
+
+COS'E'
+  Una sola pagina, index.html, che prende i file scaricati da Stockview e crea
+  le tabelle Excel da caricare su Osserva: REGISTRATE_ATTIVE_*.xlsx (sezione
+  "Imprese registrate e attive"), Iscritte_cessate_*.xlsx (sezione
+  "Iscrizioni e cessazioni") e Procedure_*/Scioglimento_*.xlsx (sezione
+  "Procedure concorsuali e scioglimenti"). La sezione si sceglie in alto,
+  al punto 1.
+  Sito: https://statisticava.github.io/report-imprese-stockview/
+  (repository GitHub StatisticaVA/report-imprese-stockview: se si modifica
+  index.html va ricaricato li'). Funziona anche aperta con doppio clic.
+  I file NON escono dal computer: la pagina non invia dati a nessun server.
+  Sostituisce la versione 5_Web_Imprese_Stockview.
+
+OGNI TRIMESTRE
+  1. Scarica da Stockview (classificazione ATECO 2025):
+       - TAAAAVAS.csv    dati grezzi "sedi d'impresa" di Varese del trimestre
+                         (es. 22026VAS.csv = II trim 2026), estratto dallo .7z
+       - AAAAMM_m.csv    un file per ogni mese del trimestre: Registrate e
+                         Attive di Varese a fine mese (es. 202604_m.csv)
+       - AAAAT_sa.csv    province lombarde (es. 20262_sa.csv)
+       - AAAAT_sa (1).csv  totale Italia
+         Per province e Italia scarica TUTTE E CINQUE le colonne: Registrate,
+         Attive, Iscrizioni, Cessazioni, Cessazioni non d'ufficio. Cosi' lo
+         stesso file serve alle due sezioni. (Se hai due file separati dello
+         stesso trimestre, trascinali tutti e due: la pagina li unisce.)
+     I nomi si possono anche cambiare: il TIPO di file si capisce dal
+     contenuto; il periodo dei dati grezzi dal contenuto (iscrizioni);
+     quello degli altri file dal nome (anche "aprile 2026", "2026-04",
+     "II trim 2026", "2026 T2"...) o, se il nome non lo dice, dal riquadro
+     in cui li trascini. Vanno bene anche salvati in Excel (.xlsx).
+  2. Apri la pagina e scegli ANNO e TRIMESTRE del report (dal II trim 2026:
+     l'ATECO 2025 e' in vigore dal II trim 2025 e serve il confronto con
+     l'anno prima, quindi prima non si puo').
+  3. Trascina i file nei riquadri (o clicca un riquadro per sfogliare le
+     cartelle). Si possono trascinare anche tutti insieme in un riquadro
+     qualsiasi: la pagina li riconosce e li mette al posto giusto.
+     Nel riquadro "Serie storica" va Storico_imprese_Varese.xlsx.
+  4. Guarda il riquadro "3 · Controllo e tabelle": dice quali tabelle sono
+     pronte e, se manca qualcosa, QUALE FILE scaricare e in quale riquadro
+     metterlo.
+  5. "Genera tabelle", poi "Scarica tutto (ZIP)".
+  6. IMPORTANTE: salva lo Storico_imprese_Varese.xlsx nuovo AL POSTO del
+     vecchio (e' anche dentro lo ZIP). Servira' il trimestre dopo.
+
+TABELLE PRODOTTE
+  tempo_trimestre, tempo_mese, settore_totale, settore_manifatturiero,
+  settore_servizi, tipo, sintesi_xgrafico, sintesi, territori.
+  Solo con il IV trimestre anche tempo_anno (dato a dicembre).
+  La tabella indici non viene prodotta.
+
+LA SERIE STORICA (Storico_imprese_Varese.xlsx)
+  Contiene tutto quello che serve per i confronti: trimestre precedente,
+  stesso trimestre dell'anno prima, mesi dal 2009, anni dal 2005, settori,
+  forme giuridiche, province e Italia; per le iscrizioni e cessazioni anche
+  i flussi di Varese per trimestre dal 2005 e i flussi per settore; per le
+  procedure concorsuali le aperture di Varese (anni dal 2006, trimestri dal
+  2020, mesi dal 2026 anche delle province) e gli stock a fine trimestre.
+  La pagina la aggiorna a ogni report.
+  Si puo' aprire in Excel e correggere a mano (non cambiare nomi di fogli e
+  colonne). Quella in questa cartella e' aggiornata al II trim 2026
+  (con anche III e IV trim 2025 e I trim 2026 completi).
+
+ESEMPIO COMPLETO
+  La cartella Input_II_trim_2026 contiene tutti i file per rifare il report
+  del II trim 2026 (con la serie storica com'era prima, al I trim 2026).
+
+PRIMO ANNO CON ATECO 2025
+  La serie storica consegnata contiene gia' in ATECO 2025 i trimestri dal
+  II trim 2025 al II trim 2026 (settori, forme giuridiche, province, Italia).
+  Quindi per i prossimi report (III e IV trim 2026, I trim 2027...) bastano
+  i file del trimestre: il controllo non chiedera' file di periodi passati.
+
+ATECO 2007 / 2025
+  La pagina riconosce da sola la classificazione del file dai codici ATECO.
+  Le due serie sono tenute separate nello storico (non sono confrontabili):
+  le tabelle dei settori usano la classificazione del file dei dati grezzi.
+ISCRIZIONI E CESSAZIONI (seconda sezione)
+  Stessa pagina e stessa serie storica: scegli "Iscrizioni e cessazioni" al
+  punto 1, poi anno e trimestre. Servono: la serie storica, i dati grezzi del
+  trimestre (TAAAAVAS.csv, colonne ISCRIZ, CESSAZ, CESNUF) e, per la tabella
+  territori, province e Italia con Iscrizioni e Cessazioni non d'ufficio.
+  I file dei mesi non servono.
+  Tabelle: Iscritte_cessate_trimestre, _sintesi, _settori_totale,
+  _settore_manifatturiero, _settore_servizi, _tipo, _territori; con il IV
+  trimestre anche Iscritte_cessate_anno (un anno per riga dal 2005).
+  La tabella indici non viene prodotta.
+  REGOLE (come il file di lavoro "II Trim. 26.xlsx"):
+   - cessate = cessazioni NON d'ufficio (fino al 2008 le cessazioni totali,
+     per questo "2009(*)");
+   - sono flussi: i trimestri dell'anno si SOMMANO (II trimestre = I + II);
+     solo Iscritte_cessate_trimestre ha i trimestri singoli;
+   - tassi = valore / imprese registrate a fine periodo precedente x 100,
+     arrotondati a 2 decimali (sintesi: registrate a dicembre dell'anno prima).
+  I trimestri gia' passati dell'anno vengono dalla serie storica. Se ne manca
+  uno, il controllo dice quale file caricare in "File di periodi passati"
+  (es. 12026VAS.csv per il I trimestre).
+  FILE DI MONITORAGGIO (NON FA PARTE DEL REPORT, NON CARICARLO SU OSSERVA):
+   Monitoraggio_cessazioni_d_ufficio_NON_PER_OSSERVA.xlsx confronta
+   cessazioni totali e non d'ufficio (Varese per trimestre, territori,
+   settori). Nello ZIP e' nella cartella "NON_DA_CARICARE_monitoraggio_...".
+   Le celle vuote sono periodi di cui lo storico non ha le cessazioni totali:
+   si riempiono caricando i dati grezzi (o province/Italia con la colonna
+   Cessazioni) di quei trimestri.
+
+PROCEDURE CONCORSUALI E SCIOGLIMENTI (terza sezione)
+  Stessa pagina e stessa serie storica: scegli "Procedure concorsuali e
+  scioglimenti" al punto 1, poi anno e trimestre. Servono:
+   - la serie storica;
+   - AAAAMM_me.csv       Varese, un file per ogni mese del trimestre
+                         (es. 202604_me.csv): colonne Classe Evento,
+                         Settore, Classe di Natura Giuridica, Aperture Eventi
+                         Procedure (settori in ATECO 2025);
+   - AAAAMM_me (1).csv   province lombarde, un file per ogni mese del
+                         trimestre: colonne Provincia, Classe Evento,
+                         Aperture Eventi Procedure;
+   - AAAAT_sa.csv        stock di Varese a fine trimestre per "Status
+                         d'Impresa" (colonna Registrate: righe "con Procedure
+                         concorsuali" e "in Scioglimento o Liquidazione").
+                         Stesso tipo di nome dei file province/Italia: la
+                         pagina lo riconosce dal contenuto.
+  Tabelle: Procedure_e_scioglim_trimestre, _sintesi; Procedure_settori,
+  _settori_x_grafico, _tipo, _territori e le stesse per Scioglimento_; con
+  il IV trimestre anche Procedure_e_scioglim_anno (un anno per riga dal 2007).
+  REGOLE (ricavate dalle tabelle pubblicate del II trim 2026):
+   - procedure concorsuali = tutte le classi di evento tranne "Scioglimento
+     e liquidazione" (crisi d'impresa, procedimenti crisi d'impresa,
+     fallimento, concordato, altre);
+   - le aperture sono flussi: i mesi dell'anno si SOMMANO (II trimestre =
+     gennaio-giugno, confrontato con gennaio-giugno dell'anno prima);
+     solo Procedure_e_scioglim_trimestre ha i trimestri singoli;
+   - gli STOCK (solo nella sintesi) NON si sommano: fine trimestre, confronto
+     con lo stesso trimestre dell'anno prima;
+   - settori_x_grafico: Servizi = sezioni H-T, Altro = B, D, E, X;
+   - territori: Lombardia = somma delle 12 province;
+   - variazioni e pesi arrotondati a 2 decimali;
+   - II trim 2022 (1.830 scioglimenti, di cui 1.698 straordinari): nelle
+     variazioni del 2023 vale 132 come base, come nelle tabelle pubblicate
+     (per questo "2022*" nella tabella anno).
+  I mesi gia' passati dell'anno vengono dalla serie storica. Se ne manca
+  uno, il controllo dice quale file caricare in "File di periodi passati".
+  Per i report del III e IV trim 2026 la serie storica non ha ancora lo
+  stock del III e IV trim 2025: il controllo chiedera' 20253_sa.csv e
+  20254_sa.csv (stock di Varese per status d'impresa), una volta sola.
+==============================================================================

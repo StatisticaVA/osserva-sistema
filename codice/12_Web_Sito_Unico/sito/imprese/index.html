@@ -1,0 +1,2592 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imprese – Report statistici · Camera di Commercio di Varese</title>
+<meta name="description" content="Imprese registrate e attive, iscrizioni e cessazioni, procedure concorsuali e scioglimenti in provincia di Varese, dai file scaricati da Stockview (InfoCamere).">
+<meta name="theme-color" content="#12104a">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/portale.css?v=e0f75119b8">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="pagina-tema" data-area="imprese" style="--area:#006ba0;--area-soft:#e3f2fa">
+<a class="vai-contenuto" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="testata-in">
+    <a class="marchio" href="../index.html" title="Torna alla pagina iniziale"><img src="../assets/logo.png" alt="Camera di Commercio di Varese – Futuro Impresa Territorio" width="218" height="44"></a>
+    <div class="testata-titolo"><a href="../index.html">Report statistici</a><small>Tabelle per Osserva · Ufficio Statistica</small></div>
+    <nav class="testata-link" aria-label="Collegamenti principali">
+      <a href="../index.html"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><span>Home</span></a>
+      <a href="../index.html#stato"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span>Stato dei dati</span></a>
+    </nav>
+    <button class="bottone-menu" type="button" aria-controls="menu" aria-expanded="false"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>Temi</button>
+  </div>
+</header>
+<div class="velo"></div>
+<div class="struttura">
+<aside class="menu-laterale" id="menu" aria-label="Temi">
+  <nav>
+    <a class="menu-area menu-home" href="../index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="nome">Pagina iniziale</span></a>
+    <p class="titoletto">Temi</p>
+    <details class="menu-voce corrente" style="--c:#006ba0;--c-soft:#e3f2fa" open>
+      <summary><span class="menu-area" aria-current="page"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span><span class="nome">Imprese</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="#sezione=registrate_attive" data-sezione="registrate_attive">Registrate e attive</a></li>
+        <li><a href="#sezione=iscrizioni_cessazioni" data-sezione="iscrizioni_cessazioni">Iscrizioni e cessazioni</a></li>
+        <li><a href="#sezione=procedure" data-sezione="procedure">Procedure concorsuali e scioglimenti</a></li>
+      </ul>
+    </details>
+    <details class="menu-voce" style="--c:#c2410c;--c-soft:#fdede4">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><span class="nome">Lavoro</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../lavoro/index.html#sezione=disoccupazione" data-sezione="disoccupazione">Disoccupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=occupazione" data-sezione="occupazione">Occupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=attivita" data-sezione="attivita">Attività</a></li>
+        <li><a href="../lavoro/index.html#sezione=inattivita" data-sezione="inattivita">Inattività</a></li>
+        <li><a href="../lavoro/index.html#sezione=cig" data-sezione="cig">Cassa integrazione</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce" style="--c:#0f766e;--c-soft:#e0f3f0"><a class="menu-area" href="../commercio-estero/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span class="nome">Commercio estero</span></a></div>
+    <details class="menu-voce" style="--c:#4338ca;--c-soft:#ebeafd">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></svg></span><span class="nome">Credito</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../credito/index.html#sezione=depositi" data-sezione="depositi">Depositi</a></li>
+        <li><a href="../credito/index.html#sezione=impieghi" data-sezione="impieghi">Impieghi</a></li>
+        <li><a href="../credito/index.html#sezione=sofferenze" data-sezione="sofferenze">Sofferenze</a></li>
+        <li><a href="../credito/index.html#sezione=sportelli" data-sezione="sportelli">Sportelli</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce" style="--c:#7e22ce;--c-soft:#f3e7fc"><a class="menu-area" href="../conti-economici/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span><span class="nome">Conti economici</span></a></div>
+    <div class="menu-voce" style="--c:#13733a;--c-soft:#e3f4e8"><a class="menu-area" href="../popolazione/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="nome">Popolazione</span></a></div>
+    <div class="menu-voce" style="--c:#be123c;--c-soft:#fce7eb"><a class="menu-area" href="../trasporti/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></span><span class="nome">Trasporti</span></a></div>
+  </nav>
+  <div class="menu-nota"><b>Come si usa</b>Scegli un tema, controlla i dati e premi «Genera». In fondo a ogni pagina, «Come funziona» spiega tabelle e regole di calcolo.</div>
+</aside>
+<div class="contenuto">
+  <section class="eroe-area" aria-labelledby="titolo-tema">
+    <div class="briciole"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Imprese</a><span aria-hidden="true">/</span><span class="qui">Registrate e attive</span></div>
+    <div class="eroe-riga">
+      <div class="tessera-grande"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></div>
+      <div>
+        <h1 id="titolo-tema">Imprese</h1>
+        <p class="lead">Imprese registrate e attive, iscrizioni e cessazioni, procedure concorsuali e scioglimenti in provincia di Varese, dai file scaricati da Stockview (InfoCamere).</p>
+        <ul class="meta">
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>Fonte: InfoCamere – Stockview</li>
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Carichi tu i file di Stockview e la serie storica</li>
+          
+        </ul>
+      </div>
+    </div>
+    <nav class="schede" role="tablist" aria-label="Sezioni di Imprese">
+      <a class="scheda" role="tab" href="#sezione=registrate_attive" data-sezione="registrate_attive" data-nome="Registrate e attive" aria-selected="true">Registrate e attive</a>
+      <a class="scheda" role="tab" href="#sezione=iscrizioni_cessazioni" data-sezione="iscrizioni_cessazioni" data-nome="Iscrizioni e cessazioni" aria-selected="false">Iscrizioni e cessazioni</a>
+      <a class="scheda" role="tab" href="#sezione=procedure" data-sezione="procedure" data-nome="Procedure concorsuali e scioglimenti" aria-selected="false">Procedure concorsuali e scioglimenti</a>
+    </nav>
+  </section>
+
+<main class="wrap" id="contenuto">
+  <section class="card">
+    <h2>1 · Periodo</h2>
+    <div class="sezioni">
+      <label class="sezione"><input type="radio" name="sezione" value="registrate_attive" checked> Imprese registrate e attive</label>
+      <label class="sezione"><input type="radio" name="sezione" value="iscrizioni_cessazioni"> Iscrizioni e cessazioni</label>
+      <label class="sezione"><input type="radio" name="sezione" value="procedure"> Procedure concorsuali e scioglimenti</label>
+    </div>
+    <div class="riga" style="margin-top:16px">
+      <label class="campo">Anno <select id="anno"></select></label>
+      <label class="campo">Trimestre
+        <select id="trim">
+          <option value="1">I trimestre</option><option value="2">II trimestre</option>
+          <option value="3">III trimestre</option><option value="4">IV trimestre</option>
+        </select>
+      </label>
+    </div>
+    <p class="nota" id="notaPeriodo"></p>
+  </section>
+
+  <section class="card">
+    <h2>2 · File</h2>
+    <p class="nota" style="margin-top:0">Trascina ogni file nel suo riquadro oppure clicca il riquadro per sfogliare le cartelle del computer.
+      Puoi anche trascinare <b>tutti i file insieme</b> in un riquadro qualsiasi: la pagina li riconosce dal nome e dal contenuto e li mette al posto giusto.</p>
+
+    <h3>Base</h3>
+    <div class="zone" id="zoneBase"></div>
+    <div id="gruppoMesi">
+      <h3><span id="titoloMesi">Mesi del trimestre</span> <span class="muted" id="serveMesi">→ tempo_mese</span></h3>
+      <div class="zone" id="zoneMesi"></div>
+    </div>
+    <h3><span id="titoloTerr">Confronto territoriale</span> <span class="muted" id="serveTerr">→ sintesi, territori</span></h3>
+    <div class="zone" id="zoneTerr"></div>
+    <h3>Periodi passati <span class="muted">— solo se il controllo qui sotto li chiede</span></h3>
+    <div class="zone" id="zoneAltri"></div>
+  </section>
+
+  <section class="card">
+    <h2>3 · Controllo e tabelle</h2>
+    <div id="controllo"></div>
+    <div class="riga" style="margin-top:14px">
+      <span class="spazio"></span>
+      <button id="genera" class="primario" disabled>⬇ Genera tabelle</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Stato</h2>
+    <pre id="log"><span class="muted">Scegli anno e trimestre, poi carica i file.</span></pre>
+  </section>
+
+  <section class="card" id="risultati" hidden>
+    <h2>File pronti</h2>
+    <a id="zip" class="zip" href="#">⬇ Scarica tutto (ZIP)</a>
+    <a id="linkStorico" class="zip storico" href="#">🗂️ Scarica la serie storica aggiornata</a>
+    <a id="linkMonitor" class="zip monitor" href="#" hidden>🔍 Monitoraggio cessazioni d'ufficio (NON per Osserva)</a>
+    <p class="avviso" style="margin-top:4px">Salva <b>Storico_imprese_Varese.xlsx</b> al posto del vecchio: servirà il prossimo trimestre (è anche dentro lo ZIP).
+      <b>Non va caricato su Osserva</b>: è solo l'input per il report successivo, lo stesso per tutte le sezioni.
+      Finché non chiudi la pagina lo storico aggiornato resta caricato, quindi puoi fare subito un altro trimestre.</p>
+    <div id="elenco"></div>
+    <div id="boxMonitor" class="monitoraggio" hidden>
+      <h3>🔍 Solo per monitoraggio — <u>non fa parte del report</u>, non caricarlo su Osserva</h3>
+      <p class="nota" style="margin-top:0">Confronta cessazioni totali e cessazioni non d'ufficio (quelle usate dal report): Varese trimestre per trimestre,
+        territori e settori. Nello ZIP è in una cartella a parte che inizia con «NON_DA_CARICARE».</p>
+      <div id="elencoMonitor"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Come funziona</h2>
+    <details id="comeRegistrate">
+      <summary>Imprese registrate e attive: tabelle prodotte, file necessari e regole</summary>
+      <ul>
+        <li><b>tempo_trimestre</b>: registrate e attive a fine trimestre dal I trim di 5 anni prima, variazioni congiunturale e tendenziale delle attive.</li>
+        <li><b>tempo_mese</b>: ultimi 37 mesi; servono i file dei mesi del trimestre (<code>AAAAMM_m.csv</code>).</li>
+        <li><b>tempo_anno</b>: solo con il IV trimestre (registrate e attive a dicembre di ogni anno dal 2005).</li>
+        <li><b>settore_totale</b>, <b>settore_manifatturiero</b>, <b>settore_servizi</b>, <b>tipo</b>: imprese attive di Varese dal file dei dati grezzi, confronto con lo stesso trimestre dell'anno prima (settore_totale anche con il trimestre precedente).</li>
+        <li><b>sintesi_xgrafico</b>: registrate e attive di Varese. <b>sintesi</b> e <b>territori</b>: servono i file delle province lombarde e dell'Italia (Registrate e Attive).</li>
+      </ul>
+      <p class="nota">Sono dati di <b>stock</b>: le imprese sono fotografate a fine periodo, nessuna somma tra trimestri.
+        I periodi di confronto (trimestre precedente, stesso trimestre dell'anno prima, mesi e anni passati) vengono presi dalla <b>serie storica</b>
+        (<i>Storico_imprese_Varese.xlsx</i>), che la pagina aggiorna ogni volta con i dati nuovi e restituisce da salvare.
+        Se nello storico manca un periodo, il controllo lo dice e indica quale file scaricare: trascinalo in «Periodi passati» e finisce nello storico.
+        Le classificazioni ATECO 2007 e 2025 sono tenute separate (non sono confrontabili): i settori usano quella del file dei dati grezzi.
+        Variazioni e pesi sono arrotondati a 2 decimali come ARROTONDA di Excel. I file restano sul tuo computer: la pagina non invia dati a nessun server.</p>
+    </details>
+    <details id="comeIscrizioni" hidden>
+      <summary>Iscrizioni e cessazioni: tabelle prodotte, file necessari e regole</summary>
+      <ul>
+        <li><b>Iscritte_cessate_trimestre</b>: iscritte, cessate, saldo e tasso di sviluppo di Varese per ogni trimestre (non cumulato) dal I trim di 5 anni prima.</li>
+        <li><b>Iscritte_cessate_anno</b>: solo con il IV trimestre, un anno per riga dal 2005 (somma dei quattro trimestri).</li>
+        <li><b>Iscritte_cessate_sintesi</b>: iscritte, cessate, saldo e tassi di natalità, mortalità e sviluppo, cumulati da inizio anno, confrontati con lo stesso periodo dell'anno prima.</li>
+        <li><b>Iscritte_cessate_settori_totale</b>, <b>_settore_manifatturiero</b>, <b>_settore_servizi</b>, <b>_tipo</b>: Varese dal file dei dati grezzi, cumulati da inizio anno.</li>
+        <li><b>Iscritte_cessate_territori</b>: province lombarde, Lombardia e Italia cumulate da inizio anno; servono i file delle province e dell'Italia con Iscrizioni e Cessazioni non d'ufficio.</li>
+        <li><b>Monitoraggio cessazioni d'ufficio</b>: file in più, <b>non fa parte del report</b>: confronta cessazioni totali e non d'ufficio.</li>
+      </ul>
+      <p class="nota">Sono dati di <b>flusso</b>: i valori dei trimestri dell'anno si <b>sommano</b> (con il II trimestre = I + II trimestre).
+        Le <b>cessate</b> sono le cessazioni <b>non d'ufficio</b> (colonna CESNUF di Stockview); fino al 2008 le cessazioni totali, per questo «2009(*)».
+        Tassi = valore / imprese registrate a fine periodo precedente × 100 (sintesi: registrate a dicembre dell'anno prima; trimestre: a fine trimestre precedente),
+        arrotondati a 2 decimali. I trimestri precedenti dell'anno e gli anni passati vengono dalla serie storica: se ne manca uno il controllo dice quale file caricare.</p>
+    </details>
+    <details id="comeProcedure" hidden>
+      <summary>Procedure concorsuali e scioglimenti: tabelle prodotte, file necessari e regole</summary>
+      <ul>
+        <li><b>Procedure_e_scioglim_trimestre</b>: aperture di Varese in ogni trimestre (non cumulato) dal I trim di 5 anni prima, con la variazione sullo stesso trimestre dell'anno prima.</li>
+        <li><b>Procedure_e_scioglim_anno</b>: solo con il IV trimestre, un anno per riga dal 2007.</li>
+        <li><b>Procedure_e_scioglim_sintesi</b>: aperture cumulate da gennaio, confrontate con lo stesso periodo dell'anno prima; <b>stock</b> a fine trimestre (non si sommano).</li>
+        <li><b>Procedure_/Scioglimento_settori</b>, <b>_settori_x_grafico</b>, <b>_tipo</b>: Varese per settore e forma giuridica, cumulati da gennaio.</li>
+        <li><b>Procedure_/Scioglimento_territori</b>: province lombarde e Lombardia, cumulate da gennaio.</li>
+      </ul>
+      <p class="nota">Le aperture sono dati di <b>flusso</b>: i mesi dell'anno si <b>sommano</b> (con il II trimestre = gennaio–giugno).
+        Procedure concorsuali = tutte le classi di evento tranne «Scioglimento e liquidazione» (crisi d'impresa, procedimenti crisi d'impresa, fallimento, concordato, altre).
+        Gli stock (imprese «con Procedure concorsuali» e «in Scioglimento o Liquidazione») sono fotografati a fine trimestre.
+        I mesi passati dell'anno, i trimestri e gli anni prima e lo stock dell'anno prima vengono dalla serie storica: se ne manca uno il controllo dice quale file caricare.
+        Variazioni e pesi arrotondati a 2 decimali.</p>
+    </details>
+  </section>
+</main>
+<footer class="versione">Fonte: InfoCamere – Stockview · elaborazione Camera di Commercio di Varese · versione 2.2</footer>
+</div>
+</div>
+<footer class="pie">
+  <div class="pie-in">
+    <div><img class="simbolo" src="../assets/simbolo-bianco.png" alt=""><b>Camera di Commercio di Varese</b> · Ufficio Statistica</div>
+    <div>Fonti: ISTAT, Banca d'Italia, INPS, InfoCamere, Centro Studi Tagliacarne, ACI · Le tabelle si creano nel browser: i file che carichi restano sul tuo computer · versione 1.0</div>
+  </div>
+</footer>
+<script id="motore">
+"use strict";
+/* ==========================================================================
+   MOTORE (nessuna libreria esterna: lettura file, calcoli, storico, Excel e ZIP)
+   ========================================================================== */
+const PROVINCIA = "Varese", REGIONE = "Lombardia", ITALIA = "Italia";
+// ordine delle righe della tabella territori (come il modello; il numero 12 manca anche nel modello)
+const PROVINCE = ["Varese", "Bergamo", "Brescia", "Como", "Cremona", "Lecco", "Lodi", "Mantova", "Milano", "Monza e Brianza", "Pavia", "Sondrio"];
+const ORDINE_TERRITORI = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15];
+
+// Divisioni della sezione C (colonna ATDIV, es. "C 10") -> gruppi della tabella settore_manifatturiero (uguali in ATECO 2007 e 2025)
+const MANIFATTURIERO = [
+  ["Alimentari, bevande, tabacco", ["10", "11", "12"]],
+  ["Tessile abbigliamento", ["13", "14"]],
+  ["Cuoio, pelle", ["15"]],
+  ["Legno", ["16"]],
+  ["Carta, editoria", ["17", "18"]],
+  ["Coke e prodotti derivanti dalla raffinazione", ["19"]],
+  ["Chimica farmaceutica", ["20", "21"]],
+  ["Gomma e materie plastiche", ["22"]],
+  ["Minerali non metalliferi", ["23"]],
+  ["Prodotti in metallo", ["24", "25"]],
+  ["Computer e apparecchi elettrici ed elettronici", ["26", "27"]],
+  ["Macchinari ed apparecchiature", ["28", "33"]],
+  ["Mezzi di trasporto", ["29", "30"]],
+  ["Altre industrie manifatturiere", ["31", "32"]],
+];
+// Per ogni classificazione ATECO: sezioni (colonna DIV) -> settori di settore_totale ("Altro" = tutte le altre: B, D, E, X…)
+// e sezioni dei servizi -> righe di settore_servizi. La classificazione del file viene riconosciuta dai codici ATDIV.
+const CLASSIFICAZIONI = {
+  "2007": {
+    settori: [
+      ["Agricoltura, pesca, silvicoltura", ["A"]], ["Manifatturiero", ["C"]], ["Costruzioni", ["F"]], ["Commercio", ["G"]],
+      ["Servizi", ["H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S"]], ["Altro", null],
+    ],
+    servizi: [
+      ["Trasporto e magazzinaggio", "H"], ["Alloggio e di ristorazione", "I"],
+      ["Servizi di informazione e comunicazione", "J"], ["Attività finanziarie e assicurative", "K"],
+      ["Attività immobiliari", "L"], ["Attività professionali, scientifiche e tecniche", "M"],
+      ["Noleggio, agenzie di viaggio, servizi di supporto alle imprese", "N"], ["Amministrazione pubblica e difesa", "O"],
+      ["Istruzione", "P"], ["Sanità e assistenza sociale", "Q"],
+      ["Attività artistiche, sportive, di intrattenimento e divertimento", "R"], ["Altre attività di servizi", "S"],
+    ],
+  },
+  "2025": {
+    settori: [
+      ["Agricoltura, pesca, silvicoltura", ["A"]], ["Manifatturiero", ["C"]], ["Costruzioni", ["F"]], ["Commercio", ["G"]],
+      ["Servizi", ["H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T"]], ["Altro", null],
+    ],
+    servizi: [
+      ["Trasporto e magazzinaggio", "H"], ["Alloggio e di ristorazione", "I"],
+      ["Attività editoriali trasmissioni radiofoniche", "J"], ["Telecomunicazioni e consulenza informatica", "K"],
+      ["Attività finanziarie e assicurative", "L"], ["Attività immobiliari", "M"],
+      ["Attività professionali, scientifiche e tecniche", "N"], ["Attività amministrative e di servizi di supporto", "O"],
+      ["Amministrazione pubblica e difesa", "P"], ["Istruzione e formazione", "Q"], ["Sanità", "R"],
+      ["Attività artistiche, sportive e ludiche", "S"], ["Altre attività di servizi", "T"],
+    ],
+  },
+};
+const ATECO_PREDEFINITA = "2025";   // quella dei download dal II trim 2026
+// primo report possibile: l'ATECO 2025 è in vigore dal II trim 2025 e i report confrontano con lo stesso trimestre dell'anno prima
+const PRIMO_REPORT = { anno: 2026, trim: 2 };
+// Classe di natura giuridica (colonna CNG) -> tabella tipo (non dipende dall'ATECO)
+const FORME = [["Società di capitale", "BC"], ["Società di persone", "CP"], ["Imprese individuali", "DI"], ["Altre forme", "EF"]];
+
+// ---- Iscrizioni e cessazioni (flussi del trimestre: ISCRIZ, CESSAZ, CESNUF del download «sedi d'impresa»)
+// Le «cessate» dei report sono le cessazioni NON d'ufficio (CESNUF); prima del 2009 le cessazioni totali (per questo «2009(*)»).
+const ANNO_CESNUF = 2009;
+// divisioni della sezione C -> gruppi della tabella Iscritte_cessate_settore_manifatturiero (diversi da quelli delle registrate)
+const MANIF_FLUSSI = [
+  ["Alimentari, bevande, tabacco", ["10", "11", "12"]],
+  ["Tessile abbigliamento, pelle", ["13", "14", "15"]],
+  ["Legno e mobili", ["16", "31"]],
+  ["Carta, editoria", ["17", "18"]],
+  ["Chimica farmaceutica", ["20", "21"]],
+  ["Gomma e materie plastiche", ["22"]],
+  ["Minerali e metallurgia", ["23", "24"]],
+  ["Meccanico e macchinari", ["25", "28"]],
+  ["Computer e app. elettrici ed elettronici", ["26", "27"]],
+  ["Mezzi di trasporto", ["29", "30"]],
+  ["Riparazione e manutenzione", ["33"]],
+  ["Altre industrie manifatturiere", ["19", "32"]],
+];
+// sezioni dei servizi -> righe di Iscritte_cessate_settore_servizi (etichette del modello)
+const SERVIZI_FLUSSI = {
+  "2025": [
+    ["Trasporti", "H"], ["Alberghi e ristorazione", "I"], ["Attività editoriali e contenuti multimediali", "J"],
+    ["Telecomunicazioni e consulenza informatica", "K"], ["Servizi finanziari e assicurativi", "L"], ["Attivita' immobiliari", "M"],
+    ["Attivita' profess. e ricerca", "N"], ["Attività amministrative e servizi di supporto", "O"], ["Pubblica amm. e difesa", "P"],
+    ["Istruzione", "Q"], ["Sanità e assistenza sociale", "R"], ["Attivita' artistiche, sportive e ludiche", "S"], ["Altre attivita' di servizi", "T"],
+  ],
+  "2007": CLASSIFICAZIONI["2007"].servizi,
+};
+const CAMPI_FLUSSO = [["isc", "Iscrizioni"], ["ces", "Cessazioni"], ["cesnu", "Cessazioni non d'ufficio"]];
+// voci dei flussi per settore salvate nello storico (foglio Flussi_settori), per classificazione ATECO
+const vociFlussi = cl => [
+  ...CLASSIFICAZIONI[cl].settori.map(s => `Settore - ${s[0]}`),
+  ...MANIF_FLUSSI.map(s => `Manifatturiero - ${s[0]}`),
+  ...SERVIZI_FLUSSI[cl].map(s => `Servizi - ${s[0]}`),
+  ...FORME.map(s => `Forma - ${s[0]}`),
+];
+// etichette della tabella territori delle iscritte/cessate (come il modello)
+const ETICHETTE_TERR_FLUSSI = { "Monza e Brianza": "Monza-Brianza" };
+
+// ---- Procedure concorsuali e scioglimenti (aperture del mese: download mensili «Classe Evento» di Stockview)
+// Classe Evento «SCIOGLIMENTO E LIQUIDAZIONE» = scioglimenti; tutte le altre = procedure concorsuali
+// (verificato sulle tabelle pubblicate del II trim 2026: crisi d'impresa + procedimenti crisi d'impresa + fallimento + concordato + altre)
+const CLASSI_PROCEDURE = ["CONCORDATO", "CRISI D'IMPRESA", "FALLIMENTO", "PROCEDIMENTI CRISI D'IMPRESA", "ALTRE PROCEDURE CONCORSUALI", "LIQUIDAZIONE GIUDIZIALE"];
+const CAMPI_PROC = [["pr", "procedure concorsuali"], ["sc", "scioglimento e liquidazione"]];
+// sezioni ATECO 2025 -> righe di Procedure_settori / Scioglimento_settori (etichette dei due modelli); sezioni non in elenco -> «Imprese non classificate»
+const SEZIONI_PROC = [
+  ["A", "Agric. silvic. pesca", "Agric silvic pesca"], ["B", "Estrazione", "Estrazione"], ["C", "Manifatturiero", "Manifatturiero"],
+  ["D", "Energia elett. gas", "Energia elett gas"], ["E", "Fornitura acqua reti fognarie", "Fornitura acqua reti fognarie"],
+  ["F", "Costruzioni", "Costruzioni"], ["G", "Commercio", "Commercio"], ["H", "Trasporto e magazzinaggio", "Trasporto e magazzinaggio"],
+  ["I", "Alloggio e ristorazione", "Alloggio e ristorazione"], ["J", "Attività editoriali", "Attività editoriali"],
+  ["K", "Telecomunicazioni e cons. inf.", "Telecomunicazioni e cons inform"], ["L", "Attivita' finanz. e assicurative", "Attività finanz e assicurative"],
+  ["M", "Attivita' immobiliari", "Attivita' immobiliari"], ["N", "Attivita' profess., scient., tecn.", "Attività profess, scient, tecn"],
+  ["O", "Amministrazione e supporto", "Amministrazione e supporto"], ["P", "Amm. pubblica", "Amm pubblica"], ["Q", "Istruzione", "Istruzione"],
+  ["R", "Sanita' e ass. sociale", "Sanita' e ass sociale"], ["S", "Attivita' artist., sport., intratt.", "Attività artist, sport, intratt"],
+  ["T", "Altre attivita' servizi", "Altre attività servizi"], ["X", "Imprese non classificate", "Imprese non classificate"],
+];
+// righe di *_settori_x_grafico («Altro» = tutte le altre sezioni: B, D, E, X…)
+const GRAFICO_PROC = [["Manifatturiero", ["C"]], ["Costruzioni", ["F"]], ["Commercio", ["G"]],
+  ["Servizi", ["H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T"]], ["Altro", null], ["Agricoltura", ["A"]]];
+// ordine della tabella territori (come i modelli)
+const TERR_PROC = ["Varese", "Como", "Sondrio", "Milano", "Monza e Brianza", "Bergamo", "Brescia", "Pavia", "Cremona", "Mantova", "Lecco", "Lodi"];
+const PRIMO_ANNO_PROC = 2007;                     // prima riga di Procedure_e_scioglim_anno
+const ETICHETTE_ANNO_PROC = { 2022: "2022*" };    // 2022: scioglimenti straordinari (II trim 2022), come il modello
+// colonne del foglio Procedure_trimestri dello storico
+const COL_PROC_TRIM = [["pr", "Aperture procedure concorsuali"], ["sc", "Aperture scioglimento e liquidazione"],
+  ["prConf", "Procedure concorsuali per i confronti"], ["scConf", "Scioglimento e liquidazione per i confronti"],
+  ["stockPr", "Stock procedure concorsuali"], ["stockSc", "Stock scioglimento e liquidazione"]];
+
+// colonne dei fogli Settori_ATECO… dello storico
+const colonneSettori = cl => [
+  ...CLASSIFICAZIONI[cl].settori.map(s => `Settore - ${s[0]}`),
+  ...MANIFATTURIERO.map(s => `Manifatturiero - ${s[0]}`),
+  ...CLASSIFICAZIONI[cl].servizi.map(s => `Servizi - ${s[0]}`),
+];
+const CAMPI_TERR = [["reg", "Registrate"], ["att", "Attive"], ["isc", "Iscrizioni"], ["ces", "Cessazioni"], ["cesnu", "Cessazioni non d'ufficio"]];
+const ROMANI = { 1: "I", 2: "II", 3: "III", 4: "IV" };
+const MESI_IT = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto", "settembre", "ottobre", "novembre", "dicembre"];
+const NOME_STORICO = "Storico_imprese_Varese.xlsx";
+
+class ErroreDati extends Error {}
+
+/* ------------------------------------------------------------------ periodi e numeri */
+const pad2 = n => String(n).padStart(2, "0");
+const kTrim = (a, t) => `${a}-T${t}`;
+const kMese = (a, m) => `${a}-${pad2(m)}`;
+const trimPrec = (a, t) => t > 1 ? [a, t - 1] : [a - 1, 4];
+const nomeTrim = (a, t) => `${ROMANI[t]} trim ${a}`;
+const etichettaTrim = (a, t) => `${ROMANI[t]} trim '${pad2(a % 100)}`;
+const nomeMese = (a, m) => `${MESI_IT[m - 1]} ${a}`;
+
+const varPct = (n, o) => (n == null || o == null || o === 0) ? null : n / o * 100 - 100;
+const quota = (p, t) => (p == null || t == null || t === 0) ? null : p / t * 100;
+const somma = arr => arr.some(v => v == null) ? null : arr.reduce((s, v) => s + v, 0);
+
+// arrotondamento a 2 decimali come ARROTONDA di Excel (metà lontano da zero, 15 cifre significative)
+function round2(x) {
+  if (x == null || !Number.isFinite(x)) return null;
+  const a = Math.abs(x);
+  if (a < 1e-6) return 0;
+  const r = Number(Math.round(Number(Number(a.toPrecision(15)) + "e2")) + "e-2");
+  return x < 0 && r !== 0 ? -r : r;
+}
+const p2 = v => v == null ? null : round2(v);
+
+// numero scritto all'italiana ("90.979", "47,23", "1 234") o già numero
+function numeroIT(v) {
+  if (v == null) return null;
+  if (typeof v === "number") return Number.isFinite(v) ? v : null;
+  let s = String(v).trim().replace(/[\s ']/g, "");
+  if (!s || s === "-") return null;
+  if (/^-?\d{1,3}(\.\d{3})+(,\d+)?$/.test(s)) s = s.replace(/\./g, "").replace(",", ".");
+  else if (/^-?\d+,\d+$/.test(s)) s = s.replace(",", ".");
+  else if (/^-?\d{1,3}(,\d{3})+$/.test(s)) s = s.replace(/,/g, "");
+  const n = Number(s);
+  return Number.isFinite(n) ? n : null;
+}
+
+/* ------------------------------------------------------------------ lettura ZIP / XLSX */
+function tipoFile(u8) {
+  if (u8.length >= 4 && u8[0] === 0x50 && u8[1] === 0x4B) return "zip";
+  if (u8.length >= 4 && u8[0] === 0x37 && u8[1] === 0x7A && u8[2] === 0xBC && u8[3] === 0xAF) return "7z";
+  if (u8.length >= 4 && u8[0] === 0xD0 && u8[1] === 0xCF && u8[2] === 0x11 && u8[3] === 0xE0) return "xls";
+  if (u8.length >= 4 && u8[0] === 0x52 && u8[1] === 0x61 && u8[2] === 0x72 && u8[3] === 0x21) return "rar";
+  return "testo";
+}
+
+function indiceZip(u8) {
+  const dv = new DataView(u8.buffer, u8.byteOffset, u8.byteLength);
+  let e = -1;
+  for (let i = u8.length - 22; i >= Math.max(0, u8.length - 65557); i--) if (dv.getUint32(i, true) === 0x06054b50) { e = i; break; }
+  if (e < 0) throw new ErroreDati("Il file compresso (zip/xlsx) è danneggiato o incompleto.");
+  const n = dv.getUint16(e + 10, true);
+  let p = dv.getUint32(e + 16, true);
+  const voci = new Map(), dec = new TextDecoder();
+  for (let k = 0; k < n; k++) {
+    if (dv.getUint32(p, true) !== 0x02014b50) throw new ErroreDati("Il file compresso (zip/xlsx) è danneggiato.");
+    const metodo = dv.getUint16(p + 10, true), comp = dv.getUint32(p + 20, true), dim = dv.getUint32(p + 24, true);
+    const ln = dv.getUint16(p + 28, true), lx = dv.getUint16(p + 30, true), lc = dv.getUint16(p + 32, true), off = dv.getUint32(p + 42, true);
+    const nome = dec.decode(u8.subarray(p + 46, p + 46 + ln)).replace(/\\/g, "/");
+    voci.set(nome, { nome, metodo, comp, dim, off });
+    p += 46 + ln + lx + lc;
+  }
+  return voci;
+}
+
+async function inflateRaw(dati) {
+  if (typeof DecompressionStream === "undefined")
+    throw new ErroreDati("Questo browser è troppo vecchio per leggere i file Excel: aggiorna Chrome, Edge o Firefox.");
+  const flusso = new Blob([dati]).stream().pipeThrough(new DecompressionStream("deflate-raw"));
+  return new Uint8Array(await new Response(flusso).arrayBuffer());
+}
+
+async function estraiZip(u8, voce) {
+  const dv = new DataView(u8.buffer, u8.byteOffset, u8.byteLength);
+  const o = voce.off, inizio = o + 30 + dv.getUint16(o + 26, true) + dv.getUint16(o + 28, true);
+  const dati = u8.subarray(inizio, inizio + voce.comp);
+  if (voce.metodo === 0) return dati;
+  if (voce.metodo === 8) return inflateRaw(dati);
+  throw new ErroreDati(`Formato di compressione non supportato (metodo ${voce.metodo}).`);
+}
+
+const decXml = s => s.indexOf("&") < 0 ? s : s.replace(/&(lt|gt|amp|quot|apos|#x[0-9a-fA-F]+|#\d+);/g, (m, e) =>
+  e === "lt" ? "<" : e === "gt" ? ">" : e === "amp" ? "&" : e === "quot" ? '"' : e === "apos" ? "'"
+  : e[1] === "x" ? String.fromCodePoint(parseInt(e.slice(2), 16)) : String.fromCodePoint(parseInt(e.slice(1), 10)));
+function attributo(s, nome) { const m = new RegExp(`(?:^|\\s)${nome}="([^"]*)"`).exec(s); return m ? decXml(m[1]) : null; }
+function colDaLettere(l) { let n = 0; for (let i = 0; i < l.length; i++) n = n * 26 + l.charCodeAt(i) - 64; return n - 1; }
+function testoRuns(xml) {
+  let s = "";
+  for (const m of xml.replace(/<rPh\b[\s\S]*?<\/rPh>/g, "").matchAll(/<t\b[^>]*?(?:\/>|>([\s\S]*?)<\/t>)/g)) s += m[1] || "";
+  return decXml(s);
+}
+
+// righe[r][c] (indici da 0) con numeri, stringhe o null
+function leggiFoglioXml(xml, condivise) {
+  const righe = [];
+  const reRiga = /<row\b([^>]*?)(?:\/>|>([\s\S]*?)<\/row>)/g;
+  const reCella = /<c\b([^>]*?)(?:\/>|>([\s\S]*?)<\/c>)/g;
+  const reRifRiga = /\br="(\d+)"/, reRif = /\br="([A-Z]+)\d+"/, reTipo = /\bt="(\w+)"/, reV = /<v>([\s\S]*?)<\/v>/;
+  let prossima = 0;
+  for (const mr of xml.matchAll(reRiga)) {
+    const rr = reRifRiga.exec(mr[1]);
+    const ri = rr ? Number(rr[1]) - 1 : prossima;
+    prossima = ri + 1;
+    const riga = [];
+    if (mr[2]) {
+      let col = 0;
+      for (const mc of mr[2].matchAll(reCella)) {
+        const a = mc[1], rif = reRif.exec(a);
+        if (rif) col = colDaLettere(rif[1]);
+        const corpo = mc[2] || "", tt = reTipo.exec(a), t = tt ? tt[1] : "n";
+        let v = null;
+        if (t === "inlineStr") v = testoRuns(corpo);
+        else {
+          const mv = reV.exec(corpo);
+          if (mv) {
+            const s = mv[1];
+            if (t === "s") v = condivise[Number(s)] ?? "";
+            else if (t === "str" || t === "e") v = decXml(s);
+            else if (t === "b") v = s === "1";
+            else { v = Number(s); if (!Number.isFinite(v)) v = decXml(s); }
+          }
+        }
+        riga[col] = v;
+        col += 1;
+      }
+    }
+    righe[ri] = riga;
+  }
+  return righe;
+}
+
+async function apriXlsx(u8) {
+  const voci = indiceZip(u8);
+  const testo = async nome => { const v = voci.get(nome); return v ? new TextDecoder().decode(await estraiZip(u8, v)) : null; };
+  const wb = await testo("xl/workbook.xml");
+  if (wb === null) return null;
+  const rels = (await testo("xl/_rels/workbook.xml.rels")) || "";
+  const target = {};
+  for (const m of rels.matchAll(/<Relationship\b([^>]*?)\/?>/g)) target[attributo(m[1], "Id")] = attributo(m[1], "Target");
+  const fogli = [];
+  for (const m of wb.matchAll(/<sheet\b([^>]*?)\/?>/g)) {
+    const t = target[attributo(m[1], "r:id")];
+    if (!t) continue;
+    const percorso = t.startsWith("/") ? t.slice(1) : ("xl/" + t).replace(/\/\.\//g, "/");
+    fogli.push({ nome: attributo(m[1], "name"), percorso });
+  }
+  let condivise = null;
+  const leggiCondivise = async () => {
+    if (condivise) return condivise;
+    const ss = await testo("xl/sharedStrings.xml");
+    condivise = [];
+    if (ss) for (const m of ss.matchAll(/<si>([\s\S]*?)<\/si>|<si\/>/g)) condivise.push(m[1] ? testoRuns(m[1]) : "");
+    return condivise;
+  };
+  return {
+    nomi: fogli.map(f => f.nome),
+    trova(nome) { const n = nome.toLowerCase().replace(/[\s_]+/g, ""); return fogli.find(f => f.nome.toLowerCase().replace(/[\s_]+/g, "") === n)?.nome ?? null; },
+    async xml(nome) { const f = fogli.find(x => x.nome === nome); return f ? testo(f.percorso) : null; },
+    async righe(nome) { const x = await this.xml(nome); return x === null ? null : leggiFoglioXml(x, await leggiCondivise()); },
+    async primaRiga(nome) {
+      const x = await this.xml(nome);
+      if (x === null) return null;
+      const fine = x.indexOf("</row>");
+      return (leggiFoglioXml(fine > 0 ? x.slice(0, fine + 6) + "</sheetData>" : x, await leggiCondivise())[0]) || [];
+    },
+  };
+}
+
+/* ------------------------------------------------------------------ dati grezzi (download «sedi d'impresa» di Stockview) */
+const CAMPI_GREZZO = ["DIV", "ATDIV", "CNG", "REGIST", "ATTIVE"];
+
+function testoDaU8(u8) {
+  let t = new TextDecoder("utf-8").decode(u8);
+  if (t.includes("�")) t = new TextDecoder("windows-1252").decode(u8);
+  return t.charCodeAt(0) === 0xFEFF ? t.slice(1) : t;
+}
+
+function tabellaDaTesto(u8) {
+  const linee = testoDaU8(u8).split(/\r\n|\n|\r/);
+  const h = linee.findIndex(l => /\bREGIST\b/i.test(l) && /\bATTIVE\b/i.test(l));
+  if (h < 0) return null;
+  const intest = linee[h];
+  const [sep, n] = ["\t", ";", "|", ","].map(s => [s, intest.split(s).length]).sort((a, b) => b[1] - a[1])[0];
+  let dividi;
+  if (n >= 5) dividi = l => l.split(sep);
+  else {   // larghezza fissa: le colonne iniziano dove iniziano i nomi nell'intestazione
+    const pos = [...intest.matchAll(/\S+/g)].map(m => m.index);
+    dividi = l => pos.map((p, i) => l.slice(p, i + 1 < pos.length ? pos[i + 1] : undefined));
+  }
+  const pulisci = s => s.trim().replace(/^"(.*)"$/, "$1");
+  const nomi = dividi(intest).map(s => pulisci(s).toUpperCase());
+  const righe = [];
+  for (let i = h + 1; i < linee.length; i++) if (linee[i].trim()) righe.push(dividi(linee[i]).map(pulisci));
+  return { nomi, righe };
+}
+
+function aggregaGrezzo(tab) {
+  const nomi = tab.nomi.map(n => String(n ?? "").trim().toUpperCase());
+  const manca = CAMPI_GREZZO.filter(c => !nomi.includes(c));
+  if (manca.length) throw new ErroreDati(`Nel file mancano le colonne ${manca.join(", ")}: è il download «sedi di impresa» di Stockview?`);
+  const i = Object.fromEntries(["PRV", "DIV", "ATDIV", "CNG", "REGIST", "ATTIVE", "ISCRIZ", "CESSAZ", "CESNUF", "AAISC", "TRIM"].map(c => [c, nomi.indexOf(c)]));
+  const num = v => typeof v === "number" ? v : (v == null || v === "" ? 0 : (Number(String(v).trim()) || 0));
+  const txt = v => v == null ? "" : String(v).trim().toUpperCase();
+  const A = { righe: 0, reg: 0, att: 0, isc: 0, ces: 0, cesnu: 0, flussi: i.ISCRIZ >= 0 && i.CESSAZ >= 0, cesnuf: i.CESNUF >= 0,
+              province: new Map(), div: new Map(), atdiv: new Map(), codiciAtdiv: new Set(), cng: new Map(), periodo: null,
+              fDiv: new Map(), fAtdiv: new Map(), fCng: new Map() };   // flussi {isc, ces, cesnu} per sezione, divisione, forma giuridica
+  const aggiungiFlusso = (mappa, k, isc, ces, cnu) => {
+    const o = mappa.get(k) || { isc: 0, ces: 0, cesnu: 0 };
+    o.isc += isc; o.ces += ces; o.cesnu += cnu;
+    mappa.set(k, o);
+  };
+  let maxP = -1, maxAny = -1;
+  for (const r of tab.righe) {
+    if (!r || !r.length) continue;
+    const reg = num(r[i.REGIST]), att = num(r[i.ATTIVE]);
+    const isc = i.ISCRIZ >= 0 ? num(r[i.ISCRIZ]) : 0, ces = i.CESSAZ >= 0 ? num(r[i.CESSAZ]) : 0, cnu = i.CESNUF >= 0 ? num(r[i.CESNUF]) : 0;
+    const div = txt(r[i.DIV]);
+    if (!div && !reg && !att && !isc && !ces) continue;
+    A.righe += 1; A.reg += reg; A.att += att; A.isc += isc; A.ces += ces; A.cesnu += cnu;
+    if (i.PRV >= 0) { const p = txt(r[i.PRV]); A.province.set(p, (A.province.get(p) || 0) + 1); }
+    const atdiv = txt(r[i.ATDIV]).replace(/\s+/g, "");
+    A.codiciAtdiv.add(atdiv);
+    if (att) {
+      A.div.set(div, (A.div.get(div) || 0) + att);
+      A.atdiv.set(atdiv, (A.atdiv.get(atdiv) || 0) + att);
+      const cng = txt(r[i.CNG]);
+      A.cng.set(cng, (A.cng.get(cng) || 0) + att);
+    }
+    if (isc || ces || cnu) {
+      aggiungiFlusso(A.fDiv, div, isc, ces, cnu);
+      aggiungiFlusso(A.fAtdiv, atdiv, isc, ces, cnu);
+      aggiungiFlusso(A.fCng, txt(r[i.CNG]), isc, ces, cnu);
+    }
+    if (i.AAISC >= 0 && i.TRIM >= 0) {
+      const y = num(r[i.AAISC]), t = num(r[i.TRIM]);
+      if (y > 1900 && t >= 1 && t <= 4) { const p = y * 4 + t - 1; if (isc > 0) maxP = Math.max(maxP, p); maxAny = Math.max(maxAny, p); }
+    }
+  }
+  if (!A.righe) throw new ErroreDati("Il file non contiene righe di dati.");
+  const pp = maxP >= 0 ? maxP : maxAny;
+  if (pp >= 0) A.periodo = { anno: Math.floor(pp / 4), trim: pp % 4 + 1 };
+  const ha = c => A.codiciAtdiv.has(c);
+  const vecchia = ha("L68") || ha("G45") || ha("J62") || ha("S95");
+  const nuova = ha("M68") || ha("K62") || ha("T95") || ha("K61");
+  A.atecoCerta = vecchia !== nuova;
+  A.ateco = vecchia && !nuova ? "2007" : nuova && !vecchia ? "2025" : ATECO_PREDEFINITA;
+  return A;
+}
+
+// voci per gruppo ("Settore - Commercio" -> n) calcolate dal file aggregato, nella sua classificazione ATECO
+function gruppiDaGrezzo(A) {
+  const avvisi = [], out = {}, forme = {};
+  const C = CLASSIFICAZIONI[A.ateco];
+  const d = s => A.div.get(s) || 0;
+  let usate = 0;
+  for (const [nome, sez] of C.settori) if (sez) { const v = sez.reduce((s, x) => s + d(x), 0); out[`Settore - ${nome}`] = v; usate += v; }
+  out["Settore - Altro"] = A.att - usate;
+  const altre = [...A.div.keys()].filter(k => !C.settori.some(([, s]) => s && s.includes(k)));
+  if (altre.some(k => !["B", "D", "E", "X", ""].includes(k))) avvisi.push(`Sezioni conteggiate in «Altro»: ${altre.map(k => k || "(vuota)").join(", ")}`);
+  let manif = 0;
+  for (const [nome, divs] of MANIFATTURIERO) {
+    const v = divs.reduce((s, x) => s + (A.atdiv.get("C" + x) || 0), 0);
+    out[`Manifatturiero - ${nome}`] = v; manif += v;
+  }
+  const scarto = d("C") - manif;
+  if (scarto !== 0) {
+    out["Manifatturiero - Altre industrie manifatturiere"] += scarto;
+    avvisi.push(`${scarto} imprese manifatturiere con divisione non riconosciuta: aggiunte ad «Altre industrie manifatturiere»`);
+  }
+  for (const [nome, s] of C.servizi) out[`Servizi - ${nome}`] = d(s);
+  let tf = 0;
+  for (const [nome, c] of FORME) { const v = A.cng.get(c) || 0; forme[nome] = v; tf += v; }
+  if (A.att - tf !== 0) {
+    forme["Altre forme"] += A.att - tf;
+    avvisi.push(`${A.att - tf} imprese con forma giuridica non riconosciuta: aggiunte ad «Altre forme»`);
+  }
+  return { ateco: A.ateco, voci: out, forme, avvisi };
+}
+
+// flussi per voce ("Settore - Commercio" -> {isc, ces, cesnu}) dal file aggregato, nella sua classificazione ATECO
+function flussiDaGrezzo(A) {
+  const C = CLASSIFICAZIONI[A.ateco], out = {}, avvisi = [];
+  const zero = () => ({ isc: 0, ces: 0, cesnu: 0 });
+  const piu = (o, x) => { if (x) { o.isc += x.isc; o.ces += x.ces; o.cesnu += x.cesnu; } return o; };
+  const meno = (o, x) => ({ isc: o.isc - x.isc, ces: o.ces - x.ces, cesnu: o.cesnu - x.cesnu });
+  const tot = { isc: A.isc, ces: A.ces, cesnu: A.cesnu };
+  const sez = s => A.fDiv.get(s);
+  let usate = zero();
+  for (const [nome, sezioni] of C.settori) if (sezioni) { const v = sezioni.reduce((o, s) => piu(o, sez(s)), zero()); out[`Settore - ${nome}`] = v; piu(usate, v); }
+  out["Settore - Altro"] = meno(tot, usate);
+  let manif = zero();
+  for (const [nome, divs] of MANIF_FLUSSI) {
+    const v = divs.reduce((o, d) => piu(o, A.fAtdiv.get("C" + d)), zero());
+    out[`Manifatturiero - ${nome}`] = v; piu(manif, v);
+  }
+  const scarto = meno(sez("C") || zero(), manif);
+  if (scarto.isc || scarto.ces || scarto.cesnu) {
+    piu(out["Manifatturiero - Altre industrie manifatturiere"], scarto);
+    avvisi.push(`Flussi del manifatturiero con divisione non riconosciuta (iscrizioni ${scarto.isc}, cessazioni ${scarto.ces}): aggiunti ad «Altre industrie manifatturiere»`);
+  }
+  for (const [nome, s] of SERVIZI_FLUSSI[A.ateco]) out[`Servizi - ${nome}`] = piu(zero(), sez(s));
+  let forme = zero();
+  for (const [nome, c] of FORME) { const v = piu(zero(), A.fCng.get(c)); out[`Forma - ${nome}`] = v; piu(forme, v); }
+  const resto = meno(tot, forme);
+  if (resto.isc || resto.ces || resto.cesnu) {
+    piu(out["Forma - Altre forme"], resto);
+    avvisi.push(`Flussi con forma giuridica non riconosciuta (iscrizioni ${resto.isc}, cessazioni ${resto.ces}): aggiunti ad «Altre forme»`);
+  }
+  return { voci: out, avvisi };
+}
+
+// periodo dal nome del file di Stockview: "22026VAS.csv" = II trimestre 2026, Varese, Sedi
+function periodoDaNome(nome) {
+  const m = /(?:^|[^0-9])([1-4])(20\d\d)([A-Z]{2})[A-Z]?(?:\s*\(\d+\))?\.[a-z0-9]+$/i.exec(String(nome || ""));
+  return m ? { anno: Number(m[2]), trim: Number(m[1]), provincia: m[3].toUpperCase() } : null;
+}
+
+// legge il file dei dati grezzi (testo, zip con il testo dentro, o vecchio file di lavoro .xlsx con il foglio «DATI DOWNLOAD»)
+async function leggiFileGrezzo(u8, nomeFile) {
+  const tipo = tipoFile(u8);
+  let tab = null;
+  if (tipo === "zip") {
+    const x = await apriXlsx(u8);
+    if (x) {
+      let foglio = x.trova("DATI DOWNLOAD");
+      if (!foglio) for (const n of x.nomi) { const r = (await x.primaRiga(n)).map(v => String(v ?? "").trim().toUpperCase()); if (r.includes("REGIST") && r.includes("ATTIVE")) { foglio = n; break; } }
+      if (!foglio) throw new ErroreDati("Nel file Excel non trovo un foglio con le colonne del download Stockview (REGIST, ATTIVE…).");
+      const righe = await x.righe(foglio);
+      const h = righe.findIndex(r => r && r.some(v => String(v ?? "").trim().toUpperCase() === "REGIST"));
+      tab = { nomi: righe[h], righe: righe.slice(h + 1) };
+    } else {
+      const voci = [...indiceZip(u8).values()].filter(v => !v.nome.endsWith("/"));
+      for (const v of voci) { const t = tabellaDaTesto(await estraiZip(u8, v)); if (t) { tab = t; break; } }
+    }
+  } else tab = tabellaDaTesto(u8);
+  if (!tab) throw new ErroreDati("Non riconosco il file: manca l'intestazione del download Stockview (REG, PRV, …, REGIST, ATTIVE…).");
+  const A = aggregaGrezzo(tab);
+  const g = gruppiDaGrezzo(A);
+  // periodo: dai dati (trimestre delle iscrizioni più recenti), così un file rinominato male non finisce nel trimestre sbagliato;
+  // il nome (es. "22026VAS.csv") serve solo se il file non ha le colonne delle iscrizioni
+  const daNome = periodoDaNome(nomeFile) || trimDaNome(nomeFile);
+  const avvisi = g.avvisi.slice();
+  if (!A.atecoCerta) avvisi.push(`Non riconosco la classificazione ATECO dai codici: considero ATECO ${A.ateco}`);
+  if (daNome && A.periodo && (daNome.anno !== A.periodo.anno || daNome.trim !== A.periodo.trim))
+    avvisi.push(`Il nome del file indica il ${nomeTrim(daNome.anno, daNome.trim)}, ma i dati (iscrizioni) sono del ${nomeTrim(A.periodo.anno, A.periodo.trim)}: uso il ${nomeTrim(A.periodo.anno, A.periodo.trim)}`);
+  const prov = [...A.province.keys()].filter(Boolean);
+  if (prov.length > 1) avvisi.push(`Il file contiene più province (${prov.join(", ")}): i totali le sommano tutte`);
+  else if (prov.length && prov[0] !== "VA") avvisi.push(`Il file è della provincia ${prov[0]}, non di Varese`);
+  const periodo = A.periodo || (daNome ? { anno: daNome.anno, trim: daNome.trim } : null);
+  const fl = A.flussi && A.cesnuf ? flussiDaGrezzo(A) : null;
+  return { A, ateco: g.ateco, voci: g.voci, forme: g.forme, flussi: fl ? fl.voci : null,
+           avvisiFlussi: fl ? fl.avvisi : ["Nel file mancano le colonne ISCRIZ, CESSAZ o CESNUF: non serve per iscrizioni e cessazioni"],
+           avvisi, periodo, nome: nomeFile || "" };
+}
+
+/* ------------------------------------------------------------------ file piccoli: mesi, province lombarde, Italia */
+// Periodo dal nome del file. Nomi di Stockview: "202604_m.csv" = aprile 2026 (mensile); "20262_sa.csv" = II trim 2026 (province o Italia).
+// Accettati anche nomi scritti a mano: "aprile 2026", "apr_26", "2026-04", "04-2026"; "II trim 2026", "2026 T2", "T2_2026", "2 trimestre 2026".
+const MESI_BREVI = ["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"];
+const annoPieno = s => s.length === 2 ? 2000 + Number(s) : Number(s);
+const senzaEstensione = nome => String(nome || "").replace(/\.[a-z0-9]{1,5}$/i, "");
+function meseDaNome(nome) {
+  const s = senzaEstensione(nome);
+  let m = /(?:^|[^0-9])(20\d\d)[-_. ]?(0[1-9]|1[0-2])(?![0-9])/.exec(s);
+  if (m) return { anno: Number(m[1]), mese: Number(m[2]) };
+  m = /(?:^|[^0-9A-Za-z])(0?[1-9]|1[0-2])[-_. ](20\d\d)(?![0-9])/.exec(s);
+  if (m) return { anno: Number(m[2]), mese: Number(m[1]) };
+  m = /(?:^|[^A-Za-z])(gen|feb|mar|apr|mag|giu|lug|ago|set|ott|nov|dic)[a-z]*[-_.' ]*(20\d\d|\d\d)(?![0-9])/i.exec(s);
+  if (m) return { anno: annoPieno(m[2]), mese: MESI_BREVI.indexOf(m[1].toLowerCase()) + 1 };
+  return null;
+}
+const ROMANI_N = { I: 1, II: 2, III: 3, IV: 4 };
+function trimDaNome(nome) {
+  const s = senzaEstensione(nome);
+  let m = /(?:^|[^0-9])(20\d\d)([1-4])_sa(?![a-z])/i.exec(s);
+  if (m) return { anno: Number(m[1]), trim: Number(m[2]) };
+  m = /(?:^|[^0-9])(20\d\d)[-_. ]*(?:T|Q|trim[a-z]*[-_. ]*)([1-4])(?![0-9])/i.exec(s);
+  if (m) return { anno: Number(m[1]), trim: Number(m[2]) };
+  m = /(?:^|[^A-Za-z0-9])(?:T|Q)([1-4])[-_. ]*(20\d\d|\d\d)(?![0-9])/i.exec(s);
+  if (m) return { anno: annoPieno(m[2]), trim: Number(m[1]) };
+  m = /(?:^|[^A-Za-z])(IV|III|II|I)[-_.° ]*trim[a-z]*[-_.' ]*(20\d\d|\d\d)(?![0-9])/i.exec(s);
+  if (m) return { anno: annoPieno(m[2]), trim: ROMANI_N[m[1].toUpperCase()] };
+  m = /(?:^|[^0-9])([1-4])[°º]?[-_. ]*trim[a-z]*[-_.' ]*(20\d\d|\d\d)(?![0-9])/i.exec(s);
+  if (m) return { anno: annoPieno(m[2]), trim: Number(m[1]) };
+  return null;
+}
+
+const normNome = s => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toUpperCase().replace(/[^A-Z]/g, "");
+function territorioDaNome(s) {
+  const n = normNome(s);
+  if (!n) return null;
+  if (n.startsWith("MONZA")) return "Monza e Brianza";
+  for (const p of PROVINCE) if (n === normNome(p)) return p;
+  if (n === "LOMBARDIA" || n.startsWith("GRANDTOT") || n === "TOTALE" || n === "TOTALECOMPLESSIVO") return REGIONE;
+  if (n.startsWith("ITALIA")) return ITALIA;
+  return null;
+}
+
+// CSV con virgolette; separatore TAB, ; o , (il più frequente nella prima riga)
+function righeCsv(testo) {
+  const prima = testo.split(/\r\n|\n|\r/, 1)[0] || "";
+  const conta = s => { let n = 0, q = false; for (const c of prima) { if (c === '"') q = !q; else if (!q && c === s) n++; } return n; };
+  const sep = ["\t", ";", ","].map(s => [s, conta(s)]).sort((a, b) => b[1] - a[1])[0][0];
+  const righe = [];
+  let riga = [], cella = "", q = false;
+  for (let i = 0; i < testo.length; i++) {
+    const c = testo[i];
+    if (q) { if (c === '"') { if (testo[i + 1] === '"') { cella += '"'; i++; } else q = false; } else cella += c; }
+    else if (c === '"') q = true;
+    else if (c === sep) { riga.push(cella); cella = ""; }
+    else if (c === "\n" || c === "\r") { if (c === "\r" && testo[i + 1] === "\n") i++; riga.push(cella); righe.push(riga); riga = []; cella = ""; }
+    else cella += c;
+  }
+  if (cella !== "" || riga.length) { riga.push(cella); righe.push(riga); }
+  return righe.map(r => r.map(c => c.trim())).filter(r => r.some(c => c !== ""));
+}
+
+function campoDaIntestazione(h) {
+  const c = String(h ?? "").toLowerCase();
+  if (c.includes("registr")) return "reg";
+  if (c.includes("attive")) return "att";
+  if (c.includes("iscr")) return "isc";
+  // «Cessazioni», «Cessate», «Cess.»; «… non d'ufficio» / «non uff.»; una colonna delle sole cessazioni d'ufficio non serve
+  if (c.includes("cess")) return c.includes("non") ? "cesnu" : c.includes("uff") ? null : "ces";
+  return null;
+}
+const NOMI_CAMPI = Object.fromEntries(CAMPI_TERR);
+
+// file piccolo di Stockview -> {tipo: "mese"|"province"|"italia", periodo, dati, colonne, avvisi, incerto}
+//   mese:     dati = {reg, att}                     (Varese a fine mese)
+//   province: dati = {Bergamo: {reg, att, …}, …, Lombardia: {…} se c'è il Grand Totale}
+//   italia:   dati = {Italia: {reg, att, …}}
+// testo = contenuto CSV, oppure righe già divise (primo foglio di un .xlsx)
+function leggiFilePiccolo(testo, nome) {
+  const righe = typeof testo === "string" ? righeCsv(testo) : testo;
+  // procedure concorsuali: file mensili «Classe Evento» (Varese o province) e stock per «Status d'impresa»
+  if (righe.some(r => r.some(c => /classe\s*evento/i.test(String(c ?? ""))))) return leggiFileProcedure(righe, nome);
+  if (righe.some(r => r.some(c => /procedure\s+concorsuali/i.test(String(c ?? "")))) && righe.some(r => r.some(c => campoDaIntestazione(c) === "reg")))
+    return leggiFileStockProcedure(righe, nome);
+  const h = righe.findIndex(r => r.some(c => campoDaIntestazione(c)));
+  if (h < 0) throw new ErroreDati("Non riconosco il file: mi aspetto un CSV di Stockview con le colonne Registrate, Attive…");
+  const campi = righe[h].map(campoDaIntestazione);
+  const colonne = [...new Set(campi.filter(Boolean))];
+  const jNome = righe[h].findIndex((c, j) => !campi[j] && c !== "");   // es. «Provincia»
+  const valori = r => { const v = {}; campi.forEach((k, j) => { if (k && v[k] == null) { const n = numeroIT(r[j]); if (n != null) v[k] = n; } }); return v; };
+  const corpo = righe.slice(h + 1);
+  const avvisi = [];
+  const perNome = corpo.map(r => ({ t: territorioDaNome(r[jNome >= 0 ? jNome : 0]), v: valori(r) })).filter(x => x.t);
+  const tNome = trimDaNome(nome), mNome = meseDaNome(nome);
+  if (perNome.some(x => PROVINCE.includes(x.t))) {
+    const dati = {};
+    for (const x of perNome) if (x.t !== ITALIA) dati[x.t] = x.v;
+    const mancano = PROVINCE.filter(p => !dati[p]);
+    if (mancano.length) avvisi.push(`Mancano le province: ${mancano.join(", ")}`);
+    return { tipo: "province", periodo: tNome, dati, colonne, avvisi };
+  }
+  if (perNome.length === 1 && perNome[0].t === ITALIA) return { tipo: "italia", periodo: tNome, dati: { [ITALIA]: perNome[0].v }, colonne, avvisi };
+  // una sola riga di numeri: un mese di Varese (decine di migliaia) oppure il totale Italia (milioni), qualunque sia il nome
+  const numeri = corpo.map(valori).filter(v => Object.keys(v).length);
+  if (numeri.length !== 1) throw new ErroreDati("Non riconosco il file: non contiene le province lombarde né una sola riga di totali (mese di Varese o Italia).");
+  const v = numeri[0];
+  if ((v.reg ?? v.att ?? 0) >= 1000000) return { tipo: "italia", periodo: tNome, dati: { [ITALIA]: v }, colonne, avvisi };
+  if (v.reg == null && v.att == null) {   // solo iscrizioni/cessazioni: l'Italia ne ha decine di migliaia a trimestre, Varese un migliaio
+    if (Math.max(v.isc ?? 0, v.ces ?? 0, v.cesnu ?? 0) >= 20000) return { tipo: "italia", periodo: tNome, dati: { [ITALIA]: v }, colonne, avvisi };
+    throw new ErroreDati("Non riconosco il file: una sola riga con iscrizioni/cessazioni ma senza Registrate. Per l'Italia scarica anche la colonna Registrate.");
+  }
+  return { tipo: "mese", periodo: mNome, dati: v, colonne, avvisi };
+}
+
+// procedure: classe evento -> "sc" (scioglimento e liquidazione) o "pr" (procedura concorsuale)
+const campoProc = classe => normNome(classe).includes("SCIOGLIMENTO") ? "sc" : "pr";
+// lettera della sezione ATECO dall'etichetta del file ("C Attività manifatturiere" -> "C")
+const sezioneDi = s => { const m = /^\s*([A-Za-z])(?![A-Za-z])/.exec(String(s ?? "")); return m ? m[1].toUpperCase() : ""; };
+const formaDi = s => { const n = normNome(s); return n.includes("CAPITAL") ? "Società di capitale" : n.includes("PERSON") ? "Società di persone" : n.includes("INDIVIDUAL") ? "Imprese individuali" : "Altre forme"; };
+// classificazione ATECO dalle etichette dei settori (2007: L immobiliari, K finanziarie…; 2025: M immobiliari, L finanziarie, K telecomunicazioni…)
+function atecoDaSettori(etichette) {
+  let v07 = 0, v25 = 0;
+  for (const s of etichette) {
+    const l = sezioneDi(s), t = String(s).toLowerCase();
+    if (/immobil/.test(t)) { if (l === "L") v07++; if (l === "M") v25++; }
+    if (/finanz/.test(t)) { if (l === "K") v07++; if (l === "L") v25++; }
+    if (/telecomunic/.test(t) && l === "K") v25++;
+    if (/informazione e comunicazione/.test(t) && l === "J") v07++;
+    if (/professional/.test(t)) { if (l === "M") v07++; if (l === "N") v25++; }
+    if (/altre attivit/.test(t)) { if (l === "S") v07++; if (l === "T") v25++; }
+  }
+  return v07 > v25 ? "2007" : "2025";
+}
+
+// file mensile delle procedure (colonne Classe Evento, …, Aperture Eventi Procedure):
+//   con la colonna Provincia -> {tipo: "procprov", dati: {Bergamo: {pr, sc}, …}}
+//   senza (Varese, con Settore e Classe di Natura Giuridica) -> {tipo: "procmese", dati: {pr, sc, righe: [[classe, settore, forma, n], …], ateco}}
+function leggiFileProcedure(righe, nome) {
+  const h = righe.findIndex(r => r.some(c => /classe\s*evento/i.test(String(c ?? ""))));
+  const intest = righe[h].map(c => String(c ?? "").trim().toLowerCase());
+  const col = re => intest.findIndex(c => re.test(c));
+  const jCl = col(/classe\s*evento/), jPr = col(/provincia/), jSe = col(/settore|sezione|ateco/), jFo = col(/natura|forma/);
+  let jV = col(/apertur/);
+  // colonna dei valori: «Aperture Eventi Procedure», altrimenti l'ultima colonna che non è una descrizione
+  if (jV < 0) for (let j = intest.length - 1; j >= 0; j--) if (![jCl, jPr, jSe, jFo].includes(j)) { jV = j; break; }
+  const avvisi = [], periodo = meseDaNome(nome);
+  const corpo = righe.slice(h + 1).filter(r => r && r.some(c => String(c ?? "").trim() !== ""));
+  const eTotale = r => [jCl, jPr, jSe, jFo].some(j => j >= 0 && normNome(r[j]).startsWith("GRANDTOT"));
+  let totFile = null;
+  const nuove = new Set();
+  if (jPr >= 0) {
+    const dati = {};
+    for (const r of corpo) {
+      const n = numeroIT(r[jV]);
+      if (eTotale(r)) { totFile = n; continue; }
+      const t = territorioDaNome(r[jPr]);
+      if (!t || !PROVINCE.includes(t)) { avvisi.push(`Riga ignorata (non è una provincia lombarda): ${r[jPr]}`); continue; }
+      if (n == null) continue;
+      dati[t] = dati[t] || { pr: 0, sc: 0 };
+      dati[t][campoProc(r[jCl])] += n;
+    }
+    if (!Object.keys(dati).length) throw new ErroreDati("Il file delle province non contiene province lombarde.");
+    const mancano = PROVINCE.filter(p => !dati[p]);
+    for (const p of mancano) dati[p] = { pr: 0, sc: 0 };
+    if (mancano.length) avvisi.push(`Province assenti nel file (nessuna apertura nel mese, considerate 0): ${mancano.join(", ")}`);
+    const somma12 = PROVINCE.reduce((s, p) => s + dati[p].pr + dati[p].sc, 0);
+    if (totFile != null && totFile !== somma12) avvisi.push(`Grand Totale del file ${totFile} ≠ somma delle province ${somma12}`);
+    return { tipo: "procprov", periodo, dati, colonne: [], avvisi };
+  }
+  const dett = [], tot = { pr: 0, sc: 0 };
+  for (const r of corpo) {
+    const n = numeroIT(r[jV]);
+    if (eTotale(r)) { totFile = n; continue; }
+    const cl = String(r[jCl] ?? "").trim();
+    if (!cl || n == null) continue;
+    const c = campoProc(cl);
+    if (c === "pr" && !CLASSI_PROCEDURE.includes(cl.toUpperCase())) nuove.add(cl);
+    dett.push([cl, jSe >= 0 ? String(r[jSe] ?? "").trim() : "", jFo >= 0 ? String(r[jFo] ?? "").trim() : "", n]);
+    tot[c] += n;
+  }
+  if (!dett.length) throw new ErroreDati("Il file delle procedure non contiene righe di dati.");
+  if (totFile != null && totFile !== tot.pr + tot.sc) avvisi.push(`Grand Totale del file ${totFile} ≠ somma delle righe ${tot.pr + tot.sc}`);
+  if (nuove.size) avvisi.push(`Classi di evento nuove, conteggiate tra le procedure concorsuali: ${[...nuove].join(", ")}`);
+  const completo = jSe >= 0 && jFo >= 0;
+  if (!completo) avvisi.push("Mancano le colonne Settore o Classe di Natura Giuridica: il file vale solo per i totali (non per settori e tipo).");
+  const ateco = atecoDaSettori(dett.map(r => r[1]));
+  const note = new Set(SEZIONI_PROC.map(s => s[0]));
+  const altre = [...new Set(dett.map(r => sezioneDi(r[1])).filter(s => !note.has(s)))];
+  if (completo && altre.length) avvisi.push(`Sezioni conteggiate in «Imprese non classificate»: ${altre.map(s => s || "(vuota)").join(", ")}`);
+  if (completo && ateco !== "2025") avvisi.push("I settori sono in ATECO 2007: il file vale per i totali, ma per le tabelle dei settori serve il download in ATECO 2025.");
+  return { tipo: "procmese", periodo, dati: { pr: tot.pr, sc: tot.sc, righe: completo ? dett : null, ateco }, colonne: [], avvisi };
+}
+
+// stock di Varese per «Status d'Impresa» (righe «con Procedure concorsuali», «in Scioglimento o Liquidazione», colonna Registrate)
+function leggiFileStockProcedure(righe, nome) {
+  const h = righe.findIndex(r => r.some(c => campoDaIntestazione(c) === "reg"));
+  const jR = righe[h].findIndex(c => campoDaIntestazione(c) === "reg");
+  const jN = Math.max(0, righe[h].findIndex((c, j) => j !== jR && !campoDaIntestazione(c) && String(c ?? "").trim() !== ""));
+  const dati = { stockPr: null, stockSc: null, reg: null };
+  for (const r of righe.slice(h + 1)) {
+    const k = normNome(r[jN]), v = numeroIT(r[jR]);
+    if (k.includes("PROCEDURECONCORSUALI")) dati.stockPr = v;
+    else if (k.includes("SCIOGLIMENTO") || k.includes("LIQUIDAZIONE")) dati.stockSc = v;
+    else if (k.startsWith("GRANDTOT")) dati.reg = v;
+  }
+  if (dati.stockPr == null || dati.stockSc == null)
+    throw new ErroreDati("Nel file dello stock mancano le righe «con Procedure concorsuali» e «in Scioglimento o Liquidazione» (colonna Registrate).");
+  return { tipo: "procstock", periodo: trimDaNome(nome), dati, colonne: [], avvisi: [] };
+}
+
+// riconosce qualsiasi file: {tipo: "storico"|"grezzo"|"mese"|"province"|"italia", periodo, …}
+async function riconosciFile(u8, nome) {
+  const tipo = tipoFile(u8);
+  if (tipo === "7z" || tipo === "rar") throw new ErroreDati("Il file è ancora compresso (.7z): estrailo prima con 7-Zip (tasto destro → 7-Zip → Estrai qui) e carica il file estratto.");
+  if (tipo === "xls") throw new ErroreDati("I file .xls (Excel 97-2003) non sono supportati: salva il file come .xlsx o carica il CSV scaricato.");
+  if (tipo === "zip") {
+    const x = await apriXlsx(u8);
+    if (x && x.trova("Mesi")) { const r = await leggiStorico(u8); return { tipo: "storico", storico: r.storico, avvisi: r.avvisi }; }
+    if (x && !x.trova("DATI DOWNLOAD")) {   // un file piccolo (mese, province, Italia) salvato in Excel?
+      let grezzo = false;
+      for (const n of x.nomi) { const r = ((await x.primaRiga(n)) || []).map(v => String(v ?? "").trim().toUpperCase()); if (r.includes("REGIST") && r.includes("ATTIVE")) { grezzo = true; break; } }
+      if (!grezzo) {
+        const righe = ((await x.righe(x.nomi[0])) || []).filter(Boolean).map(r => Array.from(r, v => v == null ? "" : String(v).trim())).filter(r => r.some(c => c));
+        return leggiFilePiccolo(righe, nome);
+      }
+    }
+    const g = await leggiFileGrezzo(u8, nome);
+    return { tipo: "grezzo", periodo: g.periodo, g, avvisi: g.avvisi };
+  }
+  const inizio = testoDaU8(u8.subarray(0, 4096));
+  if (/\bREGIST\b/i.test(inizio) && /\bATTIVE\b/i.test(inizio)) {
+    const g = await leggiFileGrezzo(u8, nome);
+    return { tipo: "grezzo", periodo: g.periodo, g, avvisi: g.avvisi };
+  }
+  return leggiFilePiccolo(testoDaU8(u8), nome);
+}
+
+// due file piccoli dello stesso tipo e periodo (es. Italia con Registrate e Attive + Italia con Iscrizioni e Cessazioni): uniti, il nuovo prevale
+function unisciFilePiccoli(vecchio, nuovo) {
+  const dati = JSON.parse(JSON.stringify(vecchio.dati || {}));
+  for (const [t, v] of Object.entries(nuovo.dati || {})) dati[t] = Object.assign(dati[t] || {}, v);
+  return { ...nuovo, dati, colonne: [...new Set([...(vecchio.colonne || []), ...(nuovo.colonne || [])])] };
+}
+
+/* ------------------------------------------------------------------ storico */
+class Storico {
+  constructor() {
+    this.mesi = {};      // "2026-06" -> {reg, att}            Varese a fine mese
+    this.anni = {};      // 2005 -> {reg, att, varReg, varAtt}  anni prima della serie mensile
+    this.settori = { "2007": {}, "2025": {} };   // ateco -> "2026-T2" -> {"Settore - Commercio": n, …}  attive di Varese
+    this.forme = {};     // "2026-T2" -> {"Società di capitale": n, …}   attive di Varese per forma giuridica
+    this.terr = {};      // "2026-T2" -> {Bergamo: {reg, att, isc, ces, cesnu}, …}   (Varese: flussi del trimestre dal 2005; registrate prima della serie mensile)
+    this.flussi = { "2007": {}, "2025": {} };    // ateco -> "2026-T2" -> {"Settore - Commercio": {isc, ces, cesnu}, …}  flussi di Varese per voce
+    // procedure concorsuali (pr) e scioglimenti (sc): aperture del mese e stock a fine trimestre
+    this.proc = {
+      mesi: {},   // "2026-04" -> {Varese: {pr, sc}, Bergamo: {pr, sc}, …}          aperture del mese per provincia
+      dett: {},   // "2026-04" -> {ateco, righe: [[classe evento, settore, forma, n], …]}   Varese, righe del download
+      trim: {},   // "2025-T2" -> {pr, sc, prConf, scConf, stockPr, stockSc}        Varese (aperture dei trimestri prima della serie mensile)
+      anni: {},   // 2006 -> {pr, sc, prConf, scConf}                                Varese, anni prima della serie trimestrale
+    };
+  }
+  clona() { const s = new Storico(); Object.assign(s, JSON.parse(JSON.stringify(this))); return s; }
+  regAtt(a, t) { return this.mesi[kMese(a, 3 * t)] || null; }
+  voce(cl, a, t, nome) { const q = this.settori[cl][kTrim(a, t)]; return q && q[nome] != null ? q[nome] : null; }
+  forma(a, t, nome) { const q = this.forme[kTrim(a, t)]; return q && q[nome] != null ? q[nome] : null; }
+  terrVal(a, t, territorio, campo) {
+    if (territorio === PROVINCIA && (campo === "reg" || campo === "att")) { const v = this.regAtt(a, t); if (v && v[campo] != null) return v[campo]; }
+    const q = this.terr[kTrim(a, t)];
+    return q && q[territorio] && q[territorio][campo] != null ? q[territorio][campo] : null;
+  }
+  // flusso di una voce (Settore/Manifatturiero/Servizi/Forma) nel trimestre: {isc, ces, cesnu} o null; la forma giuridica non dipende dall'ATECO
+  flusso(cl, a, t, voce) {
+    const trova = c => { const q = this.flussi[c][kTrim(a, t)]; return q && q[voce] ? q[voce] : null; };
+    return trova(cl) || (voce.startsWith("Forma - ") ? trova(cl === "2025" ? "2007" : "2025") : null);
+  }
+  // registrate a fine trimestre (serie mensile, poi anni fino al 2008, poi le registrate di Varese salvate con i flussi)
+  regFine(a, t) {
+    const v = this.terrVal(a, t, PROVINCIA, "reg");
+    if (v != null) return v;
+    return t === 4 && this.anni[a] && this.anni[a].reg != null ? this.anni[a].reg : null;
+  }
+  // aperture del mese di un territorio {pr, sc} o null
+  procMese(a, m, terr) { const q = this.proc.mesi[kMese(a, m)]; return q && q[terr] && q[terr].pr != null && q[terr].sc != null ? q[terr] : null; }
+  // aperture di Varese nel trimestre (c = "pr" o "sc"): somma dei tre mesi se ci sono, altrimenti il valore trimestrale salvato
+  procTrim(a, t, c) {
+    const ms = [1, 2, 3].map(k => this.procMese(a, 3 * t - 3 + k, PROVINCIA));
+    if (ms.every(Boolean)) return ms.reduce((s, v) => s + v[c], 0);
+    const q = this.proc.trim[kTrim(a, t)];
+    return q && q[c] != null ? q[c] : null;
+  }
+  // valore usato come base delle variazioni (diverso solo per periodi straordinari, es. scioglimenti del II trim 2022)
+  procTrimConf(a, t, c) { const q = this.proc.trim[kTrim(a, t)]; return q && q[c + "Conf"] != null ? q[c + "Conf"] : this.procTrim(a, t, c); }
+  // aperture di Varese nell'anno: somma dei 4 trimestri, altrimenti il valore annuale salvato (anni prima del 2020)
+  procAnno(a, c, conf) {
+    const q = [1, 2, 3, 4].map(t => conf ? this.procTrimConf(a, t, c) : this.procTrim(a, t, c));
+    if (q.every(v => v != null)) return q.reduce((s, v) => s + v, 0);
+    const y = this.proc.anni[a];
+    if (!y) return null;
+    return conf && y[c + "Conf"] != null ? y[c + "Conf"] : y[c] ?? null;
+  }
+  // stock di Varese a fine trimestre (c = "stockPr" o "stockSc")
+  procStock(a, t, c) { const q = this.proc.trim[kTrim(a, t)]; return q && q[c] != null ? q[c] : null; }
+  periodi() {
+    const k = o => Object.keys(o).sort();
+    const conTerritori = Object.keys(this.terr).filter(q => Object.keys(this.terr[q]).some(n => n !== PROVINCIA)).sort();
+    const conFlussi = Object.keys(this.terr).filter(q => this.terr[q][PROVINCIA] && this.terr[q][PROVINCIA].isc != null).sort();
+    const procTrim = Object.keys(this.proc.trim).filter(q => this.proc.trim[q].pr != null);
+    for (const m of Object.keys(this.proc.mesi)) if (this.proc.mesi[m][PROVINCIA]) { const [a, mm] = m.split("-").map(Number); procTrim.push(kTrim(a, Math.ceil(mm / 3))); }
+    return { mesi: k(this.mesi), s2007: k(this.settori["2007"]), s2025: k(this.settori["2025"]), forme: k(this.forme), terr: conTerritori,
+             flussi: conFlussi, f2025: k(this.flussi["2025"]), f2007: k(this.flussi["2007"]),
+             procMesi: Object.keys(this.proc.mesi).filter(m => this.proc.mesi[m][PROVINCIA]).sort(), procTrim: [...new Set(procTrim)].sort(),
+             procStock: Object.keys(this.proc.trim).filter(q => this.proc.trim[q].stockPr != null).sort(),
+             procProv: Object.keys(this.proc.mesi).filter(m => Object.keys(this.proc.mesi[m]).some(t => t !== PROVINCIA)).sort() };
+  }
+}
+
+// scrive un valore annotando se cambia un dato già presente
+function metti(obj, chiave, valore, modifiche, descr) {
+  if (valore == null) return;
+  const vecchio = obj[chiave];
+  if (vecchio != null && vecchio !== valore) modifiche.push(`${descr}: ${vecchio} → ${valore}`);
+  obj[chiave] = valore;
+}
+
+function applicaGrezzo(S, g, anno, trim) {
+  const mod = [], q = kTrim(anno, trim), m = kMese(anno, 3 * trim);
+  S.mesi[m] = S.mesi[m] || {};
+  metti(S.mesi[m], "reg", g.A.reg, mod, `registrate ${nomeMese(anno, 3 * trim)}`);
+  metti(S.mesi[m], "att", g.A.att, mod, `attive ${nomeMese(anno, 3 * trim)}`);
+  S.terr[q] = S.terr[q] || {};
+  S.terr[q][PROVINCIA] = S.terr[q][PROVINCIA] || {};
+  const tv = S.terr[q][PROVINCIA];
+  metti(tv, "reg", g.A.reg, mod, `Varese registrate ${nomeTrim(anno, trim)}`); metti(tv, "att", g.A.att, mod, `Varese attive ${nomeTrim(anno, trim)}`);
+  if (g.A.flussi) {
+    metti(tv, "isc", g.A.isc, mod, `Varese iscrizioni ${nomeTrim(anno, trim)}`); metti(tv, "ces", g.A.ces, mod, `Varese cessazioni ${nomeTrim(anno, trim)}`);
+    if (g.A.cesnuf) metti(tv, "cesnu", g.A.cesnu, mod, `Varese cessazioni non d'ufficio ${nomeTrim(anno, trim)}`);
+  }
+  const sett = S.settori[g.ateco];
+  sett[q] = sett[q] || {};
+  for (const [k, v] of Object.entries(g.voci)) metti(sett[q], k, v, mod, `${k} (ATECO ${g.ateco}) ${nomeTrim(anno, trim)}`);
+  S.forme[q] = S.forme[q] || {};
+  for (const [k, v] of Object.entries(g.forme)) metti(S.forme[q], k, v, mod, `forma giuridica ${k} ${nomeTrim(anno, trim)}`);
+  if (g.flussi) {
+    const fl = S.flussi[g.ateco];
+    fl[q] = fl[q] || {};
+    for (const [voce, v] of Object.entries(g.flussi)) {
+      fl[q][voce] = fl[q][voce] || {};
+      for (const [c, nome] of CAMPI_FLUSSO) metti(fl[q][voce], c, v[c], mod, `${voce} ${nome.toLowerCase()} (ATECO ${g.ateco}) ${nomeTrim(anno, trim)}`);
+    }
+  }
+  return mod;
+}
+
+// mese di Varese; se lo stesso mese arriva anche da un file dei dati grezzi (fine trimestre) vale quello: qui solo controllo
+function applicaMese(S, anno, mese, v, protetto, log) {
+  const mod = [], k = kMese(anno, mese);
+  S.mesi[k] = S.mesi[k] || {};
+  for (const [c, nome] of [["reg", "registrate"], ["att", "attive"]]) {
+    if (v[c] == null) continue;
+    if (protetto && S.mesi[k][c] != null) {
+      if (v[c] !== S.mesi[k][c]) log(`${nomeMese(anno, mese)}: ${nome} nel file mensile ${v[c]} ≠ dati grezzi del trimestre ${S.mesi[k][c]} (uso i dati grezzi)`, "warn");
+      continue;
+    }
+    metti(S.mesi[k], c, v[c], mod, `${nome} ${nomeMese(anno, mese)}`);
+  }
+  return mod;
+}
+
+function applicaTerritori(S, anno, trim, dati, log) {
+  const mod = [], q = kTrim(anno, trim), nt = nomeTrim(anno, trim);
+  const T = S.terr[q] = S.terr[q] || {};
+  for (const [t, r] of Object.entries(dati)) {
+    if (t === REGIONE) continue;
+    T[t] = T[t] || {};
+    for (const [c, nome] of CAMPI_TERR) {
+      if (r[c] == null) continue;
+      const gia = t === PROVINCIA ? S.terrVal(anno, trim, t, c) : null;
+      if (gia != null) {   // Varese: valgono i dati grezzi / lo storico; qui solo controllo
+        if (r[c] !== gia) log(`${nt}: Varese ${nome} nel file dei territori ${r[c]} ≠ dati di Varese ${gia} (uso i dati di Varese)`, "warn");
+        continue;
+      }
+      metti(T[t], c, r[c], mod, `${t} ${nome} ${nt}`);
+    }
+  }
+  // Lombardia = somma delle 12 province (se complete), confrontata con il Grand Totale del file
+  if (Object.keys(dati).some(t => t !== ITALIA)) {
+    T[REGIONE] = T[REGIONE] || {};
+    for (const [c, nome] of CAMPI_TERR) {
+      const val = somma(PROVINCE.map(p => S.terrVal(anno, trim, p, c)));
+      const inc = dati[REGIONE] ? dati[REGIONE][c] ?? null : null;
+      if (val != null) {
+        if (inc != null && inc !== val) log(`${nt}: Grand Totale ${nome} del file ${inc} ≠ somma delle province ${val} (uso la somma)`, "warn");
+        metti(T[REGIONE], c, val, mod, `Lombardia ${nome} ${nt}`);
+      } else if (inc != null) metti(T[REGIONE], c, inc, mod, `Lombardia ${nome} ${nt}`);
+    }
+  }
+  return mod;
+}
+
+// procedure di Varese del mese (totali + righe del download per settori e forma giuridica)
+function applicaProcMese(S, anno, mese, d) {
+  const mod = [], k = kMese(anno, mese), nm = nomeMese(anno, mese);
+  const q = S.proc.mesi[k] = S.proc.mesi[k] || {};
+  q[PROVINCIA] = q[PROVINCIA] || {};
+  for (const [c, nome] of CAMPI_PROC) metti(q[PROVINCIA], c, d[c], mod, `Varese aperture ${nome} ${nm}`);
+  if (d.righe) S.proc.dett[k] = { ateco: d.ateco, righe: d.righe.map(r => r.slice()) };
+  return mod;
+}
+
+// procedure delle province lombarde nel mese; Varese vale il file di Varese (qui solo controllo, se c'è già)
+function applicaProcProvince(S, anno, mese, dati, log) {
+  const mod = [], k = kMese(anno, mese), nm = nomeMese(anno, mese);
+  const q = S.proc.mesi[k] = S.proc.mesi[k] || {};
+  for (const [t, v] of Object.entries(dati)) {
+    if (t === PROVINCIA && S.procMese(anno, mese, PROVINCIA)) {
+      for (const [c, nome] of CAMPI_PROC)
+        if (v[c] !== q[t][c]) log(`${nm}: Varese ${nome} nel file delle province ${v[c]} ≠ file di Varese ${q[t][c]} (uso il file di Varese)`, "warn");
+      continue;
+    }
+    q[t] = q[t] || {};
+    for (const [c, nome] of CAMPI_PROC) metti(q[t], c, v[c], mod, `${t} aperture ${nome} ${nm}`);
+  }
+  return mod;
+}
+
+function applicaProcStock(S, anno, trim, d, log) {
+  const mod = [], k = kTrim(anno, trim), nt = nomeTrim(anno, trim);
+  const q = S.proc.trim[k] = S.proc.trim[k] || {};
+  metti(q, "stockPr", d.stockPr, mod, `stock procedure concorsuali ${nt}`);
+  metti(q, "stockSc", d.stockSc, mod, `stock scioglimento e liquidazione ${nt}`);
+  const r = S.regAtt(anno, trim);
+  if (d.reg != null && r && r.reg != null && r.reg !== d.reg)
+    log(`${nt}: registrate nel file dello stock ${d.reg} ≠ serie storica ${r.reg}: è davvero il file di Varese?`, "warn");
+  return mod;
+}
+
+/* ------------------------------------------------------------------ tabelle */
+// ogni tabella: {nome, foglio, intest, righe, colValori, colPct, mancanti: Set, servono: Map(chiave -> file), mancaCorrente}
+function nuovaTab(nome, foglio, intest, colValori, colPct) {
+  return { nome, foglio, intest, righe: [], colValori, colPct, mancanti: new Set(), servono: new Map(), mancaCorrente: false };
+}
+// file che contiene un dato mancante (serve al controllo per dire all'utente cosa scaricare)
+const fMese = (a, m) => ({ chiave: `mese|${kMese(a, m)}`, nome: `${a}${pad2(m)}_m.csv`, descr: `Varese a fine ${nomeMese(a, m)} (Registrate, Attive)` });
+const fGrezzo = (a, t, cl) => ({ chiave: `grezzo|${kTrim(a, t)}`, nome: `${t}${a}VAS.csv`, descr: `dati grezzi di Varese, ${nomeTrim(a, t)}${cl ? `, in ATECO ${cl}` : ""}` });
+const fProv = (a, t) => ({ chiave: `province|${kTrim(a, t)}`, nome: `${a}${t}_sa.csv`, descr: `province lombarde, ${nomeTrim(a, t)} (Registrate, Attive)` });
+const fIta = (a, t) => ({ chiave: `italia|${kTrim(a, t)}`, nome: `${a}${t}_sa (1).csv`, descr: `Italia, ${nomeTrim(a, t)} (Registrate, Attive)` });
+const fTerr = (a, t, terr) => terr === ITALIA ? fIta(a, t) : terr === PROVINCIA ? fMese(a, 3 * t) : fProv(a, t);
+
+function segnala(T, descr, file, corrente) {
+  T.mancanti.add(descr);
+  if (file) T.servono.set(file.chiave, file);
+  if (corrente) T.mancaCorrente = true;
+}
+
+function tabTempoTrimestre(S, anno, trim) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_tempo_trimestre.xlsx", "Foglio1",
+    ["Ordinamento", "ANNO", "Trimestre", "Registrate", "Attive", "T.var.% cong. attive", "T.var% tend. attive"], [4, 5], [6, 7]);
+  const leggi = (a, t) => { const v = S.regAtt(a, t); if (!v || v.att == null) segnala(T, `registrate/attive ${nomeTrim(a, t)}`, fMese(a, 3 * t), a === anno && t === trim); return v || {}; };
+  let n = 0;
+  for (let y = anno - 5, t = 1; y < anno || (y === anno && t <= trim); ) {
+    const c = leggi(y, t), p = leggi(...trimPrec(y, t)), a = leggi(y - 1, t);
+    T.righe.push([++n, y, etichettaTrim(y, t), c.reg ?? null, c.att ?? null, p2(varPct(c.att, p.att)), p2(varPct(c.att, a.att))]);
+    if (t < 4) t += 1; else { y += 1; t = 1; }
+  }
+  return T;
+}
+
+function tabTempoMese(S, anno, trim) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_tempo_mese.xlsx", "Foglio2",
+    ["ordinamento", "anno", "mese", "Registrate", "Attive", "T.var% cong attive", "T.var% tend attive"], [4, 5], [6, 7]);
+  const mFine = 3 * trim;
+  const leggi = (a, m) => {
+    if (m < 1) { a -= 1; m += 12; }
+    const v = S.mesi[kMese(a, m)];
+    if (!v || v.att == null) segnala(T, `registrate/attive ${nomeMese(a, m)}`, fMese(a, m), a === anno && m > mFine - 3 && m <= mFine);
+    return v || {};
+  };
+  let n = 0;
+  for (let y = anno - 3, m = mFine; y < anno || (y === anno && m <= mFine); ) {
+    const c = leggi(y, m), p = leggi(y, m - 1), a = leggi(y - 1, m);
+    T.righe.push([++n, y, `${MESI_IT[m - 1]} '${pad2(y % 100)}`, c.reg ?? null, c.att ?? null, p2(varPct(c.att, p.att)), p2(varPct(c.att, a.att))]);
+    if (m < 12) m += 1; else { y += 1; m = 1; }
+  }
+  return T;
+}
+
+function tabTempoAnno(S, anno) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_tempo_anno.xlsx", "Foglio1",
+    ["anno", "Registrate", "Attive", "T.var% tendenziale registrate", "T.var% tendenziale attive"], [2, 3], [4, 5]);
+  const dato = y => S.mesi[kMese(y, 12)] || S.anni[y] || null;
+  const anni = new Set(Object.keys(S.anni).map(Number));
+  for (const k of Object.keys(S.mesi)) if (k.endsWith("-12")) anni.add(Number(k.slice(0, 4)));
+  const primo = Math.min(anno, ...[...anni].filter(y => y <= anno));
+  for (let y = primo; y <= anno; y++) {
+    const c = dato(y), p = dato(y - 1);
+    if (!c || c.att == null) segnala(T, `registrate/attive dicembre ${y}`, fMese(y, 12), y === anno);
+    const fisso = S.anni[y] || {};
+    T.righe.push([y, c ? c.reg ?? null : null, c ? c.att ?? null : null,
+      p ? p2(varPct(c && c.reg, p.reg)) : (fisso.varReg ?? null), p ? p2(varPct(c && c.att, p.att)) : (fisso.varAtt ?? null)]);
+  }
+  return T;
+}
+
+// righe "voce | passato | recente | var | peso" per un gruppo di voci; leggi(a, t, voce) -> valore o null
+function righeGruppo(T, anno, trim, leggi, descr, file, voci, etichettaTot, conPeso) {
+  const q = (a, t, v) => { const x = leggi(a, t, v); if (x == null) segnala(T, `${descr} ${nomeTrim(a, t)}`, file(a, t), a === anno && t === trim); return x; };
+  const cur = voci.map(v => q(anno, trim, v)), pas = voci.map(v => q(anno - 1, trim, v));
+  const tc = somma(cur), tp = somma(pas);
+  voci.forEach((v, k) => {
+    const r = [k + 1, v, pas[k], cur[k], p2(varPct(cur[k], pas[k]))];
+    if (conPeso) r.push(p2(quota(cur[k], tc)));
+    T.righe.push(r);
+  });
+  const r = [voci.length + 1, etichettaTot, tp, tc, p2(varPct(tc, tp))];
+  if (conPeso) r.push(tc ? 100 : null);
+  T.righe.push(r);
+}
+
+function tabSettoreTotale(S, anno, trim, cl) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_settore_totale.xlsx", "Foglio2",
+    ["ordinamento", "Settore", "periodo recente", "periodo passato 1", "periodo passato 2", "T.var% tendenz.", "Peso %"], [3, 4, 5], [6, 7]);
+  const voci = CLASSIFICAZIONI[cl].settori.map(s => s[0]);
+  const serie = (a, t) => voci.map(v => {
+    const x = S.voce(cl, a, t, `Settore - ${v}`);
+    if (x == null) segnala(T, `settori ATECO ${cl} ${nomeTrim(a, t)}`, fGrezzo(a, t, cl), a === anno && t === trim);
+    return x;
+  });
+  const cur = serie(anno, trim), pre = serie(...trimPrec(anno, trim)), pas = serie(anno - 1, trim);
+  const tc = somma(cur);
+  voci.forEach((v, k) => T.righe.push([k + 1, v, cur[k], pre[k], pas[k], p2(varPct(cur[k], pas[k])), p2(quota(cur[k], tc))]));
+  const tp = somma(pas);
+  T.righe.push([voci.length + 1, "TOTALE", tc, somma(pre), tp, p2(varPct(tc, tp)), tc ? 100 : null]);
+  return T;
+}
+
+function tabManifatturiero(S, anno, trim, cl) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_settore_manifatturiero.xlsx", "Foglio1",
+    ["Ordine", "Settore", "periodo passato", "periodo recente", "T.var.% tend.", "Peso % su tot. manifatt."], [3, 4], [5, 6]);
+  righeGruppo(T, anno, trim, (a, t, v) => S.voce(cl, a, t, `Manifatturiero - ${v}`), `manifatturiero ATECO ${cl}`, (a, t) => fGrezzo(a, t, cl),
+              MANIFATTURIERO.map(s => s[0]), "TOTALE", true);
+  return T;
+}
+
+function tabServizi(S, anno, trim, cl) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_settore_servizi.xlsx", "Foglio1",
+    ["Ordine", "Settore", "periodo passato", "periodo recente", "T.var.% tend.", "Peso % su tot. servizi"], [3, 4], [5, 6]);
+  righeGruppo(T, anno, trim, (a, t, v) => S.voce(cl, a, t, `Servizi - ${v}`), `servizi ATECO ${cl}`, (a, t) => fGrezzo(a, t, cl),
+              CLASSIFICAZIONI[cl].servizi.map(s => s[0]), "Totale", true);
+  return T;
+}
+
+function tabTipo(S, anno, trim) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_tipo.xlsx", "Foglio1",
+    ["ORDINE", "Forma giuridica", "periodo passato", "periodo recente", "T.var.% tend."], [3, 4], [5]);
+  righeGruppo(T, anno, trim, (a, t, v) => S.forma(a, t, v), "forma giuridica", (a, t) => fGrezzo(a, t), FORME.map(s => s[0]), "TOTALE", false);
+  return T;
+}
+
+function tabSintesiGrafico(S, anno, trim) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_sintesi_xgrafico.xlsx", "Foglio1", ["Imprese", "periodo passato", "periodo recente"], [2, 3], []);
+  const c = S.regAtt(anno, trim) || {}, p = S.regAtt(anno - 1, trim) || {};
+  if (c.att == null) segnala(T, `registrate/attive ${nomeTrim(anno, trim)}`, fMese(anno, 3 * trim), true);
+  if (p.att == null) segnala(T, `registrate/attive ${nomeTrim(anno - 1, trim)}`, fMese(anno - 1, 3 * trim), false);
+  T.righe.push(["Registrate", p.reg ?? null, c.reg ?? null], ["Attive", p.att ?? null, c.att ?? null]);
+  return T;
+}
+
+function tabSintesi(S, anno, trim) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_sintesi.xlsx", "Foglio1",
+    ["ordinamento", "Territorio", "Imprese", "periodo passato", "periodo recente", "T.var% tend."], [4, 5], [6]);
+  let n = 0;
+  for (const [terr, etich] of [[ITALIA, "ITALIA"], [REGIONE, "LOMBARDIA"], [PROVINCIA, "VARESE"]]) {
+    for (const [campo, voce] of [["reg", "Registrate"], ["att", "Attive"]]) {
+      const c = S.terrVal(anno, trim, terr, campo), p = S.terrVal(anno - 1, trim, terr, campo);
+      if (c == null) segnala(T, `${terr} ${voce.toLowerCase()} ${nomeTrim(anno, trim)}`, fTerr(anno, trim, terr), true);
+      if (p == null) segnala(T, `${terr} ${voce.toLowerCase()} ${nomeTrim(anno - 1, trim)}`, fTerr(anno - 1, trim, terr), false);
+      T.righe.push([++n, etich, voce, p, c, p2(varPct(c, p))]);
+    }
+  }
+  return T;
+}
+
+function tabTerritori(S, anno, trim) {
+  const T = nuovaTab("REGISTRATE_ATTIVE_territori.xlsx", "Foglio1",
+    ["Ordine", "Territorio", "trimestre passato", "trimestre recente", "T.var% tend", "Peso %"], [3, 4], [5, 6]);
+  const val = (a, t, terr) => {
+    const v = S.terrVal(a, t, terr, "att");
+    if (v == null) segnala(T, `${terr} attive ${nomeTrim(a, t)}`, fTerr(a, t, terr), a === anno && t === trim);
+    return v;
+  };
+  const lomb = val(anno, trim, REGIONE), ita = val(anno, trim, ITALIA);
+  const elenco = [...PROVINCE.map(p => [p, p]), [REGIONE, "LOMBARDIA"], [ITALIA, "ITALIA*"]];
+  elenco.forEach(([terr, etich], k) => {
+    const c = terr === REGIONE ? lomb : terr === ITALIA ? ita : val(anno, trim, terr), p = val(anno - 1, trim, terr);
+    const peso = terr === ITALIA ? quota(lomb, ita) : quota(c, lomb);   // ITALIA*: peso della Lombardia sull'Italia
+    T.righe.push([ORDINE_TERRITORI[k], etich, p, c, p2(varPct(c, p)), p2(peso)]);
+  });
+  return T;
+}
+
+/* ------------------------------------------------------------------ generazione completa */
+const ordineP = p => p.mese ? p.anno * 12 + p.mese : p.anno * 4 + p.trim;
+// input: {anno, trim, storico (Storico o null), file: [{tipo, periodo, g|dati}]} — i file possono essere di qualsiasi periodo:
+//        quelli del trimestre scelto fanno il report, gli altri completano lo storico.
+// ctx:   {log, prova}  prova = solo controllo di cosa c'è e cosa manca (niente Excel)
+// parte comune alle sezioni: controlla il periodo e applica allo storico tutti i file caricati (di qualunque periodo)
+function preparaStorico(inp, ctx) {
+  const anno = Number(inp.anno), trim = Number(inp.trim);
+  const log = ctx.log;
+  if (![1, 2, 3, 4].includes(trim)) throw new ErroreDati("Il trimestre deve essere 1, 2, 3 o 4.");
+  if (anno * 4 + trim < PRIMO_REPORT.anno * 4 + PRIMO_REPORT.trim)
+    throw new ErroreDati(`Il primo report possibile è il ${nomeTrim(PRIMO_REPORT.anno, PRIMO_REPORT.trim)}: l'ATECO 2025 è in vigore dal ${nomeTrim(PRIMO_REPORT.anno - 1, PRIMO_REPORT.trim)} e serve il confronto con l'anno prima.`);
+  const file = inp.file || [];
+  const grezzi = file.filter(f => f.tipo === "grezzo").sort((a, b) => ordineP(a.periodo) - ordineP(b.periodo));
+  const corrente = grezzi.find(f => f.periodo.anno === anno && f.periodo.trim === trim);
+  if (!corrente && !ctx.prova && !inp.senzaGrezzo) throw new ErroreDati(`Manca il file dei dati grezzi del ${nomeTrim(anno, trim)} (${trim}${anno}VAS.csv).`);
+  const S = inp.storico ? inp.storico.clona() : new Storico();
+
+  const modifiche = [];
+  for (const f of grezzi) modifiche.push(...applicaGrezzo(S, f.g, f.periodo.anno, f.periodo.trim));
+  const protetti = new Set(grezzi.map(f => kMese(f.periodo.anno, 3 * f.periodo.trim)));
+  for (const f of file.filter(f => f.tipo === "mese"))
+    modifiche.push(...applicaMese(S, f.periodo.anno, f.periodo.mese, f.dati, protetti.has(kMese(f.periodo.anno, f.periodo.mese)), log));
+  for (const tipo of ["province", "italia"])
+    for (const f of file.filter(f => f.tipo === tipo)) modifiche.push(...applicaTerritori(S, f.periodo.anno, f.periodo.trim, f.dati, log));
+  // procedure concorsuali: prima i file di Varese (valgono loro), poi le province, poi lo stock
+  const perPeriodo = tipo => file.filter(f => f.tipo === tipo).sort((a, b) => ordineP(a.periodo) - ordineP(b.periodo));
+  for (const f of perPeriodo("procmese")) modifiche.push(...applicaProcMese(S, f.periodo.anno, f.periodo.mese, f.dati));
+  for (const f of perPeriodo("procprov")) modifiche.push(...applicaProcProvince(S, f.periodo.anno, f.periodo.mese, f.dati, log));
+  for (const f of perPeriodo("procstock")) modifiche.push(...applicaProcStock(S, f.periodo.anno, f.periodo.trim, f.dati, log));
+  if (modifiche.length) {
+    log(`La serie storica conteneva già valori diversi per ${modifiche.length} dati (aggiornati con quelli nuovi):`, "warn");
+    for (const m of modifiche.slice(0, 12)) log(`   ${m}`, "warn");
+    if (modifiche.length > 12) log(`   … e altri ${modifiche.length - 12}`, "warn");
+  }
+  return { anno, trim, S, corrente };
+}
+
+// esegue le funzioni tab* e raccoglie per ciascuna stato (ok / incompleta / mancante), dati mancanti e file da scaricare
+function raccoltaTabelle(ctx) {
+  const log = ctx.log, tabelle = [];
+  const fai = (breve, fn, extra) => {
+    let t;
+    try { t = fn(); }
+    catch (e) { log(`${breve}: ${e.message}`, "err"); tabelle.push({ breve, nome: "", stato: "mancante", mancanti: [e.message], servono: [], ...extra }); return; }
+    const stato = t.mancaCorrente ? "mancante" : t.mancanti.size ? "incompleta" : "ok";
+    const rec = { breve, nome: t.nome, stato, mancanti: [...t.mancanti], servono: [...t.servono.values()], suggeriti: t.suggeriti || [], ...extra };
+    if (!ctx.prova && stato !== "mancante") rec.dati = creaXlsx(t.fogli || [t]);
+    tabelle.push(rec);
+    if (ctx.prova) return;
+    const elenco = rec.mancanti.slice(0, 6).join("; ") + (rec.mancanti.length > 6 ? "; …" : "");
+    if (stato === "ok") log(t.nome, "ok");
+    else if (stato === "incompleta") log(`${t.nome} — incompleta, mancano nello storico: ${elenco}`, "warn");
+    else log(`${breve} non creata — manca: ${elenco}`, "info");
+  };
+  return { tabelle, fai };
+}
+
+function generaRegistrateAttive(inp, ctx) {
+  ctx = Object.assign({ log() {}, prova: false }, ctx || {});
+  const log = ctx.log;
+  const { anno, trim, S, corrente } = preparaStorico(inp, ctx);
+
+  const cl = corrente ? corrente.g.ateco : ATECO_PREDEFINITA;
+  if (!ctx.prova) log(`Settori in classificazione ATECO ${cl} (come il file dei dati grezzi)`, "info");
+  const { tabelle, fai } = raccoltaTabelle(ctx);
+
+  fai("tempo_trimestre", () => tabTempoTrimestre(S, anno, trim));
+  fai("tempo_mese", () => tabTempoMese(S, anno, trim));
+  if (trim === 4) fai("tempo_anno", () => tabTempoAnno(S, anno));
+  fai("settore_totale", () => tabSettoreTotale(S, anno, trim, cl));
+  fai("settore_manifatturiero", () => tabManifatturiero(S, anno, trim, cl));
+  fai("settore_servizi", () => tabServizi(S, anno, trim, cl));
+  fai("tipo", () => tabTipo(S, anno, trim));
+  fai("sintesi_xgrafico", () => tabSintesiGrafico(S, anno, trim));
+  fai("sintesi", () => tabSintesi(S, anno, trim));
+  fai("territori", () => tabTerritori(S, anno, trim));
+
+  const servono = new Map();
+  for (const t of tabelle) for (const f of t.servono) servono.set(f.chiave, f);
+  return {
+    cartella: `Report_imprese_registrate_attive_${anno}_T${trim}`, ateco: cl, tabelle, servono: [...servono.values()],
+    file: tabelle.filter(t => t.dati).map(t => ({ nome: t.nome, dati: t.dati, incompleto: t.stato !== "ok" })),
+    storico: S, storicoXlsx: ctx.prova ? null : storicoInXlsx(S, nomeTrim(anno, trim)),
+  };
+}
+
+/* ------------------------------------------------------------------ tabelle iscrizioni e cessazioni (flussi: somme dei trimestri) */
+const PRIMO_ANNO_FLUSSI = 2005;   // prima riga della tabella Iscritte_cessate_anno
+const NOME_MONITORAGGIO = "Monitoraggio_cessazioni_d_ufficio_NON_PER_OSSERVA.xlsx";
+const fGrezzoF = (a, t, cl) => ({ chiave: `grezzo|${kTrim(a, t)}`, nome: `${t}${a}VAS.csv`,
+  descr: `dati grezzi di Varese, ${nomeTrim(a, t)}${cl ? `, in ATECO ${cl}` : ""} (iscrizioni e cessazioni del trimestre)` });
+const fProvF = (a, t) => ({ chiave: `province|${kTrim(a, t)}`, nome: `${a}${t}_sa.csv`, descr: `province lombarde, ${nomeTrim(a, t)} (Iscrizioni, Cessazioni, Cessazioni non d'ufficio)` });
+const fItaF = (a, t) => ({ chiave: `italia|${kTrim(a, t)}`, nome: `${a}${t}_sa (1).csv`, descr: `Italia, ${nomeTrim(a, t)} (Iscrizioni, Cessazioni, Cessazioni non d'ufficio)` });
+const fTerrF = (a, t, terr) => terr === ITALIA ? fItaF(a, t) : terr === PROVINCIA ? fGrezzoF(a, t) : fProvF(a, t);
+const campoCessate = anno => anno < ANNO_CESNUF ? "ces" : "cesnu";
+// iscrizioni e cessate (non d'ufficio; totali prima del 2009) di un territorio nel trimestre
+const flussoTerr = (S, a, t, terr) => ({ isc: S.terrVal(a, t, terr, "isc"), ces: S.terrVal(a, t, terr, campoCessate(a)) });
+const saldoDi = v => v.isc == null || v.ces == null ? null : v.isc - v.ces;
+
+// somma dei trimestri 1…trim dell'anno; leggi(t) -> {isc, ces}; se manca un trimestre il cumulato è vuoto
+function cumulaTrimestri(T, anno, trim, leggi, descr, file, obbligatorio) {
+  let isc = 0, ces = 0, completo = true;
+  for (let t = 1; t <= trim; t++) {
+    const v = leggi(t);
+    if (!v || v.isc == null || v.ces == null) { completo = false; segnala(T, `${descr} ${nomeTrim(anno, t)}`, file(anno, t), obbligatorio); }
+    else { isc += v.isc; ces += v.ces; }
+  }
+  return completo ? { isc, ces } : { isc: null, ces: null };
+}
+
+function tabICTrimestre(S, anno, trim) {
+  const T = nuovaTab("Iscritte_cessate_trimestre.xlsx", "Foglio1", ["Anno", "Trimestre", "Iscritte", "Cessate", "Saldo", "Tasso di sviluppo"], [3, 4, 5], [6]);
+  for (let y = anno - 5, t = 1; y < anno || (y === anno && t <= trim); ) {
+    const f = flussoTerr(S, y, t, PROVINCIA);
+    if (f.isc == null || f.ces == null) segnala(T, `iscrizioni/cessazioni di Varese ${nomeTrim(y, t)}`, fGrezzoF(y, t), y === anno && t === trim);
+    const [py, pt] = trimPrec(y, t), reg = S.regFine(py, pt);
+    if (reg == null) segnala(T, `registrate di Varese ${nomeTrim(py, pt)}`, fMese(py, 3 * pt), false);
+    const saldo = saldoDi(f);
+    T.righe.push([y, nomeTrim(y, t), f.isc, f.ces, saldo, p2(quota(saldo, reg))]);
+    if (t < 4) t += 1; else { y += 1; t = 1; }
+  }
+  return T;
+}
+
+function tabICAnno(S, anno) {
+  const T = nuovaTab("Iscritte_cessate_anno.xlsx", "Foglio1", ["Anno", "Iscritte", "Cessate", "Saldo", "Tasso di sviluppo"], [2, 3, 4], [5]);
+  for (let y = PRIMO_ANNO_FLUSSI; y <= anno; y++) {
+    const v = cumulaTrimestri(T, y, 4, t => flussoTerr(S, y, t, PROVINCIA), "iscrizioni/cessazioni di Varese", (a, t) => fGrezzoF(a, t), y === anno);
+    const reg = S.regFine(y - 1, 4);
+    if (reg == null) segnala(T, `registrate di Varese dicembre ${y - 1}`, fMese(y - 1, 12), false);
+    const saldo = saldoDi(v);
+    T.righe.push([y === ANNO_CESNUF ? `${y}(*)` : y, v.isc, v.ces, saldo, p2(quota(saldo, reg))]);
+  }
+  return T;
+}
+
+function tabICSintesi(S, anno, trim) {
+  const T = nuovaTab("Iscritte_cessate_sintesi.xlsx", "Foglio1", ["Ordine", "Imprese e tassi", "Periodo passato", "Periodo recente"], [3, 4], []);
+  T.righePct = [3, 4, 5];   // i tassi (righe 4-6) con due decimali
+  const dati = y => {
+    const v = cumulaTrimestri(T, y, trim, t => flussoTerr(S, y, t, PROVINCIA), "iscrizioni/cessazioni di Varese", (a, t) => fGrezzoF(a, t), y === anno);
+    const base = S.regFine(y - 1, 4);   // registrate a fine anno precedente
+    if (base == null) segnala(T, `registrate di Varese dicembre ${y - 1}`, fMese(y - 1, 12), y === anno);
+    return { ...v, saldo: saldoDi(v), base };
+  };
+  const p = dati(anno - 1), c = dati(anno);
+  const tasso = (x, d) => p2(quota(x, d.base));
+  T.righe.push([1, "Iscritte", p.isc, c.isc], [2, "Cessate", p.ces, c.ces], [3, "Saldo", p.saldo, c.saldo],
+    [4, "Tasso natalità", tasso(p.isc, p), tasso(c.isc, c)], [5, "Tasso mortalità", tasso(p.ces, p), tasso(c.ces, c)],
+    [6, "Tasso sviluppo", tasso(p.saldo, p), tasso(c.saldo, c)]);
+  return T;
+}
+
+// tabelle «voce | Iscritte | Cessate | Saldo» cumulate da inizio anno, dai flussi per voce dello storico
+function tabICGruppo(nome, intest, prefisso, voci, etichettaTot, S, anno, trim, cl) {
+  const T = nuovaTab(nome, "Foglio1", intest, [3, 4, 5], []);
+  const cum = voci.map(v => cumulaTrimestri(T, anno, trim, t => {
+    const o = S.flusso(cl, anno, t, prefisso + v);
+    return o ? { isc: o.isc ?? null, ces: o[campoCessate(anno)] ?? null } : null;
+  }, `flussi per ${prefisso === "Forma - " ? "forma giuridica" : `settore (ATECO ${cl})`}`, (a, t) => fGrezzoF(a, t, cl), true));
+  voci.forEach((v, k) => T.righe.push([k + 1, v, cum[k].isc, cum[k].ces, saldoDi(cum[k])]));
+  const tot = { isc: somma(cum.map(x => x.isc)), ces: somma(cum.map(x => x.ces)) };
+  T.righe.push([voci.length + 1, etichettaTot, tot.isc, tot.ces, saldoDi(tot)]);
+  return T;
+}
+
+function tabICTerritori(S, anno, trim) {
+  const T = nuovaTab("Iscritte_cessate_territori.xlsx", "Foglio1", ["Ordine", "Territorio", "Iscritte", "Cessate", "Saldo"], [3, 4, 5], []);
+  const elenco = [...PROVINCE.map(p => [p, ETICHETTE_TERR_FLUSSI[p] || p]), [REGIONE, "LOMBARDIA"], [ITALIA, "ITALIA"]];
+  elenco.forEach(([terr, etich], k) => {
+    const v = cumulaTrimestri(T, anno, trim, t => flussoTerr(S, anno, t, terr), `${terr} iscrizioni/cessazioni`, (a, t) => fTerrF(a, t, terr), true);
+    T.righe.push([ORDINE_TERRITORI[k], etich, v.isc, v.ces, saldoDi(v)]);
+  });
+  return T;
+}
+
+// File di MONITORAGGIO (non fa parte del report): cessazioni totali, non d'ufficio e d'ufficio.
+// I dati mancanti non bloccano nulla: le celle restano vuote.
+function tabICMonitoraggio(S, anno, trim, cl) {
+  const T = nuovaTab(NOME_MONITORAGGIO, "", [], [], []);
+  // dati mancanti (solo anno in corso) e file che li contengono: suggeriti, non obbligatori
+  const suggeriti = new Map();
+  const manca = (d, f) => { T.mancanti.add(d); if (f) suggeriti.set(f.chiave, f); };
+  const conPct = (ces, cnu) => {
+    const uff = ces == null || cnu == null ? null : ces - cnu;
+    return [ces, cnu, uff, p2(quota(uff, ces))];
+  };
+  const cum = (y, leggi, descr, file) => {
+    let isc = 0, ces = 0, cnu = 0, ok = [true, true, true];
+    for (let t = 1; t <= trim; t++) {
+      const o = leggi(y, t) || {};
+      if (o.isc == null) ok[0] = false; else isc += o.isc;
+      if (o.ces == null) { ok[1] = false; if (descr) manca(`${descr} cessazioni totali ${nomeTrim(y, t)}`, file && file(y, t)); } else ces += o.ces;
+      if (o.cesnu == null) ok[2] = false; else cnu += o.cesnu;
+    }
+    return { isc: ok[0] ? isc : null, ces: ok[1] ? ces : null, cesnu: ok[2] ? cnu : null };
+  };
+  const varese = (a, t) => ({ isc: S.terrVal(a, t, PROVINCIA, "isc"), ces: S.terrVal(a, t, PROVINCIA, "ces"), cesnu: S.terrVal(a, t, PROVINCIA, "cesnu") });
+  const periodo = trim === 1 ? "I trim" : `I-${ROMANI[trim]} trim`;
+
+  // 1) Varese trimestre per trimestre (da quando lo storico ha le cessazioni totali, al massimo 5 anni)
+  let y0 = anno - 5, t0 = 1;
+  while (y0 * 4 + t0 < anno * 4 + trim && varese(y0, t0).ces == null) { if (t0 < 4) t0 += 1; else { y0 += 1; t0 = 1; } }
+  const righeT = [];
+  for (let y = y0, t = t0; y < anno || (y === anno && t <= trim); ) {
+    const v = varese(y, t);
+    righeT.push([y, nomeTrim(y, t), v.isc, ...conPct(v.ces, v.cesnu), v.isc == null || v.ces == null ? null : v.isc - v.ces, v.isc == null || v.cesnu == null ? null : v.isc - v.cesnu]);
+    if (t < 4) t += 1; else { y += 1; t = 1; }
+  }
+  for (const y of [anno - 1, anno]) {
+    const v = cum(y, varese, "Varese", (a, t) => fGrezzoF(a, t));
+    righeT.push([y, `Cumulato ${periodo} ${y}`, v.isc, ...conPct(v.ces, v.cesnu), v.isc == null || v.ces == null ? null : v.isc - v.ces, v.isc == null || v.cesnu == null ? null : v.isc - v.cesnu]);
+  }
+  const intT = ["Anno", "Periodo", "Iscrizioni", "Cessazioni totali", "Cessazioni non d'ufficio", "Cessazioni d'ufficio", "% d'ufficio sul totale",
+                "Saldo con cessazioni totali", "Saldo con cessazioni non d'ufficio (report)"];
+
+  // 2) territori e 3) settori di Varese: trimestre e cumulato dell'anno
+  const trimECum = (leggi, descr, file) => {
+    const q = leggi(anno, trim) || {}, c = cum(anno, leggi, descr, file);
+    return [q.isc ?? null, ...conPct(q.ces ?? null, q.cesnu ?? null), c.isc, ...conPct(c.ces, c.cesnu)];
+  };
+  const nt = nomeTrim(anno, trim), nc = `cumulato ${periodo} ${anno}`;
+  const colonneTC = [nt, nc].flatMap(p => [`Iscrizioni ${p}`, `Cessazioni totali ${p}`, `Cessazioni non d'ufficio ${p}`, `Cessazioni d'ufficio ${p}`, `% d'ufficio ${p}`]);
+  const righeTerr = [...PROVINCE, REGIONE, ITALIA].map(terr => {
+    const r = trimECum((a, t) => ({ isc: S.terrVal(a, t, terr, "isc"), ces: S.terrVal(a, t, terr, "ces"), cesnu: S.terrVal(a, t, terr, "cesnu") }),
+                       terr, (a, t) => fTerrF(a, t, terr));
+    return [terr === REGIONE ? "LOMBARDIA" : terr === ITALIA ? "ITALIA" : terr, ...r];
+  });
+  const intTerr = ["Territorio", ...colonneTC];
+  const righeSett = CLASSIFICAZIONI[cl].settori.map(([nome]) => [nome, ...trimECum((a, t) => S.flusso(cl, a, t, `Settore - ${nome}`),
+                                                                                  `settore ${nome}`, (a, t) => fGrezzoF(a, t, cl))]);
+  const totS = [1, 2, 3, 6, 7, 8].map(j => somma(righeSett.map(r => r[j])));
+  righeSett.push(["Totale", totS[0], ...conPct(totS[1], totS[2]), totS[3], ...conPct(totS[4], totS[5])]);
+  const intSett = ["Settore", ...colonneTC];
+
+  const leggimi = [
+    ["ATTENZIONE: QUESTO FILE NON FA PARTE DEL REPORT E NON VA CARICATO SU OSSERVA."],
+    ["Serve solo a tenere d'occhio le cessazioni d'ufficio (cancellazioni decise dal Registro imprese, non dalle imprese)."],
+    [""],
+    [`Periodo: ${nomeTrim(anno, trim)}. Cessazioni d'ufficio = cessazioni totali - cessazioni non d'ufficio.`],
+    ["Le tabelle del report usano le cessazioni NON d'ufficio (colonna CESNUF di Stockview; prima del 2009 le cessazioni totali)."],
+    [""],
+    ["Fogli: Varese_trimestri (trimestri singoli e cumulato dell'anno), Territori e Settori_Varese (trimestre e cumulato dell'anno)."],
+    ["Le celle vuote sono periodi per cui la serie storica non ha le cessazioni totali: per completarle carica i dati grezzi"],
+    ["(TAAAAVAS.csv) o i file delle province/Italia con la colonna «Cessazioni» di quei trimestri, nel riquadro «File di periodi passati»."],
+  ];
+  T.fogli = [
+    { foglio: "LEGGIMI", intest: ["NON DA CARICARE SU OSSERVA"], righe: leggimi, colValori: [], colPct: [], larghezze: [120] },
+    { foglio: "Varese_trimestri", intest: intT, righe: righeT, colValori: [3, 4, 5, 6, 8, 9], colPct: [7] },
+    { foglio: "Territori", intest: intTerr, righe: righeTerr, colValori: [2, 3, 4, 5, 7, 8, 9, 10], colPct: [6, 11] },
+    { foglio: "Settori_Varese", intest: intSett, righe: righeSett, colValori: [2, 3, 4, 5, 7, 8, 9, 10], colPct: [6, 11] },
+  ];
+  T.suggeriti = [...suggeriti.values()].sort((x, y) => x.chiave < y.chiave ? -1 : 1);
+  return T;
+}
+
+function generaIscrizioniCessazioni(inp, ctx) {
+  ctx = Object.assign({ log() {}, prova: false }, ctx || {});
+  const log = ctx.log;
+  const { anno, trim, S, corrente } = preparaStorico(inp, ctx);
+  const cl = corrente ? corrente.g.ateco : ATECO_PREDEFINITA;
+  if (!ctx.prova) {
+    log(`Cessate = cessazioni non d'ufficio. Valori cumulati dal I al ${ROMANI[trim]} trimestre ${anno}; settori in ATECO ${cl}`, "info");
+    if (corrente && !corrente.g.flussi) log(`Il file dei dati grezzi non ha le colonne ISCRIZ, CESSAZ e CESNUF`, "err");
+  }
+  const { tabelle, fai } = raccoltaTabelle(ctx);
+  fai("trimestre", () => tabICTrimestre(S, anno, trim));
+  if (trim === 4) fai("anno", () => tabICAnno(S, anno));
+  fai("sintesi", () => tabICSintesi(S, anno, trim));
+  fai("settori_totale", () => tabICGruppo("Iscritte_cessate_settori_totale.xlsx", ["Ordine", "Settore", "Iscritte", "Cessate", "Saldo"],
+      "Settore - ", CLASSIFICAZIONI[cl].settori.map(s => s[0]), "Totale", S, anno, trim, cl));
+  fai("settore_manifatturiero", () => tabICGruppo("Iscritte_cessate_settore_manifatturiero.xlsx", ["Ordine", "Settore", "Iscritte", "Cessate", "Saldo"],
+      "Manifatturiero - ", MANIF_FLUSSI.map(s => s[0]), "TOTALE MANIFATTURIERO", S, anno, trim, cl));
+  fai("settore_servizi", () => tabICGruppo("Iscritte_cessate_settore_servizi.xlsx", ["Ordinamento", "Settori", "Iscritte", "Cessate", "Saldo"],
+      "Servizi - ", SERVIZI_FLUSSI[cl].map(s => s[0]), "TOTALE SERVIZI", S, anno, trim, cl));
+  fai("tipo", () => tabICGruppo("Iscritte_cessate_tipo.xlsx", ["Ordine", "Forma giuridica", "Iscritte", "Cessate", "Saldo"],
+      "Forma - ", FORME.map(s => s[0]), "TOTALE", S, anno, trim, cl));
+  fai("territori", () => tabICTerritori(S, anno, trim));
+  fai("monitoraggio", () => tabICMonitoraggio(S, anno, trim, cl), { monitoraggio: true });
+
+  const report = tabelle.filter(t => !t.monitoraggio), mon = tabelle.find(t => t.monitoraggio);
+  const servono = new Map();
+  for (const t of report) for (const f of t.servono) servono.set(f.chiave, f);
+  return {
+    cartella: `Report_iscritte_cessate_${anno}_T${trim}`, cartellaMonitoraggio: `NON_DA_CARICARE_monitoraggio_cessazioni_${anno}_T${trim}`,
+    ateco: cl, tabelle: report, servono: [...servono.values()],
+    file: report.filter(t => t.dati).map(t => ({ nome: t.nome, dati: t.dati, incompleto: t.stato !== "ok" })),
+    monitoraggio: mon && mon.dati ? { nome: mon.nome, dati: mon.dati, incompleto: mon.stato !== "ok", mancanti: mon.mancanti, suggeriti: mon.suggeriti } : null,
+    controlloMonitoraggio: mon ? { stato: mon.stato, mancanti: mon.mancanti, suggeriti: mon.suggeriti } : null,
+    storico: S, storicoXlsx: ctx.prova ? null : storicoInXlsx(S, nomeTrim(anno, trim)),
+  };
+}
+
+/* ------------------------------------------------------------------ tabelle procedure concorsuali e scioglimenti (aperture: somme dei mesi) */
+const fProcMese = (a, m) => ({ chiave: `procmese|${kMese(a, m)}`, nome: `${a}${pad2(m)}_me.csv`,
+  descr: `procedure e scioglimenti di Varese, ${nomeMese(a, m)} (Classe Evento, Settore, Classe di Natura Giuridica)` });
+const fProcProv = (a, m) => ({ chiave: `procprov|${kMese(a, m)}`, nome: `${a}${pad2(m)}_me (1).csv`,
+  descr: `procedure e scioglimenti delle province lombarde, ${nomeMese(a, m)} (Provincia, Classe Evento)` });
+const fProcStock = (a, t) => ({ chiave: `procstock|${kTrim(a, t)}`, nome: `${a}${t}_sa.csv`,
+  descr: `imprese di Varese per status d'impresa, ${nomeTrim(a, t)} (colonna Registrate)` });
+const NOMI_PROC = { pr: "procedure concorsuali", sc: "scioglimento e liquidazione" };
+
+// trimestre di Varese che manca: servono i suoi tre file mensili (quelli che mancano nello storico)
+function segnalaTrimProc(T, S, a, t, corrente) {
+  T.mancanti.add(`aperture di Varese ${nomeTrim(a, t)}`);
+  for (let m = 3 * t - 2; m <= 3 * t; m++) if (!S.procMese(a, m, PROVINCIA)) { const f = fProcMese(a, m); T.servono.set(f.chiave, f); }
+  if (corrente) T.mancaCorrente = true;
+}
+// aperture di Varese cumulate dal I trimestre a trim (conf = valori per i confronti)
+function cumProc(T, S, anno, trim, c, conf, corrente) {
+  let s = 0;
+  for (let t = 1; t <= trim; t++) {
+    const v = conf ? S.procTrimConf(anno, t, c) : S.procTrim(anno, t, c);
+    if (v == null) { segnalaTrimProc(T, S, anno, t, corrente); s = null; } else if (s != null) s += v;
+  }
+  return s;
+}
+
+function tabPCTrimestre(S, anno, trim) {
+  const T = nuovaTab("Procedure_e_scioglim_trimestre.xlsx", "Foglio1",
+    ["Anno", "Trimestre", "N° procedure concorsuali", "T.var% tend. pr.conc.", "N° procedure scioglimento liquidazione", "T.var.% tend. pr. sciogl."], [3, 5], [4, 6]);
+  for (let y = anno - 5, t = 1; y < anno || (y === anno && t <= trim); ) {
+    const r = [y, etichettaTrim(y, t)];
+    for (const c of ["pr", "sc"]) {
+      const v = S.procTrim(y, t, c), p = S.procTrimConf(y - 1, t, c);
+      if (v == null) segnalaTrimProc(T, S, y, t, y === anno && t === trim);
+      if (p == null) segnalaTrimProc(T, S, y - 1, t, false);
+      r.push(v, p2(varPct(v, p)));
+    }
+    T.righe.push(r);
+    if (t < 4) t += 1; else { y += 1; t = 1; }
+  }
+  return T;
+}
+
+function tabPCAnno(S, anno) {
+  const T = nuovaTab("Procedure_e_scioglim_anno.xlsx", "Foglio1",
+    ["Anno", "n° procedure concorsuali", "T.var% tend pr.conc.", "N°procedure scioglimento liquidazione", "T.var%tend pr.sciogl."], [2, 4], [3, 5]);
+  const anno_ = (y, c, conf, corrente) => {
+    const v = S.procAnno(y, c, conf);
+    if (v == null) for (let t = 1; t <= 4; t++) if (S.procTrim(y, t, c) == null) segnalaTrimProc(T, S, y, t, corrente);
+    return v;
+  };
+  for (let y = PRIMO_ANNO_PROC; y <= anno; y++) {
+    const r = [ETICHETTE_ANNO_PROC[y] || y];
+    for (const c of ["pr", "sc"]) { const v = anno_(y, c, false, y === anno), p = anno_(y - 1, c, true, false); r.push(v, p2(varPct(v, p))); }
+    T.righe.push(r);
+  }
+  return T;
+}
+
+function tabPCSintesi(S, anno, trim) {
+  const T = nuovaTab("Procedure_e_scioglim_sintesi.xlsx", "Foglio1", ["ordinamento", "Variabile", "periodo passato", "periodo recente", "T.var%"], [3, 4], [5]);
+  for (const [k, c] of [[1, "pr"], [2, "sc"]]) {
+    const cur = cumProc(T, S, anno, trim, c, false, true), pas = cumProc(T, S, anno - 1, trim, c, false, false);
+    const base = cumProc(T, S, anno - 1, trim, c, true, false);
+    T.righe.push([k, `Aperture ${NOMI_PROC[c]}`, pas, cur, p2(varPct(cur, base))]);
+  }
+  for (const [k, c, s] of [[3, "pr", "stockPr"], [4, "sc", "stockSc"]]) {
+    const cur = S.procStock(anno, trim, s), pas = S.procStock(anno - 1, trim, s);
+    if (cur == null) segnala(T, `stock ${NOMI_PROC[c]} ${nomeTrim(anno, trim)}`, fProcStock(anno, trim), true);
+    if (pas == null) segnala(T, `stock ${NOMI_PROC[c]} ${nomeTrim(anno - 1, trim)}`, fProcStock(anno - 1, trim), false);
+    T.righe.push([k, `Stock ${NOMI_PROC[c]}`, pas, cur, p2(varPct(cur, pas))]);
+  }
+  return T;
+}
+
+// aperture di Varese (c = "pr"/"sc") dal I trimestre a trim dell'anno, per voce: chiave(settore, forma) -> somma; null se manca un mese
+function cumulaDettaglio(T, S, anno, trim, c, chiave, serveAteco) {
+  const out = new Map();
+  let completo = true;
+  for (let m = 1; m <= 3 * trim; m++) {
+    const d = S.proc.dett[kMese(anno, m)];
+    if (!d || (serveAteco && d.ateco !== "2025")) {
+      completo = false;
+      segnala(T, `procedure di Varese per settore e forma giuridica ${nomeMese(anno, m)}${d ? " (il file è in ATECO 2007)" : ""}`, fProcMese(anno, m), true);
+      continue;
+    }
+    for (const [cl, se, fo, n] of d.righe) if (campoProc(cl) === c) { const k = chiave(se, fo); out.set(k, (out.get(k) || 0) + n); }
+  }
+  return completo ? out : null;
+}
+const totaleMappa = m => m ? [...m.values()].reduce((s, v) => s + v, 0) : null;
+
+function tabPCSettori(S, anno, trim, c) {
+  const T = nuovaTab(c === "pr" ? "Procedure_settori.xlsx" : "Scioglimento_settori.xlsx", "Foglio1",
+    ["Ordinamento", "Settore", c === "pr" ? "Procedure concorsuali" : "Scioglimento liquidazione"], [3], []);
+  const note = new Set(SEZIONI_PROC.map(s => s[0]));
+  // sezioni non in elenco (U, V, vuota…) -> «Imprese non classificate»
+  const cum = cumulaDettaglio(T, S, anno, trim, c, se => note.has(sezioneDi(se)) ? sezioneDi(se) : "X", true);
+  SEZIONI_PROC.forEach(([s, ePr, eSc], k) => T.righe.push([k + 1, c === "pr" ? ePr : eSc, cum ? cum.get(s) || 0 : null]));
+  T.righe.push([SEZIONI_PROC.length + 1, "TOTALE", totaleMappa(cum)]);
+  return T;
+}
+
+function tabPCGrafico(S, anno, trim, c) {
+  const T = nuovaTab(c === "pr" ? "Procedure_settori_x_grafico.xlsx" : "Scioglimento_settori_x_grafico.xlsx", "Foglio1",
+    ["Ordinamento", "Settore", c === "pr" ? "Procedure" : "Scioglimento liquidazione", "Peso % su tot."], [3], [4]);
+  const gruppo = s => { const l = sezioneDi(s); const g = GRAFICO_PROC.find(([, sez]) => sez && sez.includes(l)); return g ? g[0] : "Altro"; };
+  const cum = cumulaDettaglio(T, S, anno, trim, c, se => gruppo(se), true), tot = totaleMappa(cum);
+  GRAFICO_PROC.forEach(([nome], k) => { const v = cum ? cum.get(nome) || 0 : null; T.righe.push([k + 1, nome, v, p2(quota(v, tot))]); });
+  return T;
+}
+
+function tabPCTipo(S, anno, trim, c) {
+  const T = nuovaTab(c === "pr" ? "Procedure_tipo.xlsx" : "Scioglimento_tipo.xlsx", "Foglio1",
+    [c === "pr" ? "ordine" : "Ordine", c === "pr" ? "Procedure concorsuali (per forma giuridica)" : "Scioglimento liquidazione (per forma giuridica)",
+     "Valore assoluto", "Percentuale %"], [3], [4]);
+  const cum = cumulaDettaglio(T, S, anno, trim, c, (se, fo) => formaDi(fo), false), tot = totaleMappa(cum);
+  FORME.forEach(([nome], k) => { const v = cum ? cum.get(nome) || 0 : null; T.righe.push([k + 1, nome, v, p2(quota(v, tot))]); });
+  T.righe.push([FORME.length + 1, "TOTALE", tot, tot ? 100 : null]);
+  return T;
+}
+
+function tabPCTerritori(S, anno, trim, c) {
+  const T = nuovaTab(c === "pr" ? "Procedure_territori.xlsx" : "Scioglimento_territori.xlsx", "Foglio1",
+    ["Ordinamento", "Territorio", "Periodo di riferimento", "Peso % sul totale Lombardia"], [3], [4]);
+  const val = TERR_PROC.map(terr => {
+    let s = 0;
+    for (let m = 1; m <= 3 * trim; m++) {
+      const v = S.procMese(anno, m, terr);
+      if (!v) { segnala(T, `${terr} aperture ${nomeMese(anno, m)}`, terr === PROVINCIA ? fProcMese(anno, m) : fProcProv(anno, m), true); s = null; }
+      else if (s != null) s += v[c];
+    }
+    return s;
+  });
+  const lomb = somma(val);
+  TERR_PROC.forEach((terr, k) => T.righe.push([k + 1, ETICHETTE_TERR_FLUSSI[terr] || terr, val[k], p2(quota(val[k], lomb))]));
+  T.righe.push([TERR_PROC.length + 1, "LOMBARDIA", lomb, lomb ? 100 : null]);
+  return T;
+}
+
+function generaProcedure(inp, ctx) {
+  ctx = Object.assign({ log() {}, prova: false }, ctx || {});
+  const log = ctx.log;
+  const { anno, trim, S } = preparaStorico({ ...inp, senzaGrezzo: true }, ctx);
+  const mesiTrim = [3 * trim - 2, 3 * trim - 1, 3 * trim];
+  // servono i tre file mensili di Varese del trimestre (con settore e forma giuridica): il totale di Varese del file delle province non basta
+  const manca = mesiTrim.filter(m => !S.proc.dett[kMese(anno, m)]);
+  const pronto = !manca.length;
+  if (!pronto && !ctx.prova)
+    throw new ErroreDati(`Mancano i file mensili delle procedure di Varese del ${nomeTrim(anno, trim)} (${manca.map(m => fProcMese(anno, m).nome).join(", ")}).`);
+  if (!ctx.prova) log(`Aperture cumulate da gennaio a ${MESI_IT[3 * trim - 1]} ${anno} (I–${ROMANI[trim]} trimestre); stock a fine ${nomeTrim(anno, trim)}`, "info");
+  const { tabelle, fai } = raccoltaTabelle(ctx);
+  fai("trimestre", () => tabPCTrimestre(S, anno, trim));
+  if (trim === 4) fai("anno", () => tabPCAnno(S, anno));
+  fai("sintesi", () => tabPCSintesi(S, anno, trim));
+  for (const c of ["pr", "sc"]) {
+    const b = c === "pr" ? "procedure" : "scioglimento";
+    fai(`${b}_settori`, () => tabPCSettori(S, anno, trim, c));
+    fai(`${b}_settori_x_grafico`, () => tabPCGrafico(S, anno, trim, c));
+    fai(`${b}_tipo`, () => tabPCTipo(S, anno, trim, c));
+    fai(`${b}_territori`, () => tabPCTerritori(S, anno, trim, c));
+  }
+  const servono = new Map();
+  for (const t of tabelle) for (const f of t.servono) servono.set(f.chiave, f);
+  return {
+    cartella: `Report_procedure_scioglimenti_${anno}_T${trim}`, ateco: "2025", pronto, tabelle, servono: [...servono.values()],
+    file: tabelle.filter(t => t.dati).map(t => ({ nome: t.nome, dati: t.dati, incompleto: t.stato !== "ok" })),
+    storico: S, storicoXlsx: ctx.prova ? null : storicoInXlsx(S, nomeTrim(anno, trim)),
+  };
+}
+
+/* ------------------------------------------------------------------ storico <-> Excel */
+function storicoInXlsx(S, ultimo) {
+  const oggi = new Date();
+  const data = `${pad2(oggi.getDate())}/${pad2(oggi.getMonth() + 1)}/${oggi.getFullYear()}`;
+  const leggimi = [
+    ["SERIE STORICA IMPRESE REGISTRATE E ATTIVE, ISCRIZIONI E CESSAZIONI - PROVINCIA DI VARESE"],
+    [`Ultimo report: ${ultimo} (file creato il ${data}).`],
+    [""],
+    ["Questo file serve alla pagina «Report Imprese – Stockview»: va caricato ogni trimestre nel riquadro «Serie storica»."],
+    ["La pagina lo aggiorna con i file nuovi e ne restituisce una copia: salvala sempre al posto di quella vecchia."],
+    [""],
+    ["FOGLI"],
+    ["Mesi: registrate e attive di Varese a fine mese (a fine trimestre = marzo, giugno, settembre, dicembre)."],
+    ["Anni_fino_2008: registrate e attive a fine anno prima della serie mensile (servono alla tabella tempo_anno)."],
+    ["Settori_ATECO2025: imprese attive di Varese per settore, sottosettore manifatturiero e servizi, classificazione ATECO 2025 (download dal II trim 2026)."],
+    ["Settori_ATECO2007: le stesse voci nella vecchia classificazione ATECO 2007 (dal 2007 al I trim 2026 solo Manifatturiero, Costruzioni, Commercio e Servizi)."],
+    ["   Le due classificazioni NON sono confrontabili: ogni report usa la serie della classificazione del file dei dati grezzi."],
+    ["Forma_giuridica: imprese attive di Varese per forma giuridica (non dipende dall'ATECO)."],
+    ["Territori: registrate, attive, iscrizioni e cessazioni di Varese, province lombarde, Lombardia e Italia per trimestre."],
+    ["   Per Varese contiene le iscrizioni e le cessazioni di ogni trimestre dal 2005 (fino al 2008 in «Cessazioni» ci sono le cessazioni totali,"],
+    ["   dal 2009 in «Cessazioni non d'ufficio» quelle usate dal report) e le registrate dei trimestri prima della serie mensile."],
+    ["Flussi_settori: iscrizioni, cessazioni e cessazioni non d'ufficio di Varese per settore, sottosettore manifatturiero, servizi e forma giuridica"],
+    ["   (una riga per trimestre e voce; servono solo i trimestri dell'anno in corso perché le tabelle sono cumulate da gennaio)."],
+    ["Procedure_trimestri: Varese, aperture di procedure concorsuali e di scioglimento e liquidazione per trimestre (dal 2026 somma dei mesi)"],
+    ["   e stock a fine trimestre (imprese «con Procedure concorsuali» e «in Scioglimento o Liquidazione»)."],
+    ["   Le colonne «… per i confronti» si riempiono solo per periodi straordinari: sono la base delle variazioni al posto del valore vero"],
+    ["   (II trim 2022: 1.830 scioglimenti, di cui 1.698 straordinari; nei confronti vale 132, come nelle tabelle pubblicate)."],
+    ["Procedure_anni: Varese, aperture per anno prima della serie trimestrale (2006 ricavato dalla variazione pubblicata del 2007)."],
+    ["Procedure_mesi: aperture del mese di Varese e delle province lombarde (servono i mesi dell'anno in corso perché le tabelle sono cumulate da gennaio)."],
+    ["Procedure_dettaglio_Varese: righe dei download mensili di Varese (classe evento, settore, forma giuridica), per le tabelle settori e tipo."],
+    ["Andamento_settori_ATECO…: attive per macro-settore con variazione tendenziale (calcolato, non serve modificarlo)."],
+    [""],
+    ["REGOLE"],
+    ["Si possono correggere o aggiungere valori a mano (una riga per periodo). Non cambiare i nomi dei fogli e delle colonne."],
+    ["Le colonne «Periodo» sono solo descrittive: contano Anno, Mese/Trimestre e Territorio."],
+    ["Una cella vuota vuol dire dato mancante: il controllo della pagina lo segnala e dice quale file scaricare."],
+  ];
+  const tabs = [{ foglio: "LEGGIMI", intest: ["Informazioni"], righe: leggimi, colValori: [], colPct: [], larghezze: [120] }];
+
+  const mesi = Object.keys(S.mesi).sort().map(k => { const [a, m] = k.split("-").map(Number); return [a, m, nomeMese(a, m), S.mesi[k].reg ?? null, S.mesi[k].att ?? null]; });
+  tabs.push({ foglio: "Mesi", intest: ["Anno", "Mese", "Periodo", "Registrate", "Attive"], righe: mesi, colValori: [4, 5], colPct: [] });
+
+  const anni = Object.keys(S.anni).map(Number).sort((a, b) => a - b).map(y => { const v = S.anni[y]; return [y, v.reg ?? null, v.att ?? null, v.varReg ?? null, v.varAtt ?? null]; });
+  tabs.push({ foglio: "Anni_fino_2008", intest: ["Anno", "Registrate", "Attive", "T.var% tend. registrate (se manca l'anno prima)", "T.var% tend. attive (se manca l'anno prima)"],
+              righe: anni, colValori: [2, 3], colPct: [4, 5] });
+
+  const ordTrim = k => k.split("-T").map(Number);
+  for (const cl of ["2025", "2007"]) {
+    const col = colonneSettori(cl), dati = S.settori[cl];
+    const righe = Object.keys(dati).sort().map(k => { const [a, t] = ordTrim(k); return [a, t, nomeTrim(a, t), ...col.map(c => dati[k][c] ?? null)]; });
+    tabs.push({ foglio: `Settori_ATECO${cl}`, intest: ["Anno", "Trimestre", "Periodo", ...col], righe, colValori: col.map((_, j) => j + 4), colPct: [] });
+  }
+  const colF = FORME.map(f => f[0]);
+  const forme = Object.keys(S.forme).sort().map(k => { const [a, t] = ordTrim(k); return [a, t, nomeTrim(a, t), ...colF.map(c => S.forme[k][c] ?? null)]; });
+  tabs.push({ foglio: "Forma_giuridica", intest: ["Anno", "Trimestre", "Periodo", ...colF], righe: forme, colValori: [4, 5, 6, 7], colPct: [] });
+
+  const terr = [];
+  for (const k of Object.keys(S.terr).sort()) {
+    const [a, t] = ordTrim(k);
+    for (const nome of [...PROVINCE, REGIONE, ITALIA]) {
+      const r = S.terr[k][nome];
+      if (!r || CAMPI_TERR.every(([c]) => r[c] == null)) continue;
+      terr.push([a, t, nomeTrim(a, t), nome, ...CAMPI_TERR.map(([c]) => r[c] ?? null)]);
+    }
+  }
+  tabs.push({ foglio: "Territori", intest: ["Anno", "Trimestre", "Periodo", "Territorio", ...CAMPI_TERR.map(c => c[1])], righe: terr, colValori: [5, 6, 7, 8, 9], colPct: [] });
+
+  const flussi = [];
+  for (const cl of ["2025", "2007"]) {
+    const ordine = vociFlussi(cl);
+    for (const k of Object.keys(S.flussi[cl]).sort()) {
+      const [a, t] = ordTrim(k), q = S.flussi[cl][k];
+      const voci = [...ordine.filter(v => q[v]), ...Object.keys(q).filter(v => !ordine.includes(v))];
+      for (const v of voci) {
+        if (CAMPI_FLUSSO.every(([c]) => q[v][c] == null)) continue;
+        flussi.push([a, t, nomeTrim(a, t), Number(cl), v, ...CAMPI_FLUSSO.map(([c]) => q[v][c] ?? null)]);
+      }
+    }
+  }
+  tabs.push({ foglio: "Flussi_settori", intest: ["Anno", "Trimestre", "Periodo", "ATECO", "Voce", ...CAMPI_FLUSSO.map(c => c[1])], righe: flussi, colValori: [6, 7, 8], colPct: [] });
+
+  // procedure concorsuali e scioglimenti
+  const chiaviP = new Set(Object.keys(S.proc.trim));
+  for (const k of Object.keys(S.proc.mesi)) { const [a, m] = k.split("-").map(Number); if (S.proc.mesi[k][PROVINCIA]) chiaviP.add(kTrim(a, Math.ceil(m / 3))); }
+  const procT = [...chiaviP].sort().map(k => {
+    const [a, t] = ordTrim(k), q = S.proc.trim[k] || {};
+    const v = { ...q, pr: S.procTrim(a, t, "pr"), sc: S.procTrim(a, t, "sc") };
+    return [a, t, nomeTrim(a, t), ...COL_PROC_TRIM.map(([c]) => v[c] ?? null)];
+  }).filter(r => r.slice(3).some(v => v != null));
+  tabs.push({ foglio: "Procedure_trimestri", intest: ["Anno", "Trimestre", "Periodo", ...COL_PROC_TRIM.map(c => c[1])], righe: procT, colValori: [4, 5, 6, 7, 8, 9], colPct: [] });
+  const procA = Object.keys(S.proc.anni).map(Number).sort((a, b) => a - b).map(y => [y, ...COL_PROC_TRIM.slice(0, 4).map(([c]) => S.proc.anni[y][c] ?? null)]);
+  tabs.push({ foglio: "Procedure_anni", intest: ["Anno", ...COL_PROC_TRIM.slice(0, 4).map(c => c[1])], righe: procA, colValori: [2, 3, 4, 5], colPct: [] });
+  const procM = [];
+  for (const k of Object.keys(S.proc.mesi).sort()) {
+    const [a, m] = k.split("-").map(Number);
+    for (const terr of TERR_PROC) { const v = S.proc.mesi[k][terr]; if (v && (v.pr != null || v.sc != null)) procM.push([a, m, nomeMese(a, m), terr, v.pr ?? null, v.sc ?? null]); }
+  }
+  tabs.push({ foglio: "Procedure_mesi", intest: ["Anno", "Mese", "Periodo", "Territorio", COL_PROC_TRIM[0][1], COL_PROC_TRIM[1][1]], righe: procM, colValori: [5, 6], colPct: [] });
+  const procD = [];
+  for (const k of Object.keys(S.proc.dett).sort()) {
+    const [a, m] = k.split("-").map(Number), d = S.proc.dett[k];
+    for (const r of d.righe) procD.push([a, m, nomeMese(a, m), Number(d.ateco), ...r]);
+  }
+  tabs.push({ foglio: "Procedure_dettaglio_Varese", intest: ["Anno", "Mese", "Periodo", "ATECO", "Classe Evento", "Settore", "Classe di Natura Giuridica", "Aperture"],
+              righe: procD, colValori: [8], colPct: [] });
+
+  // vista calcolata (come la tabella di destra del vecchio foglio «Settori»)
+  const macro = ["Manifatturiero", "Costruzioni", "Commercio", "Servizi"];
+  for (const cl of ["2025", "2007"]) {
+    const chiavi = Object.keys(S.settori[cl]).sort();
+    if (!chiavi.length) continue;
+    const andamento = chiavi.map(k => {
+      const [a, t] = ordTrim(k);
+      const r = [nomeTrim(a, t)];
+      for (const m of macro) { const c = S.voce(cl, a, t, `Settore - ${m}`), p = S.voce(cl, a - 1, t, `Settore - ${m}`); r.push(c, p2(varPct(c, p))); }
+      return r;
+    });
+    tabs.push({ foglio: `Andamento_settori_ATECO${cl}`, intest: ["Periodo", ...macro.flatMap(m => [m, "T.var% tendenziale"])], righe: andamento,
+                colValori: [2, 4, 6, 8], colPct: [3, 5, 7, 9] });
+  }
+  return creaXlsx(tabs);
+}
+
+async function leggiStorico(u8) {
+  if (tipoFile(u8) !== "zip") throw new ErroreDati("La serie storica deve essere il file .xlsx creato da questa pagina (Storico_imprese_Varese.xlsx).");
+  const x = await apriXlsx(u8);
+  if (!x || !x.trova("Mesi")) throw new ErroreDati("Questo non sembra il file della serie storica (manca il foglio «Mesi»).");
+  const S = new Storico(), avvisi = [];
+  const foglio = async nome => {
+    const n = x.trova(nome);
+    if (!n) { avvisi.push(`manca il foglio ${nome}`); return []; }
+    const righe = (await x.righe(n)).filter(Boolean);
+    if (!righe.length) return [];
+    const intest = righe[0].map(v => String(v ?? "").trim().toLowerCase());
+    return righe.slice(1).filter(r => r.some(v => v != null && v !== "")).map(r => ({ get: h => { const j = intest.indexOf(h.toLowerCase()); return j < 0 ? null : r[j] ?? null; } }));
+  };
+  const intero = v => { const n = numeroIT(v); return n == null ? null : Math.round(n); };
+  for (const r of await foglio("Mesi")) {
+    const a = intero(r.get("Anno")), m = intero(r.get("Mese"));
+    if (!a || !m || m < 1 || m > 12) continue;
+    S.mesi[kMese(a, m)] = { reg: numeroIT(r.get("Registrate")), att: numeroIT(r.get("Attive")) };
+  }
+  for (const r of await foglio("Anni_fino_2008")) {
+    const a = intero(r.get("Anno"));
+    if (!a) continue;
+    S.anni[a] = { reg: numeroIT(r.get("Registrate")), att: numeroIT(r.get("Attive")),
+                  varReg: numeroIT(r.get("T.var% tend. registrate (se manca l'anno prima)")), varAtt: numeroIT(r.get("T.var% tend. attive (se manca l'anno prima)")) };
+  }
+  const perTrimestre = async (nome, colonne, dest) => {
+    for (const r of await foglio(nome)) {
+      const a = intero(r.get("Anno")), t = intero(r.get("Trimestre"));
+      if (!a || !t || t < 1 || t > 4) continue;
+      const q = {};
+      for (const c of colonne) { const v = numeroIT(r.get(c)); if (v != null) q[c] = v; }
+      if (Object.keys(q).length) dest[kTrim(a, t)] = q;
+    }
+  };
+  for (const cl of Object.keys(CLASSIFICAZIONI)) await perTrimestre(`Settori_ATECO${cl}`, colonneSettori(cl), S.settori[cl]);
+  await perTrimestre("Forma_giuridica", FORME.map(f => f[0]), S.forme);
+  for (const r of await foglio("Territori")) {
+    const a = intero(r.get("Anno")), t = intero(r.get("Trimestre"));
+    const nome = territorioDaNome(r.get("Territorio"));
+    if (!a || !t || !nome) continue;
+    const q = S.terr[kTrim(a, t)] = S.terr[kTrim(a, t)] || {};
+    q[nome] = Object.fromEntries(CAMPI_TERR.map(([c, h]) => [c, numeroIT(r.get(h))]));
+  }
+  if (x.trova("Flussi_settori")) for (const r of await foglio("Flussi_settori")) {
+    const a = intero(r.get("Anno")), t = intero(r.get("Trimestre")), cl = String(intero(r.get("ATECO")) ?? "");
+    const voce = String(r.get("Voce") ?? "").trim();
+    if (!a || !t || t < 1 || t > 4 || !S.flussi[cl] || !voce) continue;
+    const q = S.flussi[cl][kTrim(a, t)] = S.flussi[cl][kTrim(a, t)] || {};
+    q[voce] = Object.fromEntries(CAMPI_FLUSSO.map(([c, h]) => [c, numeroIT(r.get(h))]));
+  }
+  // procedure concorsuali e scioglimenti (fogli assenti negli storici creati prima di questa sezione)
+  const valori = (r, colonne) => { const q = {}; for (const [c, h] of colonne) { const v = numeroIT(r.get(h)); if (v != null) q[c] = v; } return q; };
+  if (x.trova("Procedure_trimestri")) for (const r of await foglio("Procedure_trimestri")) {
+    const a = intero(r.get("Anno")), t = intero(r.get("Trimestre"));
+    if (!a || !t || t < 1 || t > 4) continue;
+    const q = valori(r, COL_PROC_TRIM);
+    if (Object.keys(q).length) S.proc.trim[kTrim(a, t)] = q;
+  }
+  if (x.trova("Procedure_anni")) for (const r of await foglio("Procedure_anni")) {
+    const a = intero(r.get("Anno")), q = valori(r, COL_PROC_TRIM.slice(0, 4));
+    if (a && Object.keys(q).length) S.proc.anni[a] = q;
+  }
+  if (x.trova("Procedure_mesi")) for (const r of await foglio("Procedure_mesi")) {
+    const a = intero(r.get("Anno")), m = intero(r.get("Mese")), terr = territorioDaNome(r.get("Territorio"));
+    if (!a || !m || m < 1 || m > 12 || !terr || !PROVINCE.includes(terr)) continue;
+    const q = valori(r, COL_PROC_TRIM.slice(0, 2));
+    if (Object.keys(q).length) (S.proc.mesi[kMese(a, m)] = S.proc.mesi[kMese(a, m)] || {})[terr] = q;
+  }
+  if (x.trova("Procedure_dettaglio_Varese")) for (const r of await foglio("Procedure_dettaglio_Varese")) {
+    const a = intero(r.get("Anno")), m = intero(r.get("Mese")), n = numeroIT(r.get("Aperture"));
+    const cl = String(r.get("Classe Evento") ?? "").trim();
+    if (!a || !m || m < 1 || m > 12 || !cl || n == null) continue;
+    const d = S.proc.dett[kMese(a, m)] = S.proc.dett[kMese(a, m)] || { ateco: String(intero(r.get("ATECO")) || ATECO_PREDEFINITA), righe: [] };
+    d.righe.push([cl, String(r.get("Settore") ?? "").trim(), String(r.get("Classe di Natura Giuridica") ?? "").trim(), n]);
+  }
+  return { storico: S, avvisi };
+}
+
+/* ------------------------------------------------------------------ Excel (.xlsx) */
+const enc = new TextEncoder();
+const xmlEsc = s => String(s).replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "")
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+function colonna(n) { let s = ""; while (n > 0) { const m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = Math.floor((n - 1) / 26); } return s; }
+function valoreCella(v) {
+  if (v === null || v === undefined) return null;
+  if (typeof v === "number") { if (!Number.isFinite(v)) return null; const r = Number.isInteger(v) ? v : round2(v); return Object.is(r, -0) ? 0 : r; }
+  return v;
+}
+
+const STILI = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+<fonts count="2"><font><sz val="11"/><name val="Calibri"/><family val="2"/></font><font><b/><sz val="11"/><color rgb="FFFFFFFF"/><name val="Calibri"/><family val="2"/></font></fonts>
+<fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2E75B6"/><bgColor indexed="64"/></patternFill></fill></fills>
+<borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>
+<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
+<cellXfs count="4"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="1" fillId="2" borderId="0" xfId="0" applyFont="1" applyFill="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf numFmtId="3" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/><xf numFmtId="2" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/></cellXfs>
+<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>
+</styleSheet>`;
+
+function foglioXml(tab) {
+  const { intest, colValori, colPct } = tab;
+  const righe = tab.righe.map(r => r.map(valoreCella));
+  const larghezze = tab.larghezze || intest.map((h, j) => {
+    let m = String(h).length;
+    for (const r of righe) { const v = r[j]; m = Math.max(m, (v === null || v === undefined || v === "") ? 0 : (typeof v === "number" && colValori.includes(j + 1) ? String(Math.round(v)).length + Math.floor(String(Math.round(Math.abs(v))).length / 3) : String(v).length)); }
+    return Math.min(Math.max(m + 2, 10), 60);
+  });
+  const cellaTesto = (ref, s, stile) => `<c r="${ref}" t="inlineStr"${stile ? ` s="${stile}"` : ""}><is><t xml:space="preserve">${xmlEsc(s)}</t></is></c>`;
+  let xml = `<row r="1">${intest.map((h, j) => cellaTesto(colonna(j + 1) + "1", h, 1)).join("")}</row>`;
+  righe.forEach((r, i) => {
+    const nr = i + 2;
+    let celle = "";
+    r.forEach((v, j) => {
+      if (v === null || v === undefined) return;
+      const ref = colonna(j + 1) + nr;
+      if (typeof v === "number") {
+        const stile = tab.righePct && tab.righePct.includes(i) ? 3 : colValori.includes(j + 1) ? 2 : colPct.includes(j + 1) ? 3 : 0;
+        celle += `<c r="${ref}"${stile ? ` s="${stile}"` : ""}><v>${String(v)}</v></c>`;
+      } else celle += cellaTesto(ref, v, 0);
+    });
+    xml += `<row r="${nr}">${celle}</row>`;
+  });
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/><selection pane="bottomLeft" activeCell="A2" sqref="A2"/></sheetView></sheetViews>
+<sheetFormatPr defaultRowHeight="15"/>
+<cols>${larghezze.map((w, j) => `<col min="${j + 1}" max="${j + 1}" width="${w}" customWidth="1"/>`).join("")}</cols>
+<sheetData>${xml}</sheetData>
+</worksheet>`;
+}
+
+// tabs: [{foglio, intest, righe, colValori, colPct}] -> file .xlsx (un foglio per tabella)
+function creaXlsx(tabs) {
+  const n = tabs.length, idx = [...Array(n).keys()];
+  const parti = [
+    ["[Content_Types].xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/>${idx.map(i => `<Override PartName="/xl/worksheets/sheet${i + 1}.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/>`).join("")}<Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>`],
+    ["_rels/.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`],
+    ["xl/workbook.xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets>${idx.map(i => `<sheet name="${xmlEsc(tabs[i].foglio)}" sheetId="${i + 1}" r:id="rId${i + 1}"/>`).join("")}</sheets></workbook>`],
+    ["xl/_rels/workbook.xml.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">${idx.map(i => `<Relationship Id="rId${i + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet${i + 1}.xml"/>`).join("")}<Relationship Id="rId${n + 1}" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>`],
+    ["xl/styles.xml", STILI],
+    ...idx.map(i => [`xl/worksheets/sheet${i + 1}.xml`, foglioXml(tabs[i])]),
+  ];
+  return creaZip(parti.map(([nome, testo]) => ({ nome, dati: enc.encode(testo) })));
+}
+
+/* ------------------------------------------------------------------ ZIP (senza compressione) */
+const CRC_TAB = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC_TAB[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+
+function creaZip(voci, data = new Date()) {
+  const ora = ((data.getHours() << 11) | (data.getMinutes() << 5) | Math.floor(data.getSeconds() / 2)) & 0xFFFF;
+  const giorno = (((data.getFullYear() - 1980) << 9) | ((data.getMonth() + 1) << 5) | data.getDate()) & 0xFFFF;
+  const parti = [], centrale = [];
+  let offset = 0;
+  for (const v of voci) {
+    const nome = enc.encode(v.nome), crc = crc32(v.dati), dim = v.dati.length;
+    const lh = new DataView(new ArrayBuffer(30));
+    lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true); lh.setUint16(6, 0x0800, true); lh.setUint16(8, 0, true);
+    lh.setUint16(10, ora, true); lh.setUint16(12, giorno, true); lh.setUint32(14, crc, true);
+    lh.setUint32(18, dim, true); lh.setUint32(22, dim, true); lh.setUint16(26, nome.length, true); lh.setUint16(28, 0, true);
+    parti.push(new Uint8Array(lh.buffer), nome, v.dati);
+    const ch = new DataView(new ArrayBuffer(46));
+    ch.setUint32(0, 0x02014b50, true); ch.setUint16(4, 20, true); ch.setUint16(6, 20, true); ch.setUint16(8, 0x0800, true);
+    ch.setUint16(10, 0, true); ch.setUint16(12, ora, true); ch.setUint16(14, giorno, true); ch.setUint32(16, crc, true);
+    ch.setUint32(20, dim, true); ch.setUint32(24, dim, true); ch.setUint16(28, nome.length, true);
+    ch.setUint32(42, offset, true);
+    centrale.push(new Uint8Array(ch.buffer), nome);
+    offset += 30 + nome.length + dim;
+  }
+  const dimCentrale = centrale.reduce((s, a) => s + a.length, 0);
+  const fine = new DataView(new ArrayBuffer(22));
+  fine.setUint32(0, 0x06054b50, true); fine.setUint16(8, voci.length, true); fine.setUint16(10, voci.length, true);
+  fine.setUint32(12, dimCentrale, true); fine.setUint32(16, offset, true);
+  const tutte = [...parti, ...centrale, new Uint8Array(fine.buffer)];
+  const out = new Uint8Array(tutte.reduce((s, a) => s + a.length, 0));
+  let p = 0;
+  for (const a of tutte) { out.set(a, p); p += a.length; }
+  return out;
+}
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { riconosciFile, leggiFileGrezzo, leggiFilePiccolo, leggiStorico, storicoInXlsx, generaRegistrateAttive,
+                     apriXlsx, creaXlsx, creaZip, round2, numeroIT, righeCsv, Storico, ErroreDati, kMese, kTrim,
+                     periodoDaNome, meseDaNome, trimDaNome, colonneSettori, PROVINCE, CLASSIFICAZIONI, MANIFATTURIERO, FORME,
+                     generaIscrizioniCessazioni, unisciFilePiccoli, MANIF_FLUSSI, SERVIZI_FLUSSI, vociFlussi, NOME_MONITORAGGIO, PRIMO_REPORT,
+                     generaProcedure, SEZIONI_PROC, GRAFICO_PROC, TERR_PROC, COL_PROC_TRIM, preparaStorico };
+}
+</script>
+
+<script>
+/* ==========================================================================
+   INTERFACCIA
+   ========================================================================== */
+(function () {
+  const $ = s => document.querySelector(s);
+  const XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+  const selAnno = $("#anno"), selTrim = $("#trim"), btn = $("#genera");
+  const log = $("#log"), risultati = $("#risultati"), elenco = $("#elenco");
+  const fmt = n => n == null ? "" : Number(n).toLocaleString("it-IT");
+
+  // file caricati: chiave "tipo|periodo" (es. "grezzo|2026-T2", "mese|2026-04") -> record; lo storico a parte
+  const stato = { storico: null, fonteStorico: "", storicoAggiornato: false, erroreStorico: "", file: new Map(), errori: {} };
+  let urlCreati = [];
+
+  // periodo predefinito: l'ultimo trimestre concluso
+  const oggi = new Date();
+  // si può scegliere solo dal PRIMO_REPORT (II trim 2026) in poi
+  const P0 = PRIMO_REPORT.anno * 4 + PRIMO_REPORT.trim;
+  for (let y = Math.max(oggi.getFullYear(), PRIMO_REPORT.anno); y >= PRIMO_REPORT.anno; y--) selAnno.add(new Option(String(y), String(y)));
+  const conclusi = Math.floor(oggi.getMonth() / 3);
+  const predef = Math.max(P0, conclusi ? oggi.getFullYear() * 4 + conclusi : (oggi.getFullYear() - 1) * 4 + 4);
+  selAnno.value = String(Math.floor((predef - 1) / 4));
+  selTrim.value = String((predef - 1) % 4 + 1);
+  function limitaTrimestri() {
+    const a = Number(selAnno.value);
+    for (const o of selTrim.options) o.disabled = a * 4 + Number(o.value) < P0;
+    if (selTrim.selectedOptions[0].disabled) selTrim.value = String(PRIMO_REPORT.trim);
+  }
+  limitaTrimestri();
+  const periodo = () => ({ anno: Number(selAnno.value), trim: Number(selTrim.value) });
+  // sezione scelta: "registrate_attive" o "iscrizioni_cessazioni"
+  const sezione = () => document.querySelector('input[name="sezione"]:checked').value;
+  const flussi = () => sezione() === "iscrizioni_cessazioni";
+  const proc = () => sezione() === "procedure";
+  const genera = (inp, ctx) => proc() ? generaProcedure(inp, ctx) : flussi() ? generaIscrizioniCessazioni(inp, ctx) : generaRegistrateAttive(inp, ctx);
+  const NOMI_SEZIONE = { registrate_attive: "Imprese registrate e attive", iscrizioni_cessazioni: "Iscrizioni e cessazioni", procedure: "Procedure concorsuali e scioglimenti" };
+
+  function scrivi(testo, classe) {
+    const r = document.createElement("span");
+    if (classe) r.className = classe;
+    r.textContent = testo + "\n";
+    log.appendChild(r);
+    log.scrollTop = log.scrollHeight;
+  }
+  const simbolo = { ok: "✓", info: "ℹ", warn: "⚠", err: "✗" };
+  const logCtx = (t, tag) => scrivi(`  ${simbolo[tag] || "•"} ${t}`, tag === "info" ? "muted" : tag);
+
+  // tipi di file con periodo mensile (gli altri sono trimestrali)
+  const MENSILI = new Set(["mese", "procmese", "procprov"]);
+  const chiaveDi = (tipo, p) => `${tipo}|${MENSILI.has(tipo) ? kMese(p.anno, p.mese) : kTrim(p.anno, p.trim)}`;
+  const descrPeriodo = (tipo, p) => MENSILI.has(tipo) ? nomeMese(p.anno, p.mese) : nomeTrim(p.anno, p.trim);
+  const NOMI_TIPO = { grezzo: "dati grezzi di Varese", mese: "mese di Varese", province: "province lombarde", italia: "totale Italia",
+                      procmese: "procedure di Varese", procprov: "procedure delle province lombarde", procstock: "stock di Varese per status d'impresa" };
+  const ESEMPI_NOME = { mese: "202604_m.csv", grezzo: "22026VAS.csv", procmese: "202604_me.csv", procprov: "202604_me (1).csv", procstock: "20262_sa.csv" };
+
+  /* ---------- riquadri dei file richiesti per il periodo scelto ---------- */
+  function riquadri() {
+    const { anno, trim } = periodo();
+    const q = { anno, trim }, m0 = 3 * trim - 2, F = flussi();
+    if (proc()) {
+      const mesi = [0, 1, 2].map(k => ({ anno, mese: m0 + k }));
+      return {
+        base: [
+          { id: "storico", tipo: "storico", titolo: "🗂️ Serie storica", atteso: NOME_STORICO, etichetta: "obbligatorio",
+            descr: "Il file salvato l'ultima volta (lo stesso delle altre sezioni): contiene i mesi passati dell'anno, i trimestri e gli anni prima e lo stock dell'anno prima. Serve solo come input: non va su Osserva.",
+            serve: "tutti i confronti" },
+          { id: "stock", tipo: "procstock", periodo: q, chiave: chiaveDi("procstock", q), titolo: "📦 Stock di Varese", atteso: `${anno}${trim}_sa.csv`, etichetta: "obbligatorio",
+            descr: `Imprese di Varese per «Status d'Impresa» a fine ${nomeTrim(anno, trim)} (colonna Registrate): righe «con Procedure concorsuali» e «in Scioglimento o Liquidazione».`,
+            serve: "sintesi (stock)" },
+        ],
+        mesi: mesi.map((p, k) => ({ id: `pm${k + 1}`, tipo: "procmese", periodo: p, chiave: chiaveDi("procmese", p), titolo: `📅 Varese, ${nomeMese(anno, p.mese)}`,
+          atteso: `${anno}${pad2(p.mese)}_me.csv`, etichetta: "obbligatorio",
+          descr: "Aperture del mese per Classe Evento, Settore (ATECO 2025) e Classe di Natura Giuridica.", serve: "tutte le tabelle" })),
+        terr: mesi.map((p, k) => ({ id: `pp${k + 1}`, tipo: "procprov", periodo: p, chiave: chiaveDi("procprov", p), titolo: `🗺️ Province, ${nomeMese(anno, p.mese)}`,
+          atteso: `${anno}${pad2(p.mese)}_me (1).csv`, etichetta: "",
+          descr: "Aperture del mese per Provincia e Classe Evento, 12 province lombarde.", serve: "territori" })),
+        altri: [{ id: "altri", tipo: null, titolo: "➕ File di periodi passati", atteso: "", etichetta: "facoltativo",
+                  descr: "Mesi o stock di un periodo che manca nello storico (es. un mese passato dell'anno): la pagina riconosce il periodo dal nome del file e lo aggiunge allo storico.", serve: "" }],
+      };
+    }
+    const colTerr = F ? "Iscrizioni, Cessazioni e Cessazioni non d'ufficio" : "Registrate e Attive";
+    return {
+      base: [
+        { id: "storico", tipo: "storico", titolo: "🗂️ Serie storica", atteso: NOME_STORICO, etichetta: "obbligatorio",
+          descr: (F ? "Il file salvato l'ultima volta (lo stesso delle registrate): contiene i trimestri passati dell'anno e degli anni prima."
+                    : "Il file salvato l'ultima volta: contiene i trimestri, i mesi e gli anni passati per i confronti.") + " Serve solo come input: non va su Osserva.",
+          serve: "tutti i confronti" },
+        { id: "grezzo", tipo: "grezzo", periodo: q, chiave: chiaveDi("grezzo", q), titolo: "📄 Dati grezzi Varese", atteso: `${trim}${anno}VAS.csv`, etichetta: "obbligatorio",
+          descr: `Download «sedi d'impresa» di Varese del ${nomeTrim(anno, trim)}, in ATECO 2025, estratto dallo .7z${F ? " (colonne ISCRIZ, CESSAZ, CESNUF)" : ""}.`, serve: "tutte le tabelle" },
+      ],
+      mesi: F ? [] : [0, 1, 2].map(k => {
+        const p = { anno, mese: m0 + k };
+        return { id: `mese${k + 1}`, tipo: "mese", periodo: p, chiave: chiaveDi("mese", p), titolo: `📅 ${nomeMese(anno, m0 + k)}`,
+                 atteso: `${anno}${pad2(m0 + k)}_m.csv`, etichetta: k === 2 ? "facoltativo" : "",
+                 descr: k === 2 ? "Ultimo mese del trimestre: è già nei dati grezzi, serve solo come controllo." : "Registrate e attive di Varese a fine mese (db SediImpresa mensile).",
+                 serve: k === 2 ? "controllo" : "tempo_mese" };
+      }),
+      terr: [
+        { id: "province", tipo: "province", periodo: q, chiave: chiaveDi("province", q), titolo: "🗺️ Province lombarde", atteso: `${anno}${trim}_sa.csv`, etichetta: "",
+          descr: `${colTerr} delle 12 province lombarde (con il Grand Totale). Conviene scaricare tutte e cinque le colonne: lo stesso file serve alle due sezioni.`,
+          serve: F ? "territori" : "sintesi, territori" },
+        { id: "italia", tipo: "italia", periodo: q, chiave: chiaveDi("italia", q), titolo: "🇮🇹 Italia", atteso: `${anno}${trim}_sa (1).csv`, etichetta: "",
+          descr: `${colTerr}, totale Italia. Se hai due file separati (uno per sezione) trascinali entrambi: vengono uniti.`, serve: F ? "territori" : "sintesi, territori" },
+      ],
+      altri: [{ id: "altri", tipo: null, titolo: "➕ File di periodi passati", atteso: "", etichetta: "facoltativo",
+                descr: "Dati grezzi, mesi, province o Italia di un periodo che manca nello storico: la pagina riconosce il periodo dal nome del file e lo aggiunge allo storico.", serve: "" }],
+    };
+  }
+
+  function creaRiquadro(def) {
+    const el = document.createElement("label");
+    el.className = "drop";
+    el.innerHTML = `<span class="testa"><b></b><span class="badge"></span></span><code></code><span class="descr"></span><span class="serve"></span><span class="avvisi"></span><span class="stato"></span><input type="file" multiple>`;
+    el.querySelector("b").textContent = def.titolo;
+    const badge = el.querySelector(".badge");
+    badge.textContent = def.etichetta; badge.hidden = !def.etichetta;
+    if (def.etichetta === "obbligatorio") badge.classList.add("obb");
+    const code = el.querySelector("code");
+    code.textContent = def.atteso; code.hidden = !def.atteso;
+    el.querySelector(".descr").textContent = def.descr;
+    el.querySelector(".serve").textContent = def.serve ? `→ ${def.serve}` : "";
+    const inp = el.querySelector("input");
+    inp.addEventListener("change", () => { if (inp.files.length) carica([...inp.files], def); inp.value = ""; });
+    el.addEventListener("dragover", e => { e.preventDefault(); e.stopPropagation(); el.classList.add("sopra"); });
+    el.addEventListener("dragleave", () => el.classList.remove("sopra"));
+    el.addEventListener("drop", e => { e.preventDefault(); e.stopPropagation(); el.classList.remove("sopra"); if (e.dataTransfer.files.length) carica([...e.dataTransfer.files], def); });
+    return el;
+  }
+  function bottoneTogli(titolo, azione) {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "togli"; b.title = titolo; b.textContent = "✕";
+    b.addEventListener("click", e => { e.preventDefault(); e.stopPropagation(); azione(); });
+    return b;
+  }
+
+  function riassunto(f) {
+    if (f.tipo === "grezzo") {
+      const A = f.g.A;
+      return `${nomeTrim(f.periodo.anno, f.periodo.trim)} · ATECO ${f.g.ateco}\nRegistrate ${fmt(A.reg)} · Attive ${fmt(A.att)}\nIscrizioni ${fmt(A.isc)} · Cessazioni ${fmt(A.ces)}` +
+             (A.cesnuf ? ` · non d'ufficio ${fmt(A.cesnu)}` : "");
+    }
+    if (f.tipo === "mese") return `Registrate ${fmt(f.dati.reg)} · Attive ${fmt(f.dati.att)}`;
+    if (f.tipo === "procmese") return `Procedure concorsuali ${fmt(f.dati.pr)} · Scioglimenti ${fmt(f.dati.sc)}` + (f.dati.righe ? `\nSettori in ATECO ${f.dati.ateco}` : "");
+    if (f.tipo === "procprov") {
+      const pr = PROVINCE.reduce((s, p) => s + (f.dati[p] ? f.dati[p].pr : 0), 0), sc = PROVINCE.reduce((s, p) => s + (f.dati[p] ? f.dati[p].sc : 0), 0);
+      return `Lombardia: procedure ${fmt(pr)} · scioglimenti ${fmt(sc)}\nVarese: ${fmt(f.dati.Varese ? f.dati.Varese.pr : null)} · ${fmt(f.dati.Varese ? f.dati.Varese.sc : null)}`;
+    }
+    if (f.tipo === "procstock") return `Stock procedure concorsuali ${fmt(f.dati.stockPr)}\nStock scioglimento e liquidazione ${fmt(f.dati.stockSc)}`;
+    if (f.tipo === "province") {
+      const n = PROVINCE.filter(p => f.dati[p]).length;
+      return `${n}/12 province${f.dati.Lombardia ? " + Grand Totale" : ""}\nColonne: ${f.colonne.map(c => NOMI_CAMPI[c]).join(", ")}`;
+    }
+    const v = f.dati.Italia;
+    const parti = CAMPI_TERR.filter(([c]) => v[c] != null).map(([c, n]) => `${n} ${fmt(v[c])}`);
+    return parti.slice(0, 2).join(" · ") + (parti.length > 2 ? `\n${parti.slice(2).join(" · ")}` : "");
+  }
+  // avvisi calcolati al volo (dipendono anche dagli altri file caricati)
+  function avvisiDi(f) {
+    const av = [...(f.avvisi || [])];
+    if (f.tipo === "grezzo" && f.g.ateco !== ATECO_PREDEFINITA)
+      av.push(`File in ATECO ${f.g.ateco}: i settori useranno la serie ATECO ${f.g.ateco} (dal II trim 2026 le tabelle pubblicate sono in ATECO ${ATECO_PREDEFINITA}).`);
+    if ((f.tipo === "province" || f.tipo === "italia") && sezione() === "registrate_attive") {
+      if (!f.colonne.includes("att")) av.push("Manca la colonna Attive (serve per sintesi e territori): in Stockview scegli le colonne Registrate e Attive.");
+      if (!f.colonne.includes("reg")) av.push("Manca la colonna Registrate: serve per la sintesi.");
+    }
+    if ((f.tipo === "province" || f.tipo === "italia") && flussi()) {
+      if (!f.colonne.includes("isc")) av.push("Manca la colonna Iscrizioni (serve per la tabella territori).");
+      if (!f.colonne.includes("cesnu")) av.push("Manca la colonna Cessazioni non d'ufficio (serve per la tabella territori): in Stockview aggiungi la colonna «Cessazioni non d'ufficio».");
+      if (!f.colonne.includes("ces")) av.push("Manca la colonna Cessazioni (totali): serve solo al file di monitoraggio.");
+    }
+    if (f.tipo === "grezzo" && flussi()) av.push(...(f.g.avvisiFlussi || []));
+    if (f.tipo === "mese") {
+      if ((f.dati.reg ?? 0) >= 1000000) av.push("Valori molto grandi: sembra il totale Italia, non Varese.");
+      const g = stato.file.get(chiaveDi("grezzo", { anno: f.periodo.anno, trim: Math.ceil(f.periodo.mese / 3) }));
+      if (g && f.periodo.mese % 3 === 0 && (g.g.A.reg !== f.dati.reg || g.g.A.att !== f.dati.att))
+        av.push(`Diverso dai dati grezzi del trimestre (${fmt(g.g.A.reg)} / ${fmt(g.g.A.att)}): vale il file dei dati grezzi.`);
+    }
+    return av;
+  }
+
+  function descriviStorico(S) {
+    const p = S.periodi(), m = p.mesi;
+    const nm = k => { const [a, mm] = k.split("-").map(Number); return `${["gen", "feb", "mar", "apr", "mag", "giu", "lug", "ago", "set", "ott", "nov", "dic"][mm - 1]} ${a}`; };
+    const nq = k => { const [a, t] = k.split("-T").map(Number); return nomeTrim(a, t); };
+    const serie = arr => !arr.length ? "nessuno" : arr.length <= 4 ? arr.map(nq).join(", ") : `${nq(arr[0])} – ${nq(arr[arr.length - 1])}`;
+    if (flussi()) return `Iscrizioni e cessazioni di Varese: ${serie(p.flussi)}\nFlussi per settore ATECO 2025: ${serie(p.f2025)}\nTerritori: ${serie(p.terr)}`;
+    if (proc()) {
+      const pm = p.procMesi, pp = p.procProv;
+      return `Procedure di Varese per trimestre: ${serie(p.procTrim)}\nMesi (Varese): ${pm.length ? `${nm(pm[0])} – ${nm(pm[pm.length - 1])}` : "nessuno"}` +
+             ` · province: ${pp.length ? `${nm(pp[0])} – ${nm(pp[pp.length - 1])}` : "nessuna"}\nStock: ${serie(p.procStock)}`;
+    }
+    return `Mesi: ${m.length ? `${nm(m[0])} – ${nm(m[m.length - 1])}` : "nessuno"}\nSettori ATECO 2025: ${serie(p.s2025)}\nTerritori: ${serie(p.terr)}`;
+  }
+
+  function rendi() {
+    const R = riquadri();
+    const chiaviSlot = new Set([...R.base, ...R.mesi, ...R.terr].map(d => d.chiave).filter(Boolean));
+    for (const [gruppo, defs] of Object.entries(R)) {
+      const cont = $(`#zone${gruppo[0].toUpperCase()}${gruppo.slice(1)}`);
+      cont.textContent = "";
+      for (const def of defs) {
+        const el = creaRiquadro(def), st = el.querySelector(".stato"), av = el.querySelector(".avvisi");
+        const testa = el.querySelector(".testa");
+        if (def.tipo === "storico") {
+          if (stato.storico) {
+            el.classList.add("caricato");
+            st.textContent = `✓ ${stato.fonteStorico}\n${descriviStorico(stato.storico)}`;
+            if (stato.storicoAggiornato) av.textContent = "Aggiornato in questa pagina: ricordati di scaricarlo e salvarlo.";
+            testa.appendChild(bottoneTogli("Togli la serie storica", () => { stato.storico = null; stato.storicoAggiornato = false; aggiorna(); }));
+          } else if (stato.erroreStorico) { el.classList.add("errore"); st.textContent = `✗ ${stato.erroreStorico}`; }
+          else st.textContent = "Trascina qui il file o clicca per sfogliare";
+        } else if (def.id === "altri") {
+          const altri = [...stato.file.values()].filter(f => !chiaviSlot.has(f.chiave)).sort((a, b) => a.chiave < b.chiave ? -1 : 1);
+          if (altri.length) {
+            el.classList.add("caricato");
+            st.textContent = `${altri.length} file che vanno nello storico:`;
+            const ul = document.createElement("ul");
+            ul.className = "lista-file";
+            for (const f of altri) {
+              const li = document.createElement("li"), s = document.createElement("span");
+              s.textContent = `${f.nome} — ${NOMI_TIPO[f.tipo]}, ${descrPeriodo(f.tipo, f.periodo)}${f.tipo === "grezzo" ? ` (ATECO ${f.g.ateco})` : ""}`;
+              const avf = avvisiDi(f);
+              if (avf.length) { s.className = "warn"; s.title = avf.join("\n"); s.textContent = "⚠ " + s.textContent; }
+              li.append(s, bottoneTogli("Togli", () => { stato.file.delete(f.chiave); aggiorna(); }));
+              ul.appendChild(li);
+            }
+            el.insertBefore(ul, el.querySelector("input"));
+          } else if (stato.errori.altri) { el.classList.add("errore"); st.textContent = `✗ ${stato.errori.altri}`; }
+          else st.textContent = "Trascina qui i file o clicca per sfogliare";
+        } else {
+          const f = stato.file.get(def.chiave);
+          if (f) {
+            const avf = avvisiDi(f);
+            el.classList.add(avf.length ? "attenzione" : "caricato");
+            st.textContent = `✓ ${f.nome}\n${riassunto(f)}`;
+            av.textContent = avf.map(a => `⚠ ${a}`).join("\n");
+            testa.appendChild(bottoneTogli("Togli il file", () => { stato.file.delete(f.chiave); aggiorna(); }));
+          } else if (stato.errori[def.id]) { el.classList.add("errore"); st.textContent = `✗ ${stato.errori[def.id]}`; }
+          else st.textContent = "Trascina qui il file o clicca per sfogliare";
+        }
+        cont.appendChild(el);
+      }
+    }
+    const { anno, trim } = periodo(), F = flussi();
+    const P = proc();
+    $("#gruppoMesi").hidden = F;
+    $("#titoloMesi").textContent = P ? "Procedure e scioglimenti di Varese, mese per mese" : "Mesi del trimestre";
+    $("#serveMesi").textContent = P ? "→ tutte le tabelle" : "→ tempo_mese";
+    $("#titoloTerr").textContent = P ? "Province lombarde, mese per mese" : "Confronto territoriale";
+    $("#serveTerr").textContent = F || P ? "→ territori" : "→ sintesi, territori";
+    $("#comeRegistrate").hidden = F || P; $("#comeIscrizioni").hidden = !F; $("#comeProcedure").hidden = !P;
+    if (P) $("#notaPeriodo").textContent = (trim === 4
+      ? `IV trimestre: oltre alle altre tabelle viene creata anche Procedure_e_scioglim_anno (un anno per riga dal ${PRIMO_ANNO_PROC} al ${anno}).`
+      : `La tabella Procedure_e_scioglim_anno si crea solo con il IV trimestre.`) +
+      ` Aperture cumulate da gennaio a ${MESI_IT[3 * trim - 1]} ${anno}; stock a fine ${nomeTrim(anno, trim)}. I mesi precedenti dell'anno vengono dalla serie storica.`;
+    else if (F) $("#notaPeriodo").textContent = (trim === 4
+      ? `IV trimestre: oltre alle altre tabelle viene creata anche Iscritte_cessate_anno (un anno per riga dal ${PRIMO_ANNO_FLUSSI} al ${anno}).`
+      : `La tabella Iscritte_cessate_anno si crea solo con il IV trimestre.`) + ` Valori cumulati da inizio anno (I–${ROMANI[trim]} trimestre ${anno}); cessate = cessazioni non d'ufficio.`;
+    else $("#notaPeriodo").textContent = trim === 4
+      ? `IV trimestre: oltre alle tabelle trimestrali viene creata anche la tabella annuale tempo_anno ${anno} (dati a dicembre).`
+      : `La tabella annuale tempo_anno si crea solo con il IV trimestre.`;
+    $("#notaPeriodo").textContent += ` I report partono dal ${nomeTrim(PRIMO_REPORT.anno, PRIMO_REPORT.trim)}: l'ATECO 2025 è in vigore dal ${nomeTrim(PRIMO_REPORT.anno - 1, PRIMO_REPORT.trim)} e serve il confronto con l'anno prima.`;
+  }
+
+  /* ---------- caricamento dei file ---------- */
+  // def = riquadro in cui è stato lasciato il file (serve se il nome del file non dice il periodo)
+  async function carica(files, def) {
+    log.textContent = "";
+    for (const k of Object.keys(stato.errori)) delete stato.errori[k];
+    for (const file of files) {
+      scrivi(`▶ ${file.name} (${file.size > 1048576 ? `${(file.size / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(file.size / 1024))} KB`})`, "muted");
+      try {
+        const r = await riconosciFile(new Uint8Array(await file.arrayBuffer()), file.name);
+        if (r.tipo === "storico") {
+          stato.storico = r.storico; stato.fonteStorico = file.name; stato.storicoAggiornato = false; stato.erroreStorico = "";
+          scrivi(`  ✓ serie storica — ${descriviStorico(r.storico).replace(/\n/g, " · ")}`, "ok");
+          for (const a of r.avvisi) scrivi(`  ⚠ serie storica: ${a}`, "warn");
+          continue;
+        }
+        const tipo = r.tipo;
+        let p = r.periodo;
+        if (!p) {   // il nome non dice il periodo: lo prendo dal riquadro (o, per i trimestri, dal trimestre scelto)
+          const q = periodo();
+          if (MENSILI.has(tipo)) { if (def && def.tipo === tipo) p = def.periodo; }
+          else if (!def || def.id !== "altri") p = q;
+          if (!p) throw new ErroreDati(`è un file «${NOMI_TIPO[tipo]}» ma dal nome non capisco il periodo: trascinalo nel suo riquadro oppure lascia il nome dato da Stockview (es. ${ESEMPI_NOME[tipo] || "20262_sa.csv"}).`);
+          scrivi(`  ℹ il nome non indica il periodo: lo considero del ${descrPeriodo(tipo, p)}`, "muted");
+        }
+        const chiave = chiaveDi(tipo, p);
+        let nuovo = { chiave, tipo, periodo: { ...p }, nome: file.name, g: r.g, dati: r.dati, colonne: r.colonne || [], avvisi: r.avvisi || [] };
+        const vecchio = stato.file.get(chiave);
+        const stesseColonne = vecchio && vecchio.colonne.length === nuovo.colonne.length && nuovo.colonne.every(c => vecchio.colonne.includes(c));
+        if (vecchio && (tipo === "province" || tipo === "italia") && !stesseColonne) {
+          // es. Italia con Registrate e Attive + Italia con Iscrizioni e Cessazioni: stesso periodo, colonne diverse -> uniti
+          nuovo = unisciFilePiccoli(vecchio, nuovo);
+          nuovo.nome = `${vecchio.nome} + ${file.name}`;
+          scrivi(`  ℹ unito a ${vecchio.nome} (stesso periodo, colonne diverse)`, "muted");
+        } else if (vecchio) scrivi(`  ℹ sostituisce ${vecchio.nome}`, "muted");
+        stato.file.set(chiave, nuovo);
+        const rec = stato.file.get(chiave);
+        scrivi(`  ✓ ${NOMI_TIPO[tipo]}, ${descrPeriodo(tipo, p)} — ${riassunto(rec).replace(/\n/g, " · ")}`, "ok");
+        for (const a of avvisiDi(rec)) scrivi(`  ⚠ ${a}`, "warn");
+        if (files.length === 1 && def && def.chiave && def.chiave !== chiave) scrivi(`  ℹ non è il file del riquadro «${def.titolo.replace(/^\S+\s/, "")}»: l'ho messo dove va (${NOMI_TIPO[tipo]}, ${descrPeriodo(tipo, p)})`, "muted");
+      } catch (e) {
+        scrivi(`  ✗ ${file.name}: ${e.message}`, "err");
+        if (!(e instanceof ErroreDati)) console.error(e);
+        if (def) { if (def.tipo === "storico") stato.erroreStorico = e.message; else stato.errori[def.id] = `${file.name}: ${e.message}`; }
+      }
+    }
+    aggiorna();
+  }
+
+  /* ---------- controllo: quali tabelle si possono fare e cosa manca ---------- */
+  const NOMI_STATO = { ok: ["✓ pronta", "ok"], incompleta: ["⚠ incompleta", "warn"], mancante: ["✗ non creata", "err"] };
+  function controlla() {
+    const { anno, trim } = periodo();
+    const box = $("#controllo");
+    box.textContent = "";
+    let esito;
+    try { esito = genera({ anno, trim, storico: stato.storico, file: [...stato.file.values()] }, { prova: true }); }
+    catch (e) { box.textContent = `Errore nel controllo: ${e.message}`; btn.disabled = true; return; }
+
+    const titolo = document.createElement("p");
+    titolo.className = "nota"; titolo.style.marginTop = "0";
+    titolo.textContent = proc()
+      ? `Procedure concorsuali e scioglimenti del ${nomeTrim(anno, trim)}${trim === 4 ? " (con la tabella anno)" : ""} · aperture cumulate gennaio–${MESI_IT[3 * trim - 1]} · settori in ATECO 2025`
+      : flussi()
+      ? `Iscritte e cessate del ${nomeTrim(anno, trim)}${trim === 4 ? " (con la tabella anno)" : ""} · settori in ATECO ${esito.ateco} · + file di monitoraggio (non per Osserva)`
+      : `Tabelle del ${nomeTrim(anno, trim)}${trim === 4 ? " (con tempo_anno)" : ""} · settori in ATECO ${esito.ateco}`;
+    box.appendChild(titolo);
+    // senza la serie storica mancano per forza tutti i periodi passati: non ha senso elencarli come file da scaricare
+    if (!stato.storico) {
+      const a = document.createElement("div");
+      a.className = "avviso"; a.style.margin = "0 0 10px";
+      a.textContent = proc()
+        ? "Carica prima la serie storica (Storico_imprese_Varese.xlsx, la stessa delle altre sezioni): contiene i mesi già passati dell'anno (per il cumulato), i trimestri e gli anni prima e lo stock dell'anno prima. Finché manca, le tabelle restano in attesa."
+        : flussi()
+        ? "Carica prima la serie storica (Storico_imprese_Varese.xlsx, la stessa delle registrate): contiene i trimestri già passati dell'anno (per il cumulato) e gli anni prima. Finché manca, le tabelle restano in attesa."
+        : "Carica prima la serie storica (Storico_imprese_Varese.xlsx): contiene i mesi, i trimestri e gli anni passati che servono per i confronti. Finché manca, le tabelle restano in attesa.";
+      box.appendChild(a);
+    }
+    const tab = document.createElement("table");
+    tab.className = "controllo";
+    for (const t of esito.tabelle) {
+      const tr = tab.insertRow();
+      tr.insertCell().textContent = t.breve;
+      const [testo, cls] = stato.storico || t.stato === "ok" ? NOMI_STATO[t.stato] : ["… in attesa", ""];
+      const b = document.createElement("span");
+      b.className = `badge ${cls}`; b.textContent = testo;
+      tr.insertCell().appendChild(b);
+      const d = tr.insertCell();
+      d.className = "dett";
+      if (t.stato !== "ok" && stato.storico) d.textContent = (t.stato === "mancante" ? "Manca: " : "Mancano nello storico: ") + t.mancanti.slice(0, 5).join("; ") + (t.mancanti.length > 5 ? `; … (${t.mancanti.length})` : "");
+    }
+    box.appendChild(tab);
+
+    const R = riquadri();
+    const slot = new Map([...R.base, ...R.mesi, ...R.terr].filter(d => d.chiave).map(d => [d.chiave, d]));
+    const posto = f => [...slot.keys()].indexOf(f.chiave);
+    const delTrimestre = esito.servono.filter(f => slot.has(f.chiave)).sort((a, b) => posto(a) - posto(b));
+    const passati = stato.storico ? esito.servono.filter(f => !slot.has(f.chiave)).sort((a, b) => a.chiave < b.chiave ? -1 : 1) : [];
+    const elencoFile = (titolo, lista, dove) => {
+      const s = document.createElement("div");
+      s.className = "servono";
+      s.innerHTML = titolo;
+      const ul = document.createElement("ul");
+      for (const f of lista) {
+        const li = document.createElement("li"), c = document.createElement("code");
+        c.textContent = f.nome;
+        const caricato = stato.file.get(f.chiave);
+        li.append(c, ` — ${f.descr}` + (caricato ? ` → il file caricato (${caricato.nome}) non contiene i dati necessari` : dove(f)));
+        ul.appendChild(li);
+      }
+      s.appendChild(ul);
+      box.appendChild(s);
+    };
+    if (delTrimestre.length)
+      elencoFile(`<b>File del ${nomeTrim(anno, trim)} ancora da caricare</b>`, delTrimestre, f => ` → riquadro «${slot.get(f.chiave).titolo.replace(/^\S+\s/, "")}»`);
+    if (passati.length)
+      elencoFile("<b>Periodi passati che mancano nello storico</b> — scaricali da Stockview e mettili nel riquadro «File di periodi passati» (servono solo una volta):", passati, () => "");
+    if (!delTrimestre.length && !passati.length && stato.storico) {
+      const s = document.createElement("div");
+      s.className = "pronto";
+      s.textContent = "✓ Ci sono tutti i dati: tutte le tabelle saranno complete.";
+      box.appendChild(s);
+    }
+    // file di monitoraggio (non fa parte del report): cosa manca e quali file lo completano, senza bloccare nulla
+    const cm = esito.controlloMonitoraggio;
+    if (cm && stato.storico) {
+      const s = document.createElement("div");
+      s.className = "monitoraggio";
+      const h = document.createElement("b");
+      h.textContent = "🔍 File di monitoraggio (non per Osserva): ";
+      s.appendChild(h);
+      if (cm.stato === "ok") s.append("completo.");
+      else {
+        s.append(`avrà alcune celle vuote, perché nello storico mancano le cessazioni totali di ${cm.mancanti.length} voci (es. ${cm.mancanti.slice(0, 2).join("; ")}). ` +
+                 "Il report per Osserva NON ne risente. Per completarlo carica nel riquadro «File di periodi passati» (facoltativo; per l'anno prima vanno bene anche i dati grezzi in ATECO 2007):");
+        const ul = document.createElement("ul");
+        for (const f of cm.suggeriti) {
+          const li = document.createElement("li"), c = document.createElement("code");
+          c.textContent = f.nome;
+          const caricato = stato.file.get(f.chiave);
+          li.append(c, ` — ${f.descr}` + (caricato ? ` → il file caricato (${caricato.nome}) non ha la colonna delle cessazioni totali` : ""));
+          ul.appendChild(li);
+        }
+        s.appendChild(ul);
+      }
+      box.appendChild(s);
+    }
+    btn.disabled = proc() ? !esito.pronto : !stato.file.has(chiaveDi("grezzo", { anno, trim }));
+    btn.title = !btn.disabled ? "" : proc() ? `Carica prima i tre file mensili delle procedure di Varese del ${nomeTrim(anno, trim)}` : `Carica prima i dati grezzi del ${nomeTrim(anno, trim)}`;
+  }
+
+  function aggiorna() { rendi(); controlla(); }
+
+  /* ---------- generazione ---------- */
+  function linkDownload(nome, dati, tipo, testo) {
+    const url = URL.createObjectURL(new Blob([dati], { type: tipo }));
+    urlCreati.push(url);
+    const a = document.createElement("a");
+    a.href = url; a.download = nome; a.className = "scarica"; a.textContent = testo || "Scarica";
+    return a;
+  }
+
+  btn.addEventListener("click", () => {
+    const { anno, trim } = periodo();
+    urlCreati.forEach(u => URL.revokeObjectURL(u)); urlCreati = [];
+    risultati.hidden = true; elenco.textContent = ""; log.textContent = "";
+    $("#elencoMonitor").textContent = ""; $("#boxMonitor").hidden = true; $("#linkMonitor").hidden = true;
+    scrivi(`▶ ${NOMI_SEZIONE[sezione()]} — ${nomeTrim(anno, trim)}`, "muted");
+    if (!stato.storico) scrivi("  ⚠ nessuna serie storica caricata: i confronti con i periodi passati resteranno vuoti", "warn");
+    try {
+      const esito = genera({ anno, trim, storico: stato.storico, file: [...stato.file.values()] }, { log: logCtx });
+      for (const t of esito.tabelle) {
+        const riga = document.createElement("div");
+        riga.className = "file";
+        const nome = document.createElement("span");
+        if (t.dati) {
+          nome.textContent = (t.stato === "ok" ? "" : "⚠ ") + t.nome + (t.stato === "ok" ? "" : " (incompleta)");
+          if (t.stato !== "ok") nome.className = "warn";
+          riga.append(nome, linkDownload(t.nome, t.dati, XLSX));
+        } else {
+          nome.textContent = `✗ ${t.breve}: non creata (mancano dati del ${nomeTrim(anno, trim)})`;
+          nome.className = "muted";
+          riga.append(nome);
+        }
+        elenco.appendChild(riga);
+      }
+      const voci = [...esito.file.map(f => ({ nome: `${esito.cartella}/${f.nome}`, dati: f.dati })), { nome: `${esito.cartella}/${NOME_STORICO}`, dati: esito.storicoXlsx }];
+      const mon = esito.monitoraggio;
+      if (mon) {   // file di monitoraggio: fuori dalla cartella del report, in una cartella «NON_DA_CARICARE…»
+        voci.push({ nome: `${esito.cartellaMonitoraggio}/${mon.nome}`, dati: mon.dati });
+        const riga = document.createElement("div"), nome = document.createElement("span");
+        riga.className = "file";
+        nome.textContent = mon.nome + (mon.incompleto ? ` (alcune celle vuote: mancano le cessazioni totali; si completa caricando in «File di periodi passati» ${mon.suggeriti.map(f => f.nome).join(", ")} e rigenerando)` : "");
+        nome.className = "muted";
+        riga.append(nome, linkDownload(mon.nome, mon.dati, XLSX));
+        $("#elencoMonitor").appendChild(riga);
+        $("#boxMonitor").hidden = false;
+        const urlM = URL.createObjectURL(new Blob([mon.dati], { type: XLSX }));
+        urlCreati.push(urlM);
+        $("#linkMonitor").href = urlM; $("#linkMonitor").download = mon.nome; $("#linkMonitor").hidden = false;
+      }
+      const urlZip = URL.createObjectURL(new Blob([creaZip(voci)], { type: "application/zip" }));
+      urlCreati.push(urlZip);
+      $("#zip").href = urlZip; $("#zip").download = `${esito.cartella}.zip`;
+      const urlS = URL.createObjectURL(new Blob([esito.storicoXlsx], { type: XLSX }));
+      urlCreati.push(urlS);
+      $("#linkStorico").href = urlS; $("#linkStorico").download = NOME_STORICO;
+      stato.storico = esito.storico; stato.fonteStorico = `serie storica aggiornata con il ${nomeTrim(anno, trim)}`; stato.storicoAggiornato = true;
+      risultati.hidden = false;
+      const inc = esito.file.filter(f => f.incompleto).length, non = esito.tabelle.length - esito.file.length;
+      scrivi(`✔ Completato: ${esito.file.length} tabelle${inc ? ` (${inc} incomplete)` : ""}${non ? `, ${non} non create` : ""} + serie storica aggiornata` +
+             `${mon ? " + file di monitoraggio (NON fa parte del report)" : ""}. Scaricale qui sotto.`, "ok");
+      aggiorna();
+      risultati.scrollIntoView({ behavior: "smooth", block: "start" });
+    } catch (e) {
+      scrivi(`✗ ${e.message}`, "err");
+      if (!(e instanceof ErroreDati)) console.error(e);
+    }
+  });
+
+  // un file lasciato fuori dai riquadri: la pagina lo riconosce da sola (e il browser non lo apre)
+  window.addEventListener("dragover", e => e.preventDefault());
+  window.addEventListener("drop", e => { e.preventDefault(); if (e.dataTransfer && e.dataTransfer.files.length) carica([...e.dataTransfer.files], null); });
+  const cambioPeriodo = () => { for (const k of Object.keys(stato.errori)) delete stato.errori[k]; risultati.hidden = true; aggiorna(); };
+  selAnno.addEventListener("change", () => { limitaTrimestri(); cambioPeriodo(); });
+  selTrim.addEventListener("change", cambioPeriodo);
+  for (const r of document.querySelectorAll('input[name="sezione"]')) r.addEventListener("change", () => { log.textContent = ""; cambioPeriodo(); });
+  aggiorna();
+})();
+</script>
+<script src="../assets/aree.js?v=3910429333"></script>
+<script src="../assets/portale.js?v=73dcaff065"></script>
+</body>
+</html>

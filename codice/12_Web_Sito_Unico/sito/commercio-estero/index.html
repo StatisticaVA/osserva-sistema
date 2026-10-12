@@ -1,0 +1,714 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commercio estero – Report statistici · Camera di Commercio di Varese</title>
+<meta name="description" content="Export e import di Varese, Lombardia e Italia per territori, settori e paesi, con i dati ISTAT Coeweb scaricati al momento.">
+<meta name="theme-color" content="#12104a">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/portale.css?v=e0f75119b8">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="pagina-tema" data-area="commercio-estero" style="--area:#0f766e;--area-soft:#e0f3f0">
+<a class="vai-contenuto" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="testata-in">
+    <a class="marchio" href="../index.html" title="Torna alla pagina iniziale"><img src="../assets/logo.png" alt="Camera di Commercio di Varese – Futuro Impresa Territorio" width="218" height="44"></a>
+    <div class="testata-titolo"><a href="../index.html">Report statistici</a><small>Tabelle per Osserva · Ufficio Statistica</small></div>
+    <nav class="testata-link" aria-label="Collegamenti principali">
+      <a href="../index.html"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><span>Home</span></a>
+      <a href="../index.html#stato"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span>Stato dei dati</span></a>
+    </nav>
+    <button class="bottone-menu" type="button" aria-controls="menu" aria-expanded="false"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>Temi</button>
+  </div>
+</header>
+<div class="velo"></div>
+<div class="struttura">
+<aside class="menu-laterale" id="menu" aria-label="Temi">
+  <nav>
+    <a class="menu-area menu-home" href="../index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="nome">Pagina iniziale</span></a>
+    <p class="titoletto">Temi</p>
+    <details class="menu-voce" style="--c:#006ba0;--c-soft:#e3f2fa">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span><span class="nome">Imprese</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../imprese/index.html#sezione=registrate_attive" data-sezione="registrate_attive">Registrate e attive</a></li>
+        <li><a href="../imprese/index.html#sezione=iscrizioni_cessazioni" data-sezione="iscrizioni_cessazioni">Iscrizioni e cessazioni</a></li>
+        <li><a href="../imprese/index.html#sezione=procedure" data-sezione="procedure">Procedure concorsuali e scioglimenti</a></li>
+      </ul>
+    </details>
+    <details class="menu-voce" style="--c:#c2410c;--c-soft:#fdede4">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><span class="nome">Lavoro</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../lavoro/index.html#sezione=disoccupazione" data-sezione="disoccupazione">Disoccupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=occupazione" data-sezione="occupazione">Occupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=attivita" data-sezione="attivita">Attività</a></li>
+        <li><a href="../lavoro/index.html#sezione=inattivita" data-sezione="inattivita">Inattività</a></li>
+        <li><a href="../lavoro/index.html#sezione=cig" data-sezione="cig">Cassa integrazione</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce corrente" style="--c:#0f766e;--c-soft:#e0f3f0"><a class="menu-area" href="../commercio-estero/index.html" aria-current="page"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span class="nome">Commercio estero</span></a></div>
+    <details class="menu-voce" style="--c:#4338ca;--c-soft:#ebeafd">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></svg></span><span class="nome">Credito</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../credito/index.html#sezione=depositi" data-sezione="depositi">Depositi</a></li>
+        <li><a href="../credito/index.html#sezione=impieghi" data-sezione="impieghi">Impieghi</a></li>
+        <li><a href="../credito/index.html#sezione=sofferenze" data-sezione="sofferenze">Sofferenze</a></li>
+        <li><a href="../credito/index.html#sezione=sportelli" data-sezione="sportelli">Sportelli</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce" style="--c:#7e22ce;--c-soft:#f3e7fc"><a class="menu-area" href="../conti-economici/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span><span class="nome">Conti economici</span></a></div>
+    <div class="menu-voce" style="--c:#13733a;--c-soft:#e3f4e8"><a class="menu-area" href="../popolazione/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="nome">Popolazione</span></a></div>
+    <div class="menu-voce" style="--c:#be123c;--c-soft:#fce7eb"><a class="menu-area" href="../trasporti/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></span><span class="nome">Trasporti</span></a></div>
+  </nav>
+  <div class="menu-nota"><b>Come si usa</b>Scegli un tema, controlla i dati e premi «Genera». In fondo a ogni pagina, «Come funziona» spiega tabelle e regole di calcolo.</div>
+</aside>
+<div class="contenuto">
+  <section class="eroe-area senza-schede" aria-labelledby="titolo-tema">
+    <div class="briciole"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Commercio estero</a></div>
+    <div class="eroe-riga">
+      <div class="tessera-grande"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></div>
+      <div>
+        <h1 id="titolo-tema">Commercio estero</h1>
+        <p class="lead">Export e import di Varese, Lombardia e Italia per territori, settori e paesi, con i dati ISTAT Coeweb scaricati al momento.</p>
+        <ul class="meta">
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>Fonte: ISTAT – Coeweb</li>
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Dati scaricati da ISTAT quando premi «Genera report»</li>
+          
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<main class="wrap" id="contenuto">
+  <section class="card">
+    <h2>Periodo</h2>
+    <div class="riga">
+      <label>Anno <select id="anno"></select></label>
+      <label>Trimestre
+        <select id="trim">
+          <option value="1">T1</option><option value="2">T2</option>
+          <option value="3">T3</option><option value="4">T4</option>
+        </select>
+      </label>
+      <span class="spazio"></span>
+      <button id="annulla" class="secondario" disabled>✕ Annulla</button>
+      <button id="genera" class="primario">⬇ Genera report</button>
+    </div>
+    <p class="nota">Valori <b>cumulati</b>: T2 = T1+T2, confrontati con T1+T2 dell'anno prima. Con T4 si usa il dato annuale ISTAT.
+      Serve circa 1–2 minuti (ISTAT accetta ~5 richieste al minuto): lascia la pagina aperta.</p>
+    <div id="avvisoFile" class="avviso" hidden>La pagina è aperta come file locale: funziona, ma se il browser blocca lo scaricamento dei dati apri la versione pubblicata online.</div>
+  </section>
+
+  <section class="card">
+    <h2>Stato</h2>
+    <pre id="log"><span class="muted">Pronto. Scegli anno e trimestre e premi «Genera report».</span></pre>
+  </section>
+
+  <section class="card" id="risultati" hidden>
+    <h2>File pronti</h2>
+    <a id="zip" class="zip" href="#">⬇ Scarica tutto (ZIP)</a>
+    <div id="elenco"></div>
+  </section>
+
+  <section class="card">
+    <h2>Cosa contiene il report</h2>
+    <details>
+      <summary>Tabelle e regole di calcolo</summary>
+      <ul>
+        <li><b>Sintesi</b>: export, import e saldo di Varese, Lombardia e Italia; periodo recente contro stesso periodo dell'anno prima.</li>
+        <li><b>Territori</b>: province lombarde e Lombardia, con variazione tendenziale, saldo e peso % sulla regione.</li>
+        <li><b>Tempo trimestrale</b>: singoli trimestri di Varese degli ultimi 5 anni, con variazioni congiunturali e tendenziali.</li>
+        <li><b>Tempo annuale</b>: ultimi 13 anni di Varese. Si crea <b>solo scegliendo T4</b> e solo quando ISTAT ha pubblicato il dato annuale.</li>
+        <li><b>Settori export/import</b>: sottosettori manifatturieri di Varese, peso sul manifatturiero e variazione tendenziale.</li>
+        <li><b>Paesi export/import</b> e <b>file per il grafico</b>: continenti, MONDO e primi 20 paesi partner di Varese.</li>
+      </ul>
+      <p class="nota">Le variazioni tendenziali confrontano sempre il periodo cumulato con lo stesso periodo cumulato dell'anno precedente.
+        I dati vengono riscaricati ogni volta: se ISTAT rivede anni passati, i valori si aggiornano.</p>
+    </details>
+  </section>
+</main>
+<footer class="versione">Fonte: ISTAT – Coeweb (esploradati.istat.it) · versione 1.0</footer>
+</div>
+</div>
+<footer class="pie">
+  <div class="pie-in">
+    <div><img class="simbolo" src="../assets/simbolo-bianco.png" alt=""><b>Camera di Commercio di Varese</b> · Ufficio Statistica</div>
+    <div>Fonti: ISTAT, Banca d'Italia, INPS, InfoCamere, Centro Studi Tagliacarne, ACI · Le tabelle si creano nel browser: i file che carichi restano sul tuo computer · versione 1.0</div>
+  </div>
+</footer>
+<script id="motore">
+"use strict";
+/* ==========================================================================
+   MOTORE DEL REPORT (nessuna libreria esterna: download, calcoli, Excel e ZIP)
+   ========================================================================== */
+const COEWEB = "https://esploradati.istat.it/Coeweb/databrowserhub/api/core/nodes/1/datasets/";
+const URL_CONG = COEWEB + "IT1,DF_DCSE_CPA_ATECO2007_COE_A_Q_CONJ,1.0/data";     // annuali + trimestrali dal 2020
+const URL_STORICO = COEWEB + "IT1,DF_CPA_AT2007_COE_OPT_A_REG_ALL,1.0/data";   // annuali dal 1991
+
+const PROVINCIA = "ITC41", REGIONE = "ITC4", ITALIA = "ITTOT";
+const NOMI = { ITC41: "Varese", ITC4: "Lombardia", ITTOT: "Italia" };
+const PROVINCE_REGIONE = [
+  ["ITC41", "Varese"], ["ITC42", "Como"], ["ITC44", "Sondrio"], ["ITC45", "Milano"],
+  ["ITC46", "Bergamo"], ["ITC47", "Brescia"], ["ITC48", "Pavia"], ["ITC4A", "Cremona"],
+  ["ITC4B", "Mantova"], ["ITC43", "Lecco"], ["ITC49", "Lodi"], ["IT108", "Monza e della Brianza"],
+];
+const SETTORI = [
+  ["CA", "Prodotti alimentari, bevande e tabacco"],
+  ["CB", "Prodotti tessili, abbigliamento, pelli accessori"],
+  ["CC", "Legno e prodotti in legno; carta e stampa"],
+  ["CD", "Coke e prodotti petroliferi raffinati"],
+  ["CE", "Sostanze e prodotti chimici"],
+  ["CF", "Articoli farmaceutici, chimico-medicinali e botanici"],
+  ["CG", "Articoli in gomma e materie plastiche, altri prodotti della lavorazione di minerali non metalliferi"],
+  ["CH", "Metalli di base e prodotti in metallo, esclusi macchine e impianti"],
+  ["CI", "Computer, apparecchi elettronici e ottici"],
+  ["CJ", "Apparecchi elettrici"],
+  ["CK", "Macchinari ed apparecchi n.c.a."],
+  ["CL", "Mezzi di trasporto"],
+  ["CM", "Prodotti altre attività manifatturiere"],
+];
+const CONTINENTI = [["EUR", "Europa"], ["ASI", "Asia"], ["AME", "America"], ["AFR", "Africa"],
+                    ["OCE_OCE_OTH", "Oceania ed altri territori"]];
+// codici "paese" a due lettere che non sono paesi (provviste di bordo, non determinati, ...)
+const NON_PAESI = new Set(["QP", "QZ", "QW", "QS", "QY", "QV", "QR", "QU", "QX", "QQ", "QO", "XC", "XL"]);
+const ROMANI = { 1: "I", 2: "II", 3: "III", 4: "IV" };
+
+const INTERVALLO_MS = 13000;   // ISTAT accetta ~5 richieste al minuto
+const MAX_TENTATIVI = 4;
+const TIMEOUT_MS = 180000;
+
+class ErroreIstat extends Error {}
+class Annullato extends Error {}
+
+/* ------------------------------------------------------------------ rete */
+let ultimaRichiesta = 0;
+
+function attendi(ms, segnale) {
+  return new Promise((ok, ko) => {
+    if (segnale && segnale.aborted) return ko(new Annullato("Operazione annullata."));
+    const t = setTimeout(ok, ms);
+    if (segnale) segnale.addEventListener("abort", () => { clearTimeout(t); ko(new Annullato("Operazione annullata.")); }, { once: true });
+  });
+}
+
+async function rispettaLimite(ctx) {
+  const attesa = INTERVALLO_MS - (Date.now() - ultimaRichiesta);
+  if (attesa > 0) {
+    if (attesa > 3000) ctx.avanzamento(`pausa di ${Math.round(attesa / 1000)}s per il limite ISTAT (~5 richieste/min)…`);
+    await attendi(attesa, ctx.segnale);
+  }
+  ultimaRichiesta = Date.now();
+}
+
+async function postIstat(url, filtri, ctx) {
+  let ritardo = 30000;
+  for (let tentativo = 0; tentativo < MAX_TENTATIVI; tentativo++) {
+    if (ctx.segnale && ctx.segnale.aborted) throw new Annullato("Operazione annullata.");
+    await rispettaLimite(ctx);
+    const ctrl = new AbortController();
+    const timer = setTimeout(() => ctrl.abort(), TIMEOUT_MS);
+    const suAnnulla = () => ctrl.abort();
+    if (ctx.segnale) ctx.segnale.addEventListener("abort", suAnnulla, { once: true });
+    let r;
+    try {
+      r = await fetch(url + "?lang=it", {
+        method: "POST",
+        headers: { "Accept": "application/json", "Content-Type": "application/json", "UserLang": "it" },
+        body: JSON.stringify(filtri),
+        signal: ctrl.signal,
+      });
+    } catch (e) {
+      if (ctx.segnale && ctx.segnale.aborted) throw new Annullato("Operazione annullata.");
+      if (tentativo < MAX_TENTATIVI - 1) {
+        ctx.avanzamento("ISTAT non risponde o connessione assente: riprovo tra 10s…");
+        await attendi(10000, ctx.segnale);
+        continue;
+      }
+      throw new ErroreIstat("Connessione a ISTAT non riuscita (rete assente o sito ISTAT non raggiungibile).");
+    } finally {
+      clearTimeout(timer);
+      if (ctx.segnale) ctx.segnale.removeEventListener("abort", suAnnulla);
+    }
+    if (r.status === 429 && tentativo < MAX_TENTATIVI - 1) {
+      const ra = parseFloat(r.headers.get("Retry-After"));
+      const pausa = Math.min(Number.isFinite(ra) ? ra * 1000 : ritardo, 120000);
+      ctx.avanzamento(`ISTAT chiede una pausa (${Math.round(pausa / 1000)}s), poi riprovo…`);
+      await attendi(pausa, ctx.segnale);
+      ritardo *= 2;
+      continue;
+    }
+    if ([500, 502, 503, 504].includes(r.status) && tentativo < MAX_TENTATIVI - 1) {
+      ctx.avanzamento(`errore temporaneo del server ISTAT (HTTP ${r.status}): riprovo tra 15s…`);
+      await attendi(15000, ctx.segnale);
+      continue;
+    }
+    if (r.status === 404) throw new ErroreIstat("404: nessun dato per questa richiesta.");
+    if (r.status === 413) throw new ErroreIstat("413: selezione troppo ampia.");
+    if (r.status === 429) throw new ErroreIstat("429: troppe richieste (limite ISTAT ~5/min): attendi 1-2 minuti e riprova.");
+    if (!r.ok) throw new ErroreIstat(`HTTP ${r.status} da ISTAT.`);
+    const testo = await r.text();
+    if (!testo || testo.length < 30) throw new ErroreIstat("risposta ISTAT vuota.");
+    try { return JSON.parse(testo); }
+    catch (e) { throw new ErroreIstat("risposta ISTAT non leggibile."); }
+  }
+  throw new ErroreIstat("ISTAT non disponibile dopo più tentativi.");
+}
+
+function filtri(freq, aree, tipi, cpa, paesi, y1, y2) {
+  const f = [
+    { id: "FREQ", filterValues: freq },
+    { id: "REF_AREA", type: "CodeValues", filterValues: aree },
+    { id: "DATA_TYPE", type: "CodeValues", filterValues: tipi },
+    { id: "ADJUSTMENT", filterValues: ["N"] },
+    { id: "CPA_ATECO2007_COE", filterValues: cpa },
+  ];
+  if (paesi) f.push({ id: "PARTNER_COUNTRY", filterValues: paesi });   // senza filtro: tutti i paesi
+  f.push({ id: "TIME_PERIOD", type: "TimeRange", filterValues: [], from: `${y1}-01-01T00:00:00`, to: `${y2}-12-31T00:00:00` });
+  return f;
+}
+
+/* ------------------------------------------------------------------ JSON-stat */
+const chiave = (area, tipo, cpa, paese, periodo) => [area, tipo, cpa, paese, periodo].join("|");
+
+function leggiJsonStat(js) {
+  if (!js || !Array.isArray(js.id) || !js.dimension) throw new ErroreIstat("risposta ISTAT in formato inatteso.");
+  const ids = js.id, dims = js.dimension;
+  const pos2code = ids.map(d => {
+    const cat = dims[d].category || {};
+    const idx = cat.index;
+    if (Array.isArray(idx)) return idx.slice();
+    if (idx && typeof idx === "object") { const a = []; for (const [c, p] of Object.entries(idx)) a[p] = c; return a; }
+    return Object.keys(cat.label || {});
+  });
+  const size = js.size || pos2code.map(a => a.length);
+  const etichette = ids.map(d => (dims[d].category || {}).label || {});
+  const n = ids.length, strides = new Array(n).fill(1);
+  for (let k = n - 2; k >= 0; k--) strides[k] = strides[k + 1] * size[k + 1];
+  const pos = {};
+  ids.forEach((d, i) => { pos[d] = i; });
+  for (const d of ["REF_AREA", "DATA_TYPE", "CPA_ATECO2007_COE", "PARTNER_COUNTRY", "TIME_PERIOD"])
+    if (!(d in pos)) throw new ErroreIstat(`risposta ISTAT senza la dimensione ${d}.`);
+  const codice = (d, i) => { const k = pos[d]; const p = Math.floor(i / strides[k]) % size[k]; return pos2code[k][p] ?? String(p); };
+  const valori = new Map();
+  const voci = Array.isArray(js.value) ? js.value.map((v, i) => [i, v]) : Object.entries(js.value || {});
+  for (const [k, v] of voci) {
+    if (v === null || v === "") continue;
+    const x = typeof v === "number" ? v : parseFloat(v);
+    if (!Number.isFinite(x)) continue;
+    const i = Number(k);
+    valori.set(chiave(codice("REF_AREA", i), codice("DATA_TYPE", i), codice("CPA_ATECO2007_COE", i),
+                      codice("PARTNER_COUNTRY", i), String(codice("TIME_PERIOD", i))), x);
+  }
+  const kp = pos.PARTNER_COUNTRY;
+  const paesi = pos2code[kp].map(c => [c, etichette[kp][c] ?? c]);   // nell'ordine ISTAT
+  return { valori, paesi };
+}
+
+async function scarica(url, f, ctx) {
+  return leggiJsonStat(await postIstat(url, f, ctx));
+}
+
+/* ------------------------------------------------------------------ dati e calcoli */
+class Dati {
+  constructor() { this.v = new Map(); }
+  aggiungi(m, prevale = true) { for (const [k, x] of m) if (prevale || !this.v.has(k)) this.v.set(k, x); }
+  get(area, tipo, periodo, cpa = "ALL", paese = "WORLD") {
+    const x = this.v.get(chiave(area, tipo, cpa, paese, String(periodo)));
+    return x === undefined ? null : x;
+  }
+  trimestre(area, tipo, anno, t, cpa, paese) { return this.get(area, tipo, `${anno}-Q${t}`, cpa, paese); }
+  annuale(area, tipo, anno, cpa, paese) { return this.get(area, tipo, anno, cpa, paese); }   // solo dato annuale ISTAT
+  cumulato(area, tipo, anno, trim, cpa, paese) {
+    if (trim === 4) { const v = this.get(area, tipo, anno, cpa, paese); if (v !== null) return v; }
+    const qs = [];
+    for (let t = 1; t <= trim; t++) qs.push(this.trimestre(area, tipo, anno, t, cpa, paese));
+    if (qs.every(x => x === null)) return null;
+    return qs.reduce((s, x) => s + (x ?? 0), 0);
+  }
+}
+
+const variaz = (nuovo, vecchio) => (nuovo === null || vecchio === null || vecchio === 0) ? null : (nuovo - vecchio) / Math.abs(vecchio) * 100;
+const quota = (parte, totale) => (parte === null || totale === null || totale === 0) ? null : parte / totale * 100;
+const saldo = (e, i) => (e === null || i === null) ? null : e - i;
+
+// arrotondamento a 2 decimali identico a Python (pareggi esatti al pari)
+function round2(x) {
+  if (x === null || x === undefined) return null;
+  if (Number.isInteger(x * 8) && !Number.isInteger(x * 4)) {
+    const giu = Math.floor(x * 100);
+    return (giu % 2 === 0 ? giu : giu + 1) / 100;
+  }
+  return Number(x.toFixed(2));
+}
+const p2 = v => v === null ? null : round2(v);
+
+/* ------------------------------------------------------------------ tabelle */
+function tabSintesi(D, anno, trim) {
+  const righe = []; let n = 0;
+  for (const area of [PROVINCIA, REGIONE, ITALIA]) {
+    const e1 = D.cumulato(area, "EV", anno, trim), e0 = D.cumulato(area, "EV", anno - 1, trim);
+    const i1 = D.cumulato(area, "IV", anno, trim), i0 = D.cumulato(area, "IV", anno - 1, trim);
+    for (const [voce, v0, v1, v] of [["Export", e0, e1, p2(variaz(e1, e0))], ["Import", i0, i1, p2(variaz(i1, i0))],
+                                     ["Saldo", saldo(e0, i0), saldo(e1, i1), null]]) {
+      n += 1;
+      righe.push([n, NOMI[area], voce, v0, v1, v]);
+    }
+  }
+  return { nome: "Import_export_Sintesi.xlsx", foglio: "Foglio2",
+           intest: ["Ordine", "Territorio", "Bilancia commerciale", "Stesso periodo precedente", "Periodo recente", "Variazione %"],
+           righe, colValori: [4, 5], colPct: [6] };
+}
+
+function tabTerritori(D, anno, trim) {
+  const reg = NOMI[REGIONE];
+  const eReg = D.cumulato(REGIONE, "EV", anno, trim), iReg = D.cumulato(REGIONE, "IV", anno, trim);
+  const righe = [...PROVINCE_REGIONE, [REGIONE, reg]].map(([area, nome], k) => {
+    const e1 = D.cumulato(area, "EV", anno, trim), e0 = D.cumulato(area, "EV", anno - 1, trim);
+    const i1 = D.cumulato(area, "IV", anno, trim), i0 = D.cumulato(area, "IV", anno - 1, trim);
+    return [k + 1, nome, e1, p2(variaz(e1, e0)), i1, p2(variaz(i1, i0)), saldo(e1, i1), p2(quota(e1, eReg)), p2(quota(i1, iReg))];
+  });
+  return { nome: "Import_export_Territori.xlsx", foglio: "Foglio1",
+           intest: ["Ordine", "Territori", "Export", "T.var % tend export", "Import", "T.var % tend import", "Saldo",
+                    `Peso % export su ${reg}`, `Peso % import su ${reg}`],
+           righe, colValori: [3, 5, 7], colPct: [4, 6, 8, 9] };
+}
+
+function tabTrimestrale(D, anno, trim) {
+  const prec = (y, t) => t > 1 ? [y, t - 1] : [y - 1, 4];
+  const serie = (tipo, y, t) => tipo === "S"
+    ? saldo(D.trimestre(PROVINCIA, "EV", y, t), D.trimestre(PROVINCIA, "IV", y, t))
+    : D.trimestre(PROVINCIA, tipo, y, t);
+  const righe = [];
+  for (let y = anno - 5, t = 1; y < anno || (y === anno && t <= trim); ) {
+    const riga = [y, `${ROMANI[t]} trim '${String(y % 100).padStart(2, "0")}`];
+    for (const tipo of ["EV", "IV", "S"]) {
+      const v = serie(tipo, y, t);
+      riga.push(v, p2(variaz(v, serie(tipo, ...prec(y, t)))), p2(variaz(v, serie(tipo, y - 1, t))));
+    }
+    righe.push(riga);
+    if (t < 4) t += 1; else { y += 1; t = 1; }
+  }
+  return { nome: "Import_export_Tempo_Trimestrale.xlsx", foglio: "Foglio1",
+           intest: ["Anno", "Trimestre", "Export", "T.var% cong. export", "T.var% tend. export", "Import", "T.var% cong. import",
+                    "T.var% tend. import", "Saldo", "T.var% cong. saldo", "T.var% tend. saldo"],
+           righe, colValori: [3, 6, 9], colPct: [4, 5, 7, 8, 10, 11] };
+}
+
+function ultimoAnnoCompleto(D, anno, trim, area = PROVINCIA) {
+  let y = trim === 4 ? anno : anno - 1;
+  while (y > anno - 5 && D.annuale(area, "EV", y) === null) y -= 1;
+  return y;
+}
+
+function tabAnnuale(D, anno, trim) {
+  const yFine = ultimoAnnoCompleto(D, anno, trim);
+  const righe = [];
+  for (let y = yFine - 12; y <= yFine; y++) {
+    const e1 = D.annuale(PROVINCIA, "EV", y), e0 = D.annuale(PROVINCIA, "EV", y - 1);
+    const i1 = D.annuale(PROVINCIA, "IV", y), i0 = D.annuale(PROVINCIA, "IV", y - 1);
+    const s1 = saldo(e1, i1), s0 = saldo(e0, i0);
+    righe.push([y, e1, p2(variaz(e1, e0)), i1, p2(variaz(i1, i0)), s1, p2(variaz(s1, s0))]);
+  }
+  return { nome: "Import_export_Tempo_Annuale.xlsx", foglio: "Foglio1",
+           intest: ["Anno", "Export", "T.var % su export anno precedente", "Import", "T.var % su import anno precedente",
+                    "Saldo", "T.var% sull'anno precedente"],
+           righe, colValori: [2, 4, 6], colPct: [3, 5, 7] };
+}
+
+function tabSettori(D, anno, trim, tipo) {
+  const flusso = tipo === "EV" ? "export" : "import";
+  const cur = c => D.cumulato(PROVINCIA, tipo, anno, trim, c);
+  const pre = c => D.cumulato(PROVINCIA, tipo, anno - 1, trim, c);
+  const totC = cur("C"), tot = cur("ALL");
+  const righe = SETTORI.map(([cod, nome], k) => { const v = cur(cod); return [k + 1, nome, v, p2(quota(v, totC)), p2(variaz(v, pre(cod)))]; });
+  const n = SETTORI.length;
+  righe.push([n + 1, "Totale manifatturiero", totC, totC ? 100 : null, p2(variaz(totC, pre("C")))]);
+  righe.push([n + 2, `% manifatturiero sul totale dell'${flusso}`, tot, p2(quota(totC, tot)), p2(variaz(tot, pre("ALL")))]);
+  const Flusso = flusso[0].toUpperCase() + flusso.slice(1);
+  return { nome: `Import_export_Settori_${Flusso}.xlsx`, foglio: "Foglio1",
+           intest: ["Ordine", "Dettaglio manifatturiero", "Valori in euro", `% ${flusso} sul totale manifatturiero`, "T.var% tend."],
+           righe, colValori: [3], colPct: [4, 5] };
+}
+
+function tabPaesi(D, anno, trim, tipo, paesi) {
+  const flusso = tipo === "EV" ? "Export" : "Import";
+  const cur = p => D.cumulato(PROVINCIA, tipo, anno, trim, "ALL", p);
+  const pre = p => D.cumulato(PROVINCIA, tipo, anno - 1, trim, "ALL", p);
+  const mondo = cur("WORLD");
+  const riga = (n, nome, p) => [n, nome, cur(p), p2(quota(cur(p), mondo)), p2(variaz(cur(p), pre(p)))];
+  const continenti = CONTINENTI.slice().sort((a, b) => (cur(b[0]) || 0) - (cur(a[0]) || 0));
+  const righe = continenti.map(([cod, nome], k) => riga(k + 1, nome, cod));
+  const grafico = righe.map(r => r.slice());
+  const n = righe.length;
+  righe.push([n + 1, "MONDO", mondo, mondo ? 100 : null, p2(variaz(mondo, pre("WORLD")))]);
+  righe.push([n + 2, "Primi 20 paesi partner", null, null, null]);
+  const elenco = paesi.filter(([c]) => c.length === 2 && !NON_PAESI.has(c) && cur(c));
+  elenco.sort((a, b) => cur(b[0]) - cur(a[0]));
+  elenco.slice(0, 20).forEach(([c, nome], k) => righe.push(riga(n + 3 + k, nome, c)));
+  const intest = ["Ordine", "Aree geografiche", flusso, "Composizione %", "T.var% tend."];
+  return [
+    { nome: `Import_export_Paesi_${flusso}.xlsx`, foglio: "Foglio1", intest, righe, colValori: [3], colPct: [4, 5] },
+    { nome: `${flusso}_paesi_xgrafico.xlsx`, foglio: "Foglio1", intest, righe: grafico, colValori: [3], colPct: [4, 5] },
+  ];
+}
+
+/* ------------------------------------------------------------------ report completo */
+async function generaReport(anno, trim, ctx) {
+  anno = Number(anno); trim = Number(trim);
+  ctx = Object.assign({ avanzamento() {}, log() {} }, ctx || {});
+  if (![1, 2, 3, 4].includes(trim)) throw new ErroreIstat("Il trimestre deve essere 1, 2, 3 o 4.");
+  const leggi = ctx.scarica || scarica;   // (ctx.scarica solo per i test)
+  const D = new Dati();
+  const settori = SETTORI.map(s => s[0]);
+  const lombardia = PROVINCE_REGIONE.map(p => p[0]);
+
+  ctx.avanzamento("scarico totali di Italia, regione e province…");
+  D.aggiungi((await leggi(URL_CONG, filtri(["A", "Q"], [ITALIA, REGIONE, ...lombardia], ["EV", "IV"], ["ALL"], ["WORLD"], anno - 6, anno), ctx)).valori);
+  if (D.trimestre(PROVINCIA, "EV", anno, trim) === null) {
+    const ultimi = [...D.v.keys()].map(k => k.split("|")).filter(k => k[0] === PROVINCIA && k[4].includes("-Q")).map(k => k[4]).sort();
+    throw new ErroreIstat(`ISTAT non ha ancora pubblicato i dati del ${trim}° trimestre ${anno}` +
+                          (ultimi.length ? ` (ultimo disponibile: ${ultimi[ultimi.length - 1]}).` : "."));
+  }
+
+  const cartella = `Report_import_export_${anno}_T${trim}`;
+  const file = [];
+  const fai = (nome, fn) => {
+    try {
+      for (const t of [].concat(fn())) { file.push({ nome: t.nome, dati: creaXlsx(t) }); ctx.log(t.nome, "ok"); }
+    } catch (e) {
+      if (e instanceof Annullato) throw e;
+      ctx.log(`${nome}: ${e.message}`, "err");
+    }
+  };
+  const nonAnnullato = e => { if (e instanceof Annullato) throw e; };
+
+  fai("Sintesi", () => tabSintesi(D, anno, trim));
+  fai("Territori", () => tabTerritori(D, anno, trim));
+  fai("Tempo trimestrale", () => tabTrimestrale(D, anno, trim));
+
+  // Tempo annuale: solo con T4 e solo se ISTAT ha pubblicato il dato annuale
+  if (trim !== 4) {
+    ctx.log("Tempo annuale: si genera solo scegliendo il T4", "info");
+  } else if (D.annuale(PROVINCIA, "EV", anno) === null || D.annuale(PROVINCIA, "IV", anno) === null) {
+    ctx.log(`Tempo annuale: dato annuale ${anno} non ancora pubblicato da ISTAT`, "info");
+  } else {
+    try {
+      ctx.avanzamento("scarico serie storica annuale…");
+      D.aggiungi((await leggi(URL_STORICO, filtri(["A"], [PROVINCIA], ["EV", "IV"], ["ALL"], ["WORLD"], anno - 14, anno), ctx)).valori, false);
+      fai("Tempo annuale", () => tabAnnuale(D, anno, trim));
+    } catch (e) { nonAnnullato(e); ctx.log(`Tempo annuale: serie storica non disponibile: ${e.message}`, "err"); }
+  }
+
+  try {
+    ctx.avanzamento("scarico settori manifatturieri…");
+    D.aggiungi((await leggi(URL_CONG, filtri(["A", "Q"], [PROVINCIA], ["EV", "IV"], ["ALL", "C", ...settori], ["WORLD"], anno - 1, anno), ctx)).valori);
+    fai("Settori export", () => tabSettori(D, anno, trim, "EV"));
+    fai("Settori import", () => tabSettori(D, anno, trim, "IV"));
+  } catch (e) { nonAnnullato(e); ctx.log(`Settori: ${e.message}`, "err"); }
+
+  try {
+    ctx.avanzamento("scarico paesi e continenti…");
+    const r = await leggi(URL_CONG, filtri(["A", "Q"], [PROVINCIA], ["EV", "IV"], ["ALL"], null, anno - 1, anno), ctx);
+    D.aggiungi(r.valori);
+    fai("Paesi export", () => tabPaesi(D, anno, trim, "EV", r.paesi));
+    fai("Paesi import", () => tabPaesi(D, anno, trim, "IV", r.paesi));
+  } catch (e) { nonAnnullato(e); ctx.log(`Paesi: ${e.message}`, "err"); }
+
+  return { cartella, file };
+}
+
+/* ------------------------------------------------------------------ Excel (.xlsx) */
+const enc = new TextEncoder();
+const xmlEsc = s => String(s).replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "")
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+function colonna(n) { let s = ""; while (n > 0) { const m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = Math.floor((n - 1) / 26); } return s; }
+function valoreCella(v) {
+  if (v === null || v === undefined) return null;
+  if (typeof v === "number") { if (!Number.isFinite(v)) return null; const r = round2(v); return Object.is(r, -0) ? 0 : r; }
+  return v;
+}
+
+const STILI = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+<fonts count="2"><font><sz val="11"/><name val="Calibri"/><family val="2"/></font><font><b/><sz val="11"/><color rgb="FFFFFFFF"/><name val="Calibri"/><family val="2"/></font></fonts>
+<fills count="3"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill><fill><patternFill patternType="solid"><fgColor rgb="FF2E75B6"/><bgColor indexed="64"/></patternFill></fill></fills>
+<borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>
+<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
+<cellXfs count="4"><xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/><xf numFmtId="0" fontId="1" fillId="2" borderId="0" xfId="0" applyFont="1" applyFill="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf><xf numFmtId="3" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/><xf numFmtId="2" fontId="0" fillId="0" borderId="0" xfId="0" applyNumberFormat="1"/></cellXfs>
+<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>
+</styleSheet>`;
+
+function creaXlsx(tab) {
+  const { foglio, intest, colValori, colPct } = tab;
+  const righe = tab.righe.map(r => r.map(valoreCella));
+  const larghezze = intest.map((h, j) => {
+    let m = String(h).length;
+    for (const r of righe) { const v = r[j]; m = Math.max(m, (v === null || v === 0 || v === "") ? 0 : String(v).length); }
+    return Math.min(Math.max(m + 2, 10), 60);
+  });
+  const cellaTesto = (ref, s, stile) => `<c r="${ref}" t="inlineStr"${stile ? ` s="${stile}"` : ""}><is><t xml:space="preserve">${xmlEsc(s)}</t></is></c>`;
+  let xml = `<row r="1">${intest.map((h, j) => cellaTesto(colonna(j + 1) + "1", h, 1)).join("")}</row>`;
+  righe.forEach((r, i) => {
+    const nr = i + 2;
+    let celle = "";
+    r.forEach((v, j) => {
+      if (v === null) return;
+      const ref = colonna(j + 1) + nr;
+      if (typeof v === "number") {
+        const stile = colValori.includes(j + 1) ? 2 : colPct.includes(j + 1) ? 3 : 0;
+        celle += `<c r="${ref}"${stile ? ` s="${stile}"` : ""}><v>${String(v)}</v></c>`;
+      } else {
+        celle += cellaTesto(ref, v, 0);
+      }
+    });
+    xml += `<row r="${nr}">${celle}</row>`;
+  });
+  const foglioXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/><selection pane="bottomLeft" activeCell="A2" sqref="A2"/></sheetView></sheetViews>
+<sheetFormatPr defaultRowHeight="15"/>
+<cols>${larghezze.map((w, j) => `<col min="${j + 1}" max="${j + 1}" width="${w}" customWidth="1"/>`).join("")}</cols>
+<sheetData>${xml}</sheetData>
+</worksheet>`;
+  const parti = [
+    ["[Content_Types].xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>`],
+    ["_rels/.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`],
+    ["xl/workbook.xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="${xmlEsc(foglio)}" sheetId="1" r:id="rId1"/></sheets></workbook>`],
+    ["xl/_rels/workbook.xml.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>`],
+    ["xl/styles.xml", STILI],
+    ["xl/worksheets/sheet1.xml", foglioXml],
+  ];
+  return creaZip(parti.map(([nome, testo]) => ({ nome, dati: enc.encode(testo) })));
+}
+
+/* ------------------------------------------------------------------ ZIP (senza compressione) */
+const CRC_TAB = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC_TAB[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+
+function creaZip(voci, data = new Date()) {
+  const ora = ((data.getHours() << 11) | (data.getMinutes() << 5) | Math.floor(data.getSeconds() / 2)) & 0xFFFF;
+  const giorno = (((data.getFullYear() - 1980) << 9) | ((data.getMonth() + 1) << 5) | data.getDate()) & 0xFFFF;
+  const parti = [], centrale = [];
+  let offset = 0;
+  for (const v of voci) {
+    const nome = enc.encode(v.nome), crc = crc32(v.dati), dim = v.dati.length;
+    const lh = new DataView(new ArrayBuffer(30));
+    lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true); lh.setUint16(6, 0x0800, true); lh.setUint16(8, 0, true);
+    lh.setUint16(10, ora, true); lh.setUint16(12, giorno, true); lh.setUint32(14, crc, true);
+    lh.setUint32(18, dim, true); lh.setUint32(22, dim, true); lh.setUint16(26, nome.length, true); lh.setUint16(28, 0, true);
+    parti.push(new Uint8Array(lh.buffer), nome, v.dati);
+    const ch = new DataView(new ArrayBuffer(46));
+    ch.setUint32(0, 0x02014b50, true); ch.setUint16(4, 20, true); ch.setUint16(6, 20, true); ch.setUint16(8, 0x0800, true);
+    ch.setUint16(10, 0, true); ch.setUint16(12, ora, true); ch.setUint16(14, giorno, true); ch.setUint32(16, crc, true);
+    ch.setUint32(20, dim, true); ch.setUint32(24, dim, true); ch.setUint16(28, nome.length, true);
+    ch.setUint32(42, offset, true);
+    centrale.push(new Uint8Array(ch.buffer), nome);
+    offset += 30 + nome.length + dim;
+  }
+  const dimCentrale = centrale.reduce((s, a) => s + a.length, 0);
+  const fine = new DataView(new ArrayBuffer(22));
+  fine.setUint32(0, 0x06054b50, true); fine.setUint16(8, voci.length, true); fine.setUint16(10, voci.length, true);
+  fine.setUint32(12, dimCentrale, true); fine.setUint32(16, offset, true);
+  const tutte = [...parti, ...centrale, new Uint8Array(fine.buffer)];
+  const out = new Uint8Array(tutte.reduce((s, a) => s + a.length, 0));
+  let p = 0;
+  for (const a of tutte) { out.set(a, p); p += a.length; }
+  return out;
+}
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { generaReport, creaZip, creaXlsx, round2, Dati, ErroreIstat, Annullato };
+}
+</script>
+
+<script>
+/* ==========================================================================
+   INTERFACCIA
+   ========================================================================== */
+(function () {
+  const $ = s => document.querySelector(s);
+  const selAnno = $("#anno"), selTrim = $("#trim"), btn = $("#genera"), btnAnnulla = $("#annulla");
+  const log = $("#log"), risultati = $("#risultati"), elenco = $("#elenco"), linkZip = $("#zip");
+  const XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+
+  const oggi = new Date();
+  const ultimo = Math.floor(oggi.getMonth() / 3);          // ultimo trimestre concluso
+  for (let y = oggi.getFullYear(); y >= 2021; y--) selAnno.add(new Option(String(y), String(y)));
+  selAnno.value = String(ultimo ? oggi.getFullYear() : oggi.getFullYear() - 1);
+  selTrim.value = String(ultimo || 4);
+  if (location.protocol === "file:") $("#avvisoFile").hidden = false;
+
+  let controllo = null, urlCreati = [];
+
+  function scrivi(testo, classe) {
+    const riga = document.createElement("span");
+    if (classe) riga.className = classe;
+    riga.textContent = testo + "\n";
+    log.appendChild(riga);
+    log.scrollTop = log.scrollHeight;
+  }
+  function occupato(si) {
+    btn.disabled = si; selAnno.disabled = si; selTrim.disabled = si; btnAnnulla.disabled = !si;
+    btn.textContent = si ? "⏳ Generazione…" : "⬇ Genera report";
+  }
+  function linkDownload(nome, dati, tipo) {
+    const url = URL.createObjectURL(new Blob([dati], { type: tipo }));
+    urlCreati.push(url);
+    const a = document.createElement("a");
+    a.href = url; a.download = nome; a.className = "scarica"; a.textContent = "Scarica";
+    return a;
+  }
+
+  window.addEventListener("beforeunload", e => { if (controllo) { e.preventDefault(); e.returnValue = ""; } });
+
+  btnAnnulla.addEventListener("click", () => { if (controllo) { controllo.abort(); scrivi("⏹ Annullamento richiesto…", "muted"); } });
+
+  btn.addEventListener("click", async () => {
+    const anno = Number(selAnno.value), trim = Number(selTrim.value);
+    urlCreati.forEach(u => URL.revokeObjectURL(u)); urlCreati = [];
+    risultati.hidden = true; elenco.textContent = ""; log.textContent = "";
+    controllo = new AbortController();
+    occupato(true);
+    scrivi(`▶ Report Import/Export ${anno} T${trim} (cumulato T1-T${trim})…`, "muted");
+    const avvio = Date.now();
+    try {
+      const esito = await generaReport(anno, trim, {
+        segnale: controllo.signal,
+        avanzamento: t => scrivi(`  ⏳ ${t}`, "muted"),
+        log: (t, tag) => scrivi(`  ${tag === "ok" ? "✓" : tag === "info" ? "ℹ" : "✗"} ${t}`, tag === "ok" ? "ok" : tag === "info" ? "muted" : "err"),
+      });
+      if (!esito.file.length) throw new ErroreIstat("Nessun file creato.");
+      for (const f of esito.file) {
+        const riga = document.createElement("div");
+        riga.className = "file";
+        const nome = document.createElement("span");
+        nome.textContent = f.nome;
+        riga.append(nome, linkDownload(f.nome, f.dati, XLSX));
+        elenco.appendChild(riga);
+      }
+      const zip = creaZip(esito.file.map(f => ({ nome: `${esito.cartella}/${f.nome}`, dati: f.dati })));
+      const urlZip = URL.createObjectURL(new Blob([zip], { type: "application/zip" }));
+      urlCreati.push(urlZip);
+      linkZip.href = urlZip; linkZip.download = `${esito.cartella}.zip`;
+      risultati.hidden = false;
+      scrivi(`✔ Completato: ${esito.file.length} file in ${Math.round((Date.now() - avvio) / 1000)}s. Scaricali qui sotto.`, "ok");
+      risultati.scrollIntoView({ behavior: "smooth", block: "start" });
+    } catch (e) {
+      if (e instanceof Annullato) scrivi("⏹ Operazione annullata.", "muted");
+      else scrivi(`✗ ${e.message}`, "err");
+    } finally {
+      controllo = null;
+      occupato(false);
+    }
+  });
+})();
+</script>
+<script src="../assets/aree.js?v=3910429333"></script>
+<script src="../assets/portale.js?v=73dcaff065"></script>
+</body>
+</html>

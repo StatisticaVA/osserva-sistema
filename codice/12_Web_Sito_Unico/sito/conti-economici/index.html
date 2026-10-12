@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conti economici – Report statistici · Camera di Commercio di Varese</title>
+<meta name="description" content="Valore aggiunto totale, pro capite e per settore di Varese, Lombardia e Italia, dal Centro Studi Tagliacarne e dall&#x27;ISTAT.">
+<meta name="theme-color" content="#12104a">
+<link rel="icon" type="image/png" href="../assets/favicon.png">
+<link rel="stylesheet" href="../assets/portale.css?v=e0f75119b8">
+<script>document.documentElement.classList.add("js");</script>
+</head>
+<body class="pagina-tema" data-area="conti-economici" style="--area:#7e22ce;--area-soft:#f3e7fc">
+<a class="vai-contenuto" href="#contenuto">Vai al contenuto</a>
+<header class="testata">
+  <div class="testata-in">
+    <a class="marchio" href="../index.html" title="Torna alla pagina iniziale"><img src="../assets/logo.png" alt="Camera di Commercio di Varese – Futuro Impresa Territorio" width="218" height="44"></a>
+    <div class="testata-titolo"><a href="../index.html">Report statistici</a><small>Tabelle per Osserva · Ufficio Statistica</small></div>
+    <nav class="testata-link" aria-label="Collegamenti principali">
+      <a href="../index.html"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg><span>Home</span></a>
+      <a href="../index.html#stato"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg><span>Stato dei dati</span></a>
+    </nav>
+    <button class="bottone-menu" type="button" aria-controls="menu" aria-expanded="false"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>Temi</button>
+  </div>
+</header>
+<div class="velo"></div>
+<div class="struttura">
+<aside class="menu-laterale" id="menu" aria-label="Temi">
+  <nav>
+    <a class="menu-area menu-home" href="../index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="nome">Pagina iniziale</span></a>
+    <p class="titoletto">Temi</p>
+    <details class="menu-voce" style="--c:#006ba0;--c-soft:#e3f2fa">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg></span><span class="nome">Imprese</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../imprese/index.html#sezione=registrate_attive" data-sezione="registrate_attive">Registrate e attive</a></li>
+        <li><a href="../imprese/index.html#sezione=iscrizioni_cessazioni" data-sezione="iscrizioni_cessazioni">Iscrizioni e cessazioni</a></li>
+        <li><a href="../imprese/index.html#sezione=procedure" data-sezione="procedure">Procedure concorsuali e scioglimenti</a></li>
+      </ul>
+    </details>
+    <details class="menu-voce" style="--c:#c2410c;--c-soft:#fdede4">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="20" height="14" x="2" y="7" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span><span class="nome">Lavoro</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../lavoro/index.html#sezione=disoccupazione" data-sezione="disoccupazione">Disoccupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=occupazione" data-sezione="occupazione">Occupazione</a></li>
+        <li><a href="../lavoro/index.html#sezione=attivita" data-sezione="attivita">Attività</a></li>
+        <li><a href="../lavoro/index.html#sezione=inattivita" data-sezione="inattivita">Inattività</a></li>
+        <li><a href="../lavoro/index.html#sezione=cig" data-sezione="cig">Cassa integrazione</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce" style="--c:#0f766e;--c-soft:#e0f3f0"><a class="menu-area" href="../commercio-estero/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span><span class="nome">Commercio estero</span></a></div>
+    <details class="menu-voce" style="--c:#4338ca;--c-soft:#ebeafd">
+      <summary><span class="menu-area"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></svg></span><span class="nome">Credito</span><span class="freccia"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 18 6-6-6-6"/></svg></span></span></summary>
+      <ul class="menu-sezioni">
+        <li><a href="../credito/index.html#sezione=depositi" data-sezione="depositi">Depositi</a></li>
+        <li><a href="../credito/index.html#sezione=impieghi" data-sezione="impieghi">Impieghi</a></li>
+        <li><a href="../credito/index.html#sezione=sofferenze" data-sezione="sofferenze">Sofferenze</a></li>
+        <li><a href="../credito/index.html#sezione=sportelli" data-sezione="sportelli">Sportelli</a></li>
+      </ul>
+    </details>
+    <div class="menu-voce corrente" style="--c:#7e22ce;--c-soft:#f3e7fc"><a class="menu-area" href="../conti-economici/index.html" aria-current="page"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></span><span class="nome">Conti economici</span></a></div>
+    <div class="menu-voce" style="--c:#13733a;--c-soft:#e3f4e8"><a class="menu-area" href="../popolazione/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><span class="nome">Popolazione</span></a></div>
+    <div class="menu-voce" style="--c:#be123c;--c-soft:#fce7eb"><a class="menu-area" href="../trasporti/index.html"><span class="tessera"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg></span><span class="nome">Trasporti</span></a></div>
+  </nav>
+  <div class="menu-nota"><b>Come si usa</b>Scegli un tema, controlla i dati e premi «Genera». In fondo a ogni pagina, «Come funziona» spiega tabelle e regole di calcolo.</div>
+</aside>
+<div class="contenuto">
+  <section class="eroe-area senza-schede" aria-labelledby="titolo-tema">
+    <div class="briciole"><a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="index.html">Conti economici</a></div>
+    <div class="eroe-riga">
+      <div class="tessera-grande"><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+      <div>
+        <h1 id="titolo-tema">Conti economici</h1>
+        <p class="lead">Valore aggiunto totale, pro capite e per settore di Varese, Lombardia e Italia, dal Centro Studi Tagliacarne e dall&#x27;ISTAT.</p>
+        <ul class="meta">
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5"/><path d="M3 12a9 3 0 0 0 18 0"/></svg>Fonte: Centro Studi Tagliacarne · ISTAT</li>
+          <li><svg class="icona-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>Dati automatici: controllo ogni giorno</li>
+          <li class="stato-dati" data-stato-area="conti-economici"><span class="pallino"></span><span class="testo">Controllo lo stato dei dati…</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<main class="wrap" id="contenuto">
+  <section class="card">
+    <h2>1 · Anno</h2>
+    <div class="riga">
+      <label class="campo">Anno del valore aggiunto <select id="anno"></select></label>
+    </div>
+    <p class="nota" id="notaFonti"></p>
+    <p class="nota">Si sceglie l'ultimo anno (per esempio 2024: valore aggiunto 2024 confrontato con il 2023). L'ultimo anno viene dal file del Centro Studi Tagliacarne,
+      l'anno prima dai dati Tagliacarne già archiviati l'anno scorso, gli anni ancora precedenti da ISTAT.</p>
+  </section>
+
+  <section class="card">
+    <h2>2 · Dati</h2>
+    <div id="fonte" class="fonte"><span class="icona">⏳</span><div><b>Cerco i dati aggiornati automaticamente…</b></div></div>
+    <h3>Se i dati automatici mancano o non sono aggiornati</h3>
+    <ol class="passi">
+      <li>Scarica dal sito del Centro Studi Tagliacarne il file Excel «Valore aggiunto per provincia e branca di attività economica»:
+        <a class="bottone" id="linkTagliacarne" href="https://www.tagliacarne.it/linee_di_attivita-33/statistiche_territoriali-101/" rel="noopener">⬇ File Tagliacarne</a></li>
+      <li>Trascinalo qui sotto (non serve aprirlo). Per i dati ISTAT e per l'anno prima servono anche i file CSV della cartella «dati» di questo sito
+        (<code>tagliacarne_AAAA.csv</code> e <code>istat_valore_aggiunto.csv</code>).</li>
+    </ol>
+    <label class="drop" id="drop">
+      <input type="file" id="scegli" multiple accept=".xlsx,.csv,.txt">
+      <b>Trascina qui il file Excel di Tagliacarne o i file CSV</b> oppure clicca per sceglierli
+      <div class="descr">I dati dei file caricati prevalgono su quelli automatici. I file restano sul tuo computer.</div>
+    </label>
+    <ul class="lista-file" id="listaFile"></ul>
+  </section>
+
+  <section class="card">
+    <h2>3 · Controllo e tabelle</h2>
+    <div id="controllo"></div>
+    <div class="riga" style="margin-top:14px">
+      <span class="spazio"></span>
+      <button id="genera" class="primario" disabled>⬇ Genera tabelle</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Stato</h2>
+    <pre id="log"><span class="muted">In attesa dei dati.</span></pre>
+  </section>
+
+  <section class="card" id="risultati" hidden>
+    <h2 id="titoloRisultati">File pronti</h2>
+    <a id="zip" class="zip" href="#">⬇ Scarica tutto (ZIP)</a>
+    <div id="elenco"></div>
+  </section>
+
+  <section class="card">
+    <h2>Come funziona</h2>
+    <details open>
+      <summary>Tabelle prodotte, fonti dei dati e regole</summary>
+      <ul>
+        <li><b>VA_SINTESI</b>: valore aggiunto (milioni di euro), quota di Varese su Lombardia e su Italia e valore aggiunto pro-capite di Varese, Lombardia e Italia, anno scelto e anno prima, con variazione %.</li>
+        <li><b>VA_TEMPO_tot</b> e <b>VA_TEMPO_procapite</b>: serie degli ultimi 15 anni (valore aggiunto in milioni di euro e pro-capite in euro).</li>
+        <li><b>VA_TERRITORI</b>: le 12 province lombarde, la Lombardia e l'Italia: valore aggiunto, quota % sulla Lombardia e sull'Italia, pro-capite.</li>
+        <li><b>VA_SETTORI</b> e <b>VA_SETTORI_grafico</b>: valore aggiunto per branca (agricoltura, industria in senso stretto, costruzioni, servizi), valori assoluti e quote %; il grafico riguarda Varese.</li>
+      </ul>
+      <p class="nota"><b>Da dove vengono gli anni.</b> Ultimo anno: file del Centro Studi Tagliacarne (stime del valore aggiunto provinciale a prezzi base e correnti).
+        Anno prima: il file Tagliacarne dell'anno scorso, conservato nell'archivio senza modifiche. Anni precedenti: ISTAT (conti economici territoriali; Lombardia = somma delle 12 province;
+        Italia = somma delle province più l'«extra-regio»). Quando esce un nuovo file Tagliacarne l'anno si aggiunge da solo; gli anni vecchi non vengono ricalcolati.</p>
+      <p class="nota">Il valore aggiunto pro-capite è il valore aggiunto diviso la media della popolazione residente al 1° gennaio dell'anno e al 1° gennaio dell'anno dopo
+        (per il Tagliacarne è già nel file; per gli anni ISTAT lo calcola la pagina). Ogni voce è arrotondata a 1 decimale prima di sommare i servizi e di calcolare le quote; le variazioni sono su valori non arrotondati.
+        I numeri sono salvati come numeri veri, con i decimali visibili (nei vecchi modelli di Osserva il formato nascondeva i decimali).</p>
+      <p class="nota">Il Centro Studi Tagliacarne pubblica il file con l'ultimo anno una volta l'anno (finora a novembre 2024 e a ottobre 2025); ISTAT pubblica i dati provinciali a dicembre.
+        L'aggiornamento automatico controlla ogni giorno e, se qualcosa non torna, non cambia i dati e manda un avviso.</p>
+    </details>
+  </section>
+</main>
+<footer class="versione">Fonte: Centro Studi delle Camere di commercio Guglielmo Tagliacarne e ISTAT · elaborazione Camera di Commercio di Varese · versione 1.0</footer>
+</div>
+</div>
+<footer class="pie">
+  <div class="pie-in">
+    <div><img class="simbolo" src="../assets/simbolo-bianco.png" alt=""><b>Camera di Commercio di Varese</b> · Ufficio Statistica</div>
+    <div>Fonti: ISTAT, Banca d'Italia, INPS, InfoCamere, Centro Studi Tagliacarne, ACI · Le tabelle si creano nel browser: i file che carichi restano sul tuo computer · versione 1.0</div>
+  </div>
+</footer>
+<script id="motore">
+"use strict";
+/* ==========================================================================
+   MOTORE (nessuna libreria esterna: lettura CSV ed Excel, calcoli, Excel e ZIP)
+   Le 6 tabelle riproducono quelle di Osserva «Valore aggiunto» (cartella «output osserva», anno 2024).
+
+   REGOLA DEGLI ANNI (per un anno N scelto):
+     N          -> file del Centro Studi Tagliacarne di quell'anno (dati/tagliacarne_N.csv);
+     N-1        -> il file Tagliacarne di N-1 già archiviato (dati/tagliacarne_N-1.csv), mai sostituito;
+     N-2 e prima-> ISTAT (dati/istat_valore_aggiunto.csv).
+   ========================================================================== */
+class ErroreDati extends Error {}
+
+// dati salvati dall'aggiornamento automatico (GitHub Actions): stessa cartella del sito, oppure il sito pubblicato
+const URL_DATI_ONLINE = "https://statisticava.github.io/report-conti-economici/dati/";
+const ANNI_TEMPO = 15;                       // la serie nel tempo tiene 15 anni (N-14 … N)
+const AREE = ["VARESE", "LOMBARDIA", "ITALIA"];                       // ordine delle tabelle di Osserva
+const NOME_AREA = { VARESE: "Varese", LOMBARDIA: "Lombardia", ITALIA: "Italia" };
+const PROVINCE = ["Varese", "Como", "Sondrio", "Milano", "Bergamo", "Brescia", "Pavia", "Cremona", "Mantova", "Lecco", "Lodi", "Monza e della Brianza"];
+const NOMI_OBBLIGATORI = [...PROVINCE, "Lombardia", "Italia"];
+const RIPARTIZIONI = ["Nord-ovest", "Nord-est", "Centro", "Sud e Isole"];
+const CAMPI = ["agr", "ind", "cos", "s1", "s2", "s3", "tot", "pc"];    // agricoltura, industria, costruzioni, 3 gruppi di servizi, totale, pro-capite
+const INTESTAZIONI_ATTESE = ["provincia", "agricoltura", "industria in senso stretto", "costruzioni", "commercio", "attivita finanziarie", "altri servizi", "totale", "valore aggiunto procapite"];
+const PAGINA_TAGLIACARNE = "https://www.tagliacarne.it/linee_di_attivita-33/statistiche_territoriali-101/";
+
+/* ------------------------------------------------------------------ arrotondamenti e calcoli */
+// ROUND di Excel (metà lontano da zero, su 15 cifre significative), come Decimal(format(v, ".15g")) di Python
+function arrotonda(v, cifre) {
+  if (v === null || v === undefined || !Number.isFinite(v)) return null;
+  const a = Math.abs(v);
+  if (a < 1e-9) return 0;
+  const r = Number(Math.round(Number(`${Number(a.toPrecision(15))}e${cifre}`)) + `e-${cifre}`);
+  return v < 0 && r !== 0 ? -r : r;
+}
+const R1 = v => arrotonda(v, 1), R2 = v => arrotonda(v, 2);
+const nullo = v => v === null || v === undefined;
+// variazione % non arrotondata, poi 2 decimali (come le tabelle di Osserva)
+const varPerc = (rec, prec) => nullo(rec) || nullo(prec) || prec === 0 ? null : (rec / prec - 1) * 100;
+const norm = s => String(s ?? "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().replace(/\s+/g, " ").trim();
+
+/* ------------------------------------------------------------------ CSV */
+function parseCsv(testo) {
+  if (testo.charCodeAt(0) === 0xFEFF) testo = testo.slice(1);
+  const primaRiga = testo.split(/\r?\n/, 1)[0];
+  const sep = [",", ";", "\t"].map(c => [c, primaRiga.split(c).length]).sort((a, b) => b[1] - a[1])[0][0];
+  const righe = [];
+  let riga = [], campo = "", tra = false;
+  for (let i = 0; i < testo.length; i++) {
+    const c = testo[i];
+    if (tra) {
+      if (c === '"') { if (testo[i + 1] === '"') { campo += '"'; i++; } else tra = false; } else campo += c;
+    } else if (c === '"') tra = true;
+    else if (c === sep) { riga.push(campo); campo = ""; }
+    else if (c === "\n" || c === "\r") {
+      if (c === "\r" && testo[i + 1] === "\n") i++;
+      riga.push(campo); campo = "";
+      if (riga.length > 1 || riga[0] !== "") righe.push(riga);
+      riga = [];
+    } else campo += c;
+  }
+  if (campo !== "" || riga.length) { riga.push(campo); righe.push(riga); }
+  return righe;
+}
+const numero = s => { s = String(s ?? "").trim(); if (s === "") return null; const n = Number(s); return Number.isFinite(n) ? n : NaN; };
+
+/* ------------------------------------------------------------------ file Tagliacarne (CSV salvato dal programma, oppure Excel scaricato dal Centro Studi) */
+// risultato comune: { tipo: "T", anno, T: Map(territorio -> {agr,ind,cos,s1,s2,s3,tot,pc}), fonte, descr, ... }
+function controllaTavolaTagliacarne(T, anno) {
+  const val = n => T.get(n);
+  // archivio dei primi anni: solo Varese, Lombardia e Italia con totale e pro-capite (niente province né branche)
+  const parziale = [...T.values()].some(r => CAMPI.some(c => r[c] === null));
+  if (parziale) {
+    for (const a of AREE) {
+      const r = T.get(NOME_AREA[a]);
+      if (!r || r.tot === null || r.pc === null) throw new ErroreDati(`Nel file Tagliacarne ${anno} mancano il totale e il pro-capite di ${NOME_AREA[a]}.`);
+    }
+    return false;
+  }
+  for (const n of NOMI_OBBLIGATORI) if (!T.has(n)) throw new ErroreDati(`Nel file Tagliacarne ${anno} manca la riga «${n}» (nomi cambiati o righe tolte).`);
+  for (const [n, r] of T) {
+    if (r.tot === null) continue;
+    const somma = r.agr + r.ind + r.cos + r.s1 + r.s2 + r.s3;
+    if (Math.abs(somma - r.tot) > 0.35) throw new ErroreDati(`Nel file Tagliacarne ${anno}, ${n}: la somma delle branche (${somma.toFixed(1)}) non coincide con il totale (${r.tot.toFixed(1)}).`);
+  }
+  {
+    const s = PROVINCE.reduce((x, n) => x + val(n).tot, 0);
+    if (Math.abs(s - val("Lombardia").tot) > 0.5) throw new ErroreDati(`Nel file Tagliacarne ${anno} la somma delle 12 province lombarde (${s.toFixed(1)}) non coincide con la Lombardia (${val("Lombardia").tot.toFixed(1)}).`);
+  }
+  return true;
+}
+
+function leggiCsvTagliacarne(testo) {
+  const righe = parseCsv(testo);
+  const testa = (righe[0] || []).map(s => s.trim());
+  const pos = n => testa.indexOf(n);
+  const colonne = ["anno", "territorio", "agricoltura", "industria", "costruzioni", "commercio_trasporti_ict", "finanza_immobiliare_professioni", "altri_servizi", "totale", "procapite"];
+  if (colonne.some(c => pos(c) < 0)) throw new ErroreDati("Non è un file CSV del valore aggiunto Tagliacarne (mancano delle colonne).");
+  const T = new Map(); let anno = null, fonte = "";
+  for (const r of righe.slice(1)) {
+    if (r.length < testa.length) continue;
+    const a = Number(r[pos("anno")]);
+    if (!Number.isInteger(a)) throw new ErroreDati("Anno non valido nel file CSV.");
+    if (anno !== null && a !== anno) throw new ErroreDati("Il file contiene più anni: serve un file per anno.");
+    anno = a; fonte = pos("fonte") >= 0 ? r[pos("fonte")].trim() : "";
+    const v = colonne.slice(2).map(c => numero(r[pos(c)]));
+    if (v.some(Number.isNaN)) throw new ErroreDati(`Valori non numerici nella riga «${r[pos("territorio")]}».`);
+    T.set(r[pos("territorio")].trim(), Object.fromEntries(CAMPI.map((c, i) => [c, v[i]])));
+  }
+  if (!T.size) throw new ErroreDati("Il file CSV non contiene righe.");
+  const completo = controllaTavolaTagliacarne(T, anno);
+  return { tipo: "T", anno, T, fonte, completo, primo: anno, ultimo: anno, righe: T.size, descr: `valore aggiunto Tagliacarne ${anno}${completo ? "" : " (solo Varese, Lombardia e Italia)"}` };
+}
+
+function leggiCsvIstat(testo) {
+  const righe = parseCsv(testo);
+  const testa = (righe[0] || []).map(s => s.trim());
+  const pos = n => testa.indexOf(n);
+  if (["anno", "area", "valore_aggiunto", "popolazione_media"].some(c => pos(c) < 0)) throw new ErroreDati("Non è un file CSV del valore aggiunto ISTAT (mancano delle colonne).");
+  const serie = { VARESE: new Map(), LOMBARDIA: new Map(), ITALIA: new Map() };
+  let n = 0, primo = Infinity, ultimo = -Infinity;
+  for (const r of righe.slice(1)) {
+    if (r.length < testa.length) continue;
+    const area = r[pos("area")].trim(), anno = Number(r[pos("anno")]), va = numero(r[pos("valore_aggiunto")]), pop = numero(r[pos("popolazione_media")]);
+    if (!serie[area] || !Number.isInteger(anno) || va === null || Number.isNaN(va) || Number.isNaN(pop)) throw new ErroreDati(`Riga non valida nel file ISTAT (${r.join(",")}).`);
+    serie[area].set(anno, { va, pop }); n++; primo = Math.min(primo, anno); ultimo = Math.max(ultimo, anno);
+  }
+  if (!n) throw new ErroreDati("Il file CSV non contiene righe.");
+  return { tipo: "I", serie, primo, ultimo, righe: n, descr: `valore aggiunto ISTAT ${primo}–${ultimo}` };
+}
+
+function leggiCsv(testo) {
+  const prima = (testo.charCodeAt(0) === 0xFEFF ? testo.slice(1) : testo).split(/\r?\n/, 1)[0];
+  if (/\bterritorio\b/.test(prima) && /\bprocapite\b/.test(prima)) return leggiCsvTagliacarne(testo);
+  if (/\bvalore_aggiunto\b/.test(prima)) return leggiCsvIstat(testo);
+  throw new ErroreDati("Non è uno dei file dei dati di questa pagina (servono i CSV della cartella «dati» o il file Excel del Centro Studi Tagliacarne).");
+}
+
+/* ------------------------------------------------------------------ Excel (.xlsx) del Centro Studi Tagliacarne, letto nel browser */
+const dec = new TextDecoder();
+async function inflaRaw(bytes) {
+  const flusso = new Blob([bytes]).stream().pipeThrough(new DecompressionStream("deflate-raw"));
+  return new Uint8Array(await new Response(flusso).arrayBuffer());
+}
+async function leggiZip(buf) {
+  const b = buf instanceof Uint8Array ? buf : new Uint8Array(buf);
+  const dv = new DataView(b.buffer, b.byteOffset, b.byteLength);
+  let e = -1;
+  for (let i = b.length - 22; i >= Math.max(0, b.length - 65557); i--) if (dv.getUint32(i, true) === 0x06054b50) { e = i; break; }
+  if (e < 0) throw new ErroreDati("Il file non è un Excel (.xlsx) valido.");
+  const n = dv.getUint16(e + 10, true); let p = dv.getUint32(e + 16, true);
+  const parti = new Map();
+  for (let k = 0; k < n; k++) {
+    if (dv.getUint32(p, true) !== 0x02014b50) throw new ErroreDati("Il file non è un Excel (.xlsx) valido.");
+    const metodo = dv.getUint16(p + 10, true), csize = dv.getUint32(p + 20, true), nlen = dv.getUint16(p + 28, true), xlen = dv.getUint16(p + 30, true), clen = dv.getUint16(p + 32, true), off = dv.getUint32(p + 42, true);
+    const nome = dec.decode(b.subarray(p + 46, p + 46 + nlen));
+    const ln = dv.getUint16(off + 26, true), lx = dv.getUint16(off + 28, true), ini = off + 30 + ln + lx;
+    parti.set(nome, { metodo, dati: b.subarray(ini, ini + csize) });
+    p += 46 + nlen + xlen + clen;
+  }
+  return parti;
+}
+async function parteZip(zip, nome) {
+  const v = zip.get(nome);
+  if (!v) return null;
+  if (v.metodo !== 0 && v.metodo !== 8) throw new ErroreDati("Il file Excel usa una compressione non supportata.");
+  return dec.decode(v.metodo === 0 ? v.dati : await inflaRaw(v.dati));
+}
+const xmlDecodifica = s => s.replace(/&#x([0-9a-f]+);/gi, (m, h) => String.fromCodePoint(parseInt(h, 16))).replace(/&#(\d+);/g, (m, d) => String.fromCodePoint(+d))
+  .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, "&");
+const attributi = s => { const o = {}; for (const m of s.matchAll(/([\w:]+)="([^"]*)"/g)) o[m[1]] = xmlDecodifica(m[2]); return o; };
+const testoXml = s => [...s.matchAll(/<t(?:\s[^>]*)?>([\s\S]*?)<\/t>/g)].map(m => xmlDecodifica(m[1])).join("");
+const colonnaDa = rif => { let n = 0; for (const c of /^[A-Z]+/.exec(rif)[0]) n = n * 26 + c.charCodeAt(0) - 64; return n - 1; };
+
+// -> { nome del foglio: righe (liste di valori: testo, numero o null) }
+async function leggiXlsx(buf) {
+  const zip = await leggiZip(buf);
+  const wb = await parteZip(zip, "xl/workbook.xml"), rels = await parteZip(zip, "xl/_rels/workbook.xml.rels");
+  if (!wb || !rels) throw new ErroreDati("Il file non è un Excel (.xlsx) valido.");
+  const cond = [];
+  const ss = await parteZip(zip, "xl/sharedStrings.xml");
+  if (ss) for (const m of ss.matchAll(/<si\b[^>]*>([\s\S]*?)<\/si>/g)) cond.push(testoXml(m[1]));
+  const target = {};
+  for (const m of rels.matchAll(/<Relationship\b([^>]*)\/?>/g)) { const a = attributi(m[1]); target[a.Id] = a.Target; }
+  const fogli = {};
+  for (const m of wb.matchAll(/<sheet\b([^>]*)\/?>/g)) {
+    const a = attributi(m[1]), t = target[a["r:id"]];
+    if (!t) continue;
+    const xml = await parteZip(zip, t.startsWith("/") ? t.slice(1) : "xl/" + t);
+    if (!xml) continue;
+    const righe = [];
+    for (const r of xml.matchAll(/<row\b([^>]*?)(?:\/>|>([\s\S]*?)<\/row>)/g)) {
+      const num = Number(attributi(r[1]).r) || righe.length + 1;
+      const celle = [];
+      for (const c of (r[2] || "").matchAll(/<c\b([^>]*?)(?:\/>|>([\s\S]*?)<\/c>)/g)) {
+        const ca = attributi(c[1]), corpo = c[2] || "", v = /<v>([\s\S]*?)<\/v>/.exec(corpo);
+        let val = null;
+        if (ca.t === "inlineStr") val = testoXml(corpo);
+        else if (v) val = ca.t === "s" ? cond[Number(v[1])] : (ca.t === "str" || ca.t === "e") ? xmlDecodifica(v[1]) : ca.t === "b" ? v[1] === "1" : Number(v[1]);
+        celle[colonnaDa(ca.r)] = val === undefined ? null : val;
+      }
+      while (righe.length < num - 1) righe.push([]);
+      righe[num - 1] = Array.from(celle, x => x === undefined ? null : x);
+    }
+    fogli[a.name] = righe;
+  }
+  return fogli;
+}
+
+// fogli Excel -> risultato comune dei file Tagliacarne (ultimo anno del file); stessi controlli del programma di aggiornamento
+function tavolaTagliacarneDaFogli(fogli) {
+  const candidati = [];
+  for (const [nome, righe] of Object.entries(fogli)) {
+    const titolo = norm(righe[0] && righe[0][0]);
+    const a = /anno (\d{4})/.exec(titolo) || /^(\d{4})$/.exec(norm(nome));
+    if (a && righe.length > 4) candidati.push([Number(a[1]), nome, righe]);
+  }
+  if (!candidati.length) throw new ErroreDati("Nel file Excel non c'è nessun foglio con il titolo «… Anno AAAA»: non è il file «Valore aggiunto per provincia e branca» del Centro Studi Tagliacarne.");
+  candidati.sort((x, y) => x[0] - y[0]);
+  const [anno, nome, righe] = candidati[candidati.length - 1];
+  const it = righe.slice(0, 8).findIndex(r => r && r[0] != null && norm(r[0]) === "provincia");
+  if (it < 0) throw new ErroreDati(`Nel foglio «${nome}» non trovo la riga di intestazione che comincia con «Provincia».`);
+  INTESTAZIONI_ATTESE.forEach((atteso, j) => {
+    if (!norm(righe[it][j]).startsWith(atteso)) throw new ErroreDati(`Colonna ${j + 1} del file Excel: trovo «${righe[it][j] ?? ""}» invece di «${atteso}» (il file è cambiato).`);
+  });
+  const T = new Map();
+  for (const r of righe.slice(it + 1)) {
+    if (!r || r[0] == null || String(r[0]).trim() === "") continue;
+    const n = String(r[0]).replace(/\s+/g, " ").trim(), v = r.slice(1, 9);
+    if (v.length < 8 || v.some(x => typeof x !== "number")) {
+      if (v.every(x => x == null)) continue;
+      throw new ErroreDati(`Riga «${n}» del file Excel: valori mancanti o non numerici.`);
+    }
+    const riga = Object.fromEntries(CAMPI.map((c, i) => [c, v[i]]));
+    if (T.has(n)) {
+      if (CAMPI.some(c => Math.abs(T.get(n)[c] - riga[c]) > 0.01)) throw new ErroreDati(`La riga «${n}» compare due volte nel file Excel con numeri diversi.`);
+      continue;                                   // provincia che è anche regione (Valle d'Aosta)
+    }
+    T.set(n, riga);
+  }
+  if (T.size < 120) throw new ErroreDati(`Il file Excel ha ${T.size} righe di territori invece di circa 132.`);
+  const completo = controllaTavolaTagliacarne(T, anno);
+  const sm = RIPARTIZIONI.every(n => T.has(n)) ? RIPARTIZIONI.reduce((x, n) => x + T.get(n).tot, 0) : null;
+  if (sm !== null) {
+    const extra = T.get("Italia").tot - sm;
+    if (!(extra >= 0 && extra <= 0.003 * T.get("Italia").tot)) throw new ErroreDati(`Italia e somma delle ripartizioni: lo scarto (${extra.toFixed(1)}) non è quello atteso.`);
+  }
+  return { tipo: "T", anno, T, fonte: "tagliacarne", completo, primo: anno, ultimo: anno, righe: T.size, descr: `valore aggiunto Tagliacarne ${anno} (file Excel)` };
+}
+async function leggiExcelTagliacarne(buf) { return tavolaTagliacarneDaFogli(await leggiXlsx(buf)); }
+
+// pagina del Centro Studi -> {url, anno, versione} del file «Valore aggiunto per provincia e branca» (serve ai link della pagina)
+function trovaFileTagliacarne(paginaHtml) {
+  const out = [];
+  for (const m of paginaHtml.matchAll(/<a\b[^>]*?href="([^"]+\.xlsx)"[^>]*>([\s\S]*?)<\/a>/gi)) {
+    const t = norm(xmlDecodifica(m[2].replace(/<[^>]+>/g, "")).replace(/ /g, " "));
+    if (t.startsWith("valore aggiunto per provincia e branca")) {
+      const a = /anno (\d{4})/.exec(t), v = /versione (?:del )?(\d{1,2}-\d{1,2}-\d{4})/.exec(t);
+      if (a) out.push({ url: xmlDecodifica(m[1]), anno: Number(a[1]), versione: v ? v[1] : null });
+    }
+  }
+  out.sort((x, y) => x.anno - y.anno);
+  return out.length ? out[out.length - 1] : null;
+}
+
+/* ------------------------------------------------------------------ i dati e la regola degli anni */
+class DatiVA {
+  constructor() { this.tag = new Map(); this.ist = { VARESE: new Map(), LOMBARDIA: new Map(), ITALIA: new Map() }; }
+  aggiungi(letto) {
+    if (letto.tipo === "T") this.tag.set(letto.anno, letto);
+    else for (const a of AREE) for (const [y, v] of letto.serie[a]) this.ist[a].set(y, v);
+  }
+  get vuoto() { return !this.tag.size && !this.ist.VARESE.size; }
+  anniTagliacarne() { return [...this.tag.keys()].sort((a, b) => a - b); }
+}
+
+// valore di un'area in un anno, secondo la regola degli anni per l'anno scelto N. null se manca.
+function valore(D, area, y, N) {
+  const nome = NOME_AREA[area];
+  const daTag = () => { const t = D.tag.get(y); const r = t && t.T.get(nome); return r && r.tot !== null && r.pc !== null ? { va: R1(r.tot), pc: R2(r.pc), fonte: "Tagliacarne" } : null; };
+  if (y >= N - 1) return daTag();
+  const i = D.ist[area].get(y);
+  if (i && i.pop !== null && i.pop > 0) return { va: R1(i.va), pc: R2(R1(i.va) * 1e6 / i.pop), fonte: "ISTAT" };
+  const t = daTag();                              // ISTAT non ha ancora l'anno: si usa l'archivio Tagliacarne, dicendolo
+  return t ? { ...t, fonte: "Tagliacarne (ISTAT non ha ancora l'anno)" } : null;
+}
+
+// cosa serve perché un anno si possa fare: null se c'è tutto, altrimenti il messaggio
+function mancaPerAnno(D, N) {
+  const t = D.tag.get(N);
+  if (!t) return `il file Tagliacarne del ${N}`;
+  if (!t.completo) return `il file Tagliacarne del ${N} completo (province e branche)`;
+  const p = D.tag.get(N - 1);
+  if (!p) return `il file Tagliacarne del ${N - 1} (l'anno prima: archivio)`;
+  for (const a of AREE) {
+    if (!valore(D, a, N - 1, N)) return `il valore aggiunto ${NOME_AREA[a]} del ${N - 1} (Tagliacarne)`;
+    for (let y = N - ANNI_TEMPO + 1; y <= N - 2; y++) if (!valore(D, a, y, N)) return `il valore aggiunto ${NOME_AREA[a]} del ${y} (ISTAT)`;
+  }
+  return null;
+}
+function anniPossibili(D) { return D.anniTagliacarne().filter(a => D.tag.get(a).completo && mancaPerAnno(D, a) === null); }
+function ultimoAnno(D) { const a = anniPossibili(D); return a.length ? a[a.length - 1] : null; }
+function controllaAnno(D, N) {
+  if (!Number.isInteger(N) || N < 2005) return { ok: false, errore: "Anno non valido." };
+  const manca = mancaPerAnno(D, N), tutti = D.anniTagliacarne();
+  if (manca) {
+    const ult = tutti.length ? ` (ultimo anno disponibile: ${tutti[tutti.length - 1]})` : "";
+    return { ok: false, ultimo: ultimoAnno(D), errore: D.tag.has(N)
+      ? `Mancano dei dati per il ${N}: ${manca}.` : `Il Centro Studi Tagliacarne non ha ancora pubblicato il valore aggiunto ${N}${ult}.` };
+  }
+  return { ok: true, ultimo: ultimoAnno(D) };
+}
+// da dove viene ogni anno (per le note della pagina)
+function descriviFonti(N) { return `${N}: Tagliacarne · ${N - 1}: Tagliacarne (archivio dell'anno prima) · ${N - ANNI_TEMPO + 1}–${N - 2}: ISTAT`; }
+
+
+/* ------------------------------------------------------------------ tabelle (specifica = modelli di Osserva) */
+const G = ["General", null];
+const contaVuoti = righe => righe.reduce((n, r) => n + r.filter(v => v === null).length, 0);
+const vuoti = tab => Math.max(0, contaVuoti(tab.righe) - (tab.vuotiPrevisti || 0));
+const SENZA = [false, null], CENTRO = [false, ["center", "center", true]], DESTRA = [false, ["right", null, false]];
+const RIGA_PROVINCE = [...PROVINCE, "Lombardia", "Italia"];
+const ETICHETTE_ABS = [...PROVINCE, "LOMBARDIA", "ITALIA"];
+const ETICHETTE_QUOTE = [...PROVINCE.slice(0, 11), "Monza e Brianza", "LOMBARDIA", "ITALIA"];
+
+// branche di una riga del file Tagliacarne: agricoltura, industria, costruzioni, servizi (somma dei 3 gruppi di servizi, ognuno a 1 decimale), totale.
+// Regola ricavata dai dati di Osserva: ogni voce si arrotonda a 1 decimale PRIMA di sommare i servizi e di calcolare le quote.
+function branche(r) {
+  return [R1(r.agr), R1(r.ind), R1(r.cos), R1(R1(r.s1) + R1(r.s2) + R1(r.s3)), R1(r.tot)];
+}
+const rigaTag = (D, N, nome) => { const t = D.tag.get(N), r = t && t.T.get(nome); if (!r) throw new ErroreDati(`Manca la riga «${nome}» nel file Tagliacarne ${N}.`); return r; };
+
+function tabSintesi(D, N) {
+  const v = (a, y) => { const x = valore(D, a, y, N); if (!x) throw new ErroreDati(`Manca il valore aggiunto ${NOME_AREA[a]} del ${y}.`); return x; };
+  const P = {}, C = {};
+  for (const a of AREE) { P[a] = v(a, N - 1); C[a] = v(a, N); }
+  const righe = [], formatiCelle = {}; let n = 0;
+  const VA = "VALORE AGGIUNTO in milioni di euro", PC = "VALORE AGGIUNTO PRO-CAPITE in euro";
+  const fmt = (riga, f) => { formatiCelle[`${riga},4`] = f; formatiCelle[`${riga},5`] = f; };
+  for (const a of AREE) { righe.push([++n, VA, NOME_AREA[a], P[a].va, C[a].va, R2(varPerc(C[a].va, P[a].va))]); fmt(righe.length + 1, "0.0"); }
+  for (const [den, nome] of [["LOMBARDIA", "Quota % Varese su Lombardia "], ["ITALIA", "Quota % Varese su Italia "]]) {
+    const qp = P.VARESE.va / P[den].va * 100, qr = C.VARESE.va / C[den].va * 100;       // la variazione si calcola sulle quote non arrotondate
+    righe.push([++n, VA, nome, R2(qp), R2(qr), R2(varPerc(qr, qp))]); fmt(righe.length + 1, "0.00");
+  }
+  for (const a of AREE) { righe.push([++n, PC, NOME_AREA[a], P[a].pc, C[a].pc, R2(varPerc(C[a].pc, P[a].pc))]); fmt(righe.length + 1, "0.00"); }
+  return { foglio: "Sheet3", nomeFile: "VA_SINTESI.xlsx", righe, formatiCelle,
+    intest: ["Ordinamento", "Valori", "variabili", "periodo passato", "periodo recente", "T.var % "],
+    hdr: [SENZA, SENZA, SENZA, SENZA, DESTRA, DESTRA],
+    colonne: [["0", null], ["@", null], ["@", null], ["0.0", null], ["0.0", null], ["0.00", null]],
+    larghezze: { A: 12.86, B: 36.57, C: 28.14, D: 15.29, E: 15.43, F: 7.71 } };
+}
+function tabTempoTot(D, N) {
+  const righe = [];
+  for (let y = N - ANNI_TEMPO + 1; y <= N; y++) righe.push([y, ...AREE.map(a => { const x = valore(D, a, y, N); if (!x) throw new ErroreDati(`Manca il valore aggiunto ${NOME_AREA[a]} del ${y}.`); return x.va; })]);
+  return { foglio: "Foglio1", nomeFile: "VA_TEMPO_tot.xlsx", righe, altezzaIntest: 60,
+    intest: ["Valore aggiunto (milioni di euro)", "Varese", "Lombardia", "Italia"], hdr: [CENTRO, CENTRO, CENTRO, CENTRO],
+    colonne: [G, ["0.0", null], ["0.0", null], ["0.0", null]],
+    larghezze: { A: 14.29, B: 11.57, C: 11.86, D: 12.43 } };
+}
+function tabTempoPro(D, N) {
+  const righe = [];
+  let i = 0;
+  for (let y = N - ANNI_TEMPO + 1; y <= N; y++) righe.push([++i, y, ...AREE.map(a => { const x = valore(D, a, y, N); if (!x) throw new ErroreDati(`Manca il valore aggiunto ${NOME_AREA[a]} del ${y}.`); return x.pc; })]);
+  return { foglio: "Foglio2", nomeFile: "VA_TEMPO_procapite.xlsx", righe,
+    intest: ["Ordinamento", "Valore aggiunto", "Varese", "Lombardia", "Italia"], hdr: [SENZA, SENZA, SENZA, SENZA, SENZA],
+    colonne: [G, G, ["0.00", null], ["0.00", null], ["0.00", null]],
+    larghezze: { B: 15.14, C: 9.57, D: 9.57, E: 9.57 } };
+}
+function tabTerritori(D, N) {
+  const lomb = branche(rigaTag(D, N, "Lombardia"))[4], ita = branche(rigaTag(D, N, "Italia"))[4];
+  const righe = RIGA_PROVINCE.map((nome, i) => {
+    const r = rigaTag(D, N, nome), tot = branche(r)[4], pc = R2(r.pc);
+    const etichetta = nome === "Monza e della Brianza" ? "Monza e della Brianza (**)" : nome === "Lombardia" ? "LOMBARDIA" : nome === "Italia" ? "ITALIA" : nome;
+    return [i + 1, etichetta, tot, nome === "Lombardia" ? 100 : nome === "Italia" ? ".." : R2(tot / lomb * 100), nome === "Italia" ? 100 : R2(tot / ita * 100), pc];
+  });
+  return { foglio: "Sheet2", nomeFile: "VA_TERRITORI.xlsx", righe, altezzaIntest: 48.6,
+    intest: ["Ordinamento", "Territorio", "Valore aggiunto (milioni di euro)", "Quota % su Lombardia", "Quota % su Italia", "Valore aggiunto pro-capite (euro)(*)"],
+    hdr: [SENZA, CENTRO, CENTRO, CENTRO, CENTRO, CENTRO],
+    colonne: [G, G, ["0.0", null], ["0.00", null], ["0.00", null], ["0.00", null]],
+    larghezze: { B: 24.44 } };
+}
+function tabSettori(D, N) {
+  const righe = [], formatiCelle = {};
+  const abs = nome => branche(rigaTag(D, N, nome));
+  righe.push([1, "Valori assoluti", null, null, null, null, null, null]);
+  RIGA_PROVINCE.forEach((nome, i) => righe.push([i + 2, null, ETICHETTE_ABS[i], ...abs(nome)]));
+  righe.push([RIGA_PROVINCE.length + 2, "Quota % per settore", null, null, null, null, null, null]);
+  const inizioQuote = righe.length + 2;                                    // numero di riga di Excel della prima riga di quote
+  RIGA_PROVINCE.forEach((nome, i) => {
+    const b = abs(nome);
+    righe.push([RIGA_PROVINCE.length + 3 + i, null, ETICHETTE_QUOTE[i], ...[0, 1, 2, 3].map(k => R2(b[k] / b[4] * 100)), 100]);
+    for (let c = 4; c <= 8; c++) formatiCelle[`${inizioQuote + i},${c}`] = "0.00";
+  });
+  return { foglio: "Foglio1", nomeFile: "VA_SETTORI.xlsx", righe, formatiCelle,
+    intest: ["Ordinamento 1", "Ordinamento 2", "Territori", "Agricoltura, silvicoltura e pesca", "Industria in senso stretto", "Costruzioni", "Servizi", "Totale"],
+    hdr: [SENZA, SENZA, SENZA, SENZA, SENZA, SENZA, SENZA, SENZA],
+    colonne: [G, G, G, ["0.0", null], ["0.0", null], ["0.0", null], ["0.0", null], ["0.0", null]],
+    vuotiPrevisti: 12 + 28,                                                // celle vuote volute: le due righe titolo e la colonna «Ordinamento 2»
+    larghezze: { B: 17.66, C: 20.44, D: 13.55, E: 13.33, F: 12.55, G: 13.66, H: 14.66 } };
+}
+function tabSettoriGrafico(D, N) {
+  const b = branche(rigaTag(D, N, "Varese"));
+  const righe = [["Agricoltura", R2(b[0] / b[4] * 100)], ["Industria", R2(b[1] / b[4] * 100)], ["Costruzioni", R2(b[2] / b[4] * 100)], ["Servizi", R2(b[3] / b[4] * 100)]];
+  return { foglio: "Foglio1", nomeFile: "VA_SETTORI_grafico.xlsx", righe,
+    intest: ["Settori", "Quota % per settore"], hdr: [SENZA, SENZA], formatiIntest: { 1: "@", 2: "@" },
+    colonne: [["@", null], ["0.00", null]],
+    larghezze: { A: 11, B: 19 } };
+}
+const TABELLE = [["Sintesi", tabSintesi], ["Tempo (totale)", tabTempoTot], ["Tempo (pro-capite)", tabTempoPro], ["Territori", tabTerritori],
+                 ["Settori", tabSettori], ["Settori (grafico di Varese)", tabSettoriGrafico]];
+const CARTELLA = "Report_valore_aggiunto_";
+
+/* ------------------------------------------------------------------ generazione completa */
+function generaReport(dati, anno, ctx = {}) {
+  const log = ctx.log || (() => {});
+  anno = Number(anno);
+  const c = controllaAnno(dati, anno);
+  if (!c.ok) throw new ErroreDati(c.errore);
+  const file = [], errori = [];
+  for (const [nome, fn] of TABELLE) {
+    try {
+      const tab = fn(dati, anno);
+      tab.mancanti = vuoti(tab);
+      file.push({ nome: tab.nomeFile, dati: creaXlsx(tab), tab });
+      log(tab.nomeFile, "ok");
+    } catch (e) { errori.push(nome); log(`${nome}: ${e.message}`, "err"); }
+  }
+  return { cartella: `${CARTELLA}${anno}`, file, errori };
+}
+
+/* ------------------------------------------------------------------ Excel (.xlsx) con gli stili dei modelli */
+const enc = new TextEncoder();
+const xmlEsc = s => String(s).replace(/[\x00-\x08\x0B\x0C\x0E-\x1F]/g, "")
+  .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+function colonna(n) { let s = ""; while (n > 0) { const m = (n - 1) % 26; s = String.fromCharCode(65 + m) + s; n = Math.floor((n - 1) / 26); } return s; }
+function colDaLettere(l) { let n = 0; for (let i = 0; i < l.length; i++) n = n * 26 + l.charCodeAt(i) - 64; return n; }
+
+// registro degli stili di una cartella di lavoro: (formato numerico, grassetto, allineamento) -> indice di cellXfs
+function nuovoRegistroStili() {
+  const predefiniti = { "General": 0, "0": 1, "0.00": 2, "#,##0": 3 };
+  const personalizzati = new Map(), xfs = [{ numId: 0, bold: false, al: null }], indice = new Map([["General|0|", 0]]);
+  return {
+    stile(fmt, bold, al) {
+      const chiave = `${fmt}|${bold ? 1 : 0}|${al ? al.join(",") : ""}`;
+      if (indice.has(chiave)) return indice.get(chiave);
+      let numId = predefiniti[fmt];
+      if (numId === undefined) { if (!personalizzati.has(fmt)) personalizzati.set(fmt, 164 + personalizzati.size); numId = personalizzati.get(fmt); }
+      xfs.push({ numId, bold: !!bold, al });
+      indice.set(chiave, xfs.length - 1);
+      return xfs.length - 1;
+    },
+    xml() {
+      const nf = [...personalizzati].map(([f, id]) => `<numFmt numFmtId="${id}" formatCode="${xmlEsc(f)}"/>`).join("");
+      const xf = xfs.map(x => `<xf numFmtId="${x.numId}" fontId="${x.bold ? 1 : 0}" fillId="0" borderId="0" xfId="0"${x.numId ? ' applyNumberFormat="1"' : ""}${x.bold ? ' applyFont="1"' : ""}${x.al ? ' applyAlignment="1"' : ""}>`
+        + (x.al ? `<alignment${x.al[0] ? ` horizontal="${x.al[0]}"` : ""}${x.al[1] ? ` vertical="${x.al[1]}"` : ""}${x.al[2] ? ' wrapText="1"' : ""}/>` : "") + "</xf>").join("");
+      return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+${nf ? `<numFmts count="${personalizzati.size}">${nf}</numFmts>` : ""}<fonts count="2"><font><sz val="11"/><name val="Calibri"/><family val="2"/></font><font><b/><sz val="11"/><name val="Calibri"/><family val="2"/></font></fonts>
+<fills count="2"><fill><patternFill patternType="none"/></fill><fill><patternFill patternType="gray125"/></fill></fills>
+<borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>
+<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
+<cellXfs count="${xfs.length}">${xf}</cellXfs>
+<cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>
+</styleSheet>`;
+    },
+  };
+}
+
+const HEAD = ["General", true, ["center", "center", true]];    // intestazione: grassetto, centrata, a capo
+function foglioXml(tab, reg) {
+  const attr = (ref, s) => `<c r="${ref}"${s ? ` s="${s}"` : ""}`;
+  const testo = (ref, s, t) => `${attr(ref, s)} t="inlineStr"><is><t xml:space="preserve">${xmlEsc(t)}</t></is></c>`;
+  const cella = (ref, s, v) => v === null || v === undefined ? (s ? `${attr(ref, s)}/>` : "")
+    : typeof v === "number" ? (Number.isFinite(v) ? `${attr(ref, s)}><v>${String(Object.is(v, -0) ? 0 : v)}</v></c>` : (s ? `${attr(ref, s)}/>` : ""))
+    : testo(ref, s, v);
+  let righe = `<row r="1"${tab.altezzaIntest ? ` ht="${tab.altezzaIntest}" customHeight="1"` : ""}>`;
+  tab.intest.forEach((h, j) => {
+    const fmt = (tab.formatiIntest && tab.formatiIntest[j + 1]) || "General";
+    const s = tab.hdr ? reg.stile(fmt, tab.hdr[j][0], tab.hdr[j][1]) : tab.stileIntest ? reg.stile(fmt, true, HEAD[2]) : tab.intestGrassetto ? reg.stile(fmt, true, null) : reg.stile(fmt, false, tab.intestACapoDa && j + 1 >= tab.intestACapoDa && j + 1 <= (tab.intestACapoA || 99) ? [null, null, true] : null);
+    righe += cella(colonna(j + 1) + "1", s, h);
+  });
+  righe += "</row>";
+  tab.righe.forEach((r, i) => {
+    const nr = i + 2;
+    righe += `<row r="${nr}">` + r.map((v, j) => {
+      const [fmt, al] = tab.colonne[j];
+      const f = (tab.formatiCelle && tab.formatiCelle[`${nr},${j + 1}`]) || fmt;
+      return cella(colonna(j + 1) + nr, reg.stile(f, false, al), v);
+    }).join("") + "</row>";
+  });
+  const cols = Object.entries(tab.larghezze || {}).sort((a, b) => colDaLettere(a[0]) - colDaLettere(b[0]))
+    .map(([l, w]) => { const n = colDaLettere(l); return `<col min="${n}" max="${n}" width="${w}" customWidth="1"/>`; }).join("");
+  return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+${tab.riquadro ? '<sheetViews><sheetView workbookViewId="0"><pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>\n' : ""}<sheetFormatPr defaultRowHeight="15"/>
+${cols ? `<cols>${cols}</cols>` : ""}<sheetData>${righe}</sheetData>
+</worksheet>`;
+}
+
+// tab -> file .xlsx (un foglio)
+function creaXlsx(tab) {
+  const reg = nuovoRegistroStili();
+  const foglio = foglioXml(tab, reg);      // prima il foglio: registra gli stili usati
+  const parti = [
+    ["[Content_Types].xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/xl/workbook.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml"/><Override PartName="/xl/worksheets/sheet1.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml"/><Override PartName="/xl/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml"/></Types>`],
+    ["_rels/.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="xl/workbook.xml"/></Relationships>`],
+    ["xl/workbook.xml", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"><sheets><sheet name="${xmlEsc(tab.foglio)}" sheetId="1" r:id="rId1"/></sheets></workbook>`],
+    ["xl/_rels/workbook.xml.rels", `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/worksheet" Target="worksheets/sheet1.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/styles" Target="styles.xml"/></Relationships>`],
+    ["xl/styles.xml", reg.xml()],
+    ["xl/worksheets/sheet1.xml", foglio],
+  ];
+  return creaZip(parti.map(([nome, t]) => ({ nome, dati: enc.encode(t) })));
+}
+
+/* ------------------------------------------------------------------ ZIP (senza compressione) */
+const CRC_TAB = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xEDB88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
+function crc32(b) { let c = 0xFFFFFFFF; for (let i = 0; i < b.length; i++) c = CRC_TAB[(c ^ b[i]) & 0xFF] ^ (c >>> 8); return (c ^ 0xFFFFFFFF) >>> 0; }
+
+function creaZip(voci, data = new Date()) {
+  const ora = ((data.getHours() << 11) | (data.getMinutes() << 5) | Math.floor(data.getSeconds() / 2)) & 0xFFFF;
+  const giorno = (((data.getFullYear() - 1980) << 9) | ((data.getMonth() + 1) << 5) | data.getDate()) & 0xFFFF;
+  const parti = [], centrale = [];
+  let offset = 0;
+  for (const v of voci) {
+    const nome = enc.encode(v.nome), crc = crc32(v.dati), dim = v.dati.length;
+    const lh = new DataView(new ArrayBuffer(30));
+    lh.setUint32(0, 0x04034b50, true); lh.setUint16(4, 20, true); lh.setUint16(6, 0x0800, true); lh.setUint16(8, 0, true);
+    lh.setUint16(10, ora, true); lh.setUint16(12, giorno, true); lh.setUint32(14, crc, true);
+    lh.setUint32(18, dim, true); lh.setUint32(22, dim, true); lh.setUint16(26, nome.length, true); lh.setUint16(28, 0, true);
+    parti.push(new Uint8Array(lh.buffer), nome, v.dati);
+    const ch = new DataView(new ArrayBuffer(46));
+    ch.setUint32(0, 0x02014b50, true); ch.setUint16(4, 20, true); ch.setUint16(6, 20, true); ch.setUint16(8, 0x0800, true);
+    ch.setUint16(10, 0, true); ch.setUint16(12, ora, true); ch.setUint16(14, giorno, true); ch.setUint32(16, crc, true);
+    ch.setUint32(20, dim, true); ch.setUint32(24, dim, true); ch.setUint16(28, nome.length, true);
+    ch.setUint32(42, offset, true);
+    centrale.push(new Uint8Array(ch.buffer), nome);
+    offset += 30 + nome.length + dim;
+  }
+  const dimCentrale = centrale.reduce((s, a) => s + a.length, 0);
+  const fine = new DataView(new ArrayBuffer(22));
+  fine.setUint32(0, 0x06054b50, true); fine.setUint16(8, voci.length, true); fine.setUint16(10, voci.length, true);
+  fine.setUint32(12, dimCentrale, true); fine.setUint32(16, offset, true);
+  const tutte = [...parti, ...centrale, new Uint8Array(fine.buffer)];
+  const out = new Uint8Array(tutte.reduce((s, a) => s + a.length, 0));
+  let p = 0;
+  for (const a of tutte) { out.set(a, p); p += a.length; }
+  return out;
+}
+
+
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = { ErroreDati, TABELLE, AREE, PROVINCE, NOME_AREA, ANNI_TEMPO, URL_DATI_ONLINE, PAGINA_TAGLIACARNE, arrotonda, varPerc, parseCsv, leggiCsv, leggiCsvTagliacarne, leggiCsvIstat,
+                     leggiXlsx, leggiExcelTagliacarne, tavolaTagliacarneDaFogli, trovaFileTagliacarne, DatiVA, valore, mancaPerAnno, anniPossibili, ultimoAnno, controllaAnno,
+                     descriviFonti, generaReport, creaXlsx, creaZip, branche };
+}
+
+</script>
+
+<script>
+"use strict";
+/* ==========================================================================
+   INTERFACCIA
+   ========================================================================== */
+(function () {
+  const $ = id => document.getElementById(id);
+  const XLSX = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+  const FILE_ISTAT = "istat_valore_aggiunto.csv";
+  const stato = { auto: [], autoInfo: null, cerco: true, file: [], dati: new DatiVA(), sceltaUtente: false, url: [], mancanti: [] };
+
+  function log(msg, tag) {
+    const el = $("log");
+    if (el.dataset.vuoto !== "no") { el.textContent = ""; el.dataset.vuoto = "no"; }
+    const riga = document.createElement("span");
+    const sim = tag === "ok" ? "✓ " : tag === "err" ? "✗ " : tag === "warn" ? "⚠ " : tag === "muted" ? "ℹ " : "";
+    riga.className = tag || "";
+    riga.textContent = sim + msg + "\n";
+    el.appendChild(riga);
+    el.scrollTop = el.scrollHeight;
+  }
+  const esc = s => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const fmtData = d => d.toLocaleDateString("it-IT") + " alle " + d.toLocaleTimeString("it-IT", { hour: "2-digit", minute: "2-digit" });
+
+  /* ---------- anno */
+  function riempiAnni() {
+    const sel = $("anno"), attuale = sel.value;
+    sel.innerHTML = "";
+    const possibili = anniPossibili(stato.dati);
+    const anni = possibili.length ? [...possibili].reverse() : [...stato.dati.anniTagliacarne()].reverse();
+    if (!anni.length) anni.push(new Date().getFullYear() - 1);
+    for (const a of anni) sel.add(new Option(String(a), String(a)));
+    if (attuale && [...sel.options].some(o => o.value === attuale) && stato.sceltaUtente) sel.value = attuale;
+    else if (possibili.length) sel.value = String(possibili[possibili.length - 1]);
+  }
+
+  /* ---------- dati */
+  function ricostruisci() {
+    const d = new DatiVA();
+    for (const a of [...stato.auto, ...stato.file]) if (a.tipo) d.aggiungi(a);       // i file caricati dall'utente prevalgono
+    stato.dati = d;
+    $("risultati").hidden = true;
+    riempiAnni();
+    aggiorna();
+  }
+
+  async function caricaAutomatici() {
+    const basi = location.protocol === "file:" ? [URL_DATI_ONLINE] : [URL_DATI_ONLINE];
+    let base = null;
+    for (const b of basi) {
+      try {
+        const r = await fetch(b + "aggiornamento.json", { cache: "no-store" });
+        if (r.ok) { stato.autoInfo = await r.json(); base = b; break; }
+      } catch (e) { /* si prova l'indirizzo successivo */ }
+    }
+    if (!base) { log("Dati automatici non raggiungibili: scarica il file di Tagliacarne e i CSV e trascinali nella pagina (punto 2).", "warn"); stato.mancanti = ["tutti"]; }
+    else {
+      const anni = (stato.autoInfo.archivio_tagliacarne || []).slice();
+      const file = [...anni.map(a => `tagliacarne_${a}.csv`), FILE_ISTAT];
+      for (const f of file) {
+        try {
+          const r = await fetch(base + f, { cache: "no-store" });
+          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          const letto = leggiCsv(await r.text());
+          stato.auto.push(letto);
+          log(`Dati automatici caricati: ${letto.descr}.`, "ok");
+        } catch (e) { stato.mancanti.push(f); log(`Dati automatici (${f}) non leggibili: ${e.message}`, "warn"); }
+      }
+    }
+    stato.cerco = false;
+    ricostruisci();
+  }
+
+  function mostraFonte() {
+    const el = $("fonte"), info = stato.autoInfo || {};
+    $("linkTagliacarne").href = (info.tagliacarne && info.tagliacarne.url) || PAGINA_TAGLIACARNE;
+    const tag = info.tagliacarne, ist = info.istat_valore_aggiunto;
+    if (stato.cerco) {
+      el.className = "fonte";
+      el.innerHTML = `<span class="icona">⏳</span><div><b>Cerco i dati aggiornati automaticamente…</b></div>`;
+    } else if (!stato.mancanti.length && stato.auto.length) {
+      const contr = info.controllato ? new Date(info.controllato) : null;
+      const anni = stato.dati.anniTagliacarne();
+      const ultimoIst = Math.max(...stato.dati.ist.VARESE.keys());
+      const avvisi = (info.avvisi || []).filter(a => !/^confronto ISTAT/.test(a));
+      el.className = "fonte ok";
+      el.innerHTML = `<span class="icona">✅</span><div><b>Dati automatici: valore aggiunto Tagliacarne fino al ${anni[anni.length - 1]}, ISTAT fino al ${ultimoIst}</b>
+        <span class="dett">${tag && tag.versione ? `File Tagliacarne dell'anno ${tag.anno}, versione del ${esc(tag.versione.replace(/-/g, "/"))}. ` : ""}${ist && ist.ultimo_aggiornamento_istat ? `Ultimo aggiornamento ISTAT: ${esc(new Date(ist.ultimo_aggiornamento_istat).toLocaleDateString("it-IT"))}. ` : ""}${contr ? `Dati aggiornati al ${esc(fmtData(contr))}. ` : ""}
+        Si controllano da soli ogni giorno.${avvisi.length ? `<br>Avvisi dell'ultimo aggiornamento: ${esc(avvisi.join(" · "))}` : ""}</span></div>`;
+    } else {
+      el.className = "fonte warn";
+      el.innerHTML = `<span class="icona">⚠️</span><div><b>Dati automatici non disponibili o incompleti (${esc(stato.mancanti.join(", ") || "nessun file")})</b>
+        <span class="dett">${location.protocol === "file:" ? "La pagina è aperta dal computer e il sito con i dati automatici non risponde. " : ""}Scarica il file Excel di Tagliacarne e trascinalo qui sotto (punto 2); per i dati ISTAT e dell'anno prima servono i file CSV della cartella «dati» del sito.</span></div>`;
+    }
+  }
+
+  function mostraFile() {
+    const ul = $("listaFile");
+    ul.innerHTML = "";
+    stato.file.forEach((f, i) => {
+      const li = document.createElement("li");
+      if (f.errore) li.className = "errore";
+      li.innerHTML = `<span>${f.errore ? "✗" : "✓"} <b>${esc(f.nome)}</b> — ${f.errore ? esc(f.errore) : esc(f.descr)}</span>`;
+      const b = document.createElement("button");
+      b.className = "togli"; b.title = "Togli"; b.textContent = "✕";
+      b.onclick = () => { stato.file.splice(i, 1); mostraFile(); ricostruisci(); };
+      li.appendChild(b);
+      ul.appendChild(li);
+    });
+  }
+
+  async function caricaFile(lista) {
+    for (const file of lista) {
+      log(`Leggo ${file.name}…`, "muted");
+      await new Promise(r => setTimeout(r, 20));
+      try {
+        if (/\.(zip|7z|xls)$/i.test(file.name)) throw new ErroreDati("Servono il file Excel .xlsx di Tagliacarne oppure i file CSV dei dati, non file ZIP o Excel vecchi (.xls).");
+        const letto = /\.xlsx$/i.test(file.name) ? await leggiExcelTagliacarne(await file.arrayBuffer()) : leggiCsv(await file.text());
+        stato.file = stato.file.filter(f => f.nome !== file.name);
+        stato.file.push({ nome: file.name, ...letto });
+        log(`${file.name}: ${letto.descr}.`, "ok");
+      } catch (e) {
+        stato.file.push({ nome: file.name, errore: e instanceof ErroreDati ? e.message : `Errore di lettura: ${e.message}` });
+        log(`${file.name}: ${e.message}`, "err");
+      }
+    }
+    mostraFile();
+    ricostruisci();
+  }
+
+  /* ---------- controllo */
+  function aggiorna() {
+    mostraFonte();
+    const anno = Number($("anno").value);
+    const el = $("controllo");
+    if (stato.dati.vuoto || !anno) {
+      el.innerHTML = `<p class="nota" style="margin-top:0">Nessun dato caricato.</p>`;
+      $("genera").disabled = true;
+      $("notaFonti").textContent = "";
+      return;
+    }
+    $("notaFonti").textContent = `Da dove vengono gli anni: ${descriviFonti(anno)}.`;
+    const c = controllaAnno(stato.dati, anno);
+    if (!c.ok) {
+      el.innerHTML = `<div class="servono">${esc(c.errore)}</div>`;
+      $("genera").disabled = true;
+      return;
+    }
+    const dett = { "Sintesi": `Varese, Lombardia, Italia: ${anno - 1} e ${anno}, quote e pro-capite`, "Tempo (totale)": `${anno - ANNI_TEMPO + 1}–${anno}, milioni di euro`,
+                   "Tempo (pro-capite)": `${anno - ANNI_TEMPO + 1}–${anno}, euro`, "Territori": `12 province, Lombardia, Italia, ${anno}`,
+                   "Settori": `4 branche, quote %, ${anno}`, "Settori (grafico di Varese)": `quote % di Varese, ${anno}` };
+    let html = `<table class="controllo">`, vuote = [];
+    for (const [nome, fn] of TABELLE) {
+      let t;
+      try { t = fn(stato.dati, anno); } catch (e) { html += `<tr><td>${esc(nome)}</td><td><span class="badge err">non si può fare</span></td><td class="dett">${esc(e.message)}</td></tr>`; continue; }
+      const n = vuoti(t);
+      if (n) vuote.push(`${nome} (${n})`);
+      html += `<tr><td>${esc(t.nomeFile.replace(/\.xlsx$/, ""))}</td><td><span class="badge ${n ? "warn" : "ok"}">${n ? "con celle vuote" : "pronta"}</span></td><td class="dett">${esc(dett[nome])}</td></tr>`;
+    }
+    html += `</table>`;
+    const fallback = [];
+    for (const a of AREE) for (let y = anno - ANNI_TEMPO + 1; y <= anno - 2; y++) { const v = valore(stato.dati, a, y, anno); if (v && v.fonte !== "ISTAT") fallback.push(`${NOME_AREA[a]} ${y}`); }
+    if (fallback.length) html += `<div class="servono">ISTAT non ha ancora pubblicato alcuni anni: per ${esc(fallback.join(", "))} si usa il dato Tagliacarne dell'archivio. Quando ISTAT li pubblica si aggiornano da soli.</div>`;
+    if (vuote.length) html += `<div class="servono">Mancano alcuni valori (celle vuote): ${esc(vuote.join(", "))}.</div>`;
+    html += `<div class="pronto">Tutto pronto per il ${anno}: ${TABELLE.length} tabelle del valore aggiunto.</div>`;
+    el.innerHTML = html;
+    $("genera").disabled = false;
+  }
+
+  /* ---------- generazione */
+  function genera() {
+    const anno = Number($("anno").value);
+    stato.url.forEach(u => URL.revokeObjectURL(u)); stato.url = [];
+    $("risultati").hidden = true;
+    try {
+      log(`Genero le tabelle del valore aggiunto ${anno}…`);
+      const esito = generaReport(stato.dati, anno, { log });
+      const elenco = $("elenco");
+      elenco.innerHTML = "";
+      for (const f of esito.file) {
+        const url = URL.createObjectURL(new Blob([f.dati], { type: XLSX }));
+        stato.url.push(url);
+        const div = document.createElement("div");
+        div.className = "file";
+        div.innerHTML = `<span>${esc(f.nome)}</span>`;
+        const a = document.createElement("a");
+        a.className = "scarica"; a.href = url; a.download = f.nome; a.textContent = "⬇ Scarica";
+        div.appendChild(a);
+        elenco.appendChild(div);
+      }
+      const zip = creaZip(esito.file.map(f => ({ nome: `${esito.cartella}/${f.nome}`, dati: f.dati })));
+      const urlZip = URL.createObjectURL(new Blob([zip], { type: "application/zip" }));
+      stato.url.push(urlZip);
+      $("zip").href = urlZip; $("zip").download = `${esito.cartella}.zip`;
+      $("titoloRisultati").textContent = `File pronti — valore aggiunto ${anno}`;
+      $("risultati").hidden = false;
+      log(esito.errori.length ? `Fatto: ${esito.file.length} file; non riuscite: ${esito.errori.join(", ")}.` : `Fatto: ${esito.file.length} file.`, esito.errori.length ? "warn" : "ok");
+    } catch (e) {
+      log(e instanceof ErroreDati ? e.message : `Errore inatteso: ${e.message}`, "err");
+      if (!(e instanceof ErroreDati)) console.error(e);
+    }
+  }
+
+  /* ---------- eventi */
+  $("anno").onchange = () => { stato.sceltaUtente = true; $("risultati").hidden = true; aggiorna(); };
+  $("genera").onclick = genera;
+  $("scegli").onchange = e => { caricaFile([...e.target.files]); e.target.value = ""; };
+  const drop = $("drop");
+  drop.addEventListener("dragover", e => { e.preventDefault(); drop.classList.add("sopra"); });
+  drop.addEventListener("dragleave", () => drop.classList.remove("sopra"));
+  drop.addEventListener("drop", e => { e.preventDefault(); drop.classList.remove("sopra"); caricaFile([...e.dataTransfer.files]); });
+  window.addEventListener("dragover", e => e.preventDefault());
+  window.addEventListener("drop", e => { if (!drop.contains(e.target)) { e.preventDefault(); caricaFile([...e.dataTransfer.files]); } });
+
+  riempiAnni();
+  aggiorna();
+  caricaAutomatici();
+})();
+
+</script>
+<script src="../assets/aree.js?v=3910429333"></script>
+<script src="../assets/portale.js?v=73dcaff065"></script>
+</body>
+</html>
