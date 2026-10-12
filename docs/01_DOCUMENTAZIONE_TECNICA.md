@@ -10,6 +10,7 @@ Gli altri documenti della cartella `docs/`:
 | Documento | Contenuto |
 |---|---|
 | `02_TABELLE_DI_OUTPUT.md` | Ogni tabella di output: da quali dati parte, quali calcoli fa, che forma ha. |
+| `HANDOVER.md` | Registro tecnico dettagliato, scritto durante lo sviluppo in ordine cronologico: decisioni, verifiche, pubblicazioni. Serve per i dettagli; cita anche test e file di prova che non sono nel repository. |
 | `LEGGIMI.txt` di ogni cartella | Istruzioni per chi usa i siti (l'ufficio). |
 
 ---
@@ -76,7 +77,7 @@ Oltre ai siti c'è un **programma Python** con interfaccia grafica: un estrattor
 ```
 osserva-sistema/
 ├── README.md                      da dove partire
-├── docs/                          questa documentazione e la specifica delle tabelle (anche in .docx)
+├── docs/                          01_DOCUMENTAZIONE_TECNICA, 02_TABELLE_DI_OUTPUT, HANDOVER (.md e .docx)
 └── codice/
     ├── 1_Estrattore_Python/       estrattore SDMX generico + report Import/Export (Python)
     ├── 2_Versione_Web_GitHub/     sito Commercio estero           = repo StatisticaVA/report-import-export
@@ -89,11 +90,27 @@ osserva-sistema/
     └── 12_Web_Sito_Unico/         costruisci_sito.py + sorgenti/ → sito/ = repo StatisticaVA/report-osserva
 ```
 
-Ogni cartella dei siti contiene la pagina (`index.html`) e le istruzioni per l'ufficio (`LEGGIMI.txt`). I siti con dati automatici contengono anche:
-- gli script di estrazione ed elaborazione (`aggiorna_dati.py`, `aggiorna_cig.py`);
-- lo script degli avvisi (`segnala_problemi.py`);
-- il workflow GitHub (`.github/workflows/`);
-- i dati (`dati/`).
+I numeri delle cartelle sono quelli originali: le cartelle 3, 4 e 5 erano versioni precedenti o strumenti secondari e non fanno parte del repository.
+
+**File di ogni sito**
+
+| File | Presente in | Ruolo |
+|---|---|---|
+| `index.html` | tutti i siti | La pagina: motore (`<script id="motore">`) e interfaccia (§3.2). |
+| `LEGGIMI.txt` | tutti i siti | Istruzioni per l'ufficio. |
+| `aggiorna_dati.py` (+ `aggiorna_cig.py` nel Lavoro) | 7, 8, 9, 10, 11 | **Estrazione ed elaborazione**: scarica, filtra, controlla e salva i dati in `dati/` (§3.4). |
+| `segnala_problemi.py` | 7, 8, 9, 10, 11 | Avviso per e-mail quando l'aggiornamento non riesce (§3.4, §8.1). |
+| `.github/workflows/*.yml` | 7, 8, 9, 10, 11 | Calendario e passi dell'aggiornamento automatico (§3.5). |
+| `dati/*.csv`, `dati/aggiornamento.json` | 7, 8, 9, 10, 11 | Dati letti dalla pagina e stato dell'ultimo aggiornamento. Il contenuto dei CSV è descritto in `02_TABELLE_DI_OUTPUT.md`, nei paragrafi «Dati di input». |
+
+Il sito Commercio estero (`2_…`) ha solo `index.html` e `LEGGIMI.txt`, perché scarica i dati da ISTAT Coeweb al momento. Anche il sito Imprese (`6_…`) ha solo questi due file, perché lavora sui file caricati dall'ufficio. Il sito unico (`12_…`) contiene:
+- `costruisci_sito.py`;
+- `sorgenti/` (grafica, logo, font);
+- `sito/`, il risultato pubblicato (§3.6).
+
+L'estrattore Python (`1_…`) è descritto al §3.7.
+
+**Provare in locale**: `python3 -m http.server 8000` dentro `codice/`, poi aprire ad esempio `http://localhost:8000/7_Web_Credito_BancaItalia/` e premere «Genera». Le pagine funzionano anche aperte con doppio clic su `index.html`: in quel caso leggono i dati automatici dai siti online.
 
 **Rapporto con i siti online.** Al 12/10/2026 queste cartelle sono identiche, file per file, ai repository pubblicati. Da qui in poi **i dati vivi stanno nei repository dei siti**: i bot salvano ogni settimana o ogni mese i CSV aggiornati nella loro cartella `dati/`. Le cartelle `dati/` di questo repository sono una fotografia al 12/10/2026.
 
